@@ -6,25 +6,25 @@ export const bolgData = [
     {
         id:1,
         thumb:blog_1,
-        title:"Empowering Children Through Education the a Igniting",
+        title:"Understanding Autism Spectrum Disorder (ASD)",
         blog_desc:"",
         date:"October 19, 2023",
-        author:"admin"
+        author:"Dr. Naveena Karthik"
     },
     {
         id:2,
         thumb:blog_2,
-        title:"Joyful Journeys Childcare and EducationIgniting Curiosity",
+        title:"The Importance of Early Intervention",
         blog_desc:"",
         date:"October 20, 2023",
-        author:"admin"
+        author:"Dr. Naveena Karthik"
     },
     {
         id:3,
         thumb:blog_3,
-        title:"Empowering Children Through Education the a Igniting",
+        title:"Tips for Parents of Children with ADHD",
         blog_desc:"",
         date:"October 21, 2023",
-        author:"admin"
+        author:"Dr. Naveena Karthik"
     },
 ]

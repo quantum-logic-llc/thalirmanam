@@ -27,11 +27,8 @@ export default function HomePage() {
         <SuccessProjectOne />
         <AboutOne isAboutpage={false} />
         <Programs />
-        <Gallery />
-        <ServicesOne />
         <FaqComp />
         <Teams />
-        <AgeOne />
         <Testimonial />
         <BlogsOne />
         <NewsletterOne />

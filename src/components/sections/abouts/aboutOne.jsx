@@ -54,10 +54,8 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     {/* <!-- right side start --> */}
                     <div className={`${isAboutpage ? "" : "lg:max-w-[439px]"} pt-7.5`}>
                         <SectionName>About Us</SectionName>
-                        <Title size={"3.5xl"} className={"pb-5"}>Unlocking Potential, One Child at a just Time in school</Title>
-                        <SectionDescription>Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet
-                            massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet
-                            lectus mi ultricies dictum</SectionDescription>
+                        <Title size={"3.5xl"} className={"pb-5"}>About Thalir Manam</Title>
+                        <SectionDescription>Thalir Manam is a child development center led by Dr. Naveena Karthik, a Developmental & Behavioural Paediatrician. We are dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</SectionDescription>
                         <div className='lg:mt-10 mt-7'>
                             <Button asChild variant="outline">
                                 <Link href="/about-us">Get a quote</Link>

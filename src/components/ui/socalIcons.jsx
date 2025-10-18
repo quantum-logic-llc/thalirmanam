@@ -1,30 +1,29 @@
 import React from 'react'
 import Link from 'next/link';
-import { FaFacebookF, FaXTwitter, FaLinkedin, FaPinterestP } from "react-icons/fa6";
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { cn } from '@/lib/utils';
 
 const icons = [
     {
         id: 1,
-        link: "",
+        link: "https://www.facebook.com/people/Thalir-Manam/100083365155092/",
         icon: <FaFacebookF />
     },
     {
         id: 2,
-        link: "",
-        icon: <FaXTwitter />
+        link: "https://www.youtube.com/@drnaveenakarthik",
+        icon: <FaYoutube />
     },
     {
         id: 3,
-        link: "",
-        icon: <FaLinkedin />
+        link: "https://www.instagram.com/dr_naveenakarthik/",
+        icon: <FaInstagram />
     },
     {
         id: 4,
-        link: "",
-        icon: <FaPinterestP />
+        link: "https://www.linkedin.com/in/dr-naveena-karthik-a202b3249",
+        icon: <FaLinkedinIn />
     },
-
 ]
 const SocalIcons = ({className, prentClass}) => {
     return (

@@ -1,18 +1,18 @@
 export const faqData = [
     {
         id:"one",
-        question:"Why do we have to go to school?",
-        ans:"It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model"
+        question:"What services does Thalir Manam offer?",
+        ans:"Thalir Manam offers a wide range of services for neurodevelopmental issues, including Autism, ADHD, Cerebral Palsy, and learning disorders. We provide early intervention services, speech and language therapy, behavioral therapy, and more."
     },
     {
         id:"two",
-        question:"What subjects will I learn in school?",
-        ans:"It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model"
+        question:"Who is Dr. Naveena Karthik?",
+        ans:"Dr. Naveena Karthik is a Developmental & Behavioural Paediatrician who leads the team at Thalir Manam. She is dedicated to providing comprehensive care and support for children with developmental and behavioral challenges."
     },
     {
         id:"three",
-        question:"How long is a school day?",
-        ans:"It is a long established fact that a reader will be distracted by the read content of a page when looking at its layout. Many desktop publish packages and web page editors now use Loremdefault model"
+        question:"What is the Early Intervention Programme?",
+        ans:"The Early Intervention Programme is designed to identify developmental and learning problems in preschoolers (aged 3-6 years). It focuses on enhancing language and communication, social play, pre-academic, and independent living skills."
     },
 
 ]

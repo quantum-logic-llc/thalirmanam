@@ -13,10 +13,10 @@ const Testimonial = () => {
             <div className="container">
                 <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10">
                     <div className="lg:max-w-[410px]">
-                        <SectionName>Clients Testimonial</SectionName>
-                        <Title size={"3.5xl"}>Unlocking the Power of  Wonderworks Child</Title>
+                        <SectionName>Parent Testimonials</SectionName>
+                        <Title size={"3.5xl"}>What Parents Say About Us</Title>
                     </div>
-                    <p className="lg:max-w-[410px]">Use receiving accounts a number a currencies and get paid like a local Use receivin accounts a number paid the most beautiful think</p>
+                    <p className="lg:max-w-[410px]">We are proud of the positive feedback we receive from parents. Here are some of their stories.</p>
                 </div>
                 <div className="relative w-full h-full after:absolute after:left-0 after:top-0 after:lg:max-w-[calc(100%-410px)] after:md:max-w-[calc(100%-310px)] after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-testimonial-banner after:bg-cover after:bg-no-repeat after:z-[-1]">
                     <div className="py-10">
@@ -55,7 +55,7 @@ const Card = ({ name, src, position, review, rating }) => {
                         <img src={quotation.src || quotation} alt="quotation" className="lg:w-auto w-9" />
                     </div>
                 </div>
-                <p>Their product exceeded his my routi  expectations. The the quality and attention to detail a the a most outstanding and it has become an essential most a education the man who can do </p>
+                <p>{review}</p>
                 <Rating star={rating} />
             </div>
         </div>

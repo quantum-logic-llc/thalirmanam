@@ -1,15 +1,13 @@
 import React from 'react'
 import PageTitle from '@/components/sections/pageTitle'
-import ServicesOne from '@/components/sections/services/servicesOne'
-import Partner from '@/components/sections/partner'
+import SuccessProjectOne from '@/components/sections/successProjects/successProjectOne'
 
 const Services = () => {
   return (
     <>
       <main>
-        <PageTitle pageName="Services" />
-        <ServicesOne />
-        <Partner />
+        <PageTitle pageName="Our Services" />
+        <SuccessProjectOne />
       </main>
     </>
   )

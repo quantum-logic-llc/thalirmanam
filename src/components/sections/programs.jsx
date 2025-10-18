@@ -11,8 +11,8 @@ const Programs = () => {
     <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 relative">
     <div className="container">
         <div className="text-center flex flex-col items-center">
-            <SectionName className={"text-green-foreground"}>Educational Programs</SectionName>
-            <Title size={"3.5xl"} className={"lg:max-w-[630px]"}>Strong Foundation for Success For Nurturing Curiosityl</Title>
+            <SectionName className={"text-green-foreground"}>Our Programs</SectionName>
+            <Title size={"3.5xl"} className={"lg:max-w-[630px]"}>Specialized Programs for Every Child</Title>
         </div>
         <div className="lg:pl-11">
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-7.5 lg:gap-x-8 gap-x-5 lg:pt-15 pt-10">

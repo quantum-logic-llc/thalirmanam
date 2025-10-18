@@ -13,7 +13,7 @@ const ContactAddress = () => {
                                 <span className="text-cream-foreground text-[28px]"><FaLocationDot /> </span>
                             </div>
                             <h5 className="font-bold text-xl mt-5 pb-2.5">Location</h5>
-                            <p>120os road no12.Mirpur,Bangladesh</p>
+                            <p>Miot Hospital, Shens Hospital, Kauvery Hospital Vadapalani, Hamsa Kids Child Development Centre</p>
                         </div>
                     </SlideUp>
 
@@ -23,7 +23,7 @@ const ContactAddress = () => {
                                 <span className="text-cream-foreground text-[28px]"><FaEnvelope /> </span>
                             </div>
                             <h5 className="font-bold text-xl mt-5 pb-2.5">Mail</h5>
-                            <p><a href="">nafiz123@gmail.com</a>- <a href="">fahad 1234@gmail.com</a></p>
+                            <p><a href="mailto:naveenak5@gmail.com">naveenak5@gmail.com</a></p>
                         </div>
                     </SlideUp>
 
@@ -33,7 +33,12 @@ const ContactAddress = () => {
                                 <span className="text-cream-foreground text-[28px]"><FaPhone /> </span>
                             </div>
                             <h5 className="font-bold text-xl mt-5 pb-2.5">Contact</h5>
-                            <p><a href="">013254974147</a>,<a href="">01258369741</a> </p>
+                            <p>
+                                <a href="tel:+918925914920">+91 89259 14920</a>,
+                                <a href="tel:+919176196546">+91 9176196546</a>,
+                                <a href="tel:9555404040">9555 404040</a>,
+                                <a href="tel:+919094736522">+91 9094736522</a>
+                            </p>
                         </div>
                     </SlideUp>
 

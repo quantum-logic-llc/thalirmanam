@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <>
       <main>
-        <PageTitle pageName="About Us" />
+        <PageTitle pageName="About Thalir Manam" />
         <AboutOne isAboutpage={true} />
         <Teams />
         <Testimonial />

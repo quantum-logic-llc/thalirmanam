@@ -14,7 +14,7 @@ const FooterOne = () => {
                 <div className="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5">
                     <SlideUp delay={2}>
                         <Logo />
-                        <p className="pt-4">Yes, there are many notable ma corporate the a  od businesses Informati worldwide</p>
+                        <p className="pt-4">Thalir Manam is a child development center dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</p>
                         <SocalIcons prentClass={"gap-5 pt-7.5"} className={"w-9 h-9 bg-warm text-muted-foreground hover:text-cream-foreground hover:bg-green"} />
                     </SlideUp>
 
@@ -22,10 +22,10 @@ const FooterOne = () => {
                         <h3 className="text-2xl font-semibold">Pages</h3>
                         <ul className="flex flex-col gap-[15px] pt-5 min-w-[203px]">
                             <li><Link href="/about-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">About Us</Link></li>
-                            <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Latest Service</Link></li>
-                            <li><Link href="/blog" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Latest Blog And News</Link></li>
-                            <li><Link href="/faq" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">FAQ</Link></li>
-                            <li><Link href="#" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Our Creative Team Member</Link></li>
+                            <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Services</Link></li>
+                            <li><Link href="/appointments" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Appointments</Link></li>
+                            <li><Link href="/parents-corner" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Parent's Corner</Link></li>
+                            <li><Link href="/contact-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Contact Us</Link></li>
                         </ul>
                     </SlideUp>
 
@@ -34,17 +34,17 @@ const FooterOne = () => {
                         <ul className="flex flex-col gap-[15px] pt-5">
                             <li>
                                 <p className="text-[#686868] flex items-center gap-4">
-                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaLocationDot /></span> <span className="max-w-[168px]">1179 KFC Road, Lisbon, Portugal</span>
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaLocationDot /></span> <span className="max-w-[168px]">Chennai, India</span>
                                 </p>
                             </li>
                             <li>
                                 <p className="text-[#686868] flex items-center gap-4">
-                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaEnvelope /></span> <Link href="">Sakib23@gmail.com</Link>
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaEnvelope /></span> <a href="mailto:naveenak5@gmail.com">naveenak5@gmail.com</a>
                                 </p>
                             </li>
                             <li>
                                 <p className="text-[#686868] flex items-center gap-4">
-                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaPhone /></span> <Link href="">012547892354</Link>
+                                    <span className="w-11 h-11 rounded-full border border-gray-200 flex justify-center items-center text-green-foreground"><FaPhone /></span> <a href="tel:+918925914920">+91 89259 14920</a>
                                 </p>
                             </li>
                         </ul>

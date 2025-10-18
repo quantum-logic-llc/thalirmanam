@@ -17,13 +17,10 @@ const FaqComp = () => {
     <section className="lg:pb-15 pb-10">
       <div className="container">
         <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
-          <div className="max-w-[528px] lg:max-w-full mx-auto">
-            <img src={faq_banner.src || faq_banner} alt="child with laptop" />
-          </div>
           <div>
             <div className="lg:max-w-[520px] pb-10">
-              <SectionName>Some Faq</SectionName>
-              <Title size={"3.5xl"}>Empowering Children Through Education Playful Mind</Title>
+              <SectionName>Frequently Asked Questions</SectionName>
+              <Title size={"3.5xl"}>Answers to Your Questions</Title>
             </div>
             <Accordion type="single" defaultValue="one" collapsible>
               {
