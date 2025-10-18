@@ -1,6 +1,6 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import Faq from '../../src/pages/faq'
+import Faq from '../../src/components/pages/faq'
 
 export const metadata = {
   title: 'Ascent - FAQ',

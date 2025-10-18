@@ -1,6 +1,6 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import Portfolio from '../../src/pages/portfolio'
+import Portfolio from '../../src/components/pages/portfolio'
 
 export const metadata = {
   title: 'Ascent - Portfolio',

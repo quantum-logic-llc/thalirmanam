@@ -1,6 +1,6 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import BlogDetails from '../../src/pages/blog-details'
+import BlogDetails from '../../src/components/pages/blog-details'
 
 export const metadata = {
   title: 'Ascent - Blog Details',

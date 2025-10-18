@@ -1,6 +1,6 @@
 import HeaderTwo from '../../src/components/sections/headers/headerTwo'
 import FooterTwo from '../../src/components/sections/footers/footerTwo'
-import HomeTwo from '../../src/pages/home-2'
+import HomeTwo from '../../src/components/pages/home-2'
 
 export const metadata = {
   title: 'Ascent - Childcare & Kids School || Home Two',
