@@ -2,7 +2,7 @@
 export const servicesDataTwo = [
     {
         id:1,
-        icon:"car",
+        icon:"autism-support",
         service_name:"Online Class",
         service_details:"Lorem ipsum dolor sit amet consectetur adipiscing elit platea the ,osr of a proin mollis pretium facilisi in, ligula volutpat",
     },

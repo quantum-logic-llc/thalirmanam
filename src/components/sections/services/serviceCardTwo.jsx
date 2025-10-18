@@ -7,6 +7,8 @@ import Feeder from '@/assets/icons/feeder'
 import Book from '@/assets/icons/book'
 import Mat from '@/assets/icons/mat'
 import BabyBody from '@/assets/icons/baby-body'
+import Chalkboard from '@/assets/icons/chalkboard'
+import AutismSupport from '@/assets/icons/autism-support'
 import SlideUp from '@/lib/animations/slideUp'
 
 const ServiceCardTwo = ({ icon, service_name, service_details }) => {
@@ -14,6 +16,10 @@ const ServiceCardTwo = ({ icon, service_name, service_details }) => {
         switch (item) {
             case 'car':
                 return <Car />
+            case 'chalkboard':
+                return <Chalkboard />
+            case 'autism-support':
+                return <AutismSupport />
             case 'toys':
                 return <Toys />
             case 'feeder':
