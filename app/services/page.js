@@ -1,6 +1,8 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import Services from '../../src/pages/services'
+import PageTitle from '../../src/components/sections/pageTitle'
+import ServicesOne from '../../src/components/sections/services/servicesOne'
+import Partner from '../../src/components/sections/partner'
 
 export const metadata = {
   title: 'Ascent - Services',
@@ -11,7 +13,11 @@ export default function ServicesPage() {
   return (
     <>
       <HeaderOne />
-      <Services />
+      <main>
+        <PageTitle pageName="Services" />
+        <ServicesOne />
+        <Partner />
+      </main>
       <FooterOne />
     </>
   )

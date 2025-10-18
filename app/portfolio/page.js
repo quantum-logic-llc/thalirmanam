@@ -1,6 +1,7 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import Portfolio from '../../src/pages/portfolio'
+import PageTitle from '../../src/components/sections/pageTitle'
+import Gallery from '../../src/components/sections/gallery/gallery'
 
 export const metadata = {
   title: 'Ascent - Portfolio',
@@ -11,7 +12,10 @@ export default function PortfolioPage() {
   return (
     <>
       <HeaderOne />
-      <Portfolio />
+      <main>
+        <PageTitle pageName="Portfolio" />
+        <Gallery />
+      </main>
       <FooterOne />
     </>
   )

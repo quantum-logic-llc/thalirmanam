@@ -1,6 +1,9 @@
 import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
-import ContactUs from '../../src/pages/contact-us'
+import PageTitle from '../../src/components/sections/pageTitle'
+import ContactForm from '../../src/components/sections/contactForm'
+import ContactAddress from '../../src/components/sections/contactAddress'
+import GoogleMap from '../../src/components/sections/googleMap'
 
 export const metadata = {
   title: 'Ascent - Contact Us',
@@ -11,7 +14,12 @@ export default function ContactUsPage() {
   return (
     <>
       <HeaderOne />
-      <ContactUs />
+      <main>
+        <PageTitle pageName="Contact Us" />
+        <ContactForm />
+        <ContactAddress />
+        <GoogleMap />
+      </main>
       <FooterOne />
     </>
   )
