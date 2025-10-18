@@ -17,19 +17,19 @@ const SuccessProjectOne = () => {
                 <div className="grid xl:grid-cols-2 lg:grid-cols-[40%_auto] grid-cols-1 gap-7.5">
 
                     <div className="lg:max-w-[600px]">
-                        <SectionName className={"text-primary-foreground"}>Number Talks</SectionName>
-                        <Title size={"3.5xl"} className={"lg:max-w-[410px] pb-5"}>Invest in education invest in the future</Title>
-                        <SectionDescription> Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum facilisis sem. Imperdiet massa turpis sit proin metus volutpat loren ipsum Lorem ipsum dolor sit amet consectetur. Amet lectus mi ultricies dictum</SectionDescription>
+                        <SectionName className={"text-primary-foreground"}>Our Services</SectionName>
+                        <Title size={"3.5xl"} className={"lg:max-w-[410px] pb-5"}>Comprehensive Services for Your Child's Needs</Title>
+                        <SectionDescription> We offer a wide range of services to address the unique needs of each child. Our services include speech and language therapy, behavioral therapy, swallowing disorders, sleep disorders, neurodevelopmental assessments, and psychometric evaluations.</SectionDescription>
                         <Button asChild variant="outline" className="mt-10">
                             <Link href={"/contact-us"}>Get a quote</Link>
                         </Button>
                     </div>
 
                     <div className="grid sm:grid-cols-2 grid-cols-1 gap-7.5">
-                        <CardOne icon={<Kindergarden />} color={"bg-primary"} number={"20k"} title={"Running Students"} />
-                        <CardOne icon={<Book />} color={"bg-destructive"} number={"12K"} title={"Completed"} />
-                        <CardOne icon={<Blocks />} color={"bg-green"} number={"3K"} title={"Award Winning"} />
-                        <CardOne icon={<Chalkboard />} color={"bg-secondary"} number={"23K"} title={"Guardian Satishfaction"} />
+                        <CardOne icon={<Kindergarden />} color={"bg-primary"} number={"10+"} title={"Years of Experience"} />
+                        <CardOne icon={<Book />} color={"bg-destructive"} number={"1000+"} title={"Children Helped"} />
+                        <CardOne icon={<Blocks />} color={"bg-green"} number={"10+"} title={"Therapists"} />
+                        <CardOne icon={<Chalkboard />} color={"bg-secondary"} number={"95%"} title={"Positive Outcomes"} />
 
                     </div>
 
@@ -40,4 +40,3 @@ const SuccessProjectOne = () => {
 }
 
 export default SuccessProjectOne
-

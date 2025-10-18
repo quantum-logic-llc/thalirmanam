@@ -17,8 +17,8 @@ const HeroOne = () => {
       <div className="container relative">
         <div className="flex flex-col items-center text-center relative z-10">
           <Title size={"7.5xl"} className={"font-normal max-w-[776px]"}>
-            <span className="relative">Exploring Minds <span className="absolute -left-6 top-1 text-3xl text-[#0A6375]"><ThreeLine /></span></span>
-            <span className="font-bold">Elementary</span> <span className="font-bold text-destructive-foreground">School</span>
+            <span className="relative">Thalir Manam <span className="absolute -left-6 top-1 text-3xl text-[#0A6375]"><ThreeLine /></span></span>
+            <span className="font-bold">Nurturing Minds</span> <span className="font-bold text-destructive-foreground">Shaping Futures</span>
           </Title>
 
           <div className="flex absolute right-[87px] top-14 animate-skw">
@@ -27,10 +27,10 @@ const HeroOne = () => {
             <img src={shap.src || shap} alt="shap-2" className="w-5 h-8 -mt-7" />
           </div>
 
-          <p className="pt-5 max-w-[431px]">Starting a corporate business typically involves several steps, such as develo a business</p>
+          <p className="pt-5 max-w-[431px]">Specialized services include speech and language therapy, behavioral therapy, swallowing disorders, sleep disorders, neurodevelopmental assessments, and psychometric evaluations</p>
           <div className="mt-6">
             <Button asChild variant={"secondary"} >
-              <Link href="/about-us">Learn More</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </Button>
           </div>
         </div>
