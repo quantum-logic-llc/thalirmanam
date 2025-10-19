@@ -2,6 +2,8 @@ import PageTitle from "@/components/sections/pageTitle";
 import Link from "next/link";
 import HeaderOne from "@/components/sections/headers/headerOne";
 import FooterOne from "@/components/sections/footers/footerOne";
+import { getPageSEO } from '../../src/lib/seo-config'
+
 
 export default function ParentsCorner() {
   return (

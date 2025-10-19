@@ -13,10 +13,9 @@ import NewsletterOne from '../src/components/sections/newsletters/newsletterOne'
 import SuccessProjectOne from '../src/components/sections/successProjects/successProjectOne'
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
 
-export const metadata = {
-  title: 'Ascent - Childcare & Kids School || Home',
-  description: 'Ascent - Childcare & Kids School React.js and Tailwind CSS Template',
-}
+import { getPageSEO } from '../src/lib/seo-config'
+
+export const metadata = getPageSEO('home')
 
 export default function HomePage() {
   return (
