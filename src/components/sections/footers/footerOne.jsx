@@ -11,55 +11,54 @@ const FooterOne = () => {
     return (
         <footer className="pt-[70px] relative">
             <div className="container">
-                <div className="grid lg:grid-cols-[300px_auto_auto_auto_auto] md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-between gap-7.5">
+                {/* Top Section - Newsletter and Resources */}
+                <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 mb-12">
+                    {/* Resources for Parents Container */}
                     <SlideUp delay={2}>
-                        <Logo />
-                        <p className="pt-4">Thalir Manam is a child development center dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</p>
-                        <SocalIcons prentClass={"gap-5 pt-7.5"} className={"w-9 h-9 bg-warm text-muted-foreground hover:text-cream-foreground hover:bg-green"} />
-                    </SlideUp>
-
-                    <SlideUp delay={3}>
-                        <h3 className="text-2xl font-semibold">Pages</h3>
-                        <ul className="flex flex-col gap-[15px] pt-5 min-w-[203px]">
-                            <li><Link href="/about-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">About Us</Link></li>
-                            <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Services</Link></li>
-                            <li><Link href="/appointments" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Appointments</Link></li>
-                            <li><Link href="/parents-corner" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Parent's Corner</Link></li>
-                            <li><Link href="/contact-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Contact Us</Link></li>
-                        </ul>
-                    </SlideUp>
-
-                    <SlideUp delay={4}>
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-xl border border-blue-100">
                             <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
                                 <span className="w-6 h-6 bg-primary rounded-full flex items-center justify-center text-white text-xs mr-3">📚</span>
                                 Resources for Parents
                             </h3>
                             <ul className="space-y-2.5">
-                                <li><Link href="/resources/autism-awareness" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Autism Awareness Guide</Link></li>
-                                <li><Link href="/resources/adhd-management" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>ADHD Management Tips</Link></li>
-                                <li><Link href="/resources/developmental-milestones" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Developmental Milestones</Link></li>
-                                <li><Link href="/resources/speech-therapy-home" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Speech Therapy at Home</Link></li>
-                                <li><Link href="/resources/behavioral-strategies" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Behavioral Strategies</Link></li>
-                                <li><Link href="/resources/learning-activities" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Learning Activities</Link></li>
-                                <li><Link href="/resources/nutrition-guide" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Nutrition Guidelines</Link></li>
-                                <li><Link href="/resources/sleep-disorders" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Sleep Disorder Solutions</Link></li>
-                                <li><Link href="/resources/school-readiness" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>School Readiness Checklist</Link></li>
-                                <li><Link href="/resources/support-groups" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Parent Support Groups</Link></li>
-                                <li><Link href="/resources/therapy-progress" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Tracking Therapy Progress</Link></li>
-                                <li><Link href="/resources/emergency-contacts" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Emergency Contacts</Link></li>
+                                <li><Link href="/downloads/language-stimulation-handout.pdf" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span><span className="mr-1">📄</span>Parental Handout For Language Stimulation</Link></li>
+                                <li><Link href="/downloads/disability-certification.pdf" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span><span className="mr-1">📄</span>Disability Certification</Link></li>
+                                <li><Link href="/downloads/down-syndrome-guide.pdf" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span><span className="mr-1">📄</span>Guide to Parents and Carers of Down Syndrome</Link></li>
+                                <li><Link href="/resources/esic-card-application" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Applying for ESIC card</Link></li>
+                                <li><Link href="/resources/udid-application" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Applying for Unique Disability ID (UDID)</Link></li>
+                                <li><Link href="/resources/niepmd-independent-living" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>NIEPMD on independent living for children with disabilities</Link></li>
+                                <li><Link href="/resources/developmental-milestones-checklist" className="flex items-center text-sm text-gray-700 hover:text-primary transition-all duration-300 group"><span className="w-1.5 h-1.5 bg-primary rounded-full mr-2 group-hover:scale-125 transition-transform"></span>Developmental milestones checklist</Link></li>
                             </ul>
                         </div>
                     </SlideUp>
 
-                    <SlideUp delay={5}>
+                    {/* Newsletter Container */}
+                    <SlideUp delay={3}>
                         <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-100">
                             <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center">
                                 <span className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center text-white text-xs mr-3">📧</span>
-                                Newsletter & Updates
+                                Newsletter Archives
                             </h3>
-                            <p className="text-gray-600 mb-4 text-sm leading-relaxed">Stay informed with expert insights, therapy tips, and developmental updates.</p>
-                            <form className="space-y-3">
+                            <div className="space-y-3 mb-6">
+                                <Link href="https://www.kauveryhospital.com/news-events/k-way-newsletter-may-2025/" target="_blank" className="flex items-center text-sm text-gray-700 hover:text-green-600 transition-all duration-300 group">
+                                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span>
+                                    <span className="font-medium mr-1">May 2025:</span> K-Way Newsletter
+                                </Link>
+                                <Link href="https://www.kauveryhospital.com/news-events/parenting-my-child-with-autism-a-journey-of-strength-advocacy-and-resilience/" target="_blank" className="flex items-center text-sm text-gray-700 hover:text-green-600 transition-all duration-300 group">
+                                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span>
+                                    <span className="font-medium mr-1">April 2025:</span> Parenting with Autism
+                                </Link>
+                                <Link href="https://www.kauveryhospital.com/news-events/a-healthy-mother-a-healthy-child/" target="_blank" className="flex items-center text-sm text-gray-700 hover:text-green-600 transition-all duration-300 group">
+                                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span>
+                                    <span className="font-medium mr-1">March 2025:</span> Healthy Mother & Child
+                                </Link>
+                                <Link href="https://www.kauveryhospital.com/news-events/building-emotional-intelligence-for-a-stronger-resilient-future/" target="_blank" className="flex items-center text-sm text-gray-700 hover:text-green-600 transition-all duration-300 group">
+                                    <span className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2 group-hover:scale-125 transition-transform"></span>
+                                    <span className="font-medium mr-1">January 2025:</span> Emotional Intelligence
+                                </Link>
+                            </div>
+                            <form className="space-y-3 border-t border-green-200 pt-4">
+                                <p className="text-xs text-gray-600 mb-2">Subscribe for future updates:</p>
                                 <input 
                                     type="email" 
                                     placeholder="Enter your email" 
@@ -72,24 +71,27 @@ const FooterOne = () => {
                                     Subscribe Now
                                 </button>
                             </form>
-                            <div className="mt-4 space-y-2">
-                                <div className="flex items-center text-xs text-gray-600">
-                                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                    Monthly developmental tips
-                                </div>
-                                <div className="flex items-center text-xs text-gray-600">
-                                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                    Latest research updates
-                                </div>
-                                <div className="flex items-center text-xs text-gray-600">
-                                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                                    Workshop announcements
-                                </div>
-                            </div>
-                            <p className="text-xs text-gray-500 mt-3 flex items-center">
-                                <span className="mr-1">🔒</span> Privacy protected. Unsubscribe anytime.
-                            </p>
                         </div>
+                    </SlideUp>
+                </div>
+
+                {/* Bottom Section - Main Footer Content */}
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between gap-7.5">
+                    <SlideUp delay={4}>
+                        <Logo />
+                        <p className="pt-4">Thalir Manam is a child development center dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</p>
+                        <SocalIcons prentClass={"gap-5 pt-7.5"} className={"w-9 h-9 bg-warm text-muted-foreground hover:text-cream-foreground hover:bg-green"} />
+                    </SlideUp>
+
+                    <SlideUp delay={5}>
+                        <h3 className="text-2xl font-semibold">Pages</h3>
+                        <ul className="flex flex-col gap-[15px] pt-5 min-w-[203px]">
+                            <li><Link href="/about-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">About Us</Link></li>
+                            <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Services</Link></li>
+                            <li><Link href="/appointments" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Appointments</Link></li>
+                            <li><Link href="/parents-corner" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Parent's Corner</Link></li>
+                            <li><Link href="/contact-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Contact Us</Link></li>
+                        </ul>
                     </SlideUp>
 
                     <SlideUp delay={6}>

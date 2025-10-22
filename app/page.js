@@ -9,7 +9,6 @@ import Programs from '../src/components/sections/programs'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
 import Testimonial from '../src/components/sections/testimonial'
-import BlogsOne from '../src/components/sections/blogs/blogsOne'
 import NewsletterOne from '../src/components/sections/newsletters/newsletterOne'
 import SuccessProjectOne from '../src/components/sections/successProjects/successProjectOne'
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
@@ -31,7 +30,6 @@ export default function HomePage() {
         <FaqComp />
         <Teams />
         <Testimonial />
-        <BlogsOne />
         <NewsletterOne />
       </main>
       <FooterOne />
