@@ -5,7 +5,6 @@ import boy_img_2 from "@/assets/images/banner/boy_img_2.png"
 import painting from "@/assets/images/banner/painting.png"
 import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
 import right_circle from "@/assets/images/banner/right-circle1..png"
-import bottom from "@/assets/images/banner/bottom.png"
 
 import shap from "@/assets/images/shapes/shap.png"
 import Link from 'next/link'
@@ -45,10 +44,6 @@ const HeroOne = () => {
 
         <div className="lg:pt-[72px]">
           <img src={painting.src || painting} alt="painting" />
-        </div>
-        
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
-          <img src={bottom.src || bottom} alt="bottom" style={{width: '764px', height: '314px'}} />
         </div>
         
 
