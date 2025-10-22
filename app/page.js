@@ -24,9 +24,9 @@ export default function HomePage() {
       <HeaderOne />
       <main>
         <HeroOne />
-        <SuccessProjectOne />
-        <ServicesGrid />
         <AboutOne isAboutpage={false} />
+        <ServicesGrid />
+        <SuccessProjectOne />
         <Programs />
         <FaqComp />
         <Teams />

@@ -6,15 +6,66 @@ import TeamCard from './teamCard'
 
 const Teams = () => {
   return (
-    <section className="lg:pt-15 lg:pb-15 pt-10 pb-10">
+    <section className="lg:py-20 py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container">
-        <div className="text-center flex flex-col items-center ">
-          <SectionName>Meet Our Doctor</SectionName>
-          <Title size={"3.5xl"} className={"lg:max-w-[520px]"}>Dr. Naveena Karthik</Title>
+        <div className="text-center mb-16">
+          <SectionName>Meet Our Expert</SectionName>
+          <Title size={"3.5xl"} className={"mb-4"}>Leading Specialist in Child Development</Title>
+          <p className="text-gray-600 max-w-2xl mx-auto">Dedicated to providing exceptional care and support for children with developmental needs</p>
         </div>
-        <div className="lg:pt-15 pt-10">
-          <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
-            {teamData.map(({id, name, position, src}) => <TeamCard key={id} name={name} position={position} src={src} />)}
+        
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="grid lg:grid-cols-5 grid-cols-1">
+              <div className="lg:col-span-2 bg-gradient-to-br from-primary to-blue-600 p-8 flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-48 h-48 mx-auto mb-6 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    {teamData.map(({id, src}) => (
+                      <img key={id} src={src} alt="Dr. Naveena Karthik" className="w-full h-full object-cover" />
+                    ))}
+                  </div>
+                  <h3 className="text-2xl font-bold text-white mb-2">Dr. Naveena Karthik</h3>
+                  <p className="text-blue-100 text-lg">Developmental & Behavioural Paediatrician</p>
+                </div>
+              </div>
+              
+              <div className="lg:col-span-3 p-8 lg:p-12">
+                <div className="space-y-8">
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Professional Qualifications</h4>
+                    <p className="text-gray-600 leading-relaxed">MBBS, MD (Paediatrics), Fellowship in Developmental Paediatrics</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Experience & Expertise</h4>
+                    <p className="text-gray-600 leading-relaxed">Over 10 years of specialized experience in child development and behavioral therapy, helping hundreds of families navigate developmental challenges.</p>
+                  </div>
+                  
+                  <div className="border-l-4 border-primary pl-6">
+                    <h4 className="text-xl font-bold text-gray-800 mb-3">Areas of Specialization</h4>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="bg-blue-50 p-3 rounded-lg">
+                        <p className="text-sm font-medium text-blue-800">Autism Spectrum Disorders</p>
+                      </div>
+                      <div className="bg-green-50 p-3 rounded-lg">
+                        <p className="text-sm font-medium text-green-800">ADHD Management</p>
+                      </div>
+                      <div className="bg-purple-50 p-3 rounded-lg">
+                        <p className="text-sm font-medium text-purple-800">Learning Disabilities</p>
+                      </div>
+                      <div className="bg-orange-50 p-3 rounded-lg">
+                        <p className="text-sm font-medium text-orange-800">Cerebral Palsy Care</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gray-50 p-6 rounded-xl">
+                    <h4 className="text-lg font-bold text-gray-800 mb-3">Our Approach</h4>
+                    <p className="text-gray-600 leading-relaxed italic">"Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

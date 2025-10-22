@@ -10,7 +10,11 @@ export default function ServicesPage() {
   return (
     <>
       <HeaderOne />
-      <Services />
+      <main>
+        <PageTitle pageName="Services" />
+        <ServicesOne />
+        <Partner />
+      </main>
       <FooterOne />
     </>
   )

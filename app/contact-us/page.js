@@ -10,7 +10,12 @@ export default function ContactUsPage() {
   return (
     <>
       <HeaderOne />
-      <ContactUs />
+      <main>
+        <PageTitle pageName="Contact Us" />
+        <ContactForm />
+        <ContactAddress />
+        <GoogleMap />
+      </main>
       <FooterOne />
     </>
   )

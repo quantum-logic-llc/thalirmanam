@@ -3,8 +3,7 @@ import { Button } from '@/components/ui/button'
 import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
 import boy_img_2 from "@/assets/images/banner/boy_img_2.png"
 import painting from "@/assets/images/banner/painting.png"
-import left_circle_1 from "@/assets/images/banner/left-circle-1.png"
-import left_circle_2 from "@/assets/images/banner/left-circle-2.png"
+import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
 import right_circle from "@/assets/images/banner/right-circle.png"
 import shap from "@/assets/images/shapes/shap.png"
 import Link from 'next/link'
@@ -34,9 +33,8 @@ const HeroOne = () => {
             </Button>
           </div>
         </div>
-        <div className="absolute left-2.5 lg:top-0 top-10 lg:max-w-full max-w-[200px] sm:block hidden animate-up-down">
-          <img src={boy_img_1.src || boy_img_1} alt="banner-img-1" />
-          <span className="absolute -left-2.5 top-[9px] border-2 border-primary rounded-[125px] w-full h-full"></span>
+        <div className="absolute left-2.5 lg:top-0 top-10 sm:block hidden animate-up-down">
+          <img src={left_circle_2.src || left_circle_2} alt="banner-img-1" style={{width: '260px', height: '365px'}} />
         </div>
 
         <div className="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down">
@@ -50,12 +48,7 @@ const HeroOne = () => {
       </div>
       {/* <!-- circle shap --> */}
       <div className="lg:block hidden">
-        <div className="absolute left-0 top-[60px] animate-left-right-2">
-          <img src={left_circle_1.src || left_circle_1} alt="img" />
-        </div>
-        <div className="absolute left-[37px] top-[186px] animate-left-right-2">
-          <img src={left_circle_2.src || left_circle_2} alt="img" />
-        </div>
+
         <div className="absolute right-0 bottom-[165px] animate-up-down">
           <img src={right_circle.src || right_circle} alt="img" />
         </div>

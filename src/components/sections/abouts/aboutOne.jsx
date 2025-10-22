@@ -32,8 +32,8 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                                             <img src={customer.src || customer} alt="customer" />
                                         </div>
                                         <div>
-                                            <h6 className="text-cream-foreground font-bold text-2xl">5,000+</h6>
-                                            <p className="text-cream-foreground">Satisfied Clients</p>
+                                            <h6 className="text-cream-foreground font-bold text-2xl">1,000+</h6>
+                                            <p className="text-cream-foreground">Children Helped</p>
                                         </div>
                                     </div>
                                 </div>
@@ -41,12 +41,12 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                             <div className="flex sm:flex-col gap-8">
                                 <div className="bg-warm max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col items-center justify-center text-center">
                                     <img src={icreement.src || icreement} alt="icreement" />
-                                    <h6 className="text-xl font-bold">Academy</h6>
-                                    <p>Learning Ladder School</p>
+                                    <h6 className="text-xl font-bold">Expert Care</h6>
+                                    <p>Specialized Therapy</p>
                                 </div>
                                 <div className="bg-background max-w-[212px] rounded-[11px] px-5 pt-[22px] pb-6 flex flex-col justify-center drop-shadow-[0px_4.8px_24.4px_rgba(19,16,34,0.10)]">
                                     <h6 className="text-[32px] font-bold text-secondary-foreground">10+</h6>
-                                    <p>Learning Ladder School</p>
+                                    <p>Years Experience</p>
                                 </div>
                             </div>
                         </div>
@@ -55,10 +55,20 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     <div className={`${isAboutpage ? "" : "lg:max-w-[439px]"} pt-7.5`}>
                         <SectionName>About Us</SectionName>
                         <Title size={"3.5xl"} className={"pb-5"}>About Thalir Manam</Title>
-                        <SectionDescription>Thalir Manam is a child development center led by Dr. Naveena Karthik, a Developmental & Behavioural Paediatrician. We are dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</SectionDescription>
+                        <SectionDescription className="mb-4">
+                            Thalir Manam is a premier child development center dedicated to nurturing the potential of every child. Led by Dr. Naveena Karthik, a renowned Developmental & Behavioural Paediatrician, we specialize in comprehensive assessment, diagnosis, and intervention for children with various developmental needs.
+                        </SectionDescription>
+                        <SectionDescription className="mb-4">
+                            Our center provides evidence-based therapeutic services for children with Autism Spectrum Disorder, ADHD, Learning Disabilities, Cerebral Palsy, and other developmental challenges. We believe in early intervention and family-centered care to help children reach their full potential.
+                        </SectionDescription>
+                        {isAboutpage && (
+                            <SectionDescription className="mb-4">
+                                At Thalir Manam, we combine clinical expertise with compassionate care, creating individualized treatment plans that address each child's unique strengths and challenges. Our multidisciplinary approach ensures comprehensive support for both children and their families throughout their developmental journey.
+                            </SectionDescription>
+                        )}
                         <div className='lg:mt-10 mt-7'>
                             <Button asChild variant="outline">
-                                <Link href="/about-us">Get a quote</Link>
+                                <Link href="/contact-us">Get a Consultation</Link>
                             </Button>
                         </div>
 

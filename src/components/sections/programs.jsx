@@ -14,10 +14,16 @@ const Programs = () => {
             <SectionName className={"text-green-foreground"}>Our Programs</SectionName>
             <Title size={"3.5xl"} className={"lg:max-w-[630px]"}>Specialized Programs for Every Child</Title>
         </div>
-        <div className="lg:pl-11">
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-y-7.5 lg:gap-x-8 gap-x-5 lg:pt-15 pt-10">
+        <div className="lg:pt-15 pt-5">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
                 {
-                    servicesDataTwo.slice(0, 3).map(({icon, id, service_details, service_name}) => <ServiceCardTwo key={id} icon={icon} service_name={service_name} service_details={service_details} />)
+                    servicesDataTwo.slice(0, 3).map(({icon, id, service_details, service_name}) => (
+                        <div key={id} className="w-full h-full flex">
+                            <div className="w-100">
+                                <ServiceCardTwo icon={icon} service_name={service_name} service_details={service_details} />
+                            </div>
+                        </div>
+                    ))
                 }
             </div>
         </div>
