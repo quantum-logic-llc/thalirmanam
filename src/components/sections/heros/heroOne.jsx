@@ -4,7 +4,9 @@ import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
 import boy_img_2 from "@/assets/images/banner/boy_img_2.png"
 import painting from "@/assets/images/banner/painting.png"
 import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
-import right_circle from "@/assets/images/banner/right-circle.png"
+import right_circle from "@/assets/images/banner/right-circle1..png"
+import bottom from "@/assets/images/banner/bottom.png"
+
 import shap from "@/assets/images/shapes/shap.png"
 import Link from 'next/link'
 import ThreeLine from '@/assets/icons/threeLine'
@@ -12,7 +14,7 @@ import Title from '@/components/ui/title'
 
 const HeroOne = () => {
   return (
-    <section className="bg-warm pt-[78px] lg:mb-15 mb-10 relative">
+    <section className="bg-transparent pt-[78px] lg:mb-15 mb-10 relative">
       <div className="container relative">
         <div className="flex flex-col items-center text-center relative z-10">
           <Title size={"7.5xl"} className={"font-normal max-w-[776px]"}>
@@ -39,18 +41,20 @@ const HeroOne = () => {
 
         <div className="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down">
           <img src={boy_img_2.src || boy_img_2} alt="banner-img-2" />
-          <span className="absolute -left-2.5 top-[9px] border-2 border-secondary rounded-[125px] max-h-[369px] w-full h-full"></span>
         </div>
 
         <div className="lg:pt-[72px]">
           <img src={painting.src || painting} alt="painting" />
         </div>
-      </div>
-      {/* <!-- circle shap --> */}
-      <div className="lg:block hidden">
+        
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2">
+          <img src={bottom.src || bottom} alt="bottom" style={{width: '764px', height: '314px'}} />
+        </div>
+        
 
-        <div className="absolute right-0 bottom-[165px] animate-up-down">
-          <img src={right_circle.src || right_circle} alt="img" />
+        {/* <!-- circle shap --> */}
+        <div className="absolute right-0 bottom-[71px] lg:block hidden animate-up-down">
+          <img src={right_circle.src || right_circle} alt="img" style={{width: '299px', height: '388px'}} />
         </div>
       </div>
       {/* <!-- circle shap --> */}
