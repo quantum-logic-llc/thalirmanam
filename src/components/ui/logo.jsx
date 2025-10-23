@@ -7,7 +7,7 @@ const Logo = ({ className }) => {
   return (
     <Link href="/" className="flex items-center gap-1">
       <img src={logo.src || logo} alt="img" className="h-16 w-auto" />
-      <span className={cn("font-bold text-3xl", className)}></span>
+      <span className={cn("font-bold text-4xl", className)}></span>
     </Link>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const BabyBody = ({width='65', height='65'}) => {
+const BabyBody = ({width='50', height='50'}) => {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 65 65" fill="none">
             <g clipPath="url(#clip0_5563_103)">
