@@ -4,6 +4,7 @@ import { teamData } from '@/lib/fackdata/teamData'
 import React from 'react'
 import TeamCard from './teamCard'
 import baby from '@/assets/images/team/baby.png'
+import Image from 'next/image'
 
 const Teams = () => {
   return (
