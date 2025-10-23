@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
-import boy_img_2 from "@/assets/images/banner/boy_img_2.png"
 import painting from "@/assets/images/banner/painting.png"
 import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
 import right_circle1 from "@/assets/images/banner/right-circle1..png"
@@ -38,18 +37,16 @@ const HeroOne = () => {
           <img src={left_circle_2.src || left_circle_2} alt="banner-img-1" style={{width: '260px', height: '365px'}} />
         </div>
 
-        <div className="absolute right-0 bottom-0 pb-[71px] lg:block hidden animate-up-down">
-          <img src={boy_img_2.src || boy_img_2} alt="banner-img-2" />
-        </div>
 
-        <div className="lg:pt-[72px]">
-          <img src={painting.src || painting} alt="painting" />
+
+        <div className="lg:pt-[72px] bg-transparent">
+          <img src={painting.src || painting} alt="painting" className="bg-transparent" />
         </div>
         
 
         {/* <!-- circle shap --> */}
-        <div className="absolute right-0 bottom-[71px] lg:block hidden animate-up-down">
-          <img src={right_circle1.src || right_circle1} alt="img" style={{width: '299px', height: '388px'}} />
+        <div className="absolute right-5 bottom-16 lg:block hidden animate-up-down ">
+          <img src={right_circle1.src || right_circle1} alt="banner-img-2" style={{width: '320px', height: '400px'}} />
         </div>
       </div>
       {/* <!-- circle shap --> */}
