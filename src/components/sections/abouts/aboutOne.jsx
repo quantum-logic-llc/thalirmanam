@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Title from '@/components/ui/title'
-import about_img_1 from "@/assets/images/about/about-1.png"
+import about_img_1 from "@/assets/images/about/sharp-1.png"
 import { Button } from '@/components/ui/button'
 import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
@@ -20,7 +20,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         </SlideUp>
                     </div>
                     {/* <!-- right side start --> */}
-                    <div className={`${isAboutpage ? "" : "lg:max-w-[439px]"} pt-7.5`}>
+                    <div className={`${isAboutpage ? "" : "lg:max-w-[430px]"} pt-7.5`}>
                         <SectionName>About Us</SectionName>
                         <Title size={"3.5xl"} className={"pb-5"}>About Thalir Manam</Title>
                         <SectionDescription className="mb-4">
