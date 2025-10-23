@@ -29,7 +29,7 @@ const ServiceArtical = () => {
         <section className="lg:pt-15 pt-10">
             <div className="container">
                 <SlideUp>
-                    <img src={service_details_1.src || service_details_1} alt="details" />
+                    <Image src={service_details_1.src || service_details_1} alt="details" />
                 </SlideUp>
                 <SlideUp delay={2}>
                     <div className="lg:pt-7.5 pt-5 ">
@@ -47,13 +47,13 @@ const ServiceArtical = () => {
                         </div>
                         <div className="mt-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
                             <div>
-                                <img src={service_details_2.src || service_details_2} alt="img-1" className="w-full" />
+                                <Image src={service_details_2.src || service_details_2} alt="img-1" className="w-full" />
                             </div>
                             <div>
-                                <img src={service_details_3.src || service_details_3} alt="img-1" className="w-full" />
+                                <Image src={service_details_3.src || service_details_3} alt="img-1" className="w-full" />
                             </div>
                             <div>
-                                <img src={service_details_4.src || service_details_4} alt="img-1" className="w-full" />
+                                <Image src={service_details_4.src || service_details_4} alt="img-1" className="w-full" />
                             </div>
                         </div>
                         <div className="lg:pt-[70px] pt-10 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-7.5">
@@ -89,7 +89,7 @@ const ServiceArtical = () => {
                                 <li className="flex items-center gap-[15px] text-[#686868]"><i className="text-secondary-foreground"> <FaAnglesRight /> </i> <span>Man encompasses formal learning in schools, colleges, and universities</span> </li>
                             </ul>
                             <div>
-                                <img src={service_details_5.src || service_details_5} alt="service-details-5" />
+                                <Image src={service_details_5.src || service_details_5} alt="service-details-5" />
                             </div>
                         </div>
                     </SlideUp>

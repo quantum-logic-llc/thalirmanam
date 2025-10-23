@@ -8,7 +8,7 @@ const CardVertical = ({ title, date, author, thumb }) => {
         <SlideUp delay={2}>
             <div className="bg-background rounded-[10px] flex flex-col items-start gap-5 shadow-4xl h-full">
                 <div className="w-full">
-                    <img src={thumb} alt="blog-img-3" className="w-full" />
+                    <Image src={thumb} alt="blog-img-3" className="w-full" />
                 </div>
                 <div className="px-10 pb-10">
                     <div className="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5">

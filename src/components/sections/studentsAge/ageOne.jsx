@@ -7,6 +7,7 @@ import { Button } from '../../ui/button'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import SectionDescription from '@/components/ui/sectionDescription'
+import Image from 'next/image'
 
 const AgeOne = () => {
     return (
@@ -46,10 +47,10 @@ const AgeOne = () => {
                 </div>
 
                 <div className="absolute 2xl:left-15 left-0 bottom-0 z-[-1] xl:block hidden">
-                    <img src={shap_1.src || shap_1} alt="tree" />
+                    <Image src={shap_1.src || shap_1} alt="tree" />
                 </div>
                 <div className="absolute 2xl:top-[120px] lg:top-16 top-5 right-[67px] 2xl:w-auto lg:w-48 w-32 animate-left-right">
-                    <img src={shap_2.src || shap_2} alt="animal" />
+                    <Image src={shap_2.src || shap_2} alt="animal" />
                 </div>
 
             </div>

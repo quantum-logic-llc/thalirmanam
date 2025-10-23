@@ -82,7 +82,7 @@ const ServicesOne = () => {
             </div>
             {/* <!-- shap start --> */}
             <div className="absolute left-4 bottom-3 animate-left-right sm:block hidden">
-                <img src={man_img.src || man_img} alt="img" />
+                <Image src={man_img.src || man_img} alt="img" />
             </div>
             {/* <!-- shap end --> */}
         </section>

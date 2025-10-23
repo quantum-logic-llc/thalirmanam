@@ -41,13 +41,13 @@ const AboutTwo = () => {
                                 </div>
                             </div>
                             <SlideUp>
-                                <img src={about_bg_2.src || about_bg_2} alt="img-1" />
+                                <Image src={about_bg_2.src || about_bg_2} alt="img-1" />
                             </SlideUp>
 
                         </div>
                         <SlideDown>
                             <div className="hidden md:block">
-                                <img src={about_bg_3.src || about_bg_3} alt="img-2" />
+                                <Image src={about_bg_3.src || about_bg_3} alt="img-2" />
                             </div>
                         </SlideDown>
                     </div>

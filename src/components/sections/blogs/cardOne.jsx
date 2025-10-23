@@ -8,7 +8,7 @@ const CardOne = ({ title, date, author, thumb }) => {
         <SlideUp>
             <div className="bg-background rounded-[10px] p-2.5 flex sm:flex-row flex-col sm:items-center gap-5 shadow-4xl">
                 <div className="w-full sm:max-w-[210px] ">
-                    <img src={thumb} alt="blog-img-1" className="w-full h-full object-cover rounded-md" />
+                    <Image src={thumb} alt="blog-img-1" className="w-full h-full object-cover rounded-md" />
                 </div>
                 <div>
                     <div className="lg:pb-5 md:pb-4 pb-3 flex items-center gap-5">

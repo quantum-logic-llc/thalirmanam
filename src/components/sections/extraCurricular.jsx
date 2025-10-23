@@ -28,7 +28,7 @@ const ExtraCurricular = () => {
                 </div>
             </div>
             <div className="absolute left-0 top-0 z-[-1] 2xl:w-auto w-96 hidden xl:block">
-                <img src={jr.src || jr} alt="img" />
+                <Image src={jr.src || jr} alt="img" />
             </div>
         </section>
     )
@@ -56,7 +56,7 @@ const Card = ({ title, desc, src, icon, id }) => {
         <SlideUp delay={id}>
             <div className="border border-[#F2F2F2] bg-background rounded-[10px] p-7.5 group/card layer-card">
                 <div className="relative overflow-hidden">
-                    <img src={src} alt="Tutoring Services" className="w-full" />
+                    <Image src={src} alt="Tutoring Services" className="w-full" />
                     <div className="absolute left-0 top-full w-full h-full flex">
                         <div className={`image-layer-hover`} style={{ backgroundImage: `url(${src})` }}></div>
                         <div className={`image-layer-hover`} style={{ backgroundImage: `url(${src})` }}></div>

@@ -20,9 +20,9 @@ const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) =
                             </ul>
                         </div>
                         <div className="relative">
-                            <img src={bread_cat.src || bread_cat} alt="cat-img" className="absolute bottom-5 -left-[30px] animate-up-down" />
-                            <img src={bread_thumb.src || bread_thumb} alt="thumb-img" className="sm:max-h-full max-h-60" />
-                            <img src={bread_child.src || bread_child} alt="child-img" className="absolute bottom-0 right-0 animate-left-right" />
+                            <Image src={bread_cat.src || bread_cat} alt="cat-img" className="absolute bottom-5 -left-[30px] animate-up-down" />
+                            <Image src={bread_thumb.src || bread_thumb} alt="thumb-img" className="sm:max-h-full max-h-60" />
+                            <Image src={bread_child.src || bread_child} alt="child-img" className="absolute bottom-0 right-0 animate-left-right" />
                         </div>
 
                     </div>

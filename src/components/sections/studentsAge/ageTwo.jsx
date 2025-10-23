@@ -40,7 +40,7 @@ const AgeTwo = () => {
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-7.5 items-start">
                         <div className="max-w-[400px] md:max-w-full mx-auto md:order-0 order-1">
                             <SlideDown delay={2}>
-                                <img src={student.src || student} alt="magnifying-glass-student" className="w-full h-full" />
+                                <Image src={student.src || student} alt="magnifying-glass-student" className="w-full h-full" />
                             </SlideDown>
                         </div>
                         <div className="order-0 md:order-1">
@@ -67,7 +67,7 @@ const AgeTwo = () => {
                     </div>
                 </div>
                 <div className="absolute lg:right-15 left-5 lg:left-auto lg:bottom-14 bottom-5 w-20 xl:w-auto animate-up-down">
-                    <img src={man.src || man} alt="man" />
+                    <Image src={man.src || man} alt="man" />
                 </div>
             </div>
         </section>

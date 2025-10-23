@@ -21,11 +21,11 @@ const ContactForm = () => {
                         <div className="relative">
                             <div className="absolute top-1/2 -translate-y-1/2 h-full flex flex-col justify-between">
                                 <div className="mt-[68px] sm:w-full w-40 animate-up-down">
-                                    <img src={contact_2.src || contact_2} alt="two-girls-img" />
+                                    <Image src={contact_2.src || contact_2} alt="two-girls-img" />
                                 </div>
                                 <div className="bg-primary px-5 py-[18px] rounded-[10px] flex items-center gap-5 mb-7.5 animate-left-right">
                                     <div>
-                                        <img src={winner.src || winner} alt="img" />
+                                        <Image src={winner.src || winner} alt="img" />
                                     </div>
                                     <div>
                                         <h4 className="text-[28px] font-bold text-cream-foreground leading-[148%] font-nunito">2k+</h4>
@@ -34,7 +34,7 @@ const ContactForm = () => {
                                 </div>
                             </div>
                             <div className="flex lg:justify-end justify-center">
-                                <img src={contact_1.src || contact_1} alt="img" />
+                                <Image src={contact_1.src || contact_1} alt="img" />
                             </div>
                         </div>
                         <div>

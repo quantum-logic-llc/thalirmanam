@@ -81,10 +81,10 @@ const FooterTwo = () => {
             <ScrollUp />
             <div>
                 <div className="absolute right-[68px] top-[40%] animate-up-down">
-                    <img src={apple.src || apple} alt="img" />
+                    <Image src={apple.src || apple} alt="img" />
                 </div>
                 <div className="absolute left-[45%] lg:top-1/2 top-[40%]">
-                    <img src={scissors.src || scissors} alt="img" />
+                    <Image src={scissors.src || scissors} alt="img" />
                 </div>
             </div>
         </footer>

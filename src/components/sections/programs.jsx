@@ -30,7 +30,7 @@ const Programs = () => {
     </div>
 
     <div className="absolute top-15 right-11 z-[-1] lg:max-w-full max-w-36 md:block hidden animate-left-right">
-        <img src={pencil_rocket.src || pencil_rocket} alt="pencil" className="w-full h-auto" />
+        <Image src={pencil_rocket.src || pencil_rocket} alt="pencil" className="w-full h-auto" />
     </div>
 
 </section>
