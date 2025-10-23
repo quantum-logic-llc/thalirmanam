@@ -13,7 +13,7 @@ export default function ParentsCorner() {
       <div className="container mx-auto py-12">
         <div className="prose lg:prose-xl">
           <p>
-            Welcome to the Parent's Corner! This section is dedicated to providing resources and information for parents of children with special needs. Here you will find articles, guides, and other materials to help you support your child's development.
+            Welcome to the Parent&apos;s Corner! This section is dedicated to providing resources and information for parents of children with special needs. Here you will find articles, guides, and other materials to help you support your child&apos;s development.
           </p>
           <ul>
             <li><a href="https://thalirmanam.in/wp-content/uploads/2022/09/LANGUAGE-STIMULATION-HANDOUTS.pdf" target="_blank" rel="noopener noreferrer">Language Stimulation Handouts</a></li>
