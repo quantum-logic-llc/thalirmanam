@@ -10,6 +10,7 @@ import Link from 'next/link'
 import SlideDown from '@/lib/animations/slideDown'
 import SectionDescription from '../ui/sectionDescription'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const Products = () => {
     return (

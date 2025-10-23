@@ -4,6 +4,7 @@ import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
 import image4 from "@/assets/images/banner/image 4.png"
 import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
 import right_circle1 from "@/assets/images/banner/right-circle1..png"
+import Image from 'next/image';
 
 import shap from "@/assets/images/shapes/shap.png"
 import Link from 'next/link'

@@ -6,6 +6,7 @@ import man from "@/assets/images/age/man.png"
 import student from "@/assets/images/age/magnifying-glass-student.png"
 import { FaCheck } from 'react-icons/fa6'
 import SlideDown from '@/lib/animations/slideDown'
+import Image from 'next/image';
 
 const categoryList = [
     {

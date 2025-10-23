@@ -9,6 +9,7 @@ import scissors from "@/assets/images/shapes/scissors.svg"
 import ScrollUp from './scrollUp'
 import Input from '@/components/ui/input'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const FooterTwo = () => {
     return (

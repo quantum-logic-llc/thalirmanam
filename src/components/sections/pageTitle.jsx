@@ -4,6 +4,7 @@ import bread_thumb from "@/assets/images/shapes/bread-thumb.png"
 import bread_child from "@/assets/images/shapes/bread-child.png"
 import Link from 'next/link'
 import { FaAngleRight } from 'react-icons/fa6'
+import Image from 'next/image';
 
 const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) => {
     return (

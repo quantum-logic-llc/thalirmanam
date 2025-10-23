@@ -7,6 +7,7 @@ import Link from 'next/link'
 import Title from '@/components/ui/title'
 import SectionDescription from '@/components/ui/sectionDescription'
 import SlideLeft from '@/lib/animations/slideLeft'
+import Image from 'next/image';
 
 const HeroTwo = () => {
     return (

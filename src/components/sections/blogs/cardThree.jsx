@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { FaCalendarDays, FaComments, FaUser } from 'react-icons/fa6'
 import { Button } from '@/components/ui/button'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const CardThree = ({ src, title }) => {
     return (

@@ -7,6 +7,7 @@ import { FaEnvelope, FaLocationDot, FaPaperPlane, FaPhone } from 'react-icons/fa
 import { Button } from '../ui/button'
 import SectionName from '../ui/sectionName'
 import Title from '../ui/title'
+import Image from 'next/image';
 
 const ContactForm = () => {
     return (

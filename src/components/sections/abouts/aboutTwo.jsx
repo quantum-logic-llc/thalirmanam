@@ -9,6 +9,7 @@ import Kindergarden from '@/assets/icons/kindergarden'
 import SectionDescription from '@/components/ui/sectionDescription'
 import SlideUp from '@/lib/animations/slideUp'
 import SlideDown from '@/lib/animations/slideDown'
+import Image from 'next/image'
 
 const AboutTwo = () => {
     return (

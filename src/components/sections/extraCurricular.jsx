@@ -9,6 +9,7 @@ import Doll from '@/assets/icons/doll'
 import SectionName from '../ui/sectionName'
 import Title from '../ui/title'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const ExtraCurricular = () => {
     return (

@@ -6,6 +6,7 @@ import { FaPlus, FaXmark } from "react-icons/fa6";
 import logo from "@/assets/images/logo.png"
 import { menuList } from '@/lib/fackdata/menuList'
 import ExtraInfo from './extraInfo';
+import Image from 'next/image';
 
 const MobileMenu = ({ isMobleMenuActive, setIsMobleMenuActive }) => {
     const [dropdownActive, setDropdownActive] = useState(null)

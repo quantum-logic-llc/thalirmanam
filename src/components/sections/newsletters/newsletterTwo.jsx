@@ -6,6 +6,7 @@ import Title from '@/components/ui/title'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import SectionDescription from '@/components/ui/sectionDescription'
+import Image from 'next/image';
 
 const NewsletterTwo = () => {
     return (

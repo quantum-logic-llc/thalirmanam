@@ -9,6 +9,7 @@ import Input from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import SocalIcons from '@/components/ui/socalIcons'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image'
 
 const BlogArticle = () => {
     return (

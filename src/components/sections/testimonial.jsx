@@ -8,6 +8,7 @@ import quotation from "@/assets/images/testimonial/quotation.png"
 import Rating from '../ui/rating'
 import Image from 'next/image'
 
+
 const Testimonial = () => {
     return (
         <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial">

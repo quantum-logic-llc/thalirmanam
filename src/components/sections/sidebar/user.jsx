@@ -1,6 +1,7 @@
 import React from 'react'
 import SocalIcons from '../../ui/socalIcons'
 import user from "@/assets/images/blog/user.png"
+import Image from 'next/image';
 
 const User = () => {
     return (

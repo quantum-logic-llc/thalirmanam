@@ -3,6 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaArrowRight } from 'react-icons/fa6'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const CardTwo = ({ id, title, blog_desc, src, date }) => {
     return (

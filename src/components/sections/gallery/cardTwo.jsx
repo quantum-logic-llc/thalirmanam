@@ -4,6 +4,7 @@ import portfolio_2 from "@/assets/images/portfolio/portfolio-2.png"
 import portfolio_3 from "@/assets/images/portfolio/portfolio-3.png"
 import portfolio_5 from "@/assets/images/portfolio/portfolio-5.png"
 import { FaArrowRight } from 'react-icons/fa6'
+import Image from 'next/image';
 import Link from 'next/link'
 
 const CardTwo = ({ data_target }) => {

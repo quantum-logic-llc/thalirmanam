@@ -10,6 +10,7 @@ import Toys from '@/assets/icons/toys'
 import Feeder from '@/assets/icons/feeder'
 import Car from '@/assets/icons/car'
 import SlideUp from '@/lib/animations/slideUp'
+import Image from 'next/image';
 
 const ServiceArtical = () => {
     const renderIcon = (icon) => {

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import { FaCalendarDays, FaRegUser, FaArrowRight } from "react-icons/fa6";
 import SlideUp from '@/lib/animations/slideUp';
+import Image from 'next/image';
 
 const CardOne = ({ title, date, author, thumb }) => {
     return (
