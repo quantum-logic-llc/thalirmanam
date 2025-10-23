@@ -4,7 +4,7 @@ import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
 import boy_img_2 from "@/assets/images/banner/boy_img_2.png"
 import painting from "@/assets/images/banner/painting.png"
 import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
-import right_circle from "@/assets/images/banner/right-circle1..png"
+import right_circle1 from "@/assets/images/banner/right-circle1..png"
 
 import shap from "@/assets/images/shapes/shap.png"
 import Link from 'next/link'
@@ -21,10 +21,10 @@ const HeroOne = () => {
             <span className="font-bold">Nurturing Minds</span> <span className="font-bold text-destructive-foreground">Shaping Futures</span>
           </Title>
 
-          <div className="flex absolute right-[87px] top-14 animate-skw">
-            <img src={shap.src || shap} alt="shap-2" className="w-7.5 h-12.5 relative top-9" />
+          <div className="flex absolute right-[78px] top-14 animate-skw">
+            <img src={shap.src || shap} alt="shap-2" className="w-8 h-12 relative top-9" />
             <img src={shap.src || shap} alt="shap-1" />
-            <img src={shap.src || shap} alt="shap-2" className="w-5 h-8 -mt-7" />
+            <img src={shap.src || shap} alt="shap-2" className="w-5 h-8 -mt-8" />
           </div>
 
           <p className="pt-5 max-w-[431px]">Specialized services include speech and language therapy, behavioral therapy, swallowing disorders, sleep disorders, neurodevelopmental assessments, and psychometric evaluations</p>
@@ -49,7 +49,7 @@ const HeroOne = () => {
 
         {/* <!-- circle shap --> */}
         <div className="absolute right-0 bottom-[71px] lg:block hidden animate-up-down">
-          <img src={right_circle.src || right_circle} alt="img" style={{width: '299px', height: '388px'}} />
+          <img src={right_circle1.src || right_circle1} alt="img" style={{width: '299px', height: '388px'}} />
         </div>
       </div>
       {/* <!-- circle shap --> */}
