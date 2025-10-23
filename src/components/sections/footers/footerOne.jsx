@@ -11,7 +11,8 @@ const FooterOne = () => {
     return (
         <footer className="pt-[70px] relative">
             <div className="container">
-                <div className="grid lg:grid-cols-[370px_auto_auto] sm:grid-cols-2 grid-cols-1 justify-between gap-7.5">
+                {/* Main Footer Content */}
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between gap-7.5">
                     <SlideUp delay={2}>
                         <Logo />
                         <p className="pt-4">Thalir Manam is a child development center dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</p>

@@ -14,14 +14,14 @@ import { faqData } from '@/lib/fackdata/faqData'
 
 const FaqComp = () => {
   return (
-    <section className="lg:pb-15 pb-10">
+    <section className="lg:py-15 py-10">
       <div className="container">
-        <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
-          <div>
-            <div className="lg:max-w-[520px] pb-10">
-              <SectionName>Frequently Asked Questions</SectionName>
-              <Title size={"3.5xl"}>Answers to Your Questions</Title>
-            </div>
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <SectionName>Frequently Asked Questions</SectionName>
+            <Title size={"3.5xl"}>Answers to Your Questions</Title>
+          </div>
+          <div className="max-w-3xl mx-auto">
             <Accordion type="single" defaultValue="one" collapsible>
               {
                 faqData.map(({ans, id, question}) => {
