@@ -9,7 +9,7 @@ export default function ParentsCorner() {
   return (
     <>
       <HeaderOne />
-      <PageTitle title="Parent's Corner" />
+      <PageTitle title="Parent&apos;s Corner" />
       <div className="container mx-auto py-12">
         <div className="prose lg:prose-xl">
           <p>

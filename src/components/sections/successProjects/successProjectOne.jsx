@@ -18,7 +18,7 @@ const SuccessProjectOne = () => {
 
                     <div className="lg:max-w-[600px]">
                         <SectionName className={"text-primary-foreground"}>Our Services</SectionName>
-                        <Title size={"3.5xl"} className={"lg:max-w-[410px] pb-5"}>Comprehensive Services for Your Child's Needs</Title>
+                        <Title size={"3.5xl"} className={"lg:max-w-[410px] pb-5"}>Comprehensive Services for Your Child&apos;s Needs</Title>
                         <SectionDescription> We offer a wide range of services to address the unique needs of each child. Our services include speech and language therapy, behavioral therapy, swallowing disorders, sleep disorders, neurodevelopmental assessments, and psychometric evaluations.</SectionDescription>
                         <Button asChild variant="outline" className="mt-10">
                             <Link href={"/contact-us"}>Get a quote</Link>

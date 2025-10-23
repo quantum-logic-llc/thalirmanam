@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Title from '@/components/ui/title'
 import about_img_1 from "@/assets/images/about/sharp-1.png"
 import { Button } from '@/components/ui/button'
@@ -16,7 +17,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                 <div className={cn("grid lg:grid-cols-[60%_40%] grid-cols-1 items-center", gridClass)}>
                     <div>
                         <SlideUp>
-                            <img src={about_img_1.src || about_img_1} alt="about-bg" className="w-[320px] h-[417px] object-cover" />
+                            <Image src={about_img_1} alt="about-bg" width={320} height={417} className="object-cover" />
                         </SlideUp>
                     </div>
                     {/* <!-- right side start --> */}
@@ -31,7 +32,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         </SectionDescription>
                         {isAboutpage && (
                             <SectionDescription className="mb-4">
-                                At Thalir Manam, we combine clinical expertise with compassionate care, creating individualized treatment plans that address each child's unique strengths and challenges. Our multidisciplinary approach ensures comprehensive support for both children and their families throughout their developmental journey.
+                                At Thalir Manam, we combine clinical expertise with compassionate care, creating individualized treatment plans that address each child&apos;s unique strengths and challenges. Our multidisciplinary approach ensures comprehensive support for both children and their families throughout their developmental journey.
                             </SectionDescription>
                         )}
                         <div className='lg:mt-10 mt-7'>

@@ -25,7 +25,7 @@ const FooterOne = () => {
                             <li><Link href="/about-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">About Us</Link></li>
                             <li><Link href="/services" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Services</Link></li>
                             <li><Link href="/appointments" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Appointments</Link></li>
-                            <li><Link href="/parents-corner" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Parent's Corner</Link></li>
+                            <li><Link href="/parents-corner" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Parent&apos;s Corner</Link></li>
                             <li><Link href="/contact-us" className="text-[#686868] transition-all duration-500 hover:ml-1 hover:text-primary-foreground">Contact Us</Link></li>
                         </ul>
                     </SlideUp>

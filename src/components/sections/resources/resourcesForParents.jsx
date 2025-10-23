@@ -65,7 +65,7 @@ const ResourcesForParents = () => {
                         <SectionName className={'text-green-600'}>Parent Support</SectionName>
                         <Title size={"3.5xl"} className="mb-4">Resources for Parents</Title>
                         <p className="text-gray-600 max-w-2xl mx-auto">
-                            Access valuable resources, guides, and tools to support your child's development journey at home.
+                            Access valuable resources, guides, and tools to support your child&apos;s development journey at home.
                         </p>
                     </div>
                     

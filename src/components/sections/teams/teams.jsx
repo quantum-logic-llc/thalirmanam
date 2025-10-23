@@ -60,7 +60,7 @@ const Teams = () => {
                   
                   <div className="bg-gray-50 p-6 rounded-xl">
                     <h4 className="text-lg font-bold text-gray-800 mb-3">Our Approach</h4>
-                    <p className="text-gray-600 leading-relaxed italic">"Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential."</p>
+                    <p className="text-gray-600 leading-relaxed italic">&quot;Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential.&quot;</p>
                   </div>
                 </div>
               </div>
