@@ -32,12 +32,12 @@ const Teams = () => {
                 <div className="space-y-8">
                   <div className="border-l-4 border-primary pl-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-3">Professional Qualifications</h4>
-                    <p className="text-gray-600 leading-relaxed">MBBS, MD (Paediatrics), Fellowship in Developmental Paediatrics</p>
+                    <p className="text-gray-600 leading-relaxed">MBBS, MD (Paediatrics), Fellowship in Developmental & Behavioural Paediatrics</p>
                   </div>
                   
                   <div className="border-l-4 border-primary pl-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-3">Experience & Expertise</h4>
-                    <p className="text-gray-600 leading-relaxed">Over 10 years of specialized experience in child development and behavioral therapy, helping hundreds of families navigate developmental challenges.</p>
+                    <p className="text-gray-600 leading-relaxed">Specialized in developmental and behavioral pediatrics with extensive experience in assessment, diagnosis, and intervention for children with neurodevelopmental conditions.</p>
                   </div>
                   
                   <div className="border-l-4 border-primary pl-6">

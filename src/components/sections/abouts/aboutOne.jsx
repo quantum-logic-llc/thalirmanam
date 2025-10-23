@@ -24,10 +24,10 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         <SectionName>About Us</SectionName>
                         <Title size={"3.5xl"} className={"pb-5"}>About Thalir Manam</Title>
                         <SectionDescription className="mb-4">
-                            Thalir Manam is a premier child development center dedicated to nurturing the potential of every child. Led by Dr. Naveena Karthik, a renowned Developmental & Behavioural Paediatrician, we specialize in comprehensive assessment, diagnosis, and intervention for children with various developmental needs.
+                            Thalir Manam Child Development Centre is dedicated to providing comprehensive developmental and behavioral pediatric services. Under the expert guidance of Dr. Naveena Karthik, we offer specialized care for children with developmental and behavioral challenges.
                         </SectionDescription>
                         <SectionDescription className="mb-4">
-                            Our center provides evidence-based therapeutic services for children with Autism Spectrum Disorder, ADHD, Learning Disabilities, Cerebral Palsy, and other developmental challenges. We believe in early intervention and family-centered care to help children reach their full potential.
+                            We provide evidence-based assessment, diagnosis, and intervention services for Autism Spectrum Disorders, ADHD, Learning Disabilities, Intellectual Disabilities, and various neurodevelopmental conditions. Our approach focuses on early intervention and family-centered care.
                         </SectionDescription>
                         {isAboutpage && (
                             <SectionDescription className="mb-4">
