@@ -20,9 +20,9 @@ const NewsletterOne = () => {
                         <Title size={"3.5xl"} className="mb-4">Subscribe to Our Newsletter</Title>
                         <p className="text-gray-600 mb-8">Get the latest updates on child development, therapy tips, and upcoming programs delivered to your inbox.</p>
                         <div className="relative max-w-md mx-auto mb-6">
-                            <Input type={"email"} placeholder="Enter Your Email Address" className="pr-32" />
-                            <Button className="absolute right-[10px] top-1/2 -translate-y-1/2 text-white bg-blue-600 hover:bg-blue-700">
-                                Subscribe <FaArrowRight className="ml-2" />
+                            <Input type={"email"} placeholder="Enter Your Email Address" className="pr-40 w-full" />
+                            <Button size="lg" className="absolute right-[5px] top-1/2 -translate-y-1/2 text-white bg-blue-500 hover:bg-blue-700 py-2 px-4 h-auto">
+                                  Book an appointment <FaArrowRight className="ml-2" />
                             </Button>
                         </div>
                         <div className="text-center">

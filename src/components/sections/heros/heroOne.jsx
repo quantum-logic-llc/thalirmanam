@@ -20,8 +20,8 @@ const HeroOne = () => {
         <div className="flex flex-col items-center text-center relative z-10">
           <TextReveal delay={0.2}>
             <Title size={"7.5xl"} className={"font-normal max-w-[776px]"}>
-              <span className="relative">Thalir Manam <span className="absolute -left-6 top-1 text-3xl text-[#0A6375]"><ThreeLine /></span></span>
-              <span className="font-bold">Child Development Centre</span>
+              <span className="relative">Thalir Manam <span className="absolute -left-5 top-1 text-3xl text-[#0A6375]"><ThreeLine /></span></span><br></br>
+              <span className="font-bold text-[56px]">Child Development Centre</span>
             </Title>
           </TextReveal>
 

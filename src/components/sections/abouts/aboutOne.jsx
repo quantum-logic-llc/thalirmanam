@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Title from '@/components/ui/title'
-import sharp_2 from "@/assets/images/about/sharp_2.png"
+import heroimg from "@/assets/images/about/heroimg.png"
 import { Button } from '@/components/ui/button'
 import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
@@ -19,7 +19,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         <SlideUp>
   <div className="overflow-hidden rounded-[50px] border-2 border-blue-400 shadow-md">
     <Image
-      src={sharp_2}
+      src={heroimg}
       alt="about-bg"
       width={320}
       height={417}
