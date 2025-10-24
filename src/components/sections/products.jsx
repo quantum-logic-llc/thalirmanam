@@ -38,21 +38,21 @@ const Products = () => {
                             </div>
                             <div className="md:order-1 order-0 relative z-[1] after:absolute after:bottom-0 after:left-0 after:z-[-1] after:w-full after:h-full after:max-h-[259px] after:bg-[linear-gradient(180deg,_rgba(247,148,30,0.00)_0%,_#F7941E_196.39%)] after:rounded-[10px]">
                                 <SlideDown delay={2}>
-                                    <Image src={car.src || car} alt="car-img" />
+                                    <Image src={car} alt="car-img" width={400} height={300} />
                                 </SlideDown>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="relative z-[1] pt-[120px]">
-                    <Image src={object.src || object} alt="object" />
+                    <Image src={object} alt="object" width={1200} height={300} />
                     <div className="absolute left-1/2 -translate-x-1/2 bottom-0 z-[-1] ">
-                        <Image src={sun.src || sun} alt="sun" className="animate-up-down" />
+                        <Image src={sun} alt="sun" width={200} height={200} className="animate-up-down" />
                     </div>
                 </div>
             </div>
             <div className="absolute top-15 right-[90px] animate-left-right md:block hidden">
-                <Image src={bard.src || bard} alt="bard" />
+                <Image src={bard} alt="bard" width={100} height={100} />
             </div>
         </section>
     )

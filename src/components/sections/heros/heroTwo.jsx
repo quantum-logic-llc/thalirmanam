@@ -27,7 +27,7 @@ const HeroTwo = () => {
                                 <Link href={"/about-us"}>Read More</Link>
                             </Button>
 
-                            <Image src={arrow.src || arrow} alt="arrow" />
+                            <Image src={arrow} alt="arrow" width={100} height={100} />
                         </div>
                     </div>
                 </div>
@@ -35,11 +35,11 @@ const HeroTwo = () => {
                 <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-secondary w-[284px] h-[284px] rounded-full opacity-30 blur-[200px]"></div>
                 <div className="absolute right-0 bottom-0 z-[-1] opacity-50 2xl:opacity-100 max-w-[580px] lg:max-w-[650px] xl:max-w-[750px] min-[1800px]:max-w-full">
                     <SlideLeft>
-                        <Image src={banner.src || banner} alt="banner background" />
+                        <Image src={banner} alt="banner background" width={800} height={600} />
                     </SlideLeft>
                 </div>
                 <div className="absolute left-10 bottom-25 z-[-1] xl:block hidden">
-                    <Image src={kite.src || kite} alt="kite" />
+                    <Image src={kite} alt="kite" width={100} height={100} />
                 </div>
             </div>
         </section>

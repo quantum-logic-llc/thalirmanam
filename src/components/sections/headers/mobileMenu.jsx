@@ -6,7 +6,7 @@ import { FaPlus, FaXmark } from "react-icons/fa6";
 import logo from "@/assets/images/logo.png"
 import { menuList } from '@/lib/fackdata/menuList'
 import ExtraInfo from './extraInfo';
-import Image from 'next/image';
+import Logo from '@/components/ui/logo';
 
 const MobileMenu = ({ isMobleMenuActive, setIsMobleMenuActive }) => {
     const [dropdownActive, setDropdownActive] = useState(null)
@@ -23,10 +23,7 @@ const MobileMenu = ({ isMobleMenuActive, setIsMobleMenuActive }) => {
             <div className={`fixed left-0 top-0 w-full h-full bg-black/30 transition-all ${isMobleMenuActive ? "visible" : "invisible"}`}></div>
             <nav className={`bg-warm border-l-2 border-l-primary w-full max-w-md min-h-screen h-full overflow-y-auto p-7 shadow-md fixed  ${isMobleMenuActive ? "right-0" : "-right-full"} top-0 z-50 transition-all duration-500`}>
                 <div className="flex justify-between items-center">
-                    <a href="" className="flex items-center gap-1">
-                        <Image src={logo.src || logo} alt="logo" />
-                        <span className="font-bold text-3xl ">Ascent</span>
-                    </a>
+                    <Logo title="Ascent" />
                     <div className="bg-primary w-10 h-10 text-cream-foreground flex items-center justify-center rounded-[4px] left-4" onClick={() => setIsMobleMenuActive(false)}>
                         <FaXmark className="text-xl" />
                     </div>

@@ -15,7 +15,7 @@ const BlogArticle = () => {
     return (
         <div>
             <SlideUp delay={2}>
-                <Image src={blog_details_1.src || blog_details_1} alt="blog-details-1" />
+                <Image src={blog_details_1} alt="blog-details-1" width={800} height={400} />
                 <div className="pt-7.5">
                     <ul className="flex gap-7.5 pb-5 flex-wrap">
                         <li className='flex items-center'> <FaCalendarDays className='text-foreground' /> <span className="text-[#686868] ml-2.5">January 19, 2024</span> </li>
@@ -27,17 +27,17 @@ const BlogArticle = () => {
                 </div>
             </SlideUp>
             <blockquote className="shadow-3xl xl:px-15 px-8 xl:py-[38px] py-5 my-10 rounded-[10px]">
-                <Image src={qute.src || qute} alt="blog-qute" />
+                <Image src={qute} alt="blog-qute" width={50} height={50} />
                 <p className="mt-5">Lorem Ipsum is simply dummy text of the printing and type setting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled loren ipsum</p>
                 <h4 className="text-xl font-bold leading-[130%] mt-[28px]">Fahad Hossain<span className="text-green-foreground">_</span> </h4>
             </blockquote>
             <div>
                 <div className="flex justify-between gap-7.5">
                     <div>
-                        <Image src={blog_details_2.src || blog_details_2} alt="blog-details-2" />
+                        <Image src={blog_details_2} alt="blog-details-2" width={400} height={300} />
                     </div>
                     <div>
-                        <Image src={blog_details_3.src || blog_details_3} alt="blog-details-3" />
+                        <Image src={blog_details_3} alt="blog-details-3" width={400} height={300} />
                     </div>
                 </div>
                 <div className="mt-7.5">

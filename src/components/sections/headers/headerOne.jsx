@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import DesktopMenu from './desktopMenu'
 import MobileMenu from './mobileMenu'
-import logo from "@/assets/images/logo.png"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { FaMagnifyingGlass, FaArrowRight } from "react-icons/fa6";

@@ -10,7 +10,7 @@ const CardTwo = ({ id, title, blog_desc, src, date }) => {
         <SlideUp delay={id}>
             <div className="bg-background group/card layer-card ">
                 <div className="relative overflow-hidden">
-                    <Image src={src} alt="blog-1" className="w-full max-h-80 h-auto" />
+                    <Image src={src} alt="blog-1" width={400} height={320} className="w-full max-h-80 h-auto" />
                     <div className="bg-secondary rounded-[10px] max-w-[69px] max-h-[72px] h-full w-full flex justify-center items-center text-center p-2.5 absolute bottom-5 right-5 z-[1]">
                         <h6 className="text-xl font-bold leading-[130% text-cream-foreground">{date}</h6>
                     </div>

@@ -25,7 +25,7 @@ const Partner = () => {
                             partnerData.map(({ id, src }) => {
                                 return (
                                     <SwiperSlide key={id} className='flex justify-center'>
-                                        <Image src={src} alt={`partner-${id}`} className="invert-[0.5] hover:invert-0 transition-all duration-500" />
+                                        <Image src={src} alt={`partner-${id}`} width={150} height={50} className="invert-[0.5] hover:invert-0 transition-all duration-500" />
                                     </SwiperSlide>
                                 )
                             })

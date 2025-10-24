@@ -25,12 +25,12 @@ const NewsletterTwo = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <Image src={stay_thumb.src || stay_thumb} alt="tree-img" />
+                            <Image src={stay_thumb.src || stay_thumb} alt="tree-img" width={400} height={400} />
                         </div>
                     </div>
                 </div>
                 <div className="absolute left-0 bottom-0 z-[-1]">
-                    <Image src={stay_shape.src || stay_shape} alt="stay-shape" />
+                    <Image src={stay_shape.src || stay_shape} alt="stay-shape" width={200} height={200} />
                 </div>
             </div>
         </section>

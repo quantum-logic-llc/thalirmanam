@@ -26,9 +26,9 @@ const HeroOne = () => {
           </TextReveal>
 
           <div className="flex absolute right-[78px] top-14 animate-skw">
-            <Image src={shap.src || shap} alt="shap-2" className="w-8 h-12 relative top-9" />
-            <Image src={shap.src || shap} alt="shap-1" />
-            <Image src={shap.src || shap} alt="shap-2" className="w-5 h-8 -mt-8" />
+            <Image src={shap.src || shap} alt="shap-2" width={32} height={48} className="w-8 h-12 relative top-9" />
+            <Image src={shap.src || shap} alt="shap-1" width={64} height={64} />
+            <Image src={shap.src || shap} alt="shap-2" width={20} height={32} className="w-5 h-8 -mt-8" />
           </div>
 
           <TextReveal delay={0.6}>
@@ -44,19 +44,19 @@ const HeroOne = () => {
           </SlideUp>
         </div>
         <div className="absolute left-2.5 lg:top-0 top-10 sm:block hidden animate-up-down">
-          <Image src={left_circle_2.src || left_circle_2} alt="banner-img-1" style={{width: '260px', height: '365px'}} />
+          <Image src={left_circle_2.src || left_circle_2} alt="banner-img-1" width={260} height={365} />
         </div>
 
 
 
         <div className="lg:pt-[72px] bg-transparent">
-          <Image src={image4.src || image4} alt="banner-img-1" className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
+          <Image src={image4.src || image4} alt="banner-img-1" width={1200} height={600} className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
         </div>
         
 
         {/* <!-- circle shap --> */}
         <div className="absolute right-5 bottom-16 lg:block hidden animate-up-down ">
-          <Image src={right_circle1.src || right_circle1} alt="banner-img-2" style={{width: '320px', height: '400px'}} />
+          <Image src={right_circle1.src || right_circle1} alt="banner-img-2" width={320} height={400} />
         </div>
       </div>
       {/* <!-- circle shap --> */}

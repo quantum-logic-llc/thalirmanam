@@ -1,16 +1,10 @@
-import React from 'react'
-import Link from 'next/link'
-import logo from "@/assets/images/about/logo23123.png"
-import { cn } from '@/lib/utils'
-import Image from 'next/image'
+import Image from "next/image";
+import logo from "@/assets/images/logo.png";
 
-const Logo = ({ className }) => {
+const Logo = ({ width, height }) => {
   return (
-    <Link href="/" className="flex items-center gap-1">
-      <Image src={logo.src || logo} alt="img" className="h-16 w-auto" />
-      <span className={cn("font-bold text-4xl", className)}></span>
-    </Link>
-  )
-}
+    <Image src={logo} alt="Logo" width={width} height={height} />
+  );
+};
 
-export default Logo
+export default Logo;

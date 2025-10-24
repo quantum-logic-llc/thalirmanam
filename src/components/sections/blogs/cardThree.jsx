@@ -9,7 +9,7 @@ const CardThree = ({ src, title }) => {
     return (
         <SlideUp delay={2}>
             <div className="shadow-4xl bg-background rounded-[10px] group">
-                <Image src={src} alt="blog-img-1" />
+                <Image src={src} alt="blog-img-1" width={400} height={300} />
                 <div className="pt-7.5 pb-10 lg:px-10 px-5">
                     <h4><Link href={"/blog-details"} className="lg:text-[28px] sm:text-[26px] text-xl font-bold lg:leading-[148%] sm:leading-[140%] leading-[120%] group-hover:text-secondary-foreground transition-all duration-500">{title}</Link></h4>
                     <div className="lg:mt-10 mt-7">

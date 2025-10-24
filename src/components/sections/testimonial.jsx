@@ -47,14 +47,14 @@ const Card = ({ name, src, position, review, rating }) => {
             <div className="bg-background border border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]">
                 <div className="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5">
                     <div className="flex items-center gap-5">
-                        <Image src={src} alt="bg-img" />
+                        <Image src={src} alt="bg-img" width={80} height={80} />
                         <div>
                             <h5 className="md:text-2xl text-xl font-semibold md:leading-[140%]">{name}</h5>
                             <p>{position}</p>
                         </div>
                     </div>
                     <div className="absolute right-0 z-[-1]">
-                        <Image src={quotation.src || quotation} alt="quotation" className="lg:w-auto w-9" />
+                        <Image src={quotation} alt="quotation" width={50} height={50} className="lg:w-auto w-9" />
                     </div>
                 </div>
                 <p>{review}</p>

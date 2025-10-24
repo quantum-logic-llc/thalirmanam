@@ -42,13 +42,13 @@ const AboutTwo = () => {
                                 </div>
                             </div>
                             <SlideUp>
-                                <Image src={about_bg_2.src || about_bg_2} alt="img-1" />
+                                <Image src={about_bg_2} alt="img-1" width={300} height={400} />
                             </SlideUp>
 
                         </div>
                         <SlideDown>
                             <div className="hidden md:block">
-                                <Image src={about_bg_3.src || about_bg_3} alt="img-2" />
+                                <Image src={about_bg_3} alt="img-2" width={300} height={500} />
                             </div>
                         </SlideDown>
                     </div>
