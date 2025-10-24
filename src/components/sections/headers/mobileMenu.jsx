@@ -23,7 +23,7 @@ const MobileMenu = ({ isMobleMenuActive, setIsMobleMenuActive }) => {
             <div className={`fixed left-0 top-0 w-full h-full bg-black/30 transition-all ${isMobleMenuActive ? "visible" : "invisible"}`}></div>
             <nav className={`bg-warm border-l-2 border-l-primary w-full max-w-md min-h-screen h-full overflow-y-auto p-7 shadow-md fixed  ${isMobleMenuActive ? "right-0" : "-right-full"} top-0 z-50 transition-all duration-500`}>
                 <div className="flex justify-between items-center">
-                    <Logo title="Ascent" />
+                    <Logo title="Ascent" width={150} height={40} />
                     <div className="bg-primary w-10 h-10 text-cream-foreground flex items-center justify-center rounded-[4px] left-4" onClick={() => setIsMobleMenuActive(false)}>
                         <FaXmark className="text-xl" />
                     </div>

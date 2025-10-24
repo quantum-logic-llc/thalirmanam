@@ -14,7 +14,7 @@ const FooterOne = () => {
                 {/* Main Footer Content */}
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between gap-7.5">
                     <SlideUp delay={2}>
-                        <Logo />
+                        <Logo width={150} height={40} />
                         <p className="pt-4">Thalir Manam is a child development center dedicated to providing comprehensive care and support for children with developmental and behavioral challenges.</p>
                         <SocalIcons prentClass={"gap-5 pt-7.5"} className={"w-9 h-9 bg-warm text-muted-foreground hover:text-cream-foreground hover:bg-green"} />
                     </SlideUp>

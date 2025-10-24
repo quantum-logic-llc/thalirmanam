@@ -18,7 +18,7 @@ const FooterTwo = () => {
                 <div className="grid lg:grid-cols-[300px_auto_auto_268px] sm:grid-cols-2 grid-cols-1 gap-x-7.5 gap-y-10 justify-between">
 
                     <SlideUp delay={2}>
-                        <Logo className="text-cream-foreground" />
+                        <Logo className="text-cream-foreground" width={150} height={40} />
                         <div className="mt-10">
                             <p className=" text-cream-foreground opacity-80">Yes, there are many notable ma corporate the a  od businesses Informati worldwide</p>
                             <SocalIcons prentClass={"gap-5 lg:pt-7.5 pt-5"} className={"w-9 h-9 bg-[#FFFFFF1A] border-none hover:bg-green"} />

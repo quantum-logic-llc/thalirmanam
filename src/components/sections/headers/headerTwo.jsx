@@ -19,7 +19,7 @@ const HeaderTwo = () => {
                     <div className="container lg:pt-5 lg:pb-5 py-6 lg:py-0 px-10 bg-background relative border-b-8 border-b-primary rounded-br-[10px] rounded-bl-[10px] shadow-md">
 
                         <div className="flex items-center justify-between">
-                            <Logo />
+                            <Logo width={150} height={40} />
                             <DesktopMenu />
                             <MobileMenu isMobleMenuActive={isMobleMenuActive} setIsMobleMenuActive={setIsMobleMenuActive} />
                             <div>
