@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Title from '@/components/ui/title'
-import about_img_1 from "@/assets/images/about/sharp-1.png"
+import sharp_2 from "@/assets/images/about/sharp_2.png"
 import { Button } from '@/components/ui/button'
 import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
@@ -17,8 +17,17 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                 <div className={cn("grid lg:grid-cols-[40%_60%] grid-cols-1 items-center lg:gap-x-12", gridClass)}>
                     <div className='flex justify-end'>
                         <SlideUp>
-                            <Image src={about_img_1} alt="about-bg" width={320} height={417} className="object-cover" />
-                        </SlideUp>
+  <div className="overflow-hidden rounded-[50px] border-2 border-blue-400 shadow-md">
+    <Image
+      src={sharp_2}
+      alt="about-bg"
+      width={320}
+      height={417}
+      className="object-cover"
+    />
+  </div>
+</SlideUp>
+
                     </div>
                     {/* <!-- right side start --> */}
                     <div className={`${isAboutpage ? "" : "lg:max-w-[430px]"} pt-7.5`}>

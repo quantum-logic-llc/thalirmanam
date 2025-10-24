@@ -1,9 +1,9 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
-import boy_img_1 from "@/assets/images/banner/boy_img_1.png"
+
 import image4 from "@/assets/images/banner/image 4.png"
-import left_circle_2 from "@/assets/images/banner/left_circle_2.png"
-import right_circle1 from "@/assets/images/banner/right-circle1..png"
+import left_circle2 from "@/assets/images/banner/left_circle2.png"
+import right_circle2 from "@/assets/images/banner/right_circle2.png"
 import Image from 'next/image';
 
 import shap from "@/assets/images/shapes/shap.png"
@@ -44,20 +44,29 @@ const HeroOne = () => {
           </SlideUp>
         </div>
         <div className="absolute left-2.5 lg:top-0 top-10 sm:block hidden animate-up-down">
-          <Image src={left_circle_2.src || left_circle_2} alt="banner-img-1" width={260} height={365} />
+          <Image src={left_circle2.src || left_circle2} alt="banner-img-1" width={260} height={365}
+          className="object-cover rounded-[75px] border-1 border-pink-400 shadow-[0_0_15px_rgba(96,165,250,0.4)]"
+          />
         </div>
 
-
-
-        <div className="lg:pt-[72px] bg-transparent">
-          <Image src={image4.src || image4} alt="banner-img-1" width={1200} height={600} className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
+        <div className="lg:pt-[60px] bg-transparent">
+          <Image src={image4.src || image4} alt="banner-img-1" width={900} height={600} className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
         </div>
         
 
         {/* <!-- circle shap --> */}
-        <div className="absolute right-5 bottom-16 lg:block hidden animate-up-down ">
-          <Image src={right_circle1.src || right_circle1} alt="banner-img-2" width={320} height={400} />
-        </div>
+      <div className="absolute right-5 bottom-40 lg:block hidden animate-up-down rounded-[75px] overflow-hidden border-3 border-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.4)]">
+  <Image
+    src={right_circle2.src || right_circle2}
+    alt="banner-img-2"
+    width={300}
+    height={360}
+    className="object-cover"
+  />
+</div>
+
+  
+      
       </div>
       {/* <!-- circle shap --> */}
     </section>
