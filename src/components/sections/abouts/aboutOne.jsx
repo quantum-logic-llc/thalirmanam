@@ -14,8 +14,8 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
     return (
         <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
             <div className="container">
-                <div className={cn("grid lg:grid-cols-[60%_40%] grid-cols-1 items-center", gridClass)}>
-                    <div>
+                <div className={cn("grid lg:grid-cols-[40%_60%] grid-cols-1 items-center lg:gap-x-12", gridClass)}>
+                    <div className='flex justify-end'>
                         <SlideUp>
                             <Image src={about_img_1} alt="about-bg" width={320} height={417} className="object-cover" />
                         </SlideUp>
