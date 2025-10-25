@@ -37,7 +37,7 @@ const HeaderOne = () => {
                                         
                                         <Button asChild variant="default" size="sm" className="hidden sm:flex bg-orange-500 hover:bg-orange-600 text-white">
                                             <Link href="/contact-us" className="flex items-center gap-2">
-                                                Get A Quote <FaArrowRight className="text-sm" />
+                                                Book An Appointement <FaArrowRight className="text-sm" />
                                             </Link>
                                         </Button>
 
