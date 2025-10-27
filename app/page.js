@@ -7,6 +7,7 @@ import Gallery from '../src/components/sections/gallery/gallery'
 import Programs from '../src/components/sections/programs'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
+import WhoWeServe from '../src/components/sections/whoWeServe'
 
 import SuccessProjectOne from '../src/components/sections/successProjects/successProjectOne'
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
@@ -21,6 +22,7 @@ export default function HomePage() {
       <HeaderOne />
       <main>
         <HeroOne />
+        <WhoWeServe />
         <ServicesGrid />
         <SuccessProjectOne />
         <Programs />
