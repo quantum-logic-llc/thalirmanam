@@ -1,9 +1,15 @@
+'use client'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import SectionName from '@/components/ui/sectionName'
 import Title from '@/components/ui/title'
 import SectionDescription from '@/components/ui/sectionDescription'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // Import service images
 import adhdImage from '@/assets/images/services/adhd.png'
@@ -110,38 +116,62 @@ const ServicesGrid = () => {
                     </SectionDescription>
                 </div>
 
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+                <Swiper
+                    modules={[Navigation, Pagination, Autoplay]}
+                    spaceBetween={24}
+                    slidesPerView={1}
+                    navigation
+                    pagination={{ clickable: true }}
+                    autoplay={{ delay: 4000, disableOnInteraction: false }}
+                    breakpoints={{
+                        640: {
+                            slidesPerView: 1,
+                            spaceBetween: 20,
+                        },
+                        768: {
+                            slidesPerView: 2,
+                            spaceBetween: 24,
+                        },
+                        1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 24,
+                        },
+                    }}
+                    className="services-carousel pb-12"
+                >
                     {servicesData.map(({ id, title, description, path, image }) => (
-                        <Link key={id} href={path} className="group">
-                            <div className="bg-white border-2 border-gray-100 rounded-2xl overflow-hidden h-full transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-1">
-                                {/* Image Header */}
-                                <div className="relative w-full h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
-                                    <Image
-                                        src={image}
-                                        alt={title}
-                                        fill
-                                        className="object-cover transition-transform duration-300 group-hover:scale-110"
-                                        unoptimized
-                                    />
-                                </div>
+                        <SwiperSlide key={id}>
+                            <Link href={path} className="group block h-full">
+                                <div className="bg-white border-2 border-gray-100 rounded-2xl overflow-hidden h-full transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-1">
+                                    {/* Image Header */}
+                                    <div className="relative w-full h-48 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
+                                        <Image
+                                            src={image}
+                                            alt={title}
+                                            fill
+                                            className="object-cover transition-transform duration-300 group-hover:scale-110"
+                                            unoptimized
+                                        />
+                                    </div>
 
-                                {/* Card Content */}
-                                <div className="p-6 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
-                                    <h3 className="text-lg font-bold text-gray-800 group-hover:text-white transition-colors duration-300 mb-3 leading-tight">
-                                        {title}
-                                    </h3>
-                                    <p className="text-gray-600 group-hover:text-white/90 transition-colors duration-300 text-sm leading-relaxed mb-4">
-                                        {description}
-                                    </p>
-                                    <div className="mt-auto pt-4 border-t border-gray-200 group-hover:border-white/20 text-primary group-hover:text-white transition-all duration-300 flex items-center justify-between">
-                                        <span className="text-sm font-semibold">Read More</span>
-                                        <span className="text-lg transform group-hover:translate-x-1 transition-transform">→</span>
+                                    {/* Card Content */}
+                                    <div className="p-6 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-orange-400 group-hover:text-white transition-all duration-300">
+                                        <h3 className="text-lg font-bold text-gray-800 group-hover:text-white transition-colors duration-300 mb-3 leading-tight">
+                                            {title}
+                                        </h3>
+                                        <p className="text-gray-600 group-hover:text-white/90 transition-colors duration-300 text-sm leading-relaxed mb-4">
+                                            {description}
+                                        </p>
+                                        <div className="mt-auto pt-4 border-t border-gray-200 group-hover:border-white/20 text-primary group-hover:text-white transition-all duration-300 flex items-center justify-between">
+                                            <span className="text-sm font-semibold">Read More</span>
+                                            <span className="text-lg transform group-hover:translate-x-1 transition-transform">→</span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
+                            </Link>
+                        </SwiperSlide>
                     ))}
-                </div>
+                </Swiper>
             </div>
         </section>
     )
