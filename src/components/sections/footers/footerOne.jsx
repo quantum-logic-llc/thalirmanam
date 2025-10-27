@@ -40,7 +40,7 @@ const FooterOne = () => {
                                     </span>
                                     <div>
                                         <p className="font-medium text-gray-800">Location</p>
-                                        <p className="text-gray-600 text-sm">Chennai, India</p>
+                                        <p className="text-gray-600 text-sm">No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</p>
                                     </div>
                                 </div>
                             </li>
@@ -51,7 +51,7 @@ const FooterOne = () => {
                                     </span>
                                     <div>
                                         <p className="font-medium text-gray-800">Email</p>
-                                        <a href="mailto:naveenak5@gmail.com" className="text-gray-600 text-sm hover:text-primary transition-colors">naveenak5@gmail.com</a>
+                                        <a href="mailto:drnaveena94@gmail.com" className="text-gray-600 text-sm hover:text-primary transition-colors">drnaveena94@gmail.com</a>
                                     </div>
                                 </div>
                             </li>

@@ -9,8 +9,6 @@ import Programs from '../src/components/sections/programs'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
 
-import NewsletterOne from '../src/components/sections/newsletters/newsletterOne'
-import ResourcesForParents from '../src/components/sections/resources/resourcesForParents'
 import SuccessProjectOne from '../src/components/sections/successProjects/successProjectOne'
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
 
@@ -30,8 +28,6 @@ export default function HomePage() {
         <Programs />
         <FaqComp />
         <Teams />
-        <ResourcesForParents />
-        <NewsletterOne />
       </main>
       <FooterOne />
     </>

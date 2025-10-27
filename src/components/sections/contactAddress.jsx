@@ -13,7 +13,7 @@ const ContactAddress = () => {
                                 <span className="text-cream-foreground text-[28px]"><FaLocationDot /> </span>
                             </div>
                             <h5 className="font-bold text-xl mt-5 pb-2.5">Location</h5>
-                            <p>Miot Hospital, Shens Hospital, Kauvery Hospital Vadapalani, Hamsa Kids Child Development Centre</p>
+                            <p>No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</p>
                         </div>
                     </SlideUp>
 
@@ -23,7 +23,7 @@ const ContactAddress = () => {
                                 <span className="text-cream-foreground text-[28px]"><FaEnvelope /> </span>
                             </div>
                             <h5 className="font-bold text-xl mt-5 pb-2.5">Mail</h5>
-                            <p><a href="mailto:naveenak5@gmail.com">naveenak5@gmail.com</a></p>
+                            <p><a href="mailto:drnaveena94@gmail.com">drnaveena94@gmail.com</a></p>
                         </div>
                     </SlideUp>
 

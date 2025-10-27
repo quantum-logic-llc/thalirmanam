@@ -11,17 +11,17 @@ const icons = [
     },
     {
         id: 2,
-        link: "https://www.youtube.com/@drnaveenakarthik",
+        link: "https://www.youtube.com/@Thalirmanam",
         icon: <FaYoutube />
     },
     {
         id: 3,
-        link: "https://www.instagram.com/dr_naveenakarthik/",
+        link: "https://www.instagram.com/Drnaveena_thalir",
         icon: <FaInstagram />
     },
     {
         id: 4,
-        link: "https://www.linkedin.com/in/dr-naveena-karthik-a202b3249",
+        link: "https://www.linkedin.com/in/dr-naveena-karthik-1b902421/?originalSubdomain=in",
         icon: <FaLinkedinIn />
     },
 ]
