@@ -33,7 +33,7 @@ const Teams = () => {
                 <div className="space-y-8">
                   <div className="border-l-4 border-primary pl-6">
                     <h4 className="text-xl font-bold text-gray-800 mb-3">Professional Qualifications</h4>
-                    <p className="text-gray-600 leading-relaxed">MBBS, MD (Paediatrics), Fellowship in Developmental & Behavioural Paediatrics</p>
+                    <p className="text-gray-600 leading-relaxed">MBBS , DCH (Child Health) PG Diploma in Developmental Neurology (CDC Trivandrum) Fellowship in Paediatric Neuro-disability (UK) Certification in Adolescent Mental Health</p>
                   </div>
                   
                   <div className="border-l-4 border-primary pl-6">

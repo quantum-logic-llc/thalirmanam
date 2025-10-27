@@ -11,11 +11,11 @@ import Image from 'next/image';
 
 const ContactForm = () => {
     return (
-        <section className="lg:pt-15 lg;pb-15 pb-10 pt-10">
+        <section className="lg:pt-15 lg:pb-15 pb-10 pt-10">
             <div className="container">
                 <div className="max-w-[546px] mx-auto text-center">
                     <SectionName>Contact</SectionName>
-                    <Title size={"3.5xl"}>Unlock your potential with education</Title>
+                    <Title size={"3.5xl"}>Get in Touch With Us</Title>
                 </div>
                 <div className="mt-15">
                     <div className="grid lg:grid-cols-2 grid-cols-1 items-center gap-7.5">
@@ -29,8 +29,8 @@ const ContactForm = () => {
                                         <Image src={winner.src || winner} alt="img" width={60} height={60} />
                                     </div>
                                     <div>
-                                        <h4 className="text-[28px] font-bold text-cream-foreground leading-[148%] font-nunito">2k+</h4>
-                                        <h6 className="text-xl font-bold text-cream-foreground mt-[5px] leading-[130%]">Project Completed</h6>
+                                        <h4 className="text-[28px] font-bold text-cream-foreground leading-[148%] font-nunito">500+</h4>
+                                        <h6 className="text-xl font-bold text-cream-foreground mt-[5px] leading-[130%]">Families Helped</h6>
                                     </div>
                                 </div>
                             </div>

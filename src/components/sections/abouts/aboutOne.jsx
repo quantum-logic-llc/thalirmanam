@@ -10,28 +10,27 @@ import SlideUp from '@/lib/animations/slideUp'
 import SectionDescription from '@/components/ui/sectionDescription'
 
 const AboutOne = ({ gridClass, isAboutpage }) => {
-    // 'gridClass' and 'isAboutpage' props come frome about-us and home-1 page
+    // 'gridClass' and 'isAboutpage' props come from about-us and home-1 page
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
+        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 bg-gradient-to-br from-white to-blue-50">
             <div className="container">
-                <div className={cn("grid lg:grid-cols-[40%_60%] grid-cols-1 items-center lg:gap-x-12", gridClass)}>
-                    <div className='flex justify-end'>
+                <div className={cn("grid lg:grid-cols-[40%_60%] grid-cols-1 items-center lg:gap-x-12 gap-y-8", gridClass)}>
+                    <div className='flex lg:justify-end justify-center'>
                         <SlideUp>
-  <div className="overflow-hidden rounded-[50px] border-2 border-blue-400 shadow-md">
-    <Image
-      src={heroimg}
-      alt="about-bg"
-      width={320}
-      height={417}
-      className="object-cover"
-    />
-  </div>
-</SlideUp>
-
+                            <div className="overflow-hidden rounded-[50px] border-2 border-blue-400 shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                                <Image
+                                    src={heroimg}
+                                    alt="about-bg"
+                                    width={320}
+                                    height={417}
+                                    className="object-cover w-full h-auto"
+                                />
+                            </div>
+                        </SlideUp>
                     </div>
                     {/* <!-- right side start --> */}
-                    <div className={`${isAboutpage ? "" : "lg:max-w-[430px]"} pt-7.5`}>
-                        <SectionName>About Us</SectionName>
+                    <div className={`${isAboutpage ? "" : "lg:max-w-[530px]"} lg:pt-0 pt-4`}>
+                        <SectionName className="text-blue-600">About Us</SectionName>
                         <Title size={"3.5xl"} className={"pb-5"}>About Thalir Manam</Title>
                         <SectionDescription className="mb-4">
                             Thalir Manam Child Development Centre is dedicated to providing comprehensive developmental and behavioral pediatric services. Under the expert guidance of Dr. Naveena Karthik, we offer specialized care for children with developmental and behavioral challenges.

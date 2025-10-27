@@ -75,7 +75,7 @@ const servicesData = [
 
 const ServicesGrid = () => {
     return (
-        <section className="pt-15 pb-15">
+        <section className="pt-15 pb-15 bg-gradient-to-br from-blue-50 via-white to-green-50">
             <div className="container">
                 <div className="text-center mb-12">
                     <SectionName className="text-primary-foreground">Our Services</SectionName>
@@ -84,19 +84,20 @@ const ServicesGrid = () => {
                         At Thalir Manam, we offer evidence-based therapeutic services and interventions designed to support children with diverse developmental needs. Our multidisciplinary approach ensures personalized care for every child.
                     </SectionDescription>
                 </div>
-                
-                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8">
+
+                <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
                     {servicesData.map(({ id, title, description, path }) => (
                         <Link key={id} href={path} className="group">
-                            <div className="bg-white border border-gray-200 rounded-xl p-6 h-full transition-all duration-300 hover:shadow-xl hover:border-primary group-hover:bg-primary group-hover:text-white">
-                                <h3 className="text-xl font-bold text-gray-800 group-hover:text-white transition-colors duration-300 mb-3">
+                            <div className="bg-white border-2 border-gray-100 rounded-2xl p-6 h-full transition-all duration-300 hover:shadow-2xl hover:border-primary hover:-translate-y-1 group-hover:bg-gradient-to-br group-hover:from-primary group-hover:to-orange-400 group-hover:text-white">
+                                <h3 className="text-lg font-bold text-gray-800 group-hover:text-white transition-colors duration-300 mb-3 leading-tight">
                                     {title}
                                 </h3>
-                                <p className="text-gray-600 group-hover:text-gray-100 transition-colors duration-300 text-sm leading-relaxed">
+                                <p className="text-gray-600 group-hover:text-white/90 transition-colors duration-300 text-sm leading-relaxed mb-4">
                                     {description}
                                 </p>
-                                <div className="mt-4 text-primary group-hover:text-white transition-colors duration-300">
-                                    <span className="text-sm font-medium">Learn More →</span>
+                                <div className="mt-auto pt-4 border-t border-gray-200 group-hover:border-white/20 text-primary group-hover:text-white transition-all duration-300 flex items-center justify-between">
+                                    <span className="text-sm font-semibold">Read More</span>
+                                    <span className="text-lg transform group-hover:translate-x-1 transition-transform">→</span>
                                 </div>
                             </div>
                         </Link>

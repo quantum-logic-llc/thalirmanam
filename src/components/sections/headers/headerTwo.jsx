@@ -9,8 +9,8 @@ import StickyHeader from '@/components/ui/stickyHeader'
 import DesktopSidebar from './desktopSidebar'
 
 const HeaderTwo = () => {
-    const [isSerchActive, setIsSerchActive] = useState(false)
-    const [isMobleMenuActive, setIsMobleMenuActive] = useState(false)
+    const [isSearchActive, setIsSearchActive] = useState(false)
+    const [isMobileMenuActive, setIsMobileMenuActive] = useState(false)
 
     return (
         <StickyHeader>
@@ -21,18 +21,18 @@ const HeaderTwo = () => {
                         <div className="flex items-center justify-between">
                             <Logo width={150} height={40} />
                             <DesktopMenu />
-                            <MobileMenu isMobleMenuActive={isMobleMenuActive} setIsMobleMenuActive={setIsMobleMenuActive} />
+                            <MobileMenu isMobleMenuActive={isMobileMenuActive} setIsMobleMenuActive={setIsMobileMenuActive} />
                             <div>
                                 {/* <!-- search, toggle and contact btn start --> */}
                                 <div className="flex items-center gap-6 ">
-                                    <div className="ml-10 cursor-pointer" onClick={() => setIsSerchActive(true)}>
+                                    <div className="ml-10 cursor-pointer" onClick={() => setIsSearchActive(true)}>
                                         <FaMagnifyingGlass className='text-xl' />
                                     </div>
                                     <p className="h-11 w-[1px] bg-muted xl:block hidden"></p>
                                     <div>
                                         {/* <!-- for desktop --> */}
-                                        
-                                        <div className="xl:flex hidden flex-col items-end cursor-pointer transition-all duration-500" onClick={() => setIsMobleMenuActive(true)}>
+
+                                        <div className="xl:flex hidden flex-col items-end cursor-pointer transition-all duration-500" onClick={() => setIsMobileMenuActive(true)}>
                                             <span className="block h-[3px] w-5 bg-muted"></span>
                                             <span className="block h-[3px] w-7.5 bg-muted mt-2"></span>
                                             <span className="block h-[3px] w-5 bg-muted mt-2"></span>
@@ -40,7 +40,7 @@ const HeaderTwo = () => {
                                         {/* <!-- for desktop --> */}
 
                                         {/* <!-- for tab and mobile --> */}
-                                        <div className="flex xl:hidden flex-col items-end cursor-pointer transition-all duration-500" onClick={() => setIsMobleMenuActive(true)}>
+                                        <div className="flex xl:hidden flex-col items-end cursor-pointer transition-all duration-500" onClick={() => setIsMobileMenuActive(true)}>
                                             <span className="block h-[3px] w-5 bg-muted"></span>
                                             <span className="block h-[3px] w-7.5 bg-muted mt-2"></span>
                                             <span className="block h-[3px] w-5 bg-muted mt-2"></span>
@@ -49,10 +49,10 @@ const HeaderTwo = () => {
                                     </div>
                                 </div>
 
-                                <SearchForm isSerchActive={isSerchActive} setIsSerchActive={setIsSerchActive} className={"lg:h-full md:h-full h-full"} />
+                                <SearchForm isSerchActive={isSearchActive} setIsSerchActive={setIsSearchActive} className={"lg:h-full md:h-full h-full"} />
                             </div>
                         </div>
-                        <DesktopSidebar active={isMobleMenuActive} setActive={setIsMobleMenuActive} />
+                        <DesktopSidebar active={isMobileMenuActive} setActive={setIsMobileMenuActive} />
                     </div>
                 </div>
             </header>
