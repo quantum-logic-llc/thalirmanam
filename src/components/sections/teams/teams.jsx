@@ -42,7 +42,7 @@ const Teams = () => {
                       <span className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white mr-3">📋</span>
                       Professional Qualifications
                     </h4>
-                    <p className="text-gray-700 leading-relaxed text-base">MBBS, DCH (Child Health), PG Diploma in Developmental Neurology (CDC Trivandrum), Fellowship in Paediatric Neuro-disability (UK), Certification in Adolescent Mental Health</p>
+                    <p className="text-gray-700 leading-relaxed text-base">Dr. Naveena Karthik MBBS , DCH (Child Health) PG Diploma in Developmental Neurology (CDC Trivandrum) Fellowship in Paediatric Neuro-disability (UK) Certification in Adolescent Mental Health.</p>
                   </div>
 
                   <div className="bg-gradient-to-r from-green-50 to-transparent p-6 rounded-xl border-l-4 border-green-600">
