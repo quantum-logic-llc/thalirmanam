@@ -2,8 +2,8 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 
 import herosec from "@/assets/images/banner/herosec.png"
-import left_circle2 from "@/assets/images/banner/left_circle2.png"
-import right_circle2 from "@/assets/images/banner/right_circle2.png"
+import herogirl from "@/assets/images/banner/herogirl.png"
+import heroboy from "@/assets/images/banner/heroboy.png"
 import Image from 'next/image';
 
 import shap from "@/assets/images/shapes/shap.png"
@@ -47,7 +47,7 @@ const HeroOne = () => {
         {/* Left decorative image */}
         <div className="absolute left-2 lg:left-2.5 top-20 lg:top-0 sm:block hidden ">
           <Image
-            src={left_circle2.src || left_circle2}
+            src={herogirl.src || herogirl}
             alt="banner-img-1"
             width={200}
             height={280}
@@ -67,7 +67,8 @@ const HeroOne = () => {
         </div>
 
         {/* Right decorative image */}
-        <div className="absolute right-2 lg:right-5 bottom-20 lg:bottom-40 hidden sm:block  rounded-[50px] lg:rounded-[75px] overflow-hidden border border-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.4)]"> <Image src={right_circle2.src || right_circle2} alt="banner-img-2" width={220} height={360} className="lg:w-[300px] lg:h-[360px] object-cover" /> </div>
+        <div className="absolute right-2 lg:right-5 bottom-20 lg:bottom-40 hidden sm:block  rounded-[50px] lg:rounded-[75px] overflow-hidden border border-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.4)]"> 
+          <Image src={heroboy.src || heroboy} alt="banner-img-2" width={220} height={360} className="lg:w-[300px] lg:h-[360px] object-cover" /> </div>
 
   
       
