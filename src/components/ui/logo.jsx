@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "@/assets/images/logo.png";
+import logo from "@/assets/images/logo2.png";
 
 const Logo = ({ width, height }) => {
   return (

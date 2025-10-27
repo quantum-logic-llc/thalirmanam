@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
-import image4 from "@/assets/images/banner/image 4.png"
+import herosec from "@/assets/images/banner/herosec.png"
 import left_circle2 from "@/assets/images/banner/left_circle2.png"
 import right_circle2 from "@/assets/images/banner/right_circle2.png"
 import Image from 'next/image';
@@ -50,7 +50,7 @@ const HeroOne = () => {
         </div>
 
         <div className="lg:pt-[60px] bg-transparent">
-          <Image src={image4.src || image4} alt="banner-img-1" width={900} height={600} className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
+          <Image src={herosec.src || herosec} alt="banner-img-1" width={900} height={600} className="bg-transparent animate-up-down  border-2 border-white/20 rounded-lg" />
         </div>
         
 
