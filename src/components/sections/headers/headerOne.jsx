@@ -22,7 +22,7 @@ const HeaderOne = () => {
                     <div className="[.header-pinned_&]:shadow-lg bg-background border-b border-gray-100 transition-all duration-300">
                         <div className="container">
                             <div className="flex justify-between items-center h-20">
-                                <Logo width={250} height={40} />
+                                <Logo width={190} height={60} />
                                 
                                 <div className="flex items-center space-x-8">
                                     <DesktopMenu />
