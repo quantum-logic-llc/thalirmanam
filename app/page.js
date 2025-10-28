@@ -8,6 +8,7 @@ import Programs from '../src/components/sections/programs'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
 import WhoWeServe from '../src/components/sections/whoWeServe'
+import FocusAreas from '../src/components/sections/focusAreas'
 
 import SuccessProjectOne from '../src/components/sections/successProjects/successProjectOne'
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
@@ -23,6 +24,7 @@ export default function HomePage() {
       <main>
         <HeroOne />
         <WhoWeServe />
+        <FocusAreas />
         <ServicesGrid />
         <SuccessProjectOne />
         <Programs />
