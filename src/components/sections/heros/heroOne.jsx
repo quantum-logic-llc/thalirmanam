@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
-import herosec2 from "@/assets/images/banner/herosec2.png"
+import herosec4 from "@/assets/images/banner/herosec4.png"
 import herogirl from "@/assets/images/banner/herogirl.png"
 import heroboy from "@/assets/images/banner/heroboy.png"
 import Image from 'next/image';
@@ -36,7 +36,7 @@ const HeroOne = () => {
           </TextReveal>
 
           <SlideUp delay={3}>
-            <div className="mt-6 mb-8">
+            <div className="mt-2 mb-0">
               <Button asChild variant={"secondary"} className="px-8 py-6 text-base">
                 <Link href="/contact-us">Contact Us</Link>
               </Button>
@@ -56,9 +56,9 @@ const HeroOne = () => {
         </div>
 
         {/* Main hero image */}
-        <div className="lg:pt-[60px] pt-8 px-4 sm:px-8 bg-transparent ">
+        <div className="lg:pt-0 px-4 sm:px-8 bg-transparent ">
           <Image
-            src={herosec2.src || herosec2}
+            src={herosec4.src || herosec4}
             alt="banner-img-1"
             width={900}
             height={600}
