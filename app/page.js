@@ -5,6 +5,7 @@ import ServicesOne from '../src/components/sections/services/servicesOne'
 import ServicesGrid from '../src/components/sections/services/servicesGrid'
 import Gallery from '../src/components/sections/gallery/gallery'
 import Programs from '../src/components/sections/programs'
+import CommitmentBanner from '../src/components/sections/commitmentBanner'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
 import WhoWeServe from '../src/components/sections/whoWeServe'
@@ -30,6 +31,7 @@ export default function HomePage() {
         <WhyChooseUs />
         <SuccessProjectOne />
         <Programs />
+        <CommitmentBanner />
         <FaqComp />
         <Teams />
       </main>
