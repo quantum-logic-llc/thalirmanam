@@ -129,18 +129,18 @@ const servicesData = [
 
 const ServicesGrid = () => {
     return (
-        <section className="pt-20 pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 relative overflow-hidden">
+        <section className="pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-20 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 relative overflow-hidden">
             {/* Decorative Background Elements */}
             <div className="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
 
             <div className="container relative z-10">
-                <div className="text-center mb-16">
-                    <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Our Services</h2>
-                    <h3 className="text-gray-800 text-[36px] font-bold capitalize mb-6 mt-4">
+                <div className="text-center mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4">
+                    <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Our Services</h2>
+                    <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mb-4 sm:mb-6 mt-2 sm:mt-4">
                         Comprehensive Developmental Care
                     </h3>
-                    <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-lg">
+                    <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg">
                         At Thalir Manam, we offer evidence-based therapeutic services and interventions designed to support children with diverse developmental needs. Our multidisciplinary approach ensures personalized care for every child.
                     </SectionDescription>
                 </div>
@@ -210,7 +210,7 @@ const ServicesGrid = () => {
 
                 <Swiper
                     modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={30}
+                    spaceBetween={20}
                     slidesPerView={1}
                     navigation
                     pagination={{
@@ -224,53 +224,61 @@ const ServicesGrid = () => {
                     }}
                     loop={true}
                     breakpoints={{
-                        480: {
+                        320: {
+                            slidesPerView: 1,
+                            spaceBetween: 15,
+                        },
+                        640: {
                             slidesPerView: 1,
                             spaceBetween: 20,
                         },
                         768: {
                             slidesPerView: 2,
-                            spaceBetween: 25,
+                            spaceBetween: 20,
                         },
                         1024: {
+                            slidesPerView: 3,
+                            spaceBetween: 25,
+                        },
+                        1280: {
                             slidesPerView: 3,
                             spaceBetween: 30,
                         },
                     }}
-                    className="services-carousel pb-16 px-2"
+                    className="services-carousel pb-12 sm:pb-14 md:pb-16 px-1 sm:px-2"
                 >
                     {servicesData.map(({ id, title, description, path, image, color, icon }) => (
                         <SwiperSlide key={id}>
                             <Link href={path} className="group block h-full">
-                                <div className="bg-white rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
+                                <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
 
                                     {/* Image Header */}
-                                    <div className="relative w-full h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
+                                    <div className="relative w-full h-44 sm:h-52 md:h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
                                         <Image
                                             src={image}
                                             alt={title}
                                             fill
-                                            className="object-cover transition-transform duration-700 "
+                                            className="object-cover transition-transform duration-700"
                                             unoptimized
                                         />
                                     </div>
 
                                     {/* Card Content */}
-                                    <div className="p-7 relative z-20">
-                                        <h3 className="text-xl font-bold text-gray-800  transition-colors duration-300 mb-4 leading-tight min-h-[60px]">
+                                    <div className="p-4 sm:p-5 md:p-7 relative z-20">
+                                        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 transition-colors duration-300 mb-3 sm:mb-4 leading-tight min-h-[48px] sm:min-h-[56px] md:min-h-[60px]">
                                             {title}
                                         </h3>
-                                        <p className="text-gray-600  transition-colors duration-300 text-base leading-relaxed mb-6 line-clamp-3">
+                                        <p className="text-gray-600 transition-colors duration-300 text-xs sm:text-sm md:text-base leading-relaxed mb-4 sm:mb-5 md:mb-6 line-clamp-3">
                                             {description}
                                         </p>
 
                                         {/* CTA Button */}
-                                        <div className="flex items-center justify-between pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
-                                            <span className="text-primary text-sm font-bold uppercase tracking-wider transition-colors">
+                                        <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
+                                            <span className="text-primary text-xs sm:text-sm font-bold uppercase tracking-wider transition-colors">
                                               Read More
                                             </span>
-                                            <div className="w-10 h-10 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-all duration-300 group-hover:translate-x-2">
-                                                <span className="text-primary text-xl font-bold transition-colors">→</span>
+                                            <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-all duration-300 group-hover:translate-x-2">
+                                                <span className="text-primary text-lg sm:text-xl font-bold transition-colors">→</span>
                                             </div>
                                         </div>
                                     </div>
@@ -286,13 +294,13 @@ const ServicesGrid = () => {
                 </Swiper>
 
                 {/* View All Services Button */}
-                <div className="text-center mt-12">
+                <div className="text-center mt-8 sm:mt-10 md:mt-12 px-3 sm:px-4">
                     <Link
                         href="/services"
-                        className="inline-flex items-center gap-3 px-8 py-6 bg-green text-cream-foreground font-medium rounded-md shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 hover:bg-secondary relative overflow-hidden after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:w-full after:bg-secondary z-[1]"
+                        className="inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 bg-green text-cream-foreground font-medium text-sm sm:text-base rounded-md shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 hover:bg-secondary relative overflow-hidden after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:w-full after:bg-secondary z-[1]"
                     >
                         <span className="relative z-10">View All Services</span>
-                        <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                     </Link>

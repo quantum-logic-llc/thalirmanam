@@ -14,20 +14,20 @@ const FocusAreas = () => {
 
             <div className="container relative z-10">
                 {/* Section Header */}
-                <div className="text-center flex flex-col items-center mb-12">
+                <div className="text-center flex flex-col items-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
                     <SlideUp>
-                        <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Focus Areas</h2>
+                        <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Focus Areas</h2>
                     </SlideUp>
                     <SlideUp delay={2}>
-                        <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5 max-w-4xl">
+                        <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5 max-w-4xl">
                             What Does Thalir Manam NDC Offer?
                         </h3>
                     </SlideUp>
                 </div>
 
                 {/* Cards Grid */}
-                <div className="lg:pt-10 pt-5">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-7.5">
+                <div className="lg:pt-10 pt-5 px-3 sm:px-4">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-7.5">
                         {focusAreasData.map((area) => (
                             <FocusAreaCard
                                 key={area.id}
@@ -49,9 +49,9 @@ export default FocusAreas
 const FocusAreaCard = ({ id, title, image, points }) => {
     return (
         <SlideUp delay={id + 2}>
-            <div className="border border-[#F2F2F2] bg-background rounded-[10px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col">
+            <div className="border border-[#F2F2F2] bg-background rounded-lg sm:rounded-[10px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col">
                 {/* Image */}
-                <div className="relative h-[280px] w-full overflow-hidden bg-gradient-to-br from-cream-foreground/40 to-green-foreground/5">
+                <div className="relative h-[220px] sm:h-[250px] md:h-[280px] w-full overflow-hidden bg-gradient-to-br from-cream-foreground/40 to-green-foreground/5">
                     <Image
                         src={image}
                         alt={title}
@@ -61,17 +61,17 @@ const FocusAreaCard = ({ id, title, image, points }) => {
                 </div>
 
                 {/* Content */}
-                <div className="p-6 flex-1 flex flex-col">
-                    <h3 className="text-xl font-bold mb-4 text-gray-800 leading-tight">
+                <div className="p-4 sm:p-5 md:p-6 flex-1 flex flex-col">
+                    <h3 className="text-base sm:text-lg md:text-xl font-bold mb-3 sm:mb-4 text-gray-800 leading-tight">
                         {title}
                     </h3>
 
                     {/* Bullet Points */}
-                    <ul className="space-y-3 flex-1">
+                    <ul className="space-y-2 sm:space-y-2.5 md:space-y-3 flex-1">
                         {points.map((point, index) => (
-                            <li key={index} className="flex items-start gap-3">
-                                <span className="flex-shrink-0 w-1.5 h-1.5 bg-primary rounded-full mt-2"></span>
-                                <span className="text-gray-600 text-sm leading-relaxed">
+                            <li key={index} className="flex items-start gap-2 sm:gap-2.5 md:gap-3">
+                                <span className="flex-shrink-0 w-1.5 h-1.5 bg-primary rounded-full mt-1.5 sm:mt-2"></span>
+                                <span className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                                     {point}
                                 </span>
                             </li>

@@ -14,20 +14,20 @@ const WhyChooseUs = () => {
 
             <div className="container relative z-10">
                 {/* Section Header */}
-                <div className="text-center mb-12">
+                <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
                     <SlideUp>
-                        <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Why Choose Us?</h2>
+                        <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Why Choose Us?</h2>
                     </SlideUp>
                     <SlideUp delay={2}>
-                        <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5">
+                        <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5">
                             Why Thalir Manam?
                         </h3>
                     </SlideUp>
                 </div>
 
                 {/* Features Grid */}
-                <div className="lg:pt-10 pt-5">
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8">
+                <div className="lg:pt-10 pt-5 px-3 sm:px-4">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-8">
                         {whyChooseUsData.map((item) => (
                             <FeatureCard
                                 key={item.id}
@@ -48,8 +48,8 @@ export default WhyChooseUs
 const FeatureCard = ({ id, title, icon }) => {
     // Icon component mapping with beautiful SVG icons
     const renderIcon = () => {
-        const iconContainerClasses = "w-20 h-20 mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
-        const iconClasses = "w-10 h-10 text-white"
+        const iconContainerClasses = "w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 mb-4 sm:mb-5 md:mb-6 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-500"
+        const iconClasses = "w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 text-white"
 
         switch (icon) {
             case 'doctor':
@@ -99,21 +99,21 @@ const FeatureCard = ({ id, title, icon }) => {
         <SlideUp delay={id + 2}>
             <div className="group relative h-full">
                 {/* Card */}
-                <div className="bg-white border-2 border-gray-100 rounded-2xl p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col items-center justify-start relative overflow-hidden group-hover:border-orange-300 group-hover:-translate-y-2">
+                <div className="bg-white border-2 border-gray-100 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 text-center shadow-lg hover:shadow-2xl transition-all duration-500 h-full flex flex-col items-center justify-start relative overflow-hidden group-hover:border-orange-300 group-hover:-translate-y-2">
                     {/* Background Gradient Effect */}
                     <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-green-50 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                     {/* Decorative circles */}
-                    <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
-                    <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-green-500/5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+                    <div className="absolute -top-8 -right-8 sm:-top-10 sm:-right-10 w-24 h-24 sm:w-32 sm:h-32 bg-orange-500/5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
+                    <div className="absolute -bottom-8 -left-8 sm:-bottom-10 sm:-left-10 w-24 h-24 sm:w-32 sm:h-32 bg-green-500/5 rounded-full group-hover:scale-150 transition-transform duration-700"></div>
 
                     {/* Icon */}
-                    <div className="relative z-10 flex items-center justify-center mb-6">
+                    <div className="relative z-10 flex items-center justify-center mb-4 sm:mb-5 md:mb-6">
                         {renderIcon()}
                     </div>
 
                     {/* Title */}
-                    <h3 className="relative z-10 text-lg font-bold text-gray-800 leading-snug transition-colors duration-500 group-hover:text-gray-900">
+                    <h3 className="relative z-10 text-sm sm:text-base md:text-lg font-bold text-gray-800 leading-snug transition-colors duration-500 group-hover:text-gray-900">
                         {title}
                     </h3>
 

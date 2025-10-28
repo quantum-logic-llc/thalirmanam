@@ -68,17 +68,17 @@ const WhoWeServe = () => {
 
       <div className="container relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
           <SlideUp>
-            <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Who Do We Serve?</h2>
+            <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Who Do We Serve?</h2>
           </SlideUp>
           <SlideUp delay={2}>
-            <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5 mb-4">
+            <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5 mb-3 sm:mb-4">
               Specialized Care For Every Child
             </h3>
           </SlideUp>
           <SlideUp delay={3}>
-            <SectionDescription className="max-w-3xl mx-auto text-gray-600">
+            <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base">
               We provide comprehensive developmental support for children with
               various conditions and special needs
             </SectionDescription>
@@ -86,19 +86,19 @@ const WhoWeServe = () => {
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 lg:gap-16 items-center max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center max-w-6xl mx-auto px-3 sm:px-4">
           {/* Left Side - Service Points */}
           <SlideUp delay={4}>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {servicesWeServe.map((service) => (
-                <div key={service.id} className="flex items-start gap-4 group">
+                <div key={service.id} className="flex items-start gap-3 sm:gap-4 group">
                   {/* Checkmark Badge */}
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-semibold text-sm group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="flex-shrink-0 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center font-semibold text-xs sm:text-sm group-hover:bg-primary group-hover:text-white transition-all duration-300">
                     ✓
                   </div>
                   {/* Service Title */}
-                  <div className="flex-1 pt-1">
-                    <h3 className="font-semibold text-gray-800 text-base leading-snug group-hover:text-primary transition-colors duration-300">
+                  <div className="flex-1 pt-0.5 sm:pt-1">
+                    <h3 className="font-semibold text-gray-800 text-sm sm:text-base leading-snug group-hover:text-primary transition-colors duration-300">
                       {service.title}
                     </h3>
                   </div>
@@ -109,8 +109,8 @@ const WhoWeServe = () => {
 
           {/* Right Side - Image */}
           <SlideUp delay={5}>
-            <div className="relative ">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[320px] md:h-[550px]">
+            <div className="relative">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
                 <Image
                   src={boy}
                   alt="Thalir Manam Child Development Center"
@@ -121,19 +121,19 @@ const WhoWeServe = () => {
               </div>
 
               {/* Decorative Elements */}
-              <div className="absolute -bottom-6 -right-6 w-32 h-25 bg-primary/10 rounded-full blur-2xl -z-10"></div>
-              <div className="absolute -top-6 -left-6 w-24 h-20 bg-blue-100 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -bottom-4 -right-4 sm:-bottom-6 sm:-right-6 w-24 h-20 sm:w-32 sm:h-25 bg-primary/10 rounded-full blur-2xl -z-10"></div>
+              <div className="absolute -top-4 -left-4 sm:-top-6 sm:-left-6 w-20 h-16 sm:w-24 sm:h-20 bg-blue-100 rounded-full blur-2xl -z-10"></div>
             </div>
           </SlideUp>
         </div>
 
         {/* CTA Button Section */}
         <SlideUp delay={6}>
-          <div className="mt-12 text-center">
+          <div className="mt-8 sm:mt-10 md:mt-12 text-center px-3 sm:px-4">
             <Button
               asChild
               size="lg"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-6 text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-sm sm:text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Link href="/contact-us">Book an Appointment</Link>
             </Button>
