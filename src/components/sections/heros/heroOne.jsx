@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
-import herosec4 from "@/assets/images/banner/herosec4.png"
+import herosec9 from "@/assets/images/banner/herosec9.png"
 import herogirl from "@/assets/images/banner/herogirl.png"
 import heroboy from "@/assets/images/banner/heroboy.png"
 import Image from 'next/image';
@@ -58,7 +58,7 @@ const HeroOne = () => {
         {/* Main hero image */}
         <div className="lg:pt-0 px-4 sm:px-8 bg-transparent ">
           <Image
-            src={herosec4.src || herosec4}
+            src={herosec9.src || herosec9}
             alt="banner-img-1"
             width={900}
             height={600}
