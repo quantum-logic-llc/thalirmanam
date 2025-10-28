@@ -33,7 +33,7 @@ const servicesData = [
         path: "/services/adhd",
         image: adhdImage,
         color: "from-blue-500 to-blue-600",
-        icon: "🎯"
+       
     },
     {
         id: 2,
@@ -42,7 +42,7 @@ const servicesData = [
         path: "/services/autism-spectrum-disorder",
         image: autismImage,
         color: "from-purple-500 to-purple-600",
-        icon: "🧩"
+        
     },
     {
         id: 3,
@@ -60,7 +60,7 @@ const servicesData = [
         path: "/services/cerebral-palsy",
         image: cerebralPalsyImage,
         color: "from-green-500 to-green-600",
-        icon: "🦾"
+        
     },
     {
         id: 5,
@@ -69,7 +69,7 @@ const servicesData = [
         path: "/services/developmental-delays",
         image: developmentalDelaysImage,
         color: "from-pink-500 to-pink-600",
-        icon: "📈"
+       
     },
     {
         id: 6,
@@ -255,10 +255,6 @@ const ServicesGrid = () => {
                                             className="object-cover transition-transform duration-700 group-hover:scale-125 group-hover:rotate-3"
                                             unoptimized
                                         />
-                                        {/* Icon Badge */}
-                                        <div className="absolute top-4 right-4 w-14 h-14 bg-white rounded-full flex items-center justify-center text-2xl shadow-lg transform transition-all duration-500 group-hover:scale-125 group-hover:rotate-12 z-20">
-                                            {icon}
-                                        </div>
                                     </div>
 
                                     {/* Card Content */}
