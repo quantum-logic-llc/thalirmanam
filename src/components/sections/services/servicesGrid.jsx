@@ -13,10 +13,10 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
 // Import service images
-import adhdImage from '@/assets/images/services/adhd.png'
-import autismImage from '@/assets/images/services/autism.png'
-import behavioralImage from '@/assets/images/services/behavioral-disorders.png'
-import cerebralPalsyImage from '@/assets/images/services/cerebral-palsy.png'
+import adhdImage from '@/assets/images/services/adhd1.png'
+import autismImage from '@/assets/images/services/autism1.png'
+import behavioralImage from '@/assets/images/services/behavioral-disorders1.png'
+import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'
 import developmentalDelaysImage from '@/assets/images/services/developmental-delays.png'
 import learningDisabilitiesImage from '@/assets/images/services/learning-disabilities.png'
 import intellectualDisabilityImage from '@/assets/images/services/intellectual-disability.png'
@@ -243,8 +243,6 @@ const ServicesGrid = () => {
                         <SwiperSlide key={id}>
                             <Link href={path} className="group block h-full">
                                 <div className="bg-white rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
-                                    {/* Gradient Overlay on Hover */}
-                                    <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-0 group-hover:opacity-95 transition-opacity duration-500 z-10`}></div>
 
                                     {/* Image Header */}
                                     <div className="relative w-full h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
@@ -252,27 +250,27 @@ const ServicesGrid = () => {
                                             src={image}
                                             alt={title}
                                             fill
-                                            className="object-cover transition-transform duration-700 group-hover:scale-125 group-hover:rotate-3"
+                                            className="object-cover transition-transform duration-700 "
                                             unoptimized
                                         />
                                     </div>
 
                                     {/* Card Content */}
                                     <div className="p-7 relative z-20">
-                                        <h3 className="text-xl font-bold text-gray-800 group-hover:text-white transition-colors duration-300 mb-4 leading-tight min-h-[60px]">
+                                        <h3 className="text-xl font-bold text-gray-800  transition-colors duration-300 mb-4 leading-tight min-h-[60px]">
                                             {title}
                                         </h3>
-                                        <p className="text-gray-600 group-hover:text-white/95 transition-colors duration-300 text-base leading-relaxed mb-6 line-clamp-3">
+                                        <p className="text-gray-600  transition-colors duration-300 text-base leading-relaxed mb-6 line-clamp-3">
                                             {description}
                                         </p>
 
                                         {/* CTA Button */}
                                         <div className="flex items-center justify-between pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
-                                            <span className="text-primary group-hover:text-white text-sm font-bold uppercase tracking-wider transition-colors">
+                                            <span className="text-primary text-sm font-bold uppercase tracking-wider transition-colors">
                                               Read More
                                             </span>
                                             <div className="w-10 h-10 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-all duration-300 group-hover:translate-x-2">
-                                                <span className="text-primary group-hover:text-white text-xl font-bold transition-colors">→</span>
+                                                <span className="text-primary text-xl font-bold transition-colors">→</span>
                                             </div>
                                         </div>
                                     </div>
