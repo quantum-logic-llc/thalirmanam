@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
+import { Button } from '../ui/button'
+import { FaCalendarCheck } from 'react-icons/fa6'
 import bannerImg from '@/assets/images/banner/about4.png'
 
 const CommitmentBanner = () => {
@@ -32,6 +35,20 @@ const CommitmentBanner = () => {
 
           {/* Decorative underline */}
           <div className="mt-6 w-24 h-1 bg-green-foreground rounded-full shadow-lg"></div>
+
+          {/* CTA Button */}
+          <div className="mt-8">
+            <Button
+              asChild
+              size="lg"
+              className="bg-green text-cream-foreground hover:bg-green-foreground hover:text-white border-2 border-white hover:border-green-foreground text-base md:text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-green-foreground/50 transition-all duration-300 hover:scale-105 font-bold"
+            >
+              <Link href="/contact-us" className="inline-flex items-center gap-3">
+                <FaCalendarCheck className="text-xl" />
+                <span>Book an Appointment</span>
+              </Link>
+            </Button>
+          </div>
         </div>
 
         {/* Additional gradient overlay for better text readability */}
