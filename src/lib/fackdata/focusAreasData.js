@@ -1,10 +1,10 @@
-// Import placeholder images - Replace these with actual focus area images
-import dailyLiving from "@/assets/images/services/school-readiness.png"
-import emotionalSocial from "@/assets/images/services/behavioral-disorders.png"
-import safetyBoundaries from "@/assets/images/services/adolescent-health.png"
-import lifeSkills from "@/assets/images/services/teen-transition.png"
-import learningSupport from "@/assets/images/services/learning-disabilities.png"
-import puberty from "@/assets/images/services/adolescent-health.png"
+// Focus area images
+import dailyLiving from "@/assets/images/services/team1.png"
+import emotionalSocial from "@/assets/images/services/team2.png"
+import safetyBoundaries from "@/assets/images/services/team3.png"
+import lifeSkills from "@/assets/images/services/team4.png"
+import learningSupport from "@/assets/images/services/team5.png"
+import puberty from "@/assets/images/services/team6.png"
 
 export const focusAreasData = [
     {
