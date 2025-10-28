@@ -67,8 +67,28 @@ const HeroOne = () => {
         </div>
 
         {/* Right decorative image */}
-        <div className="absolute right-2 lg:right-5 bottom-20 lg:bottom-40 hidden sm:block  rounded-[50px] lg:rounded-[75px] overflow-hidden border border-blue-400 shadow-[0_0_15px_rgba(96,165,250,0.4)]"> 
-          <Image src={heroboy.src || heroboy} alt="banner-img-2" width={220} height={360} className="lg:w-[300px] lg:h-[360px] object-cover" /> </div>
+        <div className="absolute right-6 lg:right-2 bottom-80 lg:bottom-96 hidden sm:block group">
+          {/* Decorative background blur */}
+          {/* <div className="absolute -inset-4 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-[60px] lg:rounded-[85px] blur-xl -z-10 group-hover:blur-2xl transition-all duration-500"></div> */}
+
+          {/* Main image container */}
+          <div className="relative rounded-[50px] lg:rounded-[75px] overflow-hidden border-2 border-blue-400/60 shadow-[0_0_25px_rgba(96,165,250,0.5)] group-hover:shadow-[0_0_35px_rgba(96,165,250,0.7)] transition-all duration-500 backdrop-blur-sm">
+            <Image
+              src={heroboy.src || heroboy}
+              alt="banner-img-2"
+              width={220}
+              height={340}
+              className="lg:w-[300px] lg:h-[340px] object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+
+            {/* Subtle gradient overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 via-transparent to-transparent pointer-events-none"></div>
+
+            {/* Corner decorative elements */}
+            <div className="absolute top-3 right-3 w-3 h-3 rounded-full bg-blue-400/60 animate-pulse"></div>
+            <div className="absolute bottom-3 left-3 w-2 h-2 rounded-full bg-cyan-400/60 animate-pulse" style={{animationDelay: '0.5s'}}></div>
+          </div>
+        </div>
 
   
       

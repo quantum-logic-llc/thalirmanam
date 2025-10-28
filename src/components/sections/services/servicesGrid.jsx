@@ -273,7 +273,7 @@ const ServicesGrid = () => {
                                         {/* CTA Button */}
                                         <div className="flex items-center justify-between pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
                                             <span className="text-primary group-hover:text-white text-sm font-bold uppercase tracking-wider transition-colors">
-                                                Learn More
+                                              Read More
                                             </span>
                                             <div className="w-10 h-10 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-all duration-300 group-hover:translate-x-2">
                                                 <span className="text-primary group-hover:text-white text-xl font-bold transition-colors">→</span>
