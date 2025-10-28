@@ -14,7 +14,7 @@ const TopHeader = () => {
                                 <FaPhone /> <a href="tel:+918925914920">+91 89259 14920</a>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaEnvelope /> <a href="mailto:naveenak5@gmail.com">drnaveena94@gmail.com</a>
+                                <FaEnvelope /> <a href="mailto:drnaveena94@gmail.com">drnaveena94@gmail.com</a>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
                                 <FaLocationDot /> <span>Mon - Sat: 9 AM to 3 PM</span>
