@@ -118,15 +118,15 @@ const Teams = () => {
               </div>
 
               {/* Approach Quote */}
-              <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+              <div className="bg-gradient-to-br from-orange-100 via-orange-50 to-peach-50 rounded-2xl p-8 border-2 border-orange-200 shadow-xl relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-orange-200/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 bg-orange-200/20 rounded-full translate-y-1/2 -translate-x-1/2"></div>
                 <div className="relative z-10">
-                  <svg className="w-10 h-10 text-white/30 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-10 h-10 text-orange-400/40 mb-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
                   </svg>
-                  <p className="text-lg leading-relaxed font-medium mb-2">Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential.</p>
-                  <p className="text-white/90 font-semibold">- Dr. Naveena Karthik</p>
+                  <p className="text-lg leading-relaxed font-medium mb-2 text-gray-800">Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential.</p>
+                  <p className="text-orange-600 font-bold">- Dr. Naveena Karthik</p>
                 </div>
               </div>
 
