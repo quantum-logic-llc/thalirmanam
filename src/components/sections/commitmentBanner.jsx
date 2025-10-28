@@ -9,7 +9,7 @@ const CommitmentBanner = () => {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Full viewport width container */}
-      <div className="relative w-screen h-[500px] left-1/2 right-1/2 -mx-[50vw]">
+      <div className="relative w-screen h-[550px] left-1/2 right-1/2 -mx-[50vw]">
         {/* Background Image with Blur */}
         <div className="absolute inset-0">
           <Image
@@ -21,7 +21,7 @@ const CommitmentBanner = () => {
             unoptimized
           />
           {/* Blur overlay */}
-          <div className="absolute inset-0 backdrop-blur-[1px] bg-black/10"></div>
+          <div className="absolute inset-0 backdrop-blur-[1px] bg-black/5"></div>
         </div>
 
         {/* Content Overlay */}
