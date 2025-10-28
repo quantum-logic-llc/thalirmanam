@@ -56,7 +56,7 @@ const FocusAreaCard = ({ id, title, image, points }) => {
                         src={image}
                         alt={title}
                         fill
-                        className="object-contain p-4 transition-transform duration-500 hover:scale-[1.02]"
+                        className="object-cover w-full h-full transition-transform duration-500 hover:scale-105"
                     />
                 </div>
 
