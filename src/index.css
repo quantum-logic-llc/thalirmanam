@@ -144,6 +144,11 @@
 }
 
 
+/* whoWeServe text-base override */
+.whoWeServe .text-base {
+  font-size: 1.2rem;
+}
+
 /* service swiper pagination */
 .services .swiper-pagination-bullets.swiper-pagination-horizontal {
   left: 0;
