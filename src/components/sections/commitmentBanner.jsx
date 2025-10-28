@@ -41,7 +41,7 @@ const CommitmentBanner = () => {
             <Button
               asChild
               size="lg"
-              className="bg-green text-cream-foreground hover:bg-green-foreground hover:text-white border-2 border-white hover:border-green-foreground text-base md:text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-green-foreground/50 transition-all duration-300 hover:scale-105 font-bold"
+              className="bg-orange-500 hover:bg-orange-600 text-white border-2 border-white hover:border-orange-600 text-base md:text-lg px-8 py-6 rounded-full shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-105 font-bold"
             >
               <Link href="/contact-us" className="inline-flex items-center gap-3">
                 <FaCalendarCheck className="text-xl" />

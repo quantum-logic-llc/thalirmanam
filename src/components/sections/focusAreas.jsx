@@ -16,12 +16,12 @@ const FocusAreas = () => {
                 {/* Section Header */}
                 <div className="text-center flex flex-col items-center mb-12">
                     <SlideUp>
-                        <SectionName className="text-primary-foreground">Focus Areas</SectionName>
+                        <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Focus Areas</h2>
                     </SlideUp>
                     <SlideUp delay={2}>
-                        <Title size="3.5xl" className="mt-2.5 max-w-4xl">
-                            WHAT DOES Thalir Manam NDC OFFER?
-                        </Title>
+                        <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5 max-w-4xl">
+                            What Does Thalir Manam NDC Offer?
+                        </h3>
                     </SlideUp>
                 </div>
 

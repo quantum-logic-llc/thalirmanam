@@ -70,12 +70,12 @@ const WhoWeServe = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <SlideUp>
-            <SectionName className="text-primary">Who Do We Serve?</SectionName>
+            <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Who Do We Serve?</h2>
           </SlideUp>
           <SlideUp delay={2}>
-            <Title size={"3.5xl"} className={"mt-2.5 mb-4"}>
-              Specialized Care for Every Child
-            </Title>
+            <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5 mb-4">
+              Specialized Care For Every Child
+            </h3>
           </SlideUp>
           <SlideUp delay={3}>
             <SectionDescription className="max-w-3xl mx-auto text-gray-600">
@@ -133,7 +133,7 @@ const WhoWeServe = () => {
             <Button
               asChild
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-white font-bold px-8 py-6 text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
+              className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-6 text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
               <Link href="/contact-us">Book an Appointment</Link>
             </Button>

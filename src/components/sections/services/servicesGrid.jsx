@@ -136,10 +136,10 @@ const ServicesGrid = () => {
 
             <div className="container relative z-10">
                 <div className="text-center mb-16">
-                    <SectionName className="text-primary-foreground bg-primary/10 px-6 py-2 rounded-full inline-block">Our Services</SectionName>
-                    <Title size="3.5xl" className="mb-6 mt-4 bg-gradient-to-r from-primary to-blue-600 bg-clip-text text-transparent">
+                    <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Our Services</h2>
+                    <h3 className="text-gray-800 text-[36px] font-bold capitalize mb-6 mt-4">
                         Comprehensive Developmental Care
-                    </Title>
+                    </h3>
                     <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-lg">
                         At Thalir Manam, we offer evidence-based therapeutic services and interventions designed to support children with diverse developmental needs. Our multidisciplinary approach ensures personalized care for every child.
                     </SectionDescription>
@@ -289,10 +289,10 @@ const ServicesGrid = () => {
                 <div className="text-center mt-12">
                     <Link
                         href="/services"
-                        className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-blue-600 text-white font-bold rounded-full shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:from-blue-600 hover:to-primary"
+                        className="inline-flex items-center gap-3 px-8 py-6 bg-green text-cream-foreground font-medium rounded-md shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 hover:bg-secondary relative overflow-hidden after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:w-full after:bg-secondary z-[1]"
                     >
-                        <span>View All Services</span>
-                        <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span className="relative z-10">View All Services</span>
+                        <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                     </Link>

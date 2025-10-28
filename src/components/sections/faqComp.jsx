@@ -18,8 +18,8 @@ const FaqComp = () => {
       <div className="container">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <SectionName className="text-purple-600">Frequently Asked Questions</SectionName>
-            <Title size={"3.5xl"} className="mb-4">Answers to Your Questions</Title>
+            <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Frequently Asked Questions</h2>
+            <h3 className="text-gray-800 text-[36px] font-bold capitalize mb-4">Answers To Your Questions</h3>
             <p className="text-gray-600 max-w-2xl mx-auto">Find answers to common questions about our services and child development</p>
           </div>
           <div className="max-w-3xl mx-auto">

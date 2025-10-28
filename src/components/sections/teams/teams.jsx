@@ -11,8 +11,8 @@ const Teams = () => {
     <section className="lg:py-20 py-16 bg-gradient-to-br from-blue-50 to-indigo-100">
       <div className="container">
         <div className="text-center mb-16">
-          <SectionName>Meet Our Expert</SectionName>
-          <Title size={"3.5xl"} className={"mb-4"}>Leading Specialist in Child Development</Title>
+          <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Meet Our Expert</h2>
+          <h3 className="text-gray-800 text-[36px] font-bold capitalize mb-4">Leading Specialist In Child Development</h3>
           <p className="text-gray-600 max-w-2xl mx-auto">Dedicated to providing exceptional care and support for children with developmental needs</p>
         </div>
 

@@ -16,12 +16,12 @@ const WhyChooseUs = () => {
                 {/* Section Header */}
                 <div className="text-center mb-12">
                     <SlideUp>
-                        <SectionName className="text-primary-foreground">WHY CHOOSE US?</SectionName>
+                        <h2 className="text-orange-500 text-[32px] font-bold uppercase mb-4">Why Choose Us?</h2>
                     </SlideUp>
                     <SlideUp delay={2}>
-                        <Title size="3.5xl" className="mt-2.5">
+                        <h3 className="text-gray-800 text-[36px] font-bold capitalize mt-2.5">
                             Why Thalir Manam?
-                        </Title>
+                        </h3>
                     </SlideUp>
                 </div>
 
