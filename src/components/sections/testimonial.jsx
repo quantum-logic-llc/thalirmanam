@@ -1,38 +1,71 @@
 'use client'
-import React from 'react'
+import React, { useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { Navigation } from 'swiper/modules'
 import SectionName from '../ui/sectionName'
 import Title from '../ui/title'
 import { testimonialData } from '@/lib/fackdata/testimonialData'
 import quotation from "@/assets/images/testimonial/quotation.png"
 import Rating from '../ui/rating'
 import Image from 'next/image'
+import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6'
+import 'swiper/css'
+import 'swiper/css/navigation'
 
 
 const Testimonial = () => {
-    return (
-        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial">
-            <div className="container">
-                <div className="flex lg:flex-row flex-col justify-between lg:items-center gap-4 lg:pb-15 pb-10">
-                    <div className="lg:max-w-[410px]">
-                        <SectionName>Parent Testimonials</SectionName>
-                        <Title size={"3.5xl"}>What Parents Say About Us</Title>
-                    </div>
-                    <p className="lg:max-w-[410px]">We are proud of the positive feedback we receive from parents. Here are some of their stories.</p>
-                </div>
-                <div className="relative w-full h-full after:absolute after:left-0 after:top-0 after:lg:max-w-[calc(100%-410px)] after:md:max-w-[calc(100%-310px)] after:max-w-[calc(100%-100px)] after:w-full after:h-full after:bg-testimonial-banner after:bg-cover after:bg-no-repeat after:z-[-1]">
-                    <div className="py-10">
-                        <Swiper
-                            slidesPerView={1}
-                            className='max-w-[630px] w-full ml-auto mr-0'
-                        >
-                            {
-                                testimonialData.map(({ id, name, position, rating, review, src }) => <SwiperSlide key={id}><Card name={name} position={position} src={src} rating={rating} /></SwiperSlide>)
-                            }
-                        </Swiper>
+    const prevRef = useRef(null)
+    const nextRef = useRef(null)
 
+    return (
+        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial bg-gray-50">
+            <div className="container">
+                <div className="text-center mb-8 sm:mb-10 md:mb-12">
+                    <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Customer Reviews</h2>
+                    <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mb-3 sm:mb-4">What Parents Say About Us</h3>
+                    <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">We are proud of the positive feedback we receive from parents. Here are some of their stories.</p>
+                </div>
+
+                <div className="relative max-w-4xl mx-auto">
+                    <Swiper
+                        modules={[Navigation]}
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        navigation={{
+                            prevEl: prevRef.current,
+                            nextEl: nextRef.current,
+                        }}
+                        onBeforeInit={(swiper) => {
+                            swiper.params.navigation.prevEl = prevRef.current
+                            swiper.params.navigation.nextEl = nextRef.current
+                        }}
+                        className='w-full testimonial-swiper'
+                    >
+                        {
+                            testimonialData.map(({ id, name, position, rating, review, src }) => (
+                                <SwiperSlide key={id}>
+                                    <Card name={name} position={position} src={src} rating={rating} review={review} />
+                                </SwiperSlide>
+                            ))
+                        }
+                    </Swiper>
+
+                    {/* Navigation Buttons */}
+                    <div className="flex justify-center gap-4 mt-8">
+                        <button
+                            ref={prevRef}
+                            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
+                        >
+                            <FaChevronLeft /> Previous
+                        </button>
+                        <button
+                            ref={nextRef}
+                            className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl"
+                        >
+                            Next <FaChevronRight />
+                        </button>
                     </div>
-                    {/* <div className="testimonial-pagination"></div> */}
                 </div>
             </div>
         </section>
@@ -43,21 +76,23 @@ export default Testimonial
 
 const Card = ({ name, src, position, review, rating }) => {
     return (
-        <div className="lg:p-10 sm:p-8 py-8 sm:py-0 sm:-mr-10">
-            <div className="bg-background border border-[#F2F2F2] lg:p-15 md:p-5 p-3 max-w-[630px] w-full rounded-[10px] ml-auto shadow-[0px_0px_60px_0px_rgba(0,0,0,0.05)]">
-                <div className="flex justify-between items-center relative z-10 lg:pb-7.5 pb-5">
+        <div className="py-8">
+            <div className="bg-white border border-gray-200 lg:p-10 md:p-8 p-6 w-full rounded-2xl shadow-xl mx-auto">
+                <div className="flex justify-between items-start relative z-10 pb-6">
                     <div className="flex items-center gap-5">
-                        <Image src={src} alt="bg-img" width={80} height={80} />
+                        <div className="rounded-full overflow-hidden border-2 border-orange-200 flex-shrink-0">
+                            <Image src={src} alt={name} width={80} height={80} className="object-cover" />
+                        </div>
                         <div>
-                            <h5 className="md:text-2xl text-xl font-semibold md:leading-[140%]">{name}</h5>
-                            <p>{position}</p>
+                            <h5 className="text-xl md:text-2xl font-bold text-gray-800">{name}</h5>
+                            <p className="text-gray-600">{position}</p>
                         </div>
                     </div>
-                    <div className="absolute right-0 z-[-1]">
-                        <Image src={quotation} alt="quotation" width={50} height={50} className="lg:w-auto w-9" />
+                    <div className="absolute right-0 top-0 z-[-1] opacity-20">
+                        <Image src={quotation} alt="quotation" width={60} height={60} className="lg:w-auto w-12" />
                     </div>
                 </div>
-                <p>{review}</p>
+                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-4">{review}</p>
                 <Rating star={rating} />
             </div>
         </div>

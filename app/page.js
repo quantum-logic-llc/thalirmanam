@@ -10,6 +10,8 @@ import Teams from '../src/components/sections/teams/teams'
 import WhoWeServe from '../src/components/sections/whoWeServe'
 import FocusAreas from '../src/components/sections/focusAreas'
 import WhyChooseUs from '../src/components/sections/whyChooseUs'
+import HelpContactSection from '../src/components/sections/helpContactSection'
+import Testimonial from '../src/components/sections/testimonial'
 
 import AgeOne from '../src/components/sections/studentsAge/ageOne'
 
@@ -29,6 +31,8 @@ export default function HomePage() {
         <WhyChooseUs />
         <CommitmentBanner />
         <FaqComp />
+        <Testimonial />
+        <HelpContactSection />
         <Teams />
       </main>
       <FooterOne />
