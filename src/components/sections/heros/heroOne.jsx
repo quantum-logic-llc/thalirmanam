@@ -34,7 +34,7 @@ const HeroOne = () => {
 
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-800">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-800 font-bold">
                   <span className="block bg-gradient-to-r from-green-600 via-green-600 to-green-600 bg-clip-text text-transparent">
                     Thalir Manam
                   </span>

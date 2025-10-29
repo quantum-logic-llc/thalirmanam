@@ -16,7 +16,7 @@ const HelpContactSection = () => {
           </div>
 
           {/* Description */}
-          <p className="max-w-2xl text-gray-600" style={{ fontSize: '1rem', lineHeight: '1.5rem' }}>
+          <p className="max-w-2xl text-gray-600" style={{ fontSize: '1.2rem', lineHeight: '2rem' }}>
             Our team of experts is here to support you and your child. Reach out to us for personalized care and guidance.
           </p>
 
