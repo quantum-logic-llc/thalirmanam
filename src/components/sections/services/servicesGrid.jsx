@@ -297,10 +297,10 @@ const ServicesGrid = () => {
                 <div className="text-center mt-8 sm:mt-10 md:mt-12 px-3 sm:px-4">
                     <Link
                         href="/services"
-                        className="inline-flex items-center gap-2 sm:gap-3 px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 bg-green text-cream-foreground font-medium text-sm sm:text-base rounded-md shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-500 hover:bg-secondary relative overflow-hidden after:absolute after:left-0 after:top-0 after:w-0 after:h-full after:transition-all after:duration-500 after:z-[-1] hover:after:w-full after:bg-secondary z-[1]"
+                        className="inline-flex items-center gap-3 bg-secondary hover:bg-secondary text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
                     >
-                        <span className="relative z-10">View All Services</span>
-                        <svg className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <span>View All Services</span>
+                        <svg className="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
                     </Link>

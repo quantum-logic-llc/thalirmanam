@@ -25,11 +25,11 @@ const HelpContactSection = () => {
             <Button
               asChild
               size="lg"
-              className="bg-green-600 hover:bg-green-700 text-white text-base sm:text-lg md:text-xl px-8 sm:px-10 md:px-12 py-5 sm:py-6 md:py-7 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 font-semibold"
+              className="bg-green-600 hover:bg-green-600 text-white font-semibold text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
             >
               <Link href="/contact-us" className="inline-flex items-center gap-3">
                 <FaPhone className="text-lg sm:text-xl" />
-                <span>Contact Us Now</span>
+                <span>Contact Us</span>
               </Link>
             </Button>
           </div>

@@ -55,10 +55,10 @@ const HeroOne = () => {
 
             <SlideUp delay={1}>
               <div className="flex flex-col sm:flex-row gap-4 items-center lg:items-start">
-                <Button asChild variant={"secondary"} className="px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <Button asChild size="lg" className="bg-green-600 hover:bg-green-600 text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <Link href="/contact-us">Contact Us</Link>
                 </Button>
-                <Button asChild variant={"outline"} className="px-8 py-6 text-base sm:text-lg rounded-full border-2 border-green-600 text-green-700 hover:bg-green-50 transition-all duration-300">
+                <Button asChild size="lg" className="bg-secondary hover:bg-secondary text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <Link href="/services">Our Services</Link>
                 </Button>
               </div>
