@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Title from '@/components/ui/title'
-import heroimg from "@/assets/images/about/heroimg.png"
+import aboutus from "@/assets/images/about/aboutus.png"
 import { Button } from '@/components/ui/button'
 import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
@@ -30,7 +30,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                             <div className="relative max-w-md w-full">
                                 <div className="overflow-hidden rounded-3xl border-4 border-white shadow-2xl hover:shadow-3xl transition-all duration-300 relative z-10">
                                     <Image
-                                        src={heroimg}
+                                        src={aboutus}
                                         alt="Thalir Manam Child Development Centre"
                                         width={450}
                                         height={550}
