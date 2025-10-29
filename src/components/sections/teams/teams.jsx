@@ -9,10 +9,6 @@ import Image from 'next/image'
 const Teams = () => {
   return (
     <section className="lg:py-20 py-16 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
-      {/* Background Decorations */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-green-500/5 rounded-full blur-3xl"></div>
-
       <div className="container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4">
