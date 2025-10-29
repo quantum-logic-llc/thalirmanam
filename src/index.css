@@ -172,3 +172,8 @@
 }
 
 /* service swiper pagination */
+
+/* Custom max-width override for max-w-2xl */
+.max-w-2xl {
+  max-width: 38rem;
+}

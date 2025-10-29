@@ -22,12 +22,12 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
     ]
 
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 bg-gradient-to-br from-white via-blue-50 to-purple-50">
+        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 bg-gradient-to-br from-white via-blue-50 to-purple-50 overflow-hidden">
             <div className="container">
-                <div className={cn("grid lg:grid-cols-[45%_55%] grid-cols-1 items-center lg:gap-x-16 gap-y-8", gridClass)}>
-                    <div className='flex lg:justify-end justify-center'>
+                <div className={cn("grid lg:grid-cols-[45%_55%] grid-cols-1 items-center lg:gap-x-16 gap-y-8 px-3 sm:px-4", gridClass)}>
+                    <div className='flex lg:justify-end justify-center px-4'>
                         <SlideUp>
-                            <div className="relative">
+                            <div className="relative max-w-md w-full">
                                 <div className="overflow-hidden rounded-3xl border-4 border-white shadow-2xl hover:shadow-3xl transition-all duration-300 relative z-10">
                                     <Image
                                         src={heroimg}
@@ -38,13 +38,13 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                                     />
                                 </div>
                                 {/* Decorative elements */}
-                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10"></div>
-                                <div className="absolute -top-6 -left-6 w-24 h-24 bg-blue-200/40 rounded-full blur-2xl -z-10"></div>
+                                <div className="absolute bottom-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-2xl -z-10"></div>
+                                <div className="absolute top-0 left-0 w-24 h-24 bg-blue-200/40 rounded-full blur-2xl -z-10"></div>
                             </div>
                         </SlideUp>
                     </div>
                     {/* <!-- right side start --> */}
-                    <div className={`${isAboutpage ? "" : "lg:max-w-[600px]"} lg:pt-0 pt-4`}>
+                    <div className={`${isAboutpage ? "max-w-3xl" : "lg:max-w-[600px]"} lg:pt-0 pt-4`}>
                         <SlideUp delay={2}>
                             <h2 className="text-orange-500 text-xl sm:text-2xl font-bold uppercase mb-3 sm:mb-4">About Us</h2>
                         </SlideUp>
@@ -55,28 +55,34 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         </SlideUp>
 
                         <SlideUp delay={4}>
-                            <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed">
-                                <strong className="text-gray-800">Thalir Manam Child Development Centre</strong> is dedicated to providing comprehensive developmental and behavioral pediatric services with expertise, innovation, and compassion.
-                            </SectionDescription>
+                            <div className="max-w-2xl">
+                                <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed">
+                                    <strong className="text-gray-800">Thalir Manam Child Development Centre</strong> is dedicated to providing comprehensive developmental and behavioral pediatric services with expertise, innovation, and compassion.
+                                </SectionDescription>
+                            </div>
                         </SlideUp>
 
                         <SlideUp delay={5}>
-                            <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed">
-                                Under the expert guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, we offer specialized care for children with developmental and behavioral challenges including Autism Spectrum Disorders, ADHD, Learning Disabilities, Cerebral Palsy, and various neurodevelopmental conditions.
-                            </SectionDescription>
+                            <div className="max-w-2xl">
+                                <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed">
+                                    Under the expert guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, we offer specialized care for children with developmental and behavioral challenges including Autism Spectrum Disorders, ADHD, Learning Disabilities, Cerebral Palsy, and various neurodevelopmental conditions.
+                                </SectionDescription>
+                            </div>
                         </SlideUp>
 
                         {isAboutpage && (
                             <>
                                 <SlideUp delay={6}>
-                                    <SectionDescription className="mb-6 text-base lg:text-lg leading-relaxed">
-                                        Our multidisciplinary approach combines clinical expertise with compassionate care, creating individualized treatment plans that address each child&apos;s unique strengths and challenges. We ensure comprehensive support for both children and their families throughout their developmental journey.
-                                    </SectionDescription>
+                                    <div className="max-w-2xl">
+                                        <SectionDescription className="mb-6 text-base lg:text-lg leading-relaxed">
+                                            Our multidisciplinary approach combines clinical expertise with compassionate care, creating individualized treatment plans that address each child&apos;s unique strengths and challenges. We ensure comprehensive support for both children and their families throughout their developmental journey.
+                                        </SectionDescription>
+                                    </div>
                                 </SlideUp>
 
                                 {/* Key Highlights */}
                                 <SlideUp delay={7}>
-                                    <div className="mb-8 space-y-3">
+                                    <div className="mb-8 space-y-3 max-w-2xl">
                                         {highlights.map((highlight, index) => (
                                             <div key={index} className="flex items-start gap-3 group">
                                                 <FaCheckCircle className="text-green-600 text-lg mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />

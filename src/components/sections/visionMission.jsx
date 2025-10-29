@@ -6,10 +6,10 @@ const VisionMission = () => {
   return (
     <section className="lg:py-15 py-10 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/5 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-      <div className="container relative z-10">
+      <div className="container relative z-10 px-3 sm:px-4 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10 lg:mb-15 px-3 sm:px-4">
           <SlideUp>
@@ -30,11 +30,11 @@ const VisionMission = () => {
         </div>
 
         {/* Vision & Mission Cards */}
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-8 lg:gap-12 max-w-6xl mx-auto px-3 sm:px-4">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 lg:gap-8 max-w-6xl mx-auto">
 
           {/* Vision Card */}
           <SlideUp delay={4}>
-            <div className="bg-white rounded-2xl lg:rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 group">
+            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 group">
               {/* Icon */}
               <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <FaEye className="text-white text-2xl lg:text-3xl" />
@@ -55,7 +55,7 @@ const VisionMission = () => {
 
           {/* Mission Card */}
           <SlideUp delay={5}>
-            <div className="bg-white rounded-2xl lg:rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-100 hover:border-green-300 group">
+            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-100 hover:border-green-300 group">
               {/* Icon */}
               <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <FaBullseye className="text-white text-2xl lg:text-3xl" />
@@ -77,9 +77,9 @@ const VisionMission = () => {
 
         {/* Core Values Section */}
         <SlideUp delay={6}>
-          <div className="mt-12 lg:mt-16 text-center px-3 sm:px-4">
+          <div className="mt-12 lg:mt-16 text-center">
             <h4 className="text-xl lg:text-2xl font-bold text-gray-800 mb-6">Our Core Values</h4>
-            <div className="flex flex-wrap justify-center gap-4 lg:gap-6 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-3 lg:gap-4 max-w-4xl mx-auto">
               <div className="bg-white px-6 py-3 rounded-full shadow-md border border-gray-200 hover:border-primary hover:shadow-lg transition-all duration-300">
                 <span className="text-gray-700 font-semibold">Expertise</span>
               </div>
