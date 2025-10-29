@@ -34,7 +34,7 @@ const VisionMission = () => {
 
           {/* Vision Card */}
           <SlideUp delay={4}>
-            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 group">
+            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-blue-100 hover:border-blue-300 group h-full flex flex-col">
               {/* Icon */}
               <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <FaEye className="text-white text-2xl lg:text-3xl" />
@@ -55,7 +55,7 @@ const VisionMission = () => {
 
           {/* Mission Card */}
           <SlideUp delay={5}>
-            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-100 hover:border-green-300 group">
+            <div className="bg-white rounded-2xl lg:rounded-3xl p-6 lg:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-green-100 hover:border-green-300 group h-full flex flex-col">
               {/* Icon */}
               <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                 <FaBullseye className="text-white text-2xl lg:text-3xl" />
