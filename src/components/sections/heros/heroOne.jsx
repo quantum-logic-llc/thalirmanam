@@ -58,7 +58,7 @@ const HeroOne = () => {
                 <Button asChild size="lg" className="bg-green-600 hover:bg-green-600 text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
                   <Link href="/contact-us">Contact Us</Link>
                 </Button>
-                <Button asChild size="lg" className="bg-secondary hover:bg-secondary text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <Button asChild size="lg" variant="outline" className="border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 text-base sm:text-lg rounded-full transition-all duration-300">
                   <Link href="/services">Our Services</Link>
                 </Button>
               </div>

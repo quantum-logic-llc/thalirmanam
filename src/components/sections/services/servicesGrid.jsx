@@ -297,7 +297,7 @@ const ServicesGrid = () => {
                 <div className="text-center mt-8 sm:mt-10 md:mt-12 px-3 sm:px-4">
                     <Link
                         href="/services"
-                        className="inline-flex items-center gap-3 bg-secondary hover:bg-secondary text-white font-semibold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                        className="inline-flex items-center gap-3 border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 text-base sm:text-lg rounded-full transition-all duration-300"
                     >
                         <span>View All Services</span>
                         <svg className="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
