@@ -5,6 +5,7 @@ import Image from 'next/image'
 import SectionName from '@/components/ui/sectionName'
 import Title from '@/components/ui/title'
 import SectionDescription from '@/components/ui/sectionDescription'
+import { Button } from '@/components/ui/button'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules'
 import 'swiper/css'
@@ -295,15 +296,9 @@ const ServicesGrid = () => {
 
                 {/* View All Services Button */}
                 <div className="text-center mt-8 sm:mt-10 md:mt-12 px-3 sm:px-4">
-                    <Link
-                        href="/services"
-                        className="inline-flex items-center gap-3 border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 text-base sm:text-lg rounded-full transition-all duration-300"
-                    >
-                        <span>View All Services</span>
-                        <svg className="w-5 h-5 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                    </Link>
+                    <Button asChild size="lg" variant="outline" className="border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 rounded-full transition-all duration-300">
+                        <Link href="/services">View All Services</Link>
+                    </Button>
                 </div>
             </div>
         </section>
