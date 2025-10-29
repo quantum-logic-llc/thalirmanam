@@ -61,7 +61,7 @@ const servicesWeServe = [
 
 const WhoWeServe = () => {
   return (
-    <section className="whoWeServe lg:py-15 py-10 bg-white relative overflow-hidden">
+    <section className="whoWeServe lg:py-15 py-10 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
       {/* Background Decoration */}
       <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-100/30 rounded-full blur-3xl"></div>

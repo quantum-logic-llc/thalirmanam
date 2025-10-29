@@ -11,7 +11,7 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const HeroOne = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden bg-white -mt-20">
+    <section className="relative w-full min-h-screen overflow-hidden -mt-20" style={{ backgroundColor: '#eff6ff' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen gap-8 lg:gap-12">
 

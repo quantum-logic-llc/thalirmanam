@@ -14,7 +14,7 @@ import { faqData } from '@/lib/fackdata/faqData'
 
 const FaqComp = () => {
   return (
-    <section className="lg:py-15 py-10 bg-gradient-to-br from-blue-50 to-purple-50">
+    <section className="lg:py-15 py-10" style={{ backgroundColor: '#eff6ff' }}>
       <div className="container">
         <div className="max-w-4xl mx-auto px-3 sm:px-4">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">

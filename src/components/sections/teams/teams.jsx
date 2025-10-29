@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 const Teams = () => {
   return (
-    <section className="lg:py-20 py-16 bg-white relative overflow-hidden">
+    <section className="lg:py-20 py-16 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-green-500/5 rounded-full blur-3xl"></div>

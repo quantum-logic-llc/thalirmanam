@@ -18,7 +18,7 @@ const Testimonial = () => {
     const nextRef = useRef(null)
 
     return (
-        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial bg-gray-50">
+        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container">
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
                     <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Customer Reviews</h2>

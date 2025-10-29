@@ -9,7 +9,7 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const FooterOne = () => {
     return (
-        <footer className="pt-[70px] pb-8 relative bg-gradient-to-br from-gray-50 to-blue-50">
+        <footer className="pt-[70px] pb-8 relative" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container">
                 {/* Main Footer Content */}
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 justify-between gap-10 lg:gap-12">

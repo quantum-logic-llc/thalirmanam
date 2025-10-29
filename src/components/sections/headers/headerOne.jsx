@@ -19,7 +19,7 @@ const HeaderOne = () => {
             <header id="header" className="sticky top-0 transition-[top] duration-300 z-50 w-full">
                 <div id="header-container">
                     <TopHeader />
-                    <div className="[.header-pinned_&]:shadow-lg bg-background border-b border-gray-100 transition-all duration-300">
+                    <div className="[.header-pinned_&]:shadow-lg border-b border-gray-100 transition-all duration-300" style={{ backgroundColor: '#eff6ff' }}>
                         <div className="container">
                             <div className="flex justify-between items-center h-20">
                                 <Logo width={200} height={100} />
