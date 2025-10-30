@@ -46,10 +46,10 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                     {/* <!-- right side start --> */}
                     <div className={`${isAboutpage ? "max-w-3xl" : "lg:max-w-[600px]"} lg:pt-0 pt-4`}>
                         <SlideUp delay={2}>
-                            <h2 className="text-orange-500 text-xl sm:text-2xl font-bold uppercase mb-3 sm:mb-4">About Us</h2>
+                            <h2 className="text-orange-500 font-bold uppercase mb-3 sm:mb-4" style={{ fontSize: '34px' }}>About Us</h2>
                         </SlideUp>
                         <SlideUp delay={3}>
-                            <Title size={"3.5xl"} className={"pb-5 text-gray-800"}>
+                            <Title size={"3.5xl"} className={"pb-5 text-gray-800"} style={{ fontSize: '36px' }}>
                                 Nurturing Health, Shaping Futures
                             </Title>
                         </SlideUp>
