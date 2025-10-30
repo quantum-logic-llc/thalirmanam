@@ -14,16 +14,16 @@ import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
 
 // Import service images
-import adhdImage from '@/assets/images/services/service12.png'
-import autismImage from '@/assets/images/services/autism1.png'
-import behavioralImage from '@/assets/images/services/behavioral-disorders1.png'
+import adhdImage from '@/assets/images/services/adhd2.png'
+import autismImage from '@/assets/images/services/Asd.png'
+import behavioralImage from '@/assets/images/services/behavioral-disorders2.png'
 import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'
 import developmentalDelaysImage from '@/assets/images/services/developmental-delays.png'
 import learningDisabilitiesImage from '@/assets/images/services/learning-disabilities1.png'
 import intellectualDisabilityImage from '@/assets/images/services/intellectual-disability.png'
-import schoolReadinessImage from '@/assets/images/services/service8.png'
+import schoolReadinessImage from '@/assets/images/services/schoolchild.png'
 import adolescentHealthImage from '@/assets/images/services/service9.png'
-import antenatalSessionsImage from '@/assets/images/services/service10.png'
+import antenatalSessionsImage from '@/assets/images/services/service13.png'
 import teenTransitionImage from '@/assets/images/services/service11.png'
 
 const servicesData = [

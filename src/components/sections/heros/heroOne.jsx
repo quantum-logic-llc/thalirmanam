@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from '@/components/ui/button'
 
-import herosec9 from "@/assets/images/banner/herosec9.png"
+import herogirl from "@/assets/images/banner/herogirl.png"
 import Image from 'next/image';
 
 import Link from 'next/link'
@@ -11,35 +11,39 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const HeroOne = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden -mt-20" style={{ backgroundColor: '#eff6ff' }}>
+    <section className="relative w-full min-h-screen overflow-hidden pt-10" style={{ backgroundColor: '#eff6ff' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen gap-2 lg:gap-10">
 
           {/* Left side - Image */}
-          <div className="w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-1">
-            <div className="relative w-full h-full">
-              <Image
-                src={herosec9.src || herosec9}
-                alt="Thalir Manam Center"
-                width={800}
-                height={600}
-                className="w-full h-auto object-contain"
-                priority
-              />
-            </div>
-          </div>
+         {/* Left side - Image */}
+<div className="w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-1">
+  <div className="relative w-[90%] h-auto"> {/* reduced image width slightly */}
+    <div className="relative rounded-3xl overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.4)] bg-green-50 p-2"> {/* green shadow and soft bg */}
+      <Image
+        src={herogirl.src || herogirl}
+        alt="Thalir Manam Center"
+        width={500} // reduced width
+        height={380} // reduced height
+        className="w-full h-auto object-contain rounded-3xl"
+        priority
+      />
+    </div>
+  </div>
+</div>
+
 
           {/* Right side - Text Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start justify-center text-center lg:text-left order-1 lg:order-2 space-y-6 lg:space-y-8">
 
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gray-800 font-bold">
-                  <span className="block bg-gradient-to-r from-green-600 via-green-600 to-green-600 bg-clip-text text-transparent">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl text-gray-800 ">
+                  <span className="block text-black ">
                     Thalir Manam
                   </span>
                 </h1>
-                <h2 className="text-1xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-gray-900">
+                <h2 className="text-1xl sm:text-3xl md:text-4xl lg:text-3xl font-bold text-gray-900">
                   Neuro Development Centre
                 </h2>
               </div>
