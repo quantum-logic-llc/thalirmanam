@@ -38,7 +38,7 @@ export const focusAreasData = [
     },
     {
         id: 4,
-        title: "Life Skills & Pre-Vocational Training",
+        title: "Pre-Vocational Training",
         image: lifeSkills,
         points: [
             "Financial literacy: budgeting, shopping",
