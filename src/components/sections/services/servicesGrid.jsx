@@ -19,7 +19,7 @@ import autismImage from '@/assets/images/services/Asd.png'
 import behavioralImage from '@/assets/images/services/behavioral-disorders2.png'
 import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'
 import developmentalDelaysImage from '@/assets/images/services/developmental-delays.png'
-import learningDisabilitiesImage from '@/assets/images/services/learning-disabilities1.png'
+import learningDisabilitiesImage from '@/assets/images/services/learning-disabilities2.png'
 import intellectualDisabilityImage from '@/assets/images/services/intellectual-disability.png'
 import schoolReadinessImage from '@/assets/images/services/schoolchild.png'
 import adolescentHealthImage from '@/assets/images/services/service9.png'
@@ -255,7 +255,7 @@ const ServicesGrid = () => {
                                             src={image}
                                             alt={title}
                                             fill
-                                            className="object-cover transition-transform duration-700"
+                                            className="object-cover  transition-transform duration-700"
                                             unoptimized
                                         />
                                     </div>
