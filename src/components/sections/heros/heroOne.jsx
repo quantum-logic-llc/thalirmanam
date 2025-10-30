@@ -39,7 +39,7 @@ const HeroOne = () => {
                 <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl text-gray-800">
                   <span className="block text-black">Thalir Manam</span>
                 </h1>
-                <h2 className="text-lg sm:text-2xl md:text-3xl lg:text-2xl font-bold text-gray-900">
+                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-bold text-gray-900">
                   Neuro Development Centre
                 </h2>
               </div>
