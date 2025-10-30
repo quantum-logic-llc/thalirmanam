@@ -9,33 +9,7 @@ export const menuList = [
         id: 2,
         path: "/about-us",
         label: "About Us",
-        dropDownMenu: [
-            {
-                id: 1,
-                path: "/about-us",
-                label: "About Thalir Manam"
-            },
-            {
-                id: 2,
-                path: "/about-us#our-mission",
-                label: "Our Mission"
-            },
-            {
-                id: 3,
-                path: "/about-us#our-vision",
-                label: "Our Vision"
-            },
-            {
-                id: 4,
-                path: "/about-us#meet-our-doctor",
-                label: "Meet Our Doctor"
-            },
-            {
-                id: 5,
-                path: "/about-us#dr-naveena-karthik",
-                label: "Dr. Naveena Karthik"
-            }
-        ]
+        dropDownMenu: false
     },
     {
         id: 3,

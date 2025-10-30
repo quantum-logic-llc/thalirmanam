@@ -1,12 +1,12 @@
 export const faqData = [
     {
         id:"one",
-        question:"What services does Thalir Manam offer?",
+        question:"What services?",
         ans:"Thalir Manam offers a wide range of services for neurodevelopmental issues, including Autism, ADHD, Cerebral Palsy, and learning disorders. We provide early intervention services, speech and language therapy, behavioral therapy, and more."
     },
     {
         id:"two",
-        question:"Who is Dr. Naveena Karthik?",
+        question:"About Dr Naveena",
         ans:"Dr. Naveena Karthik is a Developmental & Behavioural Paediatrician who leads the team at Thalir Manam. She is dedicated to providing comprehensive care and support for children with developmental and behavioral challenges."
     },
     {
