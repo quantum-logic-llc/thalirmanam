@@ -18,7 +18,7 @@ import adhdImage from '@/assets/images/services/adhd2.png'
 import autismImage from '@/assets/images/services/Asd.png'
 import behavioralImage from '@/assets/images/services/behavioral-disorders2.png'
 import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'
-import developmentalDelaysImage from '@/assets/images/services/developmental-delays.png'
+import developmentalDelaysImage from '@/assets/images/services/developmental-delays2.png'
 import learningDisabilitiesImage from '@/assets/images/services/learning-disabilities2.png'
 import intellectualDisabilityImage from '@/assets/images/services/intellectual-disability.png'
 import schoolReadinessImage from '@/assets/images/services/schoolchild.png'
@@ -250,7 +250,7 @@ const ServicesGrid = () => {
                                 <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
 
                                     {/* Image Header */}
-                                    <div className="relative w-full h-44 sm:h-52 md:h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
+                                    <div className="relative w-full h-48 sm:h-70 md:h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
                                         <Image
                                             src={image}
                                             alt={title}

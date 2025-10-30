@@ -11,26 +11,27 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const HeroOne = () => {
   return (
-    <section className="relative w-full min-h-screen overflow-hidden pt-10" style={{ backgroundColor: '#eff6ff' }}>
+    <section className="relative w-full min-h-screen overflow-hidden pt-5" style={{ backgroundColor: '#eff6ff' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen gap-2 lg:gap-10">
 
           {/* Left side - Image */}
          {/* Left side - Image */}
 <div className="w-full lg:w-1/2 flex items-center justify-center order-2 lg:order-1">
-  <div className="relative w-[90%] h-auto"> {/* reduced image width slightly */}
-    <div className="relative rounded-3xl overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.4)] bg-green-50 p-2"> {/* green shadow and soft bg */}
+  <div className="relative w-[90%] h-auto">
+    <div className="relative rounded-3xl overflow-hidden shadow-[0_0_25px_rgba(34,197,94,0.4)] bg-green-50 p-1">
       <Image
         src={herogirl.src || herogirl}
         alt="Thalir Manam Center"
-        width={500} // reduced width
-        height={380} // reduced height
+        width={500}
+        height={200} // ⬅️ Reduced image height
         className="w-full h-auto object-contain rounded-3xl"
         priority
       />
     </div>
   </div>
 </div>
+
 
 
           {/* Right side - Text Content */}

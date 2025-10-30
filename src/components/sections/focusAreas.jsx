@@ -51,7 +51,7 @@ const FocusAreaCard = ({ id, title, image, points }) => {
         <SlideUp delay={id + 2}>
             <div className="border border-[#F2F2F2] bg-background rounded-lg sm:rounded-[10px] overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 h-full flex flex-col">
                 {/* Image */}
-                <div className="relative h-[220px] sm:h-[250px] md:h-[280px] w-full overflow-hidden bg-gradient-to-br from-cream-foreground/40 to-green-foreground/5">
+                <div className="relative h-[220px] sm:h-[250px] md:h-[250px] w-full overflow-hidden bg-gradient-to-br from-cream-foreground/40 to-green-foreground/5">
                     <Image
                         src={image}
                         alt={title}
