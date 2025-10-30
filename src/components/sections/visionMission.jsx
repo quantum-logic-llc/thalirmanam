@@ -4,7 +4,7 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const VisionMission = () => {
   return (
-    <section className="lg:py-15 py-10 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50 relative overflow-hidden">
+    <section className="lg:py-15 py-10 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
       {/* Decorative background elements */}
       <div className="absolute top-0 left-0 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-green-500/5 rounded-full blur-3xl pointer-events-none"></div>

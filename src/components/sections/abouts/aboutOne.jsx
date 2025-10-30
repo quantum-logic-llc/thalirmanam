@@ -22,7 +22,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
     ]
 
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 bg-gradient-to-br from-white via-blue-50 to-purple-50 overflow-hidden">
+        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container">
                 <div className={cn("grid lg:grid-cols-[45%_55%] grid-cols-1 items-center lg:gap-x-16 gap-y-8 px-3 sm:px-4", gridClass)}>
                     <div className='flex lg:justify-end justify-center px-4'>

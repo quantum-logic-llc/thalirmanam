@@ -8,8 +8,8 @@ import Image from 'next/image';
 
 const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) => {
     return (
-        <div className="lg:pb-15 pb-10">
-            <div className="bg-warm lg:py-15 py-10">
+        <div className="">
+            <div className="lg:py-15 py-10" style={{ backgroundColor: '#eff6ff' }}>
                 <div className="container">
                     <div className="flex  md:flex-row flex-col justify-between items-center gap-10">
                         <div className="">
