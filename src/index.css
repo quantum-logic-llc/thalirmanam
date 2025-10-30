@@ -177,3 +177,11 @@
 .max-w-2xl {
   max-width: 38rem;
 }
+
+/* Hero section Thalir Manam title styling */
+.text-black {
+  --tw-text-opacity: 1;
+  color: green;
+  font-weight: bold;
+  font-size: 80px;
+}
