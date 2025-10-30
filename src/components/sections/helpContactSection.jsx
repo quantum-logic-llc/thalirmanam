@@ -11,13 +11,13 @@ const HelpContactSection = () => {
           {/* Heading */}
           <div className="space-y-3 sm:space-y-4">
             <h2 className="font-bold text-orange-500 uppercase" style={{ fontSize: '36px', lineHeight: '1' }}>
-              Can't find what you're looking for?
+              Concerned about your child or teen’s development?
             </h2>
           </div>
 
           {/* Description */}
           <p className="max-w-2xl text-gray-600" style={{ fontSize: '1.2rem', lineHeight: '2rem' }}>
-            Our team of experts is here to support you and your child. Reach out to us for personalized care and guidance.
+           We are here to help
           </p>
 
           {/* CTA Button */}
@@ -29,7 +29,7 @@ const HelpContactSection = () => {
             >
               <Link href="/contact-us" className="inline-flex items-center gap-3">
                 <FaPhone className="text-lg sm:text-xl" />
-                <span>Contact Us</span>
+                <span>book an appointment to talk with us.</span>
               </Link>
             </Button>
           </div>
