@@ -6,7 +6,7 @@ import { cn } from '@/lib/utils';
 const icons = [
     {
         id: 1,
-        link: "https://www.facebook.com/people/Thalir-Manam/100083365155092/",
+        link: "https://m.facebook.com/naveena.karthikeyan/",
         icon: <FaFacebookF />
     },
     {
