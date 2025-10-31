@@ -89,7 +89,7 @@ const HeroSlide = ({ slide }) => {
           src={image}
           alt={title}
           fill
-          className="object-cover"
+          className="object-cover object-top"
           priority
         />
         {/* Simple gradient overlay */}
@@ -125,7 +125,7 @@ const HeroSlide = ({ slide }) => {
 
             {/* Description */}
             <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-black-500 leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-black-500 font-semibold leading-relaxed max-w-2xl">
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
                     return (
