@@ -87,8 +87,8 @@ const ContactSection = () => {
                                     <div>
                                         <h5 className="font-semibold text-xl mb-1">Email Us</h5>
                                         <p className="text-muted-foreground text-base">
-                                            <a href="mailto:drnaveena94@gmail.com" className="hover:text-primary transition-colors">
-                                                drnaveena94@gmail.com
+                                            <a href="mailto:thalirmanam5@gmail.com" className="hover:text-primary transition-colors">
+                                                thalirmanam5@gmail.com
                                             </a>
                                         </p>
                                     </div>
@@ -102,7 +102,7 @@ const ContactSection = () => {
                                     <div>
                                         <h5 className="font-semibold text-xl mb-1">Call Us</h5>
                                         <p className="text-muted-foreground text-base">
-                                            <a href="tel:+918925914920" className="hover:text-primary transition-colors">+91 89259 14920</a>
+                                            <a href="tel:+918925336967" className="hover:text-primary transition-colors">+91 89253 36967</a>
                                         </p>
                                     </div>
                                 </div>
