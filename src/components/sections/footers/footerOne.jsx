@@ -51,7 +51,7 @@ const FooterOne = () => {
                                     </span>
                                     <div>
                                         <p className="font-medium text-gray-800">Email</p>
-                                        <a href="mailto:drnaveena94@gmail.com" className="text-gray-600 text-sm hover:text-primary transition-colors">drnaveena94@gmail.com</a>
+                                        <a href="mailto:thalirmanam5@gmail.com" className="text-gray-600 text-sm hover:text-primary transition-colors">thalirmanam5@gmail.com</a>
                                     </div>
                                 </div>
                             </li>
@@ -62,7 +62,7 @@ const FooterOne = () => {
                                     </span>
                                     <div>
                                         <p className="font-medium text-gray-800">Phone</p>
-                                        <a href="tel:+918925914920" className="text-gray-600 text-sm hover:text-primary transition-colors">+91 89259 14920</a>
+                                        <a href="tel:+91 8925336967" className="text-gray-600 text-sm hover:text-primary transition-colors">+91 8925336967</a>
                                     </div>
                                 </div>
                             </li>
