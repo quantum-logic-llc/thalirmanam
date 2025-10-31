@@ -84,7 +84,7 @@ const HeroSlide = ({ slide }) => {
       style={{ backgroundColor: bgColor }}
     >
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 ">
         <Image
           src={image}
           alt={title}
@@ -97,27 +97,27 @@ const HeroSlide = ({ slide }) => {
       </div>
 
       {/* Content Container */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+      <div className="container mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
 
           {/* Left Side - Text Content */}
           <div className="space-y-6 sm:space-y-8">
 
             {/* Badge */}
-            <TextReveal delay={0.1}>
+            {/* <TextReveal delay={0.1}>
               <div className="inline-flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                 Thalir Manam Center
               </div>
-            </TextReveal>
+            </TextReveal> */}
 
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
                   {title}
                 </h1>
-                <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-green-400">
+                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-black-400">
                   {subtitle}
                 </h2>
               </div>
@@ -125,7 +125,7 @@ const HeroSlide = ({ slide }) => {
 
             {/* Description */}
             <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-gray-100 leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-black-500 leading-relaxed max-w-2xl">
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
                     return (
@@ -161,7 +161,7 @@ const HeroSlide = ({ slide }) => {
             </SlideUp>
 
             {/* Trust Badges */}
-            <SlideUp delay={0.8}>
+            {/* <SlideUp delay={0.8}>
               <div className="flex flex-wrap gap-4 pt-4">
                 <div className="flex items-center gap-2 text-white">
                   <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -182,7 +182,7 @@ const HeroSlide = ({ slide }) => {
                   <span className="font-medium">Family Centered</span>
                 </div>
               </div>
-            </SlideUp>
+            </SlideUp> */}
           </div>
 
           {/* Right Side - Empty space for image to show through */}

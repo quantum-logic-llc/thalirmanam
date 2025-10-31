@@ -45,7 +45,7 @@ const StickyHeader = ({ children, top = '0px' }) => {
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
-    }, []);
+    }, [top]);
 
 
     return (

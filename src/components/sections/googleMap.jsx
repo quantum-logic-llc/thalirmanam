@@ -52,7 +52,7 @@ const GoogleMap = () => {
                             <div>
                                 <h4 className="text-xl font-bold mb-3">Need Directions?</h4>
                                 <p className="text-muted-foreground mb-4">
-                                    We're located on Kundrathur Main Road, easily accessible from all parts of Chennai.
+                                    We&rsquo;re located on Kundrathur Main Road, easily accessible from all parts of Chennai.
                                 </p>
                                 <a
                                     href="https://www.google.com/maps/dir//Chennai,+Tamil+Nadu,+India"

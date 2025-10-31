@@ -29,7 +29,7 @@ const Programs = () => {
             <SectionName className={"text-green-foreground"}>Our Programs</SectionName>
             <Title size={"3.5xl"} className={"lg:max-w-[700px] mt-3"}>Specialized Programs for Every Child</Title>
             <p className="text-muted-foreground mt-4 max-w-2xl text-base lg:text-lg">
-                Comprehensive developmental support tailored to each child's unique needs and potential
+                Comprehensive developmental support tailored to each child&rsquo;s unique needs and potential
             </p>
         </div>
 

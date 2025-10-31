@@ -16,7 +16,7 @@ const MobileMenu = ({ isMobleMenuActive, setIsMobleMenuActive }) => {
     useEffect(() => {
         setDropdownActive(null)
         setIsMobleMenuActive(false)
-    }, [pathname])
+    }, [pathname, setIsMobleMenuActive])
     
     return (
         <div className="block xl:hidden">

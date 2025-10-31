@@ -9,7 +9,7 @@ const ContactAddress = () => {
                 <div className="text-center mb-12">
                     <h2 className="text-3xl lg:text-4xl font-bold mb-3">Visit Us</h2>
                     <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                        Multiple ways to reach out - we're here to help your family
+                        Multiple ways to reach out - we&rsquo;re here to help your family
                     </p>
                 </div>
 

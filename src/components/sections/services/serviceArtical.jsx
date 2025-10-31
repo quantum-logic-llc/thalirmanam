@@ -40,7 +40,7 @@ const ServiceArtical = ({ service }) => {
                             Ready to Get Started?
                         </h3>
                         <p className="text-gray-700 mb-6">
-                            If you have concerns about your child's development or would like to learn more about our {service.service_name} services, we're here to help.
+                            If you have concerns about your child&rsquo;s development or would like to learn more about our {service.service_name} services, we&rsquo;re here to help.
                         </p>
                         <a
                             href="/contact-us"

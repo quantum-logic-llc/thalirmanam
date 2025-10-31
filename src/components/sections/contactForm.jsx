@@ -35,8 +35,8 @@ const ContactForm = () => {
                     {/* Right Side - Form */}
                     <div className="lg:order-2 order-1">
                         <div className="mb-8">
-                            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">Let's Connect</h2>
-                            <p className="text-lg text-muted-foreground">We're here to answer your questions and support your child's journey to success.</p>
+                            <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">Let&rsquo;s Connect</h2>
+                            <p className="text-lg text-muted-foreground">We&rsquo;re here to answer your questions and support your child&rsquo;s journey to success.</p>
                         </div>
 
                         <div className="bg-background shadow-xl rounded-2xl lg:p-10 p-6 border border-warm/20">
