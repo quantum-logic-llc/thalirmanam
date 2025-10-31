@@ -93,7 +93,7 @@ const HeroSlide = ({ slide }) => {
           priority
         />
         {/* Simple gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div>
+        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div> */}
       </div>
 
       {/* Content Container */}
@@ -153,7 +153,7 @@ const HeroSlide = ({ slide }) => {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-white/10 backdrop-blur-sm border-2 border-white hover:bg-white/20 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300"
+                  className="bg-white/10 border-2 border-white hover:bg-white/20 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300"
                 >
                   <Link href="/services">Explore Services</Link>
                 </Button>

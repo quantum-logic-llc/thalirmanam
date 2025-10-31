@@ -1,4 +1,4 @@
-import herogirl2 from "@/assets/images/banner/herogirl2.png";
+import herogirl2 from "@/assets/images/banner/bannerboy.png";
 import herosec2 from "@/assets/images/banner/herosec2.png";
 import herosec3 from "@/assets/images/banner/herosec3.png";
 
