@@ -10,8 +10,14 @@ export const seoConfig = {
       keywords: 'child development, speech therapy, behavioral therapy, autism support, special needs, Chennai'
     },
     'home-2': {
-      title: 'Thalir Manam - Nurturing Minds, Shaping Futures',
-      description: 'Professional child development and therapy services in Chennai'
+      title: 'Thalir Manam - Supporting Every Stage of Development',
+      description: 'From babies to teens, comprehensive family-centered care for developmental challenges. Specialized support for autism, ADHD, and learning disabilities with evidence-based interventions.',
+      keywords: 'child development, teen transition, family care, autism support, ADHD therapy, developmental services, Chennai'
+    },
+    home2: {
+      title: 'Thalir Manam - Supporting Every Stage of Development',
+      description: 'From babies to teens, comprehensive family-centered care for developmental challenges. Specialized support for autism, ADHD, and learning disabilities with evidence-based interventions.',
+      keywords: 'child development, teen transition, family care, autism support, ADHD therapy, developmental services, Chennai'
     },
     'about-us': {
       title: 'About Thalir Manam - Child Development Center',

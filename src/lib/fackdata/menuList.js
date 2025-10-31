@@ -7,12 +7,18 @@ export const menuList = [
     },
     {
         id: 2,
+        path: "/home2",
+        label: "Home2",
+        dropDownMenu: false
+    },
+    {
+        id: 3,
         path: "/about-us",
         label: "About Us",
         dropDownMenu: false
     },
     {
-        id: 3,
+        id: 4,
         path: "/services",
         label: "Services",
         dropDownMenu: [
@@ -74,19 +80,19 @@ export const menuList = [
         ]
     },
     {
-        id: 4,
+        id: 5,
         path: "/appointments",
         label: "Appointments",
         dropDownMenu: false
     },
     {
-        id: 5,
+        id: 6,
         path: "/parents-corner",
         label: "Parent's Corner",
         dropDownMenu: false
     },
     {
-        id: 6,
+        id: 7,
         path: "/contact-us",
         label: "Contact Us",
         dropDownMenu: false
