@@ -16,3 +16,4 @@ export { default as Scissors } from './scissors';
 export { default as TeddyBear } from './teddy-bear';
 export { default as ThreeLine } from './threeLine';
 export { default as Toys } from './toys';
+export { default as Teenager } from './teenager';

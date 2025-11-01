@@ -27,7 +27,7 @@ const FocusAreas = () => {
 
                 {/* Cards Grid */}
                 <div className="lg:pt-10 pt-5 px-3 sm:px-4">
-                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-7.5">
+                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-7.5">
                         {focusAreasData.map((area) => (
                             <FocusAreaCard
                                 key={area.id}

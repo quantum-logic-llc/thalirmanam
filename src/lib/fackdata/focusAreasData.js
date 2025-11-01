@@ -5,6 +5,8 @@ import safetyBoundaries from "@/assets/images/services/team3.png"
 import lifeSkills from "@/assets/images/services/team8.png"
 import learningSupport from "@/assets/images/services/team5.png"
 import puberty from "@/assets/images/services/team6.png"
+import adhd from "@/assets/images/services/team1.png"
+import autism from "@/assets/images/services/team4.png"
 
 export const focusAreasData = [
     {
@@ -60,6 +62,26 @@ export const focusAreasData = [
         points: [
             "Understanding physical and emotional changes, puberty training",
             "Personal boundaries and healthy relationships"
+        ]
+    },
+    {
+        id: 7,
+        title: "ADHD in Teens",
+        image: adhd,
+        points: [
+            "Strategies for managing attention and focus",
+            "Impulse control and organizational skills",
+            "Support for academic and social challenges"
+        ]
+    },
+    {
+        id: 8,
+        title: "Autism in Girls",
+        image: autism,
+        points: [
+            "Understanding the unique presentation of autism in girls",
+            "Social skills and navigating friendships",
+            "Support for sensory sensitivities and anxiety"
         ]
     }
 ]
