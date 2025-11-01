@@ -1,4 +1,6 @@
 import '../src/index.css'
+import WhatsAppIcon from '../src/components/ui/whatsappIcon'
+import { MessageProvider } from '../src/context/messageContext'
 
 export const metadata = {
   title: 'Thalirmanam - Nurturing Young Minds',
@@ -8,7 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden">
+        <MessageProvider>
+          {children}
+          <WhatsAppIcon />
+        </MessageProvider>
+      </body>
     </html>
   )
 }

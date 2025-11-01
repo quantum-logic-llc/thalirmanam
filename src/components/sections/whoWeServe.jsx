@@ -135,7 +135,7 @@ const WhoWeServe = () => {
               size="lg"
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-sm sm:text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              <Link href="/contact-us">Book an Appointment</Link>
+              <Link href="mailto:thalirmanam5@gmail.com" target="_blank" rel="noopener noreferrer">Book an Appointment</Link>
             </Button>
           </div>
         </SlideUp>

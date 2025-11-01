@@ -41,7 +41,7 @@ const CommitmentBanner = () => {
               size="lg"
               className="bg-orange-500 hover:bg-orange-600 text-white border-2 border-white hover:border-orange-600 text-sm sm:text-base md:text-lg px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 rounded-full shadow-2xl hover:shadow-orange-500/50 transition-all duration-300 hover:scale-105 font-bold"
             >
-              <Link href="/contact-us" className="inline-flex items-center gap-2 sm:gap-3">
+              <Link href="mailto:thalirmanam5@gmail.com" className="inline-flex items-center gap-2 sm:gap-3" target="_blank" rel="noopener noreferrer">
                 <FaCalendarCheck className="text-base sm:text-lg md:text-xl" />
                 <span>Book an Appointment</span>
               </Link>

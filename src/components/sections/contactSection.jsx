@@ -1,4 +1,3 @@
-
 "use client"
 import React, { useState } from 'react';
 import Input from '../ui/input'
@@ -6,8 +5,10 @@ import { FaEnvelope, FaLocationDot, FaPhone, FaUser } from 'react-icons/fa6'
 import { Button } from '../ui/button'
 import SlideUp from '@/lib/animations/slideUp';
 import SlideLeft from '@/lib/animations/slideLeft';
+import { useMessage } from '@/context/messageContext';
 
 const ContactSection = () => {
+    const { setMessage } = useMessage();
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -23,6 +24,9 @@ const ContactSection = () => {
             ...prevData,
             [id]: value,
         }));
+        if (id === 'message') {
+            setMessage(value);
+        }
     };
 
     const handleSubmit = async (e) => {
@@ -47,6 +51,7 @@ const ContactSection = () => {
                     location: '',
                     message: '',
                 });
+                setMessage('');
             } else {
                 setStatus('error');
             }
