@@ -93,15 +93,15 @@ const HeroSlide = ({ slide }) => {
           priority
         />
         {/* Simple gradient overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       {/* Content Container */}
       <div className="container mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-6 items-center">
+        <div className="grid lg:grid-cols-4 gap-6 items-center">
 
           {/* Left Side - Text Content */}
-          <div className="space-y-6 sm:space-y-8">
+          <div className="lg:col-span-4 space-y-6 sm:space-y-8">
 
             {/* Badge */}
             {/* <TextReveal delay={0.1}>
@@ -114,10 +114,10 @@ const HeroSlide = ({ slide }) => {
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-green-600 leading-tight">
                   {title}
                 </h1>
-                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-white">
+                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-black-500 leading-tight">
                   {subtitle}
                 </h2>
               </div>
@@ -186,7 +186,7 @@ const HeroSlide = ({ slide }) => {
           </div>
 
           {/* Right Side - Empty space for image to show through */}
-          <div className="hidden lg:block"></div>
+          <div className="lg:col-span-1 hidden lg:block"></div>
 
         </div>
       </div>
