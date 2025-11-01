@@ -6,7 +6,7 @@ import { blogDataTwo } from '@/lib/fackdata/bolgDataTwo'
 
 const BlogsTwo = () => {
     return (
-        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 ">
+        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 bg-white">
             <div className="container">
                 <div className="flex flex-col justify-center items-center">
                     <SectionName>Our Blogs</SectionName>

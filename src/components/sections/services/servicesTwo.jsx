@@ -4,7 +4,7 @@ import ServiceCardTwo from './serviceCardTwo'
 
 const ServicesTwo = () => {
     return (
-        <div className="lg:pb-15 pb-10">
+        <div className="lg:pb-15 pb-10 bg-blue-100">
             <div className="container">
                 <div className="lg:pl-11">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-y-7.5 lg:gap-x-[74px] gap-x-5 lg:pt-15 pt-5">

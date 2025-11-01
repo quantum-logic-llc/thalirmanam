@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const NewsletterTwo = () => {
     return (
-        <section className="lg:pt-15 pt-10 ">
+        <section className="lg:pt-15 pt-10 bg-blue-100">
             <div className="bg-warm py-12.5 relative z-[1]">
                 <div className="container">
                     <div className="flex md:flex-row flex-col justify-between items-center gap-10">

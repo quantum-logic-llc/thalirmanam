@@ -7,7 +7,7 @@ import BabyBody from '@/assets/icons/baby-body'
 
 const SuccessProjectTwo = () => {
     return (
-        <div className="lg:pt-15 lg:pb-15 pt-10 pb-10">
+        <div className="lg:pt-15 lg:pb-15 pt-10 pb-10 bg-blue-100">
             <div className="container">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-7.5">
                     <CardTwo icon={<Crayon/>} number={"1230"} title={"Team member"}/>

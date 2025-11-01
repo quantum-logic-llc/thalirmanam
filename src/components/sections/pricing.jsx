@@ -9,7 +9,7 @@ import SlideUp from '@/lib/animations/slideUp'
 
 const Pricing = () => {
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10">
+        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 bg-blue-100">
             <div className="container">
                 <div className="flex flex-col justify-center items-center">
                     <SectionName className={"text-primary-foreground"}>Our Pricing</SectionName>

@@ -13,7 +13,7 @@ import Image from 'next/image'
 
 const AboutTwo = () => {
     return (
-        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10">
+        <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 bg-white">
             <div className="container">
                 <div className="grid xl:grid-cols-[45%_52%] lg:grid-cols-[40%_44%] grid-cols-1 xl:justify-between gap-7.5">
                     <div className="">

@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 const HeroTwo = () => {
     return (
-        <section className="lg:pb-15 pb-10">
+        <section className="lg:pb-15 pb-10 bg-blue-100">
             <div className="bg-warm min-[1800px]:pt-[291px] pt-48 min-[1800px]:pb-[179px] lg:pb-32 pb-20 relative z-[1] overflow-hidden after:absolute after:bottom-0 after:left-0 after:bg-[linear-gradient(180deg,_rgba(255,255,255,0.00)_0%,_#FFF_100%)] after:w-full after:h-full after:max-h-[257px]">
                 <div className="container">
                     <div className="max-w-[633px] w-full h-full bg-[linear-gradient(180deg,_rgba(255,255,255,0.00)_0%,_#FFF_50%_rgba(255,255,255,0.00)_100%)]">
