@@ -93,7 +93,7 @@ const HeroSlide = ({ slide }) => {
           priority
         />
         {/* Simple gradient overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"></div> */}
+        <div className="absolute inset-0 bg-black/50"></div>
       </div>
 
       {/* Content Container */}
@@ -114,10 +114,10 @@ const HeroSlide = ({ slide }) => {
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-black leading-tight">
+                <h1 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
                   {title}
                 </h1>
-                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-black-400">
+                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-white">
                   {subtitle}
                 </h2>
               </div>
@@ -125,7 +125,7 @@ const HeroSlide = ({ slide }) => {
 
             {/* Description */}
             <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-black-500 font-semibold leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-white font-semibold leading-relaxed max-w-2xl">
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
                     return (
