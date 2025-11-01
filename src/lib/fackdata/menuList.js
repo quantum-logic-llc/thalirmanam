@@ -1,11 +1,5 @@
 export const menuList = [
     {
-        id: 1,
-        path: "/",
-        label: "Home",
-        dropDownMenu: false
-    },
-    {
         id: 2,
         path: "/home2",
         label: "Home2",
