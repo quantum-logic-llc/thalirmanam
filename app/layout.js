@@ -1,19 +1,20 @@
+'use client';
 import '../src/index.css'
 import WhatsAppIcon from '../src/components/ui/whatsappIcon'
+import WhatsAppChatBox from '../src/components/ui/whatsappChatBox'
 import { MessageProvider } from '../src/context/messageContext'
-
-export const metadata = {
-  title: 'Thalirmanam - Nurturing Young Minds',
-  description: 'Thalirmanam is a nurturing and stimulating environment where children can learn, grow, and thrive. We offer a variety of programs for children of all ages, from infants to preschoolers.',
-}
+import { useState } from 'react';
 
 export default function RootLayout({ children }) {
+  const [isChatBoxVisible, setIsChatBoxVisible] = useState(false);
+
   return (
     <html lang="en">
       <body className="overflow-x-hidden">
         <MessageProvider>
           {children}
-          <WhatsAppIcon />
+          <WhatsAppIcon onClick={() => setIsChatBoxVisible(!isChatBoxVisible)} />
+          <WhatsAppChatBox isVisible={isChatBoxVisible} onClose={() => setIsChatBoxVisible(false)} />
         </MessageProvider>
       </body>
     </html>
