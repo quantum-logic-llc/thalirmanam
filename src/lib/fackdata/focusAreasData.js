@@ -5,8 +5,8 @@ import safetyBoundaries from "@/assets/images/services/team3.png"
 import lifeSkills from "@/assets/images/services/team9.png"
 import learningSupport from "@/assets/images/services/team5.png"
 import puberty from "@/assets/images/services/team6.png"
-import adhd from "@/assets/images/services/team1.png"
-import autism from "@/assets/images/services/team4.png"
+import adhd from "@/assets/images/services/team10.png"
+import autism from "@/assets/images/services/team11.png"
 
 export const focusAreasData = [
     {
