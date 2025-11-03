@@ -54,6 +54,11 @@ export const seoConfig = {
     'parents-corner': {
       title: 'Thalir Manam - Parent\'s Corner',
       description: 'Resources and guidance for parents of children with special needs and developmental challenges'
+    },
+    appointments: {
+      title: 'Book an Appointment - Thalir Manam',
+      description: 'Schedule an appointment with our child development specialists. Book speech therapy, behavioral therapy, and developmental assessments in Chennai',
+      keywords: 'book appointment, child therapy, speech therapy booking, developmental assessment, Chennai child development center'
     }
   }
 }

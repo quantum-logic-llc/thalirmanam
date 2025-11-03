@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import banner from "@/assets/images/banner/banner-v2-thumb.png"
 import kite from "@/assets/images/shapes/kite.png"

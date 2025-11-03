@@ -1,3 +1,4 @@
+'use client'
 import { pricingData } from '@/lib/fackdata/pricingData'
 import React from 'react'
 import { FaAnglesRight, FaXmark } from 'react-icons/fa6'

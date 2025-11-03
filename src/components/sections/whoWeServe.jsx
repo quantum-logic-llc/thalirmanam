@@ -135,7 +135,7 @@ const WhoWeServe = () => {
               size="lg"
               className="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 sm:px-6 md:px-8 py-4 sm:py-5 md:py-6 text-sm sm:text-base shadow-lg hover:shadow-xl transition-all hover:scale-105"
             >
-              <Link href="mailto:thalirmanam5@gmail.com" target="_blank" rel="noopener noreferrer">Book an Appointment</Link>
+              <Link href="mailto:thalirmanam5@gmail.com?subject=Appointment%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20provide%20the%20following%20details%3A%0A-%20Name%3A%0A-%20Phone%3A%0A-%20Preferred%20Date%3A%0A-%20Service%20Required%3A%0A%0AThank%20you." target="_blank" rel="noopener noreferrer">Book an Appointment</Link>
             </Button>
           </div>
         </SlideUp>

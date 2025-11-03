@@ -97,7 +97,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                         <SlideUp delay={8}>
                             <div className='flex flex-col sm:flex-row gap-4 lg:mt-10 mt-7'>
                                 <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                                    <Link href="/contact-us" className="inline-flex items-center gap-2">
+                                    <Link href="mailto:thalirmanam5@gmail.com?subject=Appointment%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20provide%20the%20following%20details%3A%0A-%20Name%3A%0A-%20Phone%3A%0A-%20Preferred%20Date%3A%0A-%20Service%20Required%3A%0A%0AThank%20you." target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                                         <FaCalendarCheck />
                                         <span>Book Appointment</span>
                                     </Link>

@@ -1,5 +1,6 @@
+'use client'
 import React from 'react'
-import about_bg_2 from "@/assets/images/about/about-2.png"
+import about_bg_2 from "@/assets/images/about/about_2.png"
 import about_bg_3 from "@/assets/images/about/about-3.png"
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
