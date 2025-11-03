@@ -126,11 +126,11 @@ const ContactSectionNew = () => {
                             Get in Touch
                         </span>
                         <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                            We'd Love to Hear From You
+                            We&apos;d Love to Hear From You
                         </h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Have questions about our services? Want to schedule a consultation?
-                            Reach out to us and we'll get back to you as soon as possible.
+                            Reach out to us and we&apos;ll get back to you as soon as possible.
                         </p>
                     </SlideUp>
                 </div>
@@ -283,7 +283,7 @@ const ContactSectionNew = () => {
                                 {status === 'success' && (
                                     <div className="bg-green-50 border-2 border-green-500 text-green-700 px-6 py-4 rounded-xl text-center animate-pulse">
                                         <p className="font-semibold">✓ Message Sent Successfully!</p>
-                                        <p className="text-sm mt-1">We'll get back to you within 24 hours.</p>
+                                        <p className="text-sm mt-1">We&apos;ll get back to you within 24 hours.</p>
                                     </div>
                                 )}
                                 {status === 'error' && (

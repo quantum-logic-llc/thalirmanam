@@ -131,7 +131,7 @@ const AppointmentBooking = () => {
                         </div>
                         <h2 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">Schedule Your Visit</h2>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                            Take the first step towards your child's development. Our team of specialists is ready to support your family's journey.
+                            Take the first step towards your child&apos;s development. Our team of specialists is ready to support your family&apos;s journey.
                         </p>
                     </SlideUp>
                 </div>
@@ -164,7 +164,7 @@ const AppointmentBooking = () => {
                                 {/* Child Name and Age */}
                                 <div className="grid sm:grid-cols-2 grid-cols-1 gap-6">
                                     <div className="relative">
-                                        <label htmlFor="childName" className="block text-sm font-semibold mb-2 text-gray-700">Child's Name <span className="text-red-500">*</span></label>
+                                        <label htmlFor="childName" className="block text-sm font-semibold mb-2 text-gray-700">Child&apos;s Name <span className="text-red-500">*</span></label>
                                         <div className="relative">
                                             <span className="absolute left-4 top-1/2 -translate-y-1/2 text-primary">
                                                 <FaChild />
@@ -182,7 +182,7 @@ const AppointmentBooking = () => {
                                     </div>
 
                                     <div className="relative">
-                                        <label htmlFor="childAge" className="block text-sm font-semibold mb-2 text-gray-700">Child's Age <span className="text-red-500">*</span></label>
+                                        <label htmlFor="childAge" className="block text-sm font-semibold mb-2 text-gray-700">Child&apos;s Age <span className="text-red-500">*</span></label>
                                         <div className="relative">
                                             <Input
                                                 type="number"
@@ -308,7 +308,7 @@ const AppointmentBooking = () => {
                                     <textarea
                                         name="concerns"
                                         id="concerns"
-                                        placeholder="Please share any specific concerns about your child's development or behavior..."
+                                        placeholder="Please share any specific concerns about your child&apos;s development or behavior..."
                                         value={formData.concerns}
                                         onChange={handleChange}
                                         className="w-full min-h-32 rounded-xl border-2 text-[#686868] placeholder:text-[#A0A0A0] border-[#E5E5E5] px-5 py-4 outline-none focus:border-primary transition-colors resize-none"

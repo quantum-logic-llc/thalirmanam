@@ -37,11 +37,11 @@ export async function generateMetadata({ params }) {
 const ServiceHero = ({ title, description, icon }) => {
   const IconComponent = Icons[toPascalCase(icon)];
   return (
-    <section className="bg-gradient-to-r from-green-50 to-cyan-50 py-20">
+    <section className="bg-gradient-to-r from-green-50 to-cyan-50 py-16">
       <div className="container mx-auto px-4 text-center">
-        {IconComponent && <IconComponent className="w-16 h-16 mx-auto mb-4 text-green-500" />}
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">{title}</h1>
-        <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">{description}</p>
+        {IconComponent && <IconComponent className="w-14 h-14 mx-auto mb-4 text-green-500" />}
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">{title}</h1>
+        <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">{description}</p>
       </div>
     </section>
   );
@@ -74,36 +74,19 @@ export default function ServiceDetailsPage({ params }) {
       <HeaderOne />
       <main className="bg-white">
         <ServiceHero title={service.service_name} description={service.service_details} icon={service.src} />
-        <div className="container mx-auto py-16 px-4">
-          <div className="grid lg:grid-cols-12 gap-12">
-            <div className="lg:col-span-8">
-              <article
-                className="prose lg:prose-xl max-w-none"
-                dangerouslySetInnerHTML={{ __html: service.content }}
-              />
-            </div>
-            <aside className="lg:col-span-4">
-              <div className="sticky top-24 bg-gray-50 p-8 rounded-lg shadow-md">
-                <h3 className="text-2xl font-bold text-gray-800 mb-6">Other Services</h3>
-                <ul className="space-y-4">
-                  {otherServices.map((s) => (
-                    <li key={s.id}>
-                      <Link href={`/services/${s.slug}`} className="group flex items-center">
-                        <span className="text-green-500 group-hover:text-green-700 transition-colors">
-                          <svg className="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
-                        </span>
-                        <span className="text-gray-700 group-hover:text-gray-900 font-medium transition-colors">{s.service_name}</span>
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-10">
-                  <Link href="/contact-us" className="w-full text-center bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition-colors block">
-                    Book a Consultation
-                  </Link>
-                </div>
-              </div>
-            </aside>
+        <div className="container mx-auto py-12 px-4 max-w-5xl">
+          <article
+            className="prose prose-sm md:prose-base max-w-none service-content-custom"
+            dangerouslySetInnerHTML={{ __html: service.content }}
+          />
+
+          {/* Call to Action Section */}
+          <div className="mt-12 bg-gradient-to-r from-green-50 to-cyan-50 p-8 rounded-xl text-center">
+            <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to Get Started?</h3>
+            <p className="text-gray-600 mb-6">Book a consultation with our expert team to discuss your child&apos;s needs.</p>
+            <Link href="/appointments" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl">
+              Book an Appointment
+            </Link>
           </div>
         </div>
       </main>
