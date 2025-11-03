@@ -5,9 +5,9 @@ export const servicesDataOne = [
         service_name: "Attention Deficit Hyperactive Disorder (ADHD)",
         service_details: "Comprehensive diagnosis and therapy to help children explore their feelings, with behavioral modification programs at school and home.",
         slug: "adhd",
-        image: "/assets/images/services/adhd2.png",
+        image: "/assets/images/services/disorder1.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/adhd2.png" alt="ADHD Support" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/disorder1.png" alt="ADHD Support" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">ATTENTION DEFICIT HYPERACTIVE DISORDER</h2>
 
@@ -490,9 +490,9 @@ export const servicesDataOne = [
         service_name: "Intellectual Disability",
         service_details: "Assessment and support when there are limits to a person's ability to learn at an expected level and function in daily life.",
         slug: "intellectual-disability",
-        image: "/assets/images/services/intellectual-disability.png",
+        image: "/assets/images/services/disorder.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/intellectual-disability.png" alt="Intellectual Disability" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/disorder.png" alt="Intellectual Disability" class="mb-6 rounded-lg shadow-lg w-full" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">What is Intellectual Disability?</h2>
 
@@ -576,9 +576,9 @@ export const servicesDataOne = [
         service_name: "School Readiness",
         service_details: "Unique individualized training to assist children with learning and behavioural challenges to transition into schooling.",
         slug: "school-readiness",
-        image: "/assets/images/services/school-readiness.png",
+        image: "/assets/images/services/schoolchild.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/school-readiness.png" alt="School Readiness" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/schoolchild.png" alt="School Readiness" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">School Readiness</h2>
 <p>The School Readiness is a unique individualised training to assist children with unique learning and behavioural challenges to transition into schooling.</p>
@@ -605,9 +605,9 @@ export const servicesDataOne = [
         service_name: "Adolescent Health and Well-being",
         service_details: "Supporting the crucial developmental period for developing social and emotional habits important for mental well-being.",
         slug: "adolescent-health",
-        image: "/assets/images/services/adolescent-health.png",
+        image: "/assets/images/services/service9.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/adolescent-health.png" alt="Adolescent Health and Well-being" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/service9.png" alt="Adolescent Health and Well-being" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Adolescent health and well being</h2>
 <p>Adolescence is a crucial period for developing social and emotional habits important for mental well-being. These include adopting healthy sleep patterns; exercising regularly; developing coping, problem-solving, and interpersonal skills; and learning to manage emotions. Protective and supportive environments in the family, at school and in the wider community are important.</p>
@@ -627,9 +627,9 @@ export const servicesDataOne = [
         service_name: "Developmental Supportive Care – Antenatal Sessions",
         service_details: "Specialized prenatal guidance for expectant parents focusing on early brain development and mindful parenting preparation.",
         slug: "antenatal-sessions",
-        image: "/assets/images/services/antenatal-sessions.png",
+        image: "/assets/images/services/antent.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/antenatal-sessions.png" alt="Antenatal Sessions" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Developmental Supportive Care – Antenatal Sessions</h2>
 <p>At Thalir Manam, expectant parents and couples planning pregnancy can access developmental support sessions. The service focuses on early brain development, bonding, and mindful parenting and aims to establish foundations for healthy child development across physical, emotional, and neurological domains.</p>
@@ -652,9 +652,9 @@ export const servicesDataOne = [
         service_name: "Teen Transition Clinic for Adolescents with Special Need",
         service_details: "Specialized clinic supporting transition from childhood to adulthood for teens with neurodevelopmental conditions.",
         slug: "teen-transition-clinic",
-        image: "/assets/images/services/teen-transition.png",
+        image: "/assets/images/services/service11.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/teen-transition.png" alt="Teen Transition Clinic" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/service11.png" alt="Teen Transition Clinic" class="mb-6 rounded-lg shadow-lg w-full" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">Teen Transition Clinic for Adolescents with Special Needs</h2>
 
