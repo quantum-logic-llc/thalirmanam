@@ -114,10 +114,37 @@ const HeroSlide = ({ slide }) => {
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-green-600 leading-tight">
+                <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-green-600 leading-tight"
+                    style={{
+                      textShadow: `
+                        -2px -2px 0 #fff,
+                        2px -2px 0 #fff,
+                        -2px 2px 0 #fff,
+                        2px 2px 0 #fff,
+                        -2px 0 0 #fff,
+                        2px 0 0 #fff,
+                        0 -2px 0 #fff,
+                        0 2px 0 #fff,
+                        0 0 8px rgba(255, 255, 255, 0.8),
+                        0 0 16px rgba(255, 255, 255, 0.5)
+                      `
+                    }}>
                   {title}
                 </h1>
-                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-black-500 leading-tight">
+                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-white leading-tight"
+                    style={{
+                      textShadow: `
+                        -1.5px -1.5px 0 #000,
+                        1.5px -1.5px 0 #000,
+                        -1.5px 1.5px 0 #000,
+                        1.5px 1.5px 0 #000,
+                        -1.5px 0 0 #000,
+                        1.5px 0 0 #000,
+                        0 -1.5px 0 #000,
+                        0 1.5px 0 #000,
+                        0 0 10px rgba(0, 0, 0, 0.7)
+                      `
+                    }}>
                   {subtitle}
                 </h2>
               </div>
@@ -125,11 +152,31 @@ const HeroSlide = ({ slide }) => {
 
             {/* Description */}
             <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-white font-semibold leading-relaxed max-w-2xl">
+              <p className="text-base sm:text-lg md:text-xl text-white font-semibold leading-relaxed max-w-2xl"
+                 style={{
+                   textShadow: `
+                     -1px -1px 0 rgba(0, 0, 0, 0.8),
+                     1px -1px 0 rgba(0, 0, 0, 0.8),
+                     -1px 1px 0 rgba(0, 0, 0, 0.8),
+                     1px 1px 0 rgba(0, 0, 0, 0.8),
+                     0 0 8px rgba(0, 0, 0, 0.9),
+                     0 0 16px rgba(0, 0, 0, 0.5)
+                   `
+                 }}>
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
                     return (
-                      <span key={index} className="text-green-300 font-bold">
+                      <span key={index} className="text-green-300 font-bold"
+                            style={{
+                              textShadow: `
+                                -1px -1px 0 rgba(0, 0, 0, 0.9),
+                                1px -1px 0 rgba(0, 0, 0, 0.9),
+                                -1px 1px 0 rgba(0, 0, 0, 0.9),
+                                1px 1px 0 rgba(0, 0, 0, 0.9),
+                                0 0 10px rgba(0, 0, 0, 1),
+                                0 0 20px rgba(0, 100, 0, 0.4)
+                              `
+                            }}>
                         {part}
                       </span>
                     );
