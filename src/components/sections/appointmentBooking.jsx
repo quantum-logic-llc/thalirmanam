@@ -5,6 +5,7 @@ import { FaCalendar, FaClock, FaEnvelope, FaPhone, FaUser, FaChild, FaNotesMedic
 import { Button } from '../ui/button'
 import SlideUp from '@/lib/animations/slideUp';
 import SlideLeft from '@/lib/animations/slideLeft';
+import emailjs from '@emailjs/browser';
 
 const AppointmentBooking = () => {
     const [formData, setFormData] = useState({
@@ -33,15 +34,19 @@ const AppointmentBooking = () => {
         setStatus('sending');
 
         try {
-            const response = await fetch('/api/appointment', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            // EmailJS configuration - these should be set in .env.local
+            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+            const templateId = process.env.NEXT_PUBLIC_EMAILJS_APPOINTMENT_TEMPLATE_ID;
+            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-            if (response.ok) {
+            // Check if EmailJS is configured
+            if (!serviceId || !templateId || !publicKey) {
+                console.error('EmailJS not configured. Please set up environment variables.');
+                // Fallback to mailto link
+                const mailtoLink = `mailto:thalirmanam5@gmail.com?subject=${encodeURIComponent('Appointment Request')}&body=${encodeURIComponent(
+                    `Parent Name: ${formData.parentName}\nChild Name: ${formData.childName}\nChild Age: ${formData.childAge}\nEmail: ${formData.email}\nPhone: ${formData.phoneNumber}\nPreferred Date: ${formData.preferredDate}\nPreferred Time: ${formData.preferredTime}\nService Type: ${formData.serviceType}\n\nConcerns:\n${formData.concerns}`
+                )}`;
+                window.location.href = mailtoLink;
                 setStatus('success');
                 setFormData({
                     parentName: '',
@@ -54,10 +59,40 @@ const AppointmentBooking = () => {
                     serviceType: '',
                     concerns: '',
                 });
-            } else {
-                setStatus('error');
+                return;
             }
+
+            // Prepare template parameters
+            const templateParams = {
+                parent_name: formData.parentName,
+                child_name: formData.childName,
+                child_age: formData.childAge,
+                from_email: formData.email,
+                phone_number: formData.phoneNumber,
+                preferred_date: formData.preferredDate,
+                preferred_time: formData.preferredTime,
+                service_type: formData.serviceType,
+                concerns: formData.concerns || 'No additional concerns mentioned',
+                to_email: 'thalirmanam5@gmail.com'
+            };
+
+            // Send email using EmailJS
+            await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+            setStatus('success');
+            setFormData({
+                parentName: '',
+                childName: '',
+                childAge: '',
+                email: '',
+                phoneNumber: '',
+                preferredDate: '',
+                preferredTime: '',
+                serviceType: '',
+                concerns: '',
+            });
         } catch (error) {
+            console.error('Error booking appointment:', error);
             setStatus('error');
         }
     };

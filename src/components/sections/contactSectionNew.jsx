@@ -6,6 +6,7 @@ import { Button } from '../ui/button'
 import SlideUp from '@/lib/animations/slideUp';
 import SlideLeft from '@/lib/animations/slideLeft';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
 
 const ContactSectionNew = () => {
     const [formData, setFormData] = useState({
@@ -30,15 +31,19 @@ const ContactSectionNew = () => {
         setStatus('sending');
 
         try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
+            // EmailJS configuration - these should be set in .env.local
+            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+            const templateId = process.env.NEXT_PUBLIC_EMAILJS_CONTACT_TEMPLATE_ID;
+            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
-            if (response.ok) {
+            // Check if EmailJS is configured
+            if (!serviceId || !templateId || !publicKey) {
+                console.error('EmailJS not configured. Please set up environment variables.');
+                // Fallback to mailto link
+                const mailtoLink = `mailto:thalirmanam5@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+                    `Name: ${formData.fullName}\nEmail: ${formData.email}\nPhone: ${formData.phoneNumber}\n\nMessage:\n${formData.message}`
+                )}`;
+                window.location.href = mailtoLink;
                 setStatus('success');
                 setFormData({
                     fullName: '',
@@ -47,10 +52,32 @@ const ContactSectionNew = () => {
                     subject: '',
                     message: '',
                 });
-            } else {
-                setStatus('error');
+                return;
             }
+
+            // Prepare template parameters
+            const templateParams = {
+                from_name: formData.fullName,
+                from_email: formData.email,
+                phone_number: formData.phoneNumber,
+                subject: formData.subject,
+                message: formData.message,
+                to_email: 'thalirmanam5@gmail.com'
+            };
+
+            // Send email using EmailJS
+            await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+            setStatus('success');
+            setFormData({
+                fullName: '',
+                email: '',
+                phoneNumber: '',
+                subject: '',
+                message: '',
+            });
         } catch (error) {
+            console.error('Error sending message:', error);
             setStatus('error');
         }
     };
