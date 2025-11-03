@@ -37,11 +37,16 @@ export async function generateMetadata({ params }) {
 const ServiceHero = ({ title, description, icon }) => {
   const IconComponent = Icons[toPascalCase(icon)];
   return (
-    <section className="bg-gradient-to-r from-green-50 to-cyan-50 py-16">
+    <section className="bg-gradient-to-br from-green-50 via-cyan-50 to-blue-50 py-12 md:py-20">
       <div className="container mx-auto px-4 text-center">
-        {IconComponent && <IconComponent className="w-14 h-14 mx-auto mb-4 text-green-500" />}
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-3">{title}</h1>
-        <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">{description}</p>
+        {IconComponent && (
+          <div className="mb-6 inline-flex items-center justify-center w-20 h-20 rounded-full bg-white shadow-lg">
+            <IconComponent className="w-10 h-10 text-green-600" />
+          </div>
+        )}
+        <h1 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">{title}</h1>
+        <div className="w-24 h-1 bg-gradient-to-r from-green-500 to-cyan-500 mx-auto mb-6 rounded-full"></div>
+        <p className="text-base md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">{description}</p>
       </div>
     </section>
   );
@@ -72,19 +77,36 @@ export default function ServiceDetailsPage({ params }) {
   return (
     <>
       <HeaderOne />
-      <main className="bg-white">
+      <main className="bg-gradient-to-b from-white to-gray-50">
         <ServiceHero title={service.service_name} description={service.service_details} icon={service.src} />
-        <div className="container mx-auto py-12 px-4 max-w-5xl">
-          <article
-            className="prose prose-sm md:prose-base max-w-none service-content-custom"
-            dangerouslySetInnerHTML={{ __html: service.content }}
-          />
+
+        <div className="container mx-auto py-16 px-4 max-w-6xl">
+          <div className="bg-white rounded-2xl shadow-xl p-6 md:p-12">
+            <article
+              className="prose prose-base md:prose-lg max-w-none
+                prose-headings:font-bold prose-headings:text-gray-900
+                prose-h2:text-2xl md:prose-h2:text-3xl prose-h2:mb-6 prose-h2:mt-8 prose-h2:border-b prose-h2:border-gray-200 prose-h2:pb-3
+                prose-h3:text-xl md:prose-h3:text-2xl prose-h3:mb-4 prose-h3:mt-6 prose-h3:text-green-700
+                prose-h4:text-lg md:prose-h4:text-xl prose-h4:mb-3 prose-h4:mt-4
+                prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-4
+                prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-4 prose-ul:space-y-2
+                prose-ol:list-decimal prose-ol:pl-6 prose-ol:mb-4 prose-ol:space-y-2
+                prose-li:text-gray-700
+                prose-strong:text-gray-900 prose-strong:font-semibold
+                prose-img:rounded-xl prose-img:shadow-lg prose-img:mx-auto prose-img:my-8
+                [&_img]:max-w-[600px] [&_img]:w-auto [&_img]:h-auto [&_img]:mx-auto"
+              dangerouslySetInnerHTML={{ __html: service.content }}
+            />
+          </div>
 
           {/* Call to Action Section */}
-          <div className="mt-12 bg-gradient-to-r from-green-50 to-cyan-50 p-8 rounded-xl text-center">
-            <h3 className="text-2xl font-bold text-gray-800 mb-3">Ready to Get Started?</h3>
-            <p className="text-gray-600 mb-6">Book a consultation with our expert team to discuss your child&apos;s needs.</p>
-            <Link href="/appointments" className="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors shadow-lg hover:shadow-xl">
+          <div className="mt-12 bg-gradient-to-r from-green-500 to-cyan-500 p-8 md:p-12 rounded-2xl text-center shadow-2xl">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">Ready to Get Started?</h3>
+            <p className="text-white text-lg mb-8 max-w-2xl mx-auto">Book a consultation with our expert team to discuss your child&apos;s needs and create a personalized care plan.</p>
+            <Link
+              href="/appointments"
+              className="inline-block bg-white text-green-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+            >
               Book an Appointment
             </Link>
           </div>

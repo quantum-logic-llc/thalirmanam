@@ -7,7 +7,7 @@ export const servicesDataOne = [
         slug: "adhd",
         image: "/assets/images/services/disorder1.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/disorder1.png" alt="ADHD Support" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/disorder1.png" alt="ADHD Support" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">ATTENTION DEFICIT HYPERACTIVE DISORDER</h2>
 
@@ -49,7 +49,7 @@ export const servicesDataOne = [
         slug: "autism-spectrum-disorder",
         image: "/assets/images/services/Asd.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/Asd.png" alt="Autism Spectrum Disorder" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/Asd.png" alt="Autism Spectrum Disorder" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">AUTISM SPECTRUM DISORDER</h2>
 
@@ -104,7 +104,7 @@ export const servicesDataOne = [
         slug: "behavioural-disorders",
         image: "/assets/images/services/behavioral-disorders2.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/behavioral-disorders2.png" alt="Behavioural Disorders" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/behavioral-disorders2.png" alt="Behavioural Disorders" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Behavioural Concerns in Children</h2>
 <p>Some children have extremely difficult and challenging behaviours that are outside the norm for their age. These problems can result from temporary stressors in the child's life, or they might represent more enduring disorders. The most common disruptive behaviour disorders include oppositional defiant disorder (ODD), conduct disorder (CD) and attention deficit hyperactivity disorder (ADHD). Boys are more likely than girls to suffer from behavioural disorders. Treatment options include parent management training, cognitive behaviour therapy, medication and treatment for associated problems.</p>
@@ -156,9 +156,9 @@ export const servicesDataOne = [
         service_name: "Cerebral Palsy (CP)",
         service_details: "Assessment and early intervention for the most common motor disability in childhood, affecting movement, balance and posture.",
         slug: "cerebral-palsy",
-        image: "/assets/images/services/cerebral-palsy.png",
+        image: "/assets/images/services/cerebral-palsy1.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/cerebral-palsy.png" alt="Cerebral Palsy" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/cerebral-palsy1.png" alt="Cerebral Palsy" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">Cerebral Palsy</h2>
 
@@ -223,7 +223,7 @@ export const servicesDataOne = [
 <p>Some individuals exhibit multiple CP type symptoms, with spastic-dyskinetic CP being most common.</p>
 </div>
 
-<img src="/assets/images/services/cerebral-disorders1.png" alt="Cerebral Palsy Development" class="my-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/cerebral-disorders1.png" alt="Cerebral Palsy Development" class="my-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <hr class="my-6" />
 
@@ -307,7 +307,7 @@ export const servicesDataOne = [
         slug: "developmental-delays",
         image: "/assets/images/services/developmental-delays2.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/developmental-delays2.png" alt="Developmental Delays" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/developmental-delays2.png" alt="Developmental Delays" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">Developmental Delays</h2>
 
@@ -356,7 +356,7 @@ export const servicesDataOne = [
 </div>
 </div>
 
-<img src="/assets/images/services/developmental-delays.png" alt="Developmental Support" class="my-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/developmental-delays.png" alt="Developmental Support" class="my-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <div class="bg-white border-2 border-purple-200 p-6 rounded-lg mb-6 shadow-sm">
 <h3 class="text-xl font-bold text-purple-700 mb-3">Social, Emotional, and Behavioural Delays</h3>
@@ -425,7 +425,7 @@ export const servicesDataOne = [
         slug: "learning-disabilities",
         image: "/assets/images/services/learning-disabilities2.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/learning-disabilities2.png" alt="Learning Disabilities" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/learning-disabilities2.png" alt="Learning Disabilities" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Learning Disabilities</h2>
 <h3>Learning Disabilities and Disorders</h3>
@@ -492,7 +492,7 @@ export const servicesDataOne = [
         slug: "intellectual-disability",
         image: "/assets/images/services/disorder.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/disorder.png" alt="Intellectual Disability" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/disorder.png" alt="Intellectual Disability" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">What is Intellectual Disability?</h2>
 
@@ -578,7 +578,7 @@ export const servicesDataOne = [
         slug: "school-readiness",
         image: "/assets/images/services/schoolchild.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/schoolchild.png" alt="School Readiness" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/schoolchild.png" alt="School Readiness" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">School Readiness</h2>
 <p>The School Readiness is a unique individualised training to assist children with unique learning and behavioural challenges to transition into schooling.</p>
@@ -607,7 +607,7 @@ export const servicesDataOne = [
         slug: "adolescent-health",
         image: "/assets/images/services/service9.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/service9.png" alt="Adolescent Health and Well-being" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/service9.png" alt="Adolescent Health and Well-being" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Adolescent health and well being</h2>
 <p>Adolescence is a crucial period for developing social and emotional habits important for mental well-being. These include adopting healthy sleep patterns; exercising regularly; developing coping, problem-solving, and interpersonal skills; and learning to manage emotions. Protective and supportive environments in the family, at school and in the wider community are important.</p>
@@ -629,7 +629,7 @@ export const servicesDataOne = [
         slug: "antenatal-sessions",
         image: "/assets/images/services/antent.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="mb-6 rounded-lg shadow-lg w-full max-w-2xl" />
+<img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-3xl font-bold text-primary mb-4">Developmental Supportive Care – Antenatal Sessions</h2>
 <p>At Thalir Manam, expectant parents and couples planning pregnancy can access developmental support sessions. The service focuses on early brain development, bonding, and mindful parenting and aims to establish foundations for healthy child development across physical, emotional, and neurological domains.</p>
@@ -649,12 +649,12 @@ export const servicesDataOne = [
     {
         id: 11,
         src: "teen-transition",
-        service_name: "Teen Transition Clinic for Adolescents with Special Need",
+        service_name: "Teen Transition Clinic for Adolescents with Special Needs",
         service_details: "Specialized clinic supporting transition from childhood to adulthood for teens with neurodevelopmental conditions.",
         slug: "teen-transition-clinic",
         image: "/assets/images/services/service11.png",
         content: `<div class="service-content">
-<img src="/assets/images/services/service11.png" alt="Teen Transition Clinic" class="mb-6 rounded-lg shadow-lg w-full" />
+<img src="/assets/images/services/service11.png" alt="Teen Transition Clinic" class="mb-8 rounded-xl shadow-lg max-w-lg mx-auto block" />
 
 <h2 class="text-2xl font-bold text-primary mb-4">Teen Transition Clinic for Adolescents with Special Needs</h2>
 
