@@ -102,15 +102,15 @@ const HeroSlide = ({ slide }) => {
 
           {/* Right Side - Text Content with Card Background */}
           <div className="w-full lg:w-1/2 xl:w-5/12 px-5">
-            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border-l-8 border-orange-500 space-y-6">
+            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border-l-8 border-orange-500 min-h-[520px] flex flex-col justify-center space-y-6">
 
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-bold text-black leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-black leading-tight">
                   {title}
                 </h1>
-                <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-green-600 leading-snug">
+                <h2 className="text-1xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-green-600 leading-snug">
                   {subtitle}
                 </h2>
               </div>
