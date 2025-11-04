@@ -80,7 +80,7 @@ const HeroSlide = ({ slide }) => {
 
   return (
     <div
-      className="relative w-full h-[100vh] flex items-center overflow-hidden"
+      className="relative w-full h-[85vh] flex items-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
       {/* Background Image - Clean and bright for kids */}
