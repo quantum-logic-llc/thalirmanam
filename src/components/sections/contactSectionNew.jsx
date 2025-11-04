@@ -262,7 +262,7 @@ const ContactSectionNew = () => {
                                 {/* Message */}
                                 <div className="relative">
                                     <label htmlFor="message" className="block text-sm font-semibold mb-2 text-gray-700">
-                                        Your Message <span className="text-red-500">*</span>
+                                        Your Message(Message is required and must be at least 10 characters) <span className="text-red-500">*</span>
                                     </label>
                                     <textarea
                                         name="message"
