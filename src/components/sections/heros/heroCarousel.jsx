@@ -93,15 +93,18 @@ const HeroSlide = ({ slide }) => {
           priority
         />
         {/* Simple gradient overlay */}
-        <div className="absolute inset-0 bg-black/40"></div>
+        {/* <div className="absolute inset-0 bg-black/40"></div> */}
       </div>
 
       {/* Content Container */}
       <div className="container mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-4 gap-6 items-center">
+        <div className="grid lg:grid-cols-2 gap-6 items-center">
 
-          {/* Left Side - Text Content */}
-          <div className="lg:col-span-4 space-y-6 sm:space-y-8">
+          {/* Left Side - Empty space for image to show through */}
+          <div className="hidden lg:block"></div>
+
+          {/* Right Side - Text Content */}
+          <div className="lg:col-span-1 space-y-6 sm:space-y-8">
 
             {/* Badge */}
             {/* <TextReveal delay={0.1}>
@@ -231,9 +234,6 @@ const HeroSlide = ({ slide }) => {
               </div>
             </SlideUp> */}
           </div>
-
-          {/* Right Side - Empty space for image to show through */}
-          <div className="lg:col-span-1 hidden lg:block"></div>
 
         </div>
       </div>

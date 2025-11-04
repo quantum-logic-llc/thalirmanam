@@ -1,6 +1,6 @@
-import herogirl2 from "@/assets/images/banner/banner1.png";
-import herosec2 from "@/assets/images/banner/banner2.png";
-import herosec3 from "@/assets/images/banner/banner5.png";
+import herogirl2 from "@/assets/images/banner/banner8.png";
+import herosec2 from "@/assets/images/banner/banner7.png";
+import herosec3 from "@/assets/images/banner/banner9.png";
 
 export const heroCarouselData = [
     {
