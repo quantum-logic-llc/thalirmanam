@@ -75,7 +75,7 @@ export const menuList = [
             {
                 id: 11,
                 path: "/services/teen-transition-clinic",
-                label: "Teen Transition Clinic for Adolescents with Special Need"
+                label: "Teen Transition Clinic for Adolescents with Special Needs"
             }
         ]
     },

@@ -132,12 +132,12 @@ const ServicesGrid = () => {
     return (
         <section className="pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-20 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container relative z-10">
-                <div className="text-center mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4">
-                    <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Our Services</h2>
-                    <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mb-4 sm:mb-6 mt-2 sm:mt-4">
+                <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
+                    <h2 className="text-orange-500 text-xl sm:text-2xl md:text-[26px] font-bold uppercase mb-2 sm:mb-3">Our Services</h2>
+                    <h3 className="text-black text-xl sm:text-2xl md:text-[28px] font-bold capitalize mb-3 sm:mb-4 mt-2">
                         Comprehensive Developmental Care
                     </h3>
-                    <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base md:text-lg">
+                    <SectionDescription className="max-w-3xl mx-auto text-gray-700 text-sm sm:text-sm md:text-base">
                         At Thalir Manam, we offer evidence-based therapeutic services and interventions designed to support children with diverse developmental needs. Our multidisciplinary approach ensures personalized care for every child.
                     </SectionDescription>
                 </div>
