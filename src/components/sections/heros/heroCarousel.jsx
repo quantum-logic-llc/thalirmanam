@@ -98,16 +98,16 @@ const HeroSlide = ({ slide }) => {
 
       {/* Content Container */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex justify-end items-center min-h-[80vh]">
+        <div className="flex justify-end items-center min-h-[70vh]">
 
           {/* Right Side - Text Content (no box, just soft shadows) */}
-          <div className="w-full lg:w-1/2 xl:w-5/12 space-y-6 sm:space-y-8 px-4">
+          <div className="w-full lg:w-1/2 xl:w-5/12 space-y-6 sm:space-y-8 px-5">
 
             {/* Main Title with soft shadow */}
             <TextReveal delay={0.2}>
               <div className="space-y-4">
                 <h1
-                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+                  className="text-3xl sm:text-5xl md:text-6xl lg:text-5xl font-bold text-black-600 leading-tight whitespace-nowrap"
                   style={{
                     textShadow: `
                       0 2px 10px rgba(0, 0, 0, 0.3),
@@ -119,7 +119,7 @@ const HeroSlide = ({ slide }) => {
                   {title}
                 </h1>
                 <h2
-                  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-yellow-300 leading-snug"
+                  className="text-xl sm:text-2xl md:text-3xl lg:text-3xl font-semibold text-yellow-300 leading-snug"
                   style={{
                     textShadow: `
                       0 2px 8px rgba(0, 0, 0, 0.4),
@@ -142,13 +142,7 @@ const HeroSlide = ({ slide }) => {
             {/* Description with soft shadow */}
             <TextReveal delay={0.4}>
               <p
-                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium leading-relaxed"
-                style={{
-                  textShadow: `
-                    0 2px 8px rgba(0, 0, 0, 0.4),
-                    0 4px 16px rgba(0, 0, 0, 0.2)
-                  `
-                }}
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-black font-medium leading-relaxed"
               >
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
