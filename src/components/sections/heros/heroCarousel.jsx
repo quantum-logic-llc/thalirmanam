@@ -83,103 +83,86 @@ const HeroSlide = ({ slide }) => {
       className="relative w-full h-[100vh] flex items-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0 ">
+      {/* Background Image - Clean and bright for kids */}
+      <div className="absolute inset-0 z-0">
         <Image
           src={image}
           alt={title}
           fill
-          className="object-cover object-top"
+          className="object-cover object-center"
           priority
         />
-        {/* Simple gradient overlay */}
-        {/* <div className="absolute inset-0 bg-black/40"></div> */}
+        {/* Subtle gradient overlay for right side text readability */}
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/20"></div>
       </div>
 
       {/* Content Container */}
-      <div className="container mx-auto px-2 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-6 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="flex justify-end items-center min-h-[80vh]">
 
-          {/* Left Side - Empty space for image to show through */}
-          <div className="hidden lg:block"></div>
+          {/* Right Side - Text Content (no box, just soft shadows) */}
+          <div className="w-full lg:w-1/2 xl:w-5/12 space-y-6 sm:space-y-8 px-4">
 
-          {/* Right Side - Text Content */}
-          <div className="lg:col-span-1 space-y-6 sm:space-y-8">
-
-            {/* Badge */}
-            {/* <TextReveal delay={0.1}>
-              <div className="inline-flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
-                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                Thalir Manam Center
-              </div>
-            </TextReveal> */}
-
-            {/* Main Title */}
+            {/* Main Title with soft shadow */}
             <TextReveal delay={0.2}>
-              <div className="space-y-3">
-                <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-6xl font-bold text-green-600 leading-tight"
-                    style={{
-                      textShadow: `
-                        -2px -2px 0 #fff,
-                        2px -2px 0 #fff,
-                        -2px 2px 0 #fff,
-                        2px 2px 0 #fff,
-                        -2px 0 0 #fff,
-                        2px 0 0 #fff,
-                        0 -2px 0 #fff,
-                        0 2px 0 #fff,
-                        0 0 8px rgba(255, 255, 255, 0.8),
-                        0 0 16px rgba(255, 255, 255, 0.5)
-                      `
-                    }}>
+              <div className="space-y-4">
+                <h1
+                  className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
+                  style={{
+                    textShadow: `
+                      0 2px 10px rgba(0, 0, 0, 0.3),
+                      0 4px 20px rgba(0, 0, 0, 0.2),
+                      0 8px 40px rgba(0, 0, 0, 0.15)
+                    `
+                  }}
+                >
                   {title}
                 </h1>
-                <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-white leading-tight"
-                    style={{
-                      textShadow: `
-                        -1.5px -1.5px 0 #000,
-                        1.5px -1.5px 0 #000,
-                        -1.5px 1.5px 0 #000,
-                        1.5px 1.5px 0 #000,
-                        -1.5px 0 0 #000,
-                        1.5px 0 0 #000,
-                        0 -1.5px 0 #000,
-                        0 1.5px 0 #000,
-                        0 0 10px rgba(0, 0, 0, 0.7)
-                      `
-                    }}>
+                <h2
+                  className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold text-yellow-300 leading-snug"
+                  style={{
+                    textShadow: `
+                      0 2px 8px rgba(0, 0, 0, 0.4),
+                      0 4px 16px rgba(0, 0, 0, 0.2)
+                    `
+                  }}
+                >
                   {subtitle}
                 </h2>
               </div>
             </TextReveal>
 
-            {/* Description */}
+            {/* Colorful divider */}
+            <div className="flex items-center gap-2">
+              <div className="h-1.5 w-16 bg-gradient-to-r from-green-400 to-green-500 rounded-full shadow-lg"></div>
+              <div className="h-1.5 w-12 bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-full shadow-lg"></div>
+              <div className="h-1.5 w-8 bg-gradient-to-r from-pink-400 to-pink-500 rounded-full shadow-lg"></div>
+            </div>
+
+            {/* Description with soft shadow */}
             <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-white font-semibold leading-relaxed max-w-2xl"
-                 style={{
-                   textShadow: `
-                     -1px -1px 0 rgba(0, 0, 0, 0.8),
-                     1px -1px 0 rgba(0, 0, 0, 0.8),
-                     -1px 1px 0 rgba(0, 0, 0, 0.8),
-                     1px 1px 0 rgba(0, 0, 0, 0.8),
-                     0 0 8px rgba(0, 0, 0, 0.9),
-                     0 0 16px rgba(0, 0, 0, 0.5)
-                   `
-                 }}>
+              <p
+                className="text-base sm:text-lg md:text-xl lg:text-2xl text-white font-medium leading-relaxed"
+                style={{
+                  textShadow: `
+                    0 2px 8px rgba(0, 0, 0, 0.4),
+                    0 4px 16px rgba(0, 0, 0, 0.2)
+                  `
+                }}
+              >
                 {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
                   if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
                     return (
-                      <span key={index} className="text-green-300 font-bold"
-                            style={{
-                              textShadow: `
-                                -1px -1px 0 rgba(0, 0, 0, 0.9),
-                                1px -1px 0 rgba(0, 0, 0, 0.9),
-                                -1px 1px 0 rgba(0, 0, 0, 0.9),
-                                1px 1px 0 rgba(0, 0, 0, 0.9),
-                                0 0 10px rgba(0, 0, 0, 1),
-                                0 0 20px rgba(0, 100, 0, 0.4)
-                              `
-                            }}>
+                      <span
+                        key={index}
+                        className="text-green-300 font-bold"
+                        style={{
+                          textShadow: `
+                            0 2px 10px rgba(0, 0, 0, 0.5),
+                            0 0 20px rgba(34, 197, 94, 0.4)
+                          `
+                        }}
+                      >
                         {part}
                       </span>
                     );
@@ -189,50 +172,50 @@ const HeroSlide = ({ slide }) => {
               </p>
             </TextReveal>
 
-            {/* CTA Buttons */}
+            {/* CTA Buttons with playful design */}
             <SlideUp delay={0.6}>
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4">
                 <Button
                   asChild
                   size="lg"
-                  className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/30"
                 >
                   <Link href="/contact-us">Book Consultation</Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
-                  variant="outline"
-                  className="bg-white/10 border-2 border-white hover:bg-white/20 text-white font-semibold px-8 py-6 text-lg rounded-full shadow-lg transition-all duration-300"
+                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-gray-800 font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 border-2 border-white/30"
                 >
                   <Link href="/services">Explore Services</Link>
                 </Button>
               </div>
             </SlideUp>
 
-            {/* Trust Badges */}
+            {/* Trust Badges - colorful and fun */}
             {/* <SlideUp delay={0.8}>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <div className="flex items-center gap-2 text-white">
-                  <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex flex-wrap gap-3 pt-2">
+                <div className="flex items-center gap-2 bg-green-500/90 backdrop-blur-sm px-4 py-2.5 rounded-full shadow-lg">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="font-medium">Expert Team</span>
+                  <span className="font-bold text-white text-sm">Expert Team</span>
                 </div>
-                <div className="flex items-center gap-2 text-white">
-                  <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 bg-yellow-400/90 backdrop-blur-sm px-4 py-2.5 rounded-full shadow-lg">
+                  <svg className="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="font-medium">Proven Results</span>
+                  <span className="font-bold text-gray-800 text-sm">Proven Results</span>
                 </div>
-                <div className="flex items-center gap-2 text-white">
-                  <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
+                <div className="flex items-center gap-2 bg-pink-500/90 backdrop-blur-sm px-4 py-2.5 rounded-full shadow-lg">
+                  <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  <span className="font-medium">Family Centered</span>
+                  <span className="font-bold text-white text-sm">Family Centered</span>
                 </div>
               </div>
             </SlideUp> */}
+
           </div>
 
         </div>
