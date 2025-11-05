@@ -10,7 +10,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section with Vibrant Border -->
 <div class="relative mb-20 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/disorder1.png" alt="ADHD Support" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/disorder1.png" alt="ADHD Support" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -144,7 +144,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-purple-100 via-blue-100 to-cyan-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/Asd.png" alt="Autism Spectrum Disorder" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/Asd.png" alt="Autism Spectrum Disorder" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -268,7 +268,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-red-100 via-orange-100 to-yellow-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/behavioral-disorders2.png" alt="Behavioural Disorders" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/behavioral-disorders2.png" alt="Behavioural Disorders" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -398,7 +398,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-green-100 via-blue-100 to-purple-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/cerebral-palsy1.png" alt="Cerebral Palsy" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/cerebral-palsy1.png" alt="Cerebral Palsy" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -469,7 +469,7 @@ export const servicesDataOne = [
 <!-- Additional Image -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/cerebral-disorders1.png" alt="Cerebral Palsy Development" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/cerebral-disorders1.png" alt="Cerebral Palsy Development" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -577,7 +577,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-purple-100 via-pink-100 to-orange-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/developmental-delays2.png" alt="Developmental Delays" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/developmental-delays2.png" alt="Developmental Delays" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -647,7 +647,7 @@ export const servicesDataOne = [
 <!-- Additional Image -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-yellow-100 via-green-100 to-blue-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/developmental-delays.png" alt="Developmental Support" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/developmental-delays.png" alt="Developmental Support" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -680,7 +680,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-yellow-100 via-green-100 to-blue-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/learning-disabilities2.png" alt="Learning Disabilities" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/learning-disabilities2.png" alt="Learning Disabilities" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -823,7 +823,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/disorder.png" alt="Intellectual Disability" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/disorder.png" alt="Intellectual Disability" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -948,7 +948,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-yellow-100 via-orange-100 to-red-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/schoolchild.png" alt="School Readiness" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/schoolchild.png" alt="School Readiness" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -1065,7 +1065,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-pink-100 via-purple-100 to-blue-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/service9.png" alt="Adolescent Health and Well-being" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/service9.png" alt="Adolescent Health and Well-being" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -1173,7 +1173,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-pink-100 via-rose-100 to-purple-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
@@ -1290,7 +1290,7 @@ export const servicesDataOne = [
 <!-- Hero Image Section -->
 <div class="relative mb-16 flex justify-center">
   <div class="relative overflow-hidden rounded-[3rem] bg-gradient-to-br from-indigo-100 via-blue-100 to-cyan-100 p-2 max-w-3xl w-full">
-    <img src="/assets/images/services/service11.png" alt="Teen Transition Clinic" class="w-full h-[300px] object-cover rounded-[2.5rem] shadow-2xl" />
+    <img src="/assets/images/services/service11.png" alt="Teen Transition Clinic" class="w-full h-auto max-h-[400px] object-contain rounded-[2.5rem] shadow-2xl" />
   </div>
 </div>
 
