@@ -35,8 +35,7 @@ export async function generateMetadata({ params }) {
 }
 
 // Kid-friendly hero section with playful design
-const ServiceHero = ({ title, description, icon }) => {
-  const IconComponent = Icons[toPascalCase(icon)];
+const ServiceHero = ({ title, description }) => {
   return (
     <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-100 via-pink-100 to-yellow-100">
       {/* Decorative floating shapes */}
@@ -53,11 +52,6 @@ const ServiceHero = ({ title, description, icon }) => {
       </div>
 
       <div className="container mx-auto px-4 text-center relative z-10">
-        {IconComponent && (
-          <div className="mb-6 inline-flex items-center justify-center w-28 h-28 rounded-full bg-white shadow-2xl border-4 border-purple-300 animate-bounce">
-            <IconComponent className="w-16 h-16 text-purple-600" />
-          </div>
-        )}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 mb-6 leading-tight drop-shadow-lg font-bubblegum">
           {title}
         </h1>
@@ -102,7 +96,7 @@ export default function ServiceDetailsPage({ params }) {
     <>
       <HeaderOne />
       <main className="bg-gradient-to-b from-blue-50 via-purple-50 to-pink-50">
-        <ServiceHero title={service.service_name} description={service.service_details} icon={service.src} />
+        <ServiceHero title={service.service_name} description={service.service_details} />
 
         {/* Main content area with kid-friendly design */}
         <div className="relative w-full py-16 px-4">
