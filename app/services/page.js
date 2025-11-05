@@ -2,12 +2,10 @@ import HeaderOne from '../../src/components/sections/headers/headerOne'
 import FooterOne from '../../src/components/sections/footers/footerOne'
 import Services from '../../src/components/pages/services'
 import PageTitle from '../../src/components/sections/pageTitle'
-import ServicesOne from '../../src/components/sections/services/servicesOne'
+import ServicesGrid from '../../src/components/sections/services/servicesGrid'
 import Partner from '../../src/components/sections/partner'
-import { getPageSEO } from '../../src/lib/seo-config'
 
-
-export const metadata = getPageSEO('services')
+// ... other imports
 
 export default function ServicesPage() {
   return (
@@ -15,7 +13,7 @@ export default function ServicesPage() {
       <HeaderOne />
       <main>
         <PageTitle pageName="Services" />
-        <ServicesOne />
+        <ServicesGrid />
         <Partner />
       </main>
       <FooterOne />
