@@ -1,31 +1,54 @@
 import React from 'react'
-import bread_cat from "@/assets/images/shapes/bread-cat.png"
-import bread_thumb from "@/assets/images/shapes/bread-thumb.png"
-import bread_child from "@/assets/images/shapes/bread-child.png"
 import Link from 'next/link'
 import { FaAngleRight } from 'react-icons/fa6'
-import Image from 'next/image';
 
 const PageTitle = ({ pageName, breadcrumbLink, breadcrumbCurrent, className }) => {
     return (
-        <div className="">
-            <div className="lg:py-15 py-10" style={{ backgroundColor: '#eff6ff' }}>
-                <div className="container">
-                    <div className="flex  md:flex-row flex-col justify-between items-center gap-10">
-                        <div className="">
-                            <h2 className="xl:text-[70px] lg:text-6xl md:text-5xl text-4xl font-bold leading-[117%]">{pageName}</h2>
-                            <ul className="lg:pt-5 pt-3 flex items-center lg:gap-5 gap-2">
-                                <li><Link href="/" className="lg:text-[28px] text-xl font-bold">Home</Link></li>
-                                <li><FaAngleRight /> </li>
-                                <li><p className="lg:text-[28px] text-xl font-bold text-muted-foreground">{breadcrumbCurrent}</p></li>
-                            </ul>
-                        </div>
-                        <div className="relative">
-                            <Image src={bread_cat} alt="cat-img" width={100} height={100} className="absolute bottom-5 -left-[30px] animate-up-down" />
-                            <Image src={bread_thumb} alt="thumb-img" width={300} height={200} className="sm:max-h-full max-h-60" />
-                            <Image src={bread_child} alt="child-img" width={100} height={100} className="absolute bottom-0 right-0 animate-left-right" />
+        <div className={className}>
+            <div className="relative lg:py-20 py-12 overflow-hidden" style={{
+                background: 'linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%)'
+            }}>
+                {/* Decorative background elements */}
+                <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                    <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-200 rounded-full opacity-20 blur-3xl"></div>
+                    <div className="absolute -bottom-10 -right-10 w-60 h-60 bg-purple-200 rounded-full opacity-20 blur-3xl"></div>
+                </div>
+
+                <div className="container relative z-10">
+                    <div className="flex flex-col items-center justify-center text-center">
+                        {/* Page Title */}
+                        <h1 className="xl:text-[64px] lg:text-5xl md:text-4xl text-3xl font-bold leading-tight text-gray-900 mb-4 max-w-4xl">
+                            {pageName}
+                        </h1>
+
+                        {/* Decorative divider */}
+                        <div className="flex items-center gap-2 mb-6">
+                            <div className="w-12 h-1 bg-gradient-to-r from-transparent via-blue-500 to-blue-500 rounded-full"></div>
+                            <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <div className="w-12 h-1 bg-gradient-to-l from-transparent via-blue-500 to-blue-500 rounded-full"></div>
                         </div>
 
+                        {/* Breadcrumb */}
+                        <nav aria-label="Breadcrumb">
+                            <ul className="flex items-center justify-center gap-3 lg:text-lg text-base">
+                                <li>
+                                    <Link
+                                        href="/"
+                                        className="font-semibold text-gray-700 hover:text-blue-600 transition-colors duration-200"
+                                    >
+                                        Home
+                                    </Link>
+                                </li>
+                                <li className="text-gray-400">
+                                    <FaAngleRight className="text-sm" />
+                                </li>
+                                <li>
+                                    <span className="font-semibold text-blue-600">
+                                        {breadcrumbCurrent}
+                                    </span>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
