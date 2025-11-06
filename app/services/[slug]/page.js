@@ -54,7 +54,7 @@ export default function ServiceDetailsPage({ params }) {
       <HeaderOne />
       <main>
         <article
-          className="prose prose-lg max-w-none"
+          className="max-w-none"
           dangerouslySetInnerHTML={{ __html: service.content }}
         />
         <div className="py-16 text-center">

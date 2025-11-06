@@ -1,14 +1,8 @@
 export const menuList = [
     {
-        id: 1,
+        id: 2,
         path: "/",
         label: "Home",
-        dropDownMenu: false
-    },
-    {
-        id: 2,
-        path: "/home2",
-        label: "Home2",
         dropDownMenu: false
     },
     {
@@ -17,6 +11,7 @@ export const menuList = [
         label: "About Us",
         dropDownMenu: false
     },
+
     {
         id: 4,
         path: "/services",

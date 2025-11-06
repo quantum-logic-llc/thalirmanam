@@ -1,6 +1,6 @@
 import HeaderOne from '../src/components/sections/headers/headerOne'
 import FooterOne from '../src/components/sections/footers/footerOne'
-import HeroOne from '../src/components/sections/heros/heroOne'
+import HeroCarousel from '../src/components/sections/heros/heroCarousel'
 import ServicesOne from '../src/components/sections/services/servicesOne'
 import ServicesGrid from '../src/components/sections/services/servicesGrid'
 import Gallery from '../src/components/sections/gallery/gallery'
@@ -24,7 +24,7 @@ export default function HomePage() {
     <>
       <HeaderOne />
       <main>
-        <HeroOne />
+        <HeroCarousel />
         <WhoWeServe />
         <FocusAreas />
         <ServicesGrid />

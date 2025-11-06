@@ -1,13 +1,129 @@
 export const servicesDataOne = [
     {
         id: 1,
+        src: "early-stimulation",
+        service_name: "Early Stimulation for High-Risk Babies",
+        service_details: "Comprehensive growth monitoring, developmental screening, and stimulation programs for high-risk infants to promote optimal development.",
+        slug: "early-stimulation-high-risk-babies",
+        image: "/assets/images/services/parent.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Early Stimulation for High-Risk Babies</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/parent.png" alt="Early Stimulation for High-Risk Babies" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            High-risk babies require specialized care and early intervention to support their development. Our comprehensive early stimulation program provides monitoring, assessment, and therapeutic interventions for infants who may be at risk for developmental delays.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Our Services Include</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Periodic Growth Monitoring:</strong> Regular tracking of physical growth and development milestones.</li>
+            <li><strong>HINE (Hammersmith Infant Neurological Evaluation):</strong> Developmental screening for infants until age 1 to detect neurological concerns early.</li>
+            <li><strong>Amiel-Tison Neurological Assessment:</strong> Comprehensive neurological evaluation to identify potential developmental issues.</li>
+            <li><strong>Bayley Scales Assessment:</strong> Standardized developmental assessment for children aged 18 months to 4 years, evaluating cognitive, language, and motor development.</li>
+            <li><strong>Multi-Sensory Stimulation:</strong> Targeted stimulation programs including:
+                <ul class="list-circle pl-5 mt-2">
+                    <li>Auditory stimulation to enhance hearing and sound processing</li>
+                    <li>Tactile stimulation to develop touch sensitivity and awareness</li>
+                    <li>Visual stimulation to promote visual tracking and perception</li>
+                    <li>Motor stimulation to encourage movement and physical development</li>
+                </ul>
+            </li>
+            <li><strong>Lactation Counseling:</strong> Support and guidance for mothers on breastfeeding techniques and nutrition.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Who Benefits from This Program?</h3>
+        <p>High-risk babies include those who:</p>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Were born prematurely or with low birth weight</li>
+            <li>Experienced birth complications or neonatal intensive care</li>
+            <li>Have a family history of developmental disorders</li>
+            <li>Show early signs of developmental delays</li>
+            <li>Have medical conditions that may affect development</li>
+        </ul>
+        <p class="font-semibold text-gray-800 mt-8">
+            Early detection and intervention during the critical first years of life can significantly improve developmental outcomes and help babies reach their full potential.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 2,
+        src: "early-intervention",
+        service_name: "Early Intervention Programme",
+        service_details: "Comprehensive early intervention for preschoolers aged 3-6 to enhance language, communication, social play, pre-academic skills, and independent living.",
+        slug: "early-intervention-programme",
+        image: "/assets/images/services/schoolchild.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Early Intervention Programme</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/schoolchild.png" alt="Early Intervention Programme" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Our Early Intervention Programme is specifically designed for pre-schoolers aged 3-6 years who are experiencing developmental, learning, or behavioral challenges. Early intervention during these critical years can make a profound difference in a child's developmental trajectory.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Programme Components</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Identification and Assessment:</strong> Comprehensive evaluation to identify developmental and learning problems early.</li>
+            <li><strong>Behavioral Assessment:</strong> Detailed analysis of behavioral patterns and challenges.</li>
+            <li><strong>Language and Communication Enhancement:</strong> Targeted interventions to develop receptive and expressive language skills.</li>
+            <li><strong>Social Play Development:</strong> Activities and strategies to improve social interaction and play skills.</li>
+            <li><strong>Pre-Academic Skills:</strong> Preparing children for school success through foundational learning activities.</li>
+            <li><strong>Independent Living Skills:</strong> Teaching self-care, daily living, and functional independence skills.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Who We Serve</h3>
+        <p>Our Early Intervention Programme supports children with:</p>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>ADHD (Attention Deficit Hyperactive Disorder):</strong> Helping children develop focus, impulse control, and behavioral regulation.</li>
+            <li><strong>Learning Disorders:</strong> Addressing early learning challenges before school entry.</li>
+            <li><strong>Intellectual Disability:</strong> Providing developmental support tailored to the child's abilities.</li>
+            <li><strong>Autism Spectrum Disorder:</strong> Implementing evidence-based interventions for communication, social skills, and behavior.</li>
+            <li><strong>Developmental Delays:</strong> Supporting children who are not meeting expected milestones.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Our Approach</h3>
+        <p>
+            We use a family-centered, multidisciplinary approach that involves parents as active participants in their child's intervention. Our programs are individualized based on each child's unique strengths, needs, and family goals.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            The early years are a window of opportunity. Our Early Intervention Programme aims to maximize developmental potential, prevent secondary complications, and prepare children for successful transition to school and beyond.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 3,
         src: "autism-support",
         service_name: "Attention Deficit Hyperactive Disorder (ADHD)",
         service_details: "Comprehensive diagnosis and therapy to help children explore their feelings, with behavioral modification programs at school and home.",
         slug: "adhd",
         image: "/assets/images/services/disorder1.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Attention Deficit Hyperactive Disorder</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Attention Deficit Hyperactive Disorder</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="/assets/images/services/parent.png" alt="ADHD Support" class="w-full align-center  max-h-[500px] object-cover mb-10 " />
     <div class="flex justify-center items-center  ">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
@@ -18,17 +134,27 @@ export const servicesDataOne = [
 (v) Making aware of the parents and teachers about the fact that ADHD can be successfully managed.<br><br>
         </div>    
     </div>
+    </div>
 </div>`
     },
     {
-        id: 2,
+        id: 4,
         src: "autism-support",
         service_name: "Autism Spectrum Disorder (ASD)",
         service_details: "Early detection and intervention for children under 6, with comprehensive training covering behavior modification, speech training, and social skill development.",
         slug: "autism-spectrum-disorder",
         image: "/assets/images/services/Asd.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Autism Spectrum Disorder</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Autism Spectrum Disorder</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/asd-1000x400.jpg" alt="Autism Spectrum Disorder Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="prose prose-lg max-w-full text-gray-700">
         <p>
@@ -43,32 +169,42 @@ export const servicesDataOne = [
             <li>Counselling and parental training program.</li>
         </ul>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 3,
+        id: 5,
         src: "behavioral-therapy",
         service_name: "Behavioural Disorders",
         service_details: "Assessment and treatment of disruptive behavior disorders including ODD, CD, and behavioral concerns in children.",
         slug: "behavioural-disorders",
         image: "/assets/images/services/behavioral-disorders2.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Behavioural Disorders</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Behavioural Disorders</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Behavioral-Disorders-1200x400.jpg" alt="Behavioural Disorders Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
             <p>
                 Some children exhibit challenging behaviors beyond their age norm, possibly due to temporary stressors or enduring disorders. Common disruptive disorders include ODD, CD, and ADHD. Boys are more prone to behavioral disorders.
             </p>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Risk Factors</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Risk Factors</h3>
             <ul class="list-disc space-y-2 pl-5">
-                <li><strong>Gender:</strong> Boys are more likely to have behavioral disorders.</li>
+                <li><strong>Gender:</strong> Disruptive behavioural disorders are complicated and may include many different factors working in combination. For example, a child who exhibits the delinquent behaviours of CD may also have ADHD, Anxiety, depression and a difficult home life.</li>
                 <li><strong>Gestation and birth:</strong> Difficult pregnancies and premature birth can be factors.</li>
                 <li><strong>Temperament:</strong> Aggressive or difficult temperaments may lead to disorders.</li>
                 <li><strong>Family life:</strong> Dysfunctional family environments increase the risk.</li>
                 <li><strong>Learning difficulties:</strong> Often linked to behavior issues.</li>
             </ul>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Diagnosis & Treatment</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Diagnosis of children’s behavioural disorders</h3>
             <p>
                 Diagnosis is made by a specialist. Untreated disorders can lead to dysfunctional adulthood, so early intervention is key.
             </p>
@@ -77,23 +213,34 @@ export const servicesDataOne = [
             <img src="https://thalirmanam.in/wp-content/uploads/2022/12/ID-1.jpg" alt="Intellectual Disability" class="w-full h-auto rounded-lg shadow-md" />
         </div>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 4,
+        id: 6,
         src: "cerebral-palsy",
         service_name: "Cerebral Palsy (CP)",
         service_details: "Assessment and early intervention for the most common motor disability in childhood, affecting movement, balance and posture.",
         slug: "cerebral-palsy",
         image: "/assets/images/services/cerebral-palsy1.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Cerebral Palsy</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Cerebral Palsy</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Cerebral-Palsy-1200x400.jpg" alt="Cerebral Palsy Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
             <p>
                 Cerebral palsy (CP) is a group of disorders affecting movement, balance, and posture. It's the most common motor disability in childhood, caused by abnormal brain development or damage. While CP doesn't worsen over time, its symptoms can change.
             </p>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Types of Cerebral Palsy</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Types of Cerebral Palsy</h3>
             <p>CP is classified by the main type of movement disorder involved:</p>
             <ul class="list-disc space-y-2 pl-5">
                 <li><strong>Spastic CP:</strong> The most common type (80%), causing stiff muscles and awkward movements. It can be further described by the parts of the body affected (diplegia, hemiplegia, or quadriplegia).</li>
@@ -107,7 +254,7 @@ export const servicesDataOne = [
         </div>
     </div>
     <div class="prose prose-lg max-w-full text-gray-700 mt-12">
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Early Signs & Diagnosis</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Early Signs & Diagnosis</h3>
         <p>Diagnosing CP at an early age is important. Signs to watch for include:</p>
         <ul class="list-disc space-y-2 pl-5">
             <li><strong>In a baby younger than 6 months:</strong> Head lagging, feeling stiff or floppy, overextending back/neck, or stiffening and crossing legs.</li>
@@ -115,28 +262,38 @@ export const servicesDataOne = [
             <li><strong>In a baby older than 10 months:</strong> Lopsided crawling or not crawling on all fours.</li>
         </ul>
         <p>Diagnosis involves developmental monitoring, screening tests, and medical evaluations.</p>
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Treatment and Intervention</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Treatment and Intervention</h3>
         <p>
             There is no cure for CP, but treatment can improve the lives of those who have the condition. It is important to begin a treatment program as early as possible.
         </p>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 5,
+        id: 7,
         src: "developmental-delays",
         service_name: "Developmental Delays",
         service_details: "Assessment and intervention for delays affecting physical, cognitive, communication, social, emotional, or behavioural skills in children.",
         slug: "developmental-delays",
         image: "/assets/images/services/developmental-delays2.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Developmental Delays</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Developmental Delays</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Developmental-Delays-1200x400.jpg" alt="Developmental Delays Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="space-y-16">
         <!-- Cognitive Delays -->
         <div class="flex flex-col md:flex-row gap-8 items-center">
             <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-                <h3 class="text-3xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Cognitive Delays</h3>
+                <h3 class="text-2xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Cognitive Delays</h3>
                 <p>Cognitive delays affect intellectual functioning, causing learning difficulties often apparent after school entry, and may hinder communication and play. Causes can include brain injury, chromosomal disorders like Down syndrome, though often the reason is unclear.</p>
             </div>
             <div class="w-full md:w-1/2">
@@ -146,7 +303,7 @@ export const servicesDataOne = [
         <!-- Motor Delays -->
         <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
             <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-                <h3 class="text-3xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Motor Delays</h3>
+                <h3 class="text-2xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Motor Delays</h3>
                 <p>Motor delays impede a child's ability to coordinate large and small muscle groups. Infants may struggle with rolling or crawling; older children might be clumsy. Fine motor delays affect tasks like holding small objects or tying shoes.</p>
             </div>
             <div class="w-full md:w-1/2">
@@ -156,7 +313,7 @@ export const servicesDataOne = [
         <!-- Social, Emotional, and Behavioural Delays -->
         <div class="flex flex-col md:flex-row gap-8 items-center">
             <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-                <h3 class="text-3xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Social, Emotional, and Behavioural Delays</h3>
+                <h3 class="text-2xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Social, Emotional, and Behavioural Delays</h3>
                 <p>Children with neurobehavioral disorders like Autism and ADHD often have social, emotional, or behavioral delays. They may struggle with social cues, initiating conversations, or coping with frustration, leading to prolonged tantrums.</p>
             </div>
             <div class="w-full md:w-1/2">
@@ -166,7 +323,7 @@ export const servicesDataOne = [
         <!-- Speech Delays -->
         <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
             <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-                <h3 class="text-3xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Speech Delays</h3>
+                <h3 class="text-2xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Speech Delays</h3>
                 <p>Speech delays can be receptive (difficulty understanding) or expressive (reduced vocabulary). Oral motor problems can also cause speech production disorders. Causes can be physiological or environmental, though many are unknown.</p>
             </div>
             <div class="w-full md:w-1/2">
@@ -174,17 +331,27 @@ export const servicesDataOne = [
             </div>
         </div>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 6,
+        id: 8,
         src: "learning-disability",
         service_name: "Learning Disabilities",
         service_details: "Support for children with difficulties in reading, writing, math, reasoning, listening, and speaking - not related to intelligence or motivation.",
         slug: "learning-disabilities",
         image: "/assets/images/services/learning-disabilities2.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Learning Disabilities</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Learning Disabilities</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Learning-Disabilities-1200x400.jpg" alt="Learning Disabilities Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="space-y-16">
         <div class="prose prose-lg max-w-full text-gray-700">
@@ -195,7 +362,7 @@ export const servicesDataOne = [
         <!-- Red Flags -->
         <div class="flex flex-col md:flex-row gap-8 items-center">
             <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-                <h3 class="text-3xl font-semibold text-pink-700 mb-4 text-left border-l-4 border-pink-200 pl-4">Red Flags for Learning Disabilities</h3>
+                <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Red Flags for Learning Disabilities</h3>
                 <p>Signs can appear at different ages:</p>
                 <ul class="list-disc space-y-2 pl-5">
                     <li><strong>Preschool:</strong> Problems pronouncing words, trouble finding the right word, difficulty rhyming, or trouble learning the alphabet, numbers, and colors.</li>
@@ -213,24 +380,34 @@ export const servicesDataOne = [
             </p>
         </div>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 7,
+        id: 9,
         src: "intellectual-disability",
         service_name: "Intellectual Disability",
         service_details: "Assessment and support when there are limits to a person's ability to learn at an expected level and function in daily life.",
         slug: "intellectual-disability",
         image: "/assets/images/services/disorder.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Intellectual Disability</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Intellectual Disability</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Intellectual-Disability-1200x400.jpg" alt="Intellectual Disability Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
             <p>
                 Intellectual disability refers to limitations in a person's ability to learn and function in daily life. Children with this disability may learn and develop more slowly than their peers. It can be caused by injury, disease, or brain issues that occur before the age of 18.
             </p>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Signs of Intellectual Disability</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Signs of Intellectual Disability</h3>
             <p>While signs can vary, some common indicators include:</p>
             <ul class="list-disc space-y-2 pl-5">
                 <li>Sitting up, crawling, or walking later than other children.</li>
@@ -238,7 +415,7 @@ export const servicesDataOne = [
                 <li>Difficulty remembering things or understanding social rules.</li>
                 <li>Trouble seeing the results of their actions or solving problems.</li>
             </ul>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Seeking Help</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Seeking Help</h3>
             <p>
                 If you have concerns, it is important to consult your child’s doctor. Seeking a referral to a Developmental Paediatrician or another specialist for early intervention can make a significant difference.
             </p>
@@ -247,24 +424,34 @@ export const servicesDataOne = [
             <img src="https://thalirmanam.in/wp-content/uploads/2022/11/girl-g7f8c47347_1280.jpg" alt="Intellectual Disability Signs" class="w-full h-auto rounded-lg shadow-md" />
         </div>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 8,
+        id: 10,
         src: "school-readiness",
         service_name: "School Readiness",
         service_details: "Unique individualized training to assist children with learning and behavioural challenges to transition into schooling.",
         slug: "school-readiness",
         image: "/assets/images/services/schoolchild.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">School Readiness</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">School Readiness</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2022/12/ld-1024x400.jpg" alt="School Readiness Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
             <p>
                 Our School Readiness program is an individualized training plan designed to help children with unique learning and behavioral challenges transition smoothly into a school environment. It focuses on developing group readiness, early academics, social skills, fine motor skills, and communication.
             </p>
-            <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Key Characteristics for School Readiness</h3>
+            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Key Characteristics for School Readiness</h3>
             <p>We help children develop essential skills, including:</p>
             <ul class="list-disc space-y-2 pl-5">
                 <li>Independence in toileting and dressing.</li>
@@ -279,17 +466,27 @@ export const servicesDataOne = [
             <img src="https://thalirmanam.in/wp-content/uploads/2022/12/10-300x169.jpg" alt="School Readiness" class="w-full h-auto rounded-lg shadow-md" />
         </div>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 9,
+        id: 11,
         src: "adolescent-health",
         service_name: "Adolescent Health and Well-being",
         service_details: "Supporting the crucial developmental period for developing social and emotional habits important for mental well-being.",
         slug: "adolescent-health",
         image: "/assets/images/services/service9.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-8 text-left border-b-2 border-green-200 pb-2">Adolescent Health and Well-being</h2>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Adolescent Health and Well-being</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2024/06/2148108574.jpg" alt="Adolescent Health and Well-being Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="prose prose-lg max-w-full text-gray-700">
         <p>
@@ -302,24 +499,33 @@ export const servicesDataOne = [
             Supportive environments in the family, school, and community are vital for helping teens navigate this important stage of life.
         </p>
     </div>
+    </div>
 </div>`
     },
     {
-        id: 10,
+        id: 12,
         src: "antenatal-care",
         service_name: "Developmental Supportive Care – Antenatal Sessions",
         service_details: "Specialized prenatal guidance for expectant parents focusing on early brain development and mindful parenting preparation.",
         slug: "antenatal-sessions",
         image: "/assets/images/services/antent.png",
-                        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-4 text-left border-b-2 border-green-200 pb-2">Developmental Supportive Care</h2>
-    <p class="text-2xl text-gray-600 mb-8 text-left">Antenatal Sessions</p>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Developmental Supportive Care <span class="block text-2xl font-semibold text-gray-600 mt-2">Antenatal Sessions</span></h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="/assets/images/services/antent.png" alt="Antenatal Sessions" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="prose prose-lg max-w-full text-gray-700">
         <p>
             Expectant parents can access developmental support sessions focusing on early brain development, bonding, and mindful parenting to establish a foundation for healthy child development.
         </p>
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Offer</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Offer</h3>
         <ul class="list-disc space-y-2 pl-5">
             <li><strong>Brain Development:</strong> Understanding how brain development begins in the womb.</li>
             <li><strong>Maternal Well-being:</strong> Strategies to promote wellness and reduce prenatal stress.</li>
@@ -328,28 +534,38 @@ export const servicesDataOne = [
             <li><strong>Flexible Formats:</strong> Individual and group sessions with interactive discussion.</li>
             <li><strong>Expert-Led:</strong> All sessions are led by a developmental paediatrician.</li>
         </ul>
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Perfect For</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Perfect For</h3>
         <p>
             First-time parents, those with high-risk pregnancies, or anyone seeking intentional preparation for parenthood.
         </p>
     </div>
-</div>`    },
+    </div>
+</div>`
+    },
     {
-        id: 11,
+        id: 13,
         src: "teen-transition",
         service_name: "Teen Transition Clinic for Adolescents with Special Needs",
         service_details: "Specialized clinic supporting transition from childhood to adulthood for teens with neurodevelopmental conditions.",
         slug: "teen-transition-clinic",
         image: "/assets/images/services/service11.png",
-        content: `<div class="service-details-page bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-    <h2 class="text-4xl font-bold text-green-800 mb-4 text-left border-b-2 border-green-200 pb-2">Teen Transition Clinic</h2>
-    <p class="text-2xl text-gray-600 mb-8 text-left">For Adolescents with Special Needs</p>
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Teen Transition Clinic <span class="block text-2xl font-semibold text-gray-600 mt-2">For Adolescents with Special Needs</span></h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <img src="https://thalirmanam.in/wp-content/uploads/2024/06/2148026237-1000x400.jpg" alt="Teen Transition Clinic Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
     <div class="prose prose-lg max-w-full text-gray-700">
         <p>
             Thalir Manam's Teen Transition Clinic supports adolescents with neurodevelopmental conditions like ASD, ADHD, Learning Disabilities, or Intellectual Disabilities, and their families, in navigating the transition to adulthood. The clinic focuses on developing life skills, emotional regulation, communication, and functional independence.
         </p>
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Services Include:</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Services Include:</h3>
         <ul class="list-disc space-y-2 pl-5">
             <li><strong>Individualized Transition Planning:</strong> Personalized support based on strengths, needs, and future goals.</li>
             <li><strong>Life Skills and Daily Living Training:</strong> Skill-building in personal care, shopping, money handling, and public transport use.</li>
@@ -358,13 +574,421 @@ export const servicesDataOne = [
             <li><strong>Puberty, Safety & Boundaries Education:</strong> Age-appropriate education on body awareness, privacy, and safe behavior.</li>
             <li><strong>Parent and Caregiver Coaching:</strong> Strategies for families to foster independence and self-advocacy.</li>
         </ul>
-        <h3 class="text-3xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Who Can Benefit?</h3>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Who Can Benefit?</h3>
         <p>
             Our clinic is designed for adolescents aged 10–18 with developmental or learning needs, teens with mild to moderate support needs, and families preparing for major life transitions.
         </p>
         <p class="font-semibold text-gray-800">
             Led by a developmental paediatrician, our multidisciplinary approach helps teens grow confidently. Contact us to book a consultation.
         </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 14,
+        src: "speech-therapy",
+        service_name: "Speech and Language Therapy",
+        service_details: "Comprehensive speech and language therapy services to enhance communication skills, address speech delays, and support language development.",
+        slug: "speech-language-therapy",
+        image: "/assets/images/services/speech.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Speech and Language Therapy</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/speech.png" alt="Speech and Language Therapy" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Our Speech and Language Therapy services are designed to help children overcome communication challenges and develop essential language skills. We provide expert assessment and intervention for various speech and language disorders.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Services We Offer</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Speech Delays:</strong> Assessment and therapy for children with delayed speech development.</li>
+            <li><strong>Articulation Disorders:</strong> Helping children produce sounds correctly.</li>
+            <li><strong>Language Comprehension:</strong> Improving receptive language skills and understanding.</li>
+            <li><strong>Expressive Language:</strong> Building vocabulary and sentence formation abilities.</li>
+            <li><strong>Communication Skills:</strong> Enhancing overall communication abilities in children with special needs.</li>
+            <li><strong>Speech Training:</strong> Specialized training as part of autism intervention and early intervention programs.</li>
+        </ul>
+        <p class="font-semibold text-gray-800 mt-8">
+            Our experienced speech and language therapists work closely with families to create individualized treatment plans that address each child's unique needs and goals.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 15,
+        src: "behavioral-therapy",
+        service_name: "Behavioural Therapy",
+        service_details: "Evidence-based behavioral intervention programs to address challenging behaviors and develop positive skills in children with neurodevelopmental conditions.",
+        slug: "behavioural-therapy",
+        image: "/assets/images/services/behavioral-disorders1.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Behavioural Therapy</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/behavioral-disorders1.png" alt="Behavioural Therapy" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Our Behavioural Therapy services provide comprehensive support for children experiencing behavioral challenges. We use evidence-based approaches to help children develop appropriate behaviors and reduce problematic ones.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Offer</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Behavior Modification Programs:</strong> Structured programs at school and home to address behavioral challenges.</li>
+            <li><strong>Applied Behavior Analysis (ABA):</strong> Evidence-based therapy particularly effective for children with autism spectrum disorder.</li>
+            <li><strong>Social Skills Training:</strong> Helping children learn appropriate social interactions and play skills.</li>
+            <li><strong>Behavioral Assessment:</strong> Comprehensive evaluation to identify triggers and patterns of challenging behaviors.</li>
+            <li><strong>Parent Training:</strong> Equipping parents with strategies to manage and prevent behavioral issues at home.</li>
+            <li><strong>School Support:</strong> Collaborating with educators to implement behavioral interventions in educational settings.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Conditions We Address</h3>
+        <p>Our behavioral therapy services support children with:</p>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Autism Spectrum Disorder (ASD)</li>
+            <li>Attention Deficit Hyperactive Disorder (ADHD)</li>
+            <li>Oppositional Defiant Disorder (ODD)</li>
+            <li>Conduct Disorder (CD)</li>
+            <li>General behavioral and emotional challenges</li>
+        </ul>
+        <p class="font-semibold text-gray-800 mt-8">
+            Our goal is to help children develop positive behaviors, improve social functioning, and enhance their overall quality of life through individualized, family-centered behavioral interventions.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 16,
+        src: "swallowing-disorders",
+        service_name: "Swallowing Disorders",
+        service_details: "Comprehensive assessment and treatment for feeding and swallowing difficulties in children, ensuring safe and efficient eating.",
+        slug: "swallowing-disorders",
+        image: "/assets/images/services/swallowing.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Swallowing Disorders</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/swallowing.png" alt="Swallowing Disorders" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Swallowing disorders, also known as dysphagia, can affect a child's ability to eat and drink safely. Our specialized team provides comprehensive assessment and treatment for feeding and swallowing difficulties in children.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Offer</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Swallowing Assessment:</strong> Detailed evaluation of oral motor function and swallowing abilities.</li>
+            <li><strong>Feeding Therapy:</strong> Intervention for children with feeding difficulties and food aversions.</li>
+            <li><strong>Oral Motor Exercises:</strong> Strengthening exercises to improve tongue, lip, and jaw movements.</li>
+            <li><strong>Texture Modification Guidance:</strong> Recommendations for safe food and liquid consistencies.</li>
+            <li><strong>Parent Education:</strong> Training caregivers on safe feeding techniques and positioning.</li>
+            <li><strong>Multidisciplinary Approach:</strong> Collaboration with pediatricians and other specialists for comprehensive care.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Signs of Swallowing Difficulties</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Coughing or choking during or after eating</li>
+            <li>Prolonged meal times or difficulty transitioning to solid foods</li>
+            <li>Weight loss or poor growth</li>
+            <li>Frequent respiratory infections</li>
+            <li>Excessive drooling or food pocketing in cheeks</li>
+            <li>Refusal to eat certain textures</li>
+        </ul>
+        <p class="font-semibold text-gray-800 mt-8">
+            Early identification and intervention for swallowing disorders can prevent complications and improve your child's nutritional status and quality of life.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 17,
+        src: "sleep-disorders",
+        service_name: "Sleep Disorders",
+        service_details: "Comprehensive assessment and management of sleep problems in children to promote healthy sleep patterns and overall well-being.",
+        slug: "sleep-disorders",
+        image: "/assets/images/services/sleep.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Sleep Disorders</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/sleep.png" alt="Sleep Disorders" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Quality sleep is essential for children's growth, development, and overall health. Sleep disorders can significantly impact a child's behavior, learning, and well-being. Our specialized services help identify and manage various sleep problems in children.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Services We Provide</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Sleep Assessment:</strong> Comprehensive evaluation of sleep patterns and problems.</li>
+            <li><strong>Sleep Hygiene Education:</strong> Teaching healthy sleep habits and routines.</li>
+            <li><strong>Behavioral Sleep Interventions:</strong> Evidence-based strategies to improve sleep quality.</li>
+            <li><strong>Parent Counseling:</strong> Guidance on establishing consistent bedtime routines.</li>
+            <li><strong>Management Strategies:</strong> Individualized plans for various sleep disorders.</li>
+            <li><strong>Collaboration with Specialists:</strong> Coordinating care with pediatricians when needed.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Common Sleep Issues We Address</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Difficulty falling asleep or staying asleep</li>
+            <li>Night wakings and sleep disruptions</li>
+            <li>Irregular sleep schedules</li>
+            <li>Sleep problems in children with neurodevelopmental conditions</li>
+            <li>Bedtime resistance and behavioral sleep problems</li>
+            <li>Sleep-related anxiety</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Why Sleep Matters</h3>
+        <p>
+            Adequate sleep is crucial for developing healthy sleep patterns, supporting cognitive function and learning, regulating emotions and behavior, and promoting physical growth and immune function.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            Our goal is to help your child develop healthy sleep habits that will benefit them throughout their life, contributing to better overall health and development.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 18,
+        src: "neuro-developmental-assessments",
+        service_name: "Neuro Developmental Assessments",
+        service_details: "Comprehensive developmental screening and assessment using standardized tools to identify neurodevelopmental conditions and guide early intervention.",
+        slug: "neuro-developmental-assessments",
+        image: "/assets/images/services/neuro.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Neuro Developmental Assessments</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/neuro.png" alt="Neuro Developmental Assessments" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Our comprehensive neurodevelopmental assessments provide detailed evaluation of children's developmental progress across multiple domains. These assessments are crucial for early identification of developmental concerns and planning appropriate interventions.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Assessment Tools We Use</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>HINE (Hammersmith Infant Neurological Evaluation):</strong> Neurological assessment for infants until age 1.</li>
+            <li><strong>Amiel-Tison Method:</strong> Comprehensive neurological assessment for early detection.</li>
+            <li><strong>Bayley Scales:</strong> Developmental assessment for children aged 18 months to 4 years.</li>
+            <li><strong>M-CHAT (Modified Checklist for Autism in Toddlers):</strong> Screening for autistic features.</li>
+            <li><strong>TABC (Trivandrum Autism Behaviour Checklist):</strong> Autism screening tool.</li>
+            <li><strong>CARS (Childhood Autism Rating Scale):</strong> Diagnostic tool for autism spectrum disorder.</li>
+            <li><strong>DSM-V Criteria:</strong> Standardized diagnostic criteria for neurodevelopmental disorders.</li>
+            <li><strong>INDT-ASD, ISSA, and 3di:</strong> Advanced autism diagnostic tools.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Assess</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Developmental milestones and delays</li>
+            <li>Neurological function and reflexes</li>
+            <li>Cognitive and intellectual abilities</li>
+            <li>Motor skills (gross and fine motor)</li>
+            <li>Language and communication development</li>
+            <li>Social and emotional development</li>
+            <li>Behavioral patterns and concerns</li>
+            <li>Autism spectrum features</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Why Choose Our Assessments?</h3>
+        <p>
+            Our assessments are conducted by a qualified developmental paediatrician using internationally recognized, standardized tools. We provide detailed reports with clear recommendations for intervention, educational planning, and ongoing support.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            Early and accurate assessment is the foundation for effective intervention. Our comprehensive evaluations help families understand their child's unique developmental profile and access appropriate support services.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 19,
+        src: "psychometric-evaluation",
+        service_name: "Psychometric Evaluation",
+        service_details: "Comprehensive psychological testing to measure IQ, cognitive abilities, social maturity, and academic functioning for educational planning and intervention.",
+        slug: "psychometric-evaluation",
+        image: "/assets/images/services/evaluation.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Psychometric Evaluation</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/evaluation.png" alt="Psychometric Evaluation" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Psychometric evaluation provides objective, standardized measurement of a child's cognitive abilities, intellectual functioning, and social-emotional development. These assessments are essential for accurate diagnosis, educational planning, and identifying appropriate interventions.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Evaluate</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Intelligence Quotient (IQ):</strong> Comprehensive assessment of cognitive abilities and intellectual functioning.</li>
+            <li><strong>Social Maturity:</strong> Evaluation of adaptive behavior and social skills development.</li>
+            <li><strong>Academic Achievement:</strong> Assessment of reading, writing, and mathematical abilities.</li>
+            <li><strong>Cognitive Strengths and Weaknesses:</strong> Detailed profile of learning abilities across different domains.</li>
+            <li><strong>Memory and Attention:</strong> Evaluation of working memory, attention span, and concentration.</li>
+            <li><strong>Executive Functions:</strong> Assessment of planning, organization, and problem-solving skills.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">When is Psychometric Evaluation Needed?</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Academic difficulties or underachievement at school</li>
+            <li>Suspected learning disabilities</li>
+            <li>Assessment for intellectual disability</li>
+            <li>Educational planning and school placement decisions</li>
+            <li>Evaluation for gifted programs</li>
+            <li>Diagnostic clarification for neurodevelopmental disorders</li>
+            <li>Tracking developmental progress over time</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Our Approach</h3>
+        <p>
+            Our psychometric evaluations are conducted by qualified professionals using standardized, internationally recognized assessment tools. We provide comprehensive reports that include detailed test results, interpretations, and specific recommendations for intervention and educational support.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Educational Counseling</h3>
+        <p>
+            We offer specialized educational counseling for children struggling academically. Based on evaluation results, we work with families and schools to develop individualized education plans, recommend appropriate accommodations, and guide intervention strategies.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            Psychometric evaluation provides valuable insights into your child's unique learning profile, enabling targeted support and maximizing their potential for success.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 20,
+        src: "3di-autism-diagnostic",
+        service_name: "3DI: Autism Diagnostic Interview",
+        service_details: "Advanced computer-based diagnostic tool providing developmental, dimensional, and diagnostic assessment for autism spectrum disorder.",
+        slug: "3di-autism-diagnostic-interview",
+        image: "/assets/images/services/evaluation.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">3DI: Autism Diagnostic Interview</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/evaluation.png" alt="3DI Autism Diagnostic Interview" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            The 3DI (Developmental, Dimensional, and Diagnostic Interview) is an advanced, computer-based diagnostic tool designed to provide comprehensive assessment for autism spectrum disorder. This sophisticated instrument offers a thorough evaluation that goes beyond traditional screening methods.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What is 3DI?</h3>
+        <p>
+            The 3DI is a standardized diagnostic interview that captures detailed information about a child's developmental history and current functioning. It uses advanced algorithms to analyze responses and provide objective diagnostic information.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Three Dimensions of Assessment</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Developmental Assessment:</strong> Evaluates the child's developmental history and milestones from infancy to the present.</li>
+            <li><strong>Dimensional Assessment:</strong> Measures the severity of features associated with autism across different behavioral domains.</li>
+            <li><strong>Diagnostic Assessment:</strong> Provides diagnostic clarity regarding the presence and characteristics of autism spectrum disorder.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Key Features</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Computer-based administration for consistency and accuracy</li>
+            <li>Computes severity scores for autism-related features</li>
+            <li>Assesses behavioral adjustment levels across multiple domains</li>
+            <li>Provides detailed diagnostic profile</li>
+            <li>Helps guide treatment planning and intervention strategies</li>
+            <li>Can be used for monitoring progress over time</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Why Choose 3DI?</h3>
+        <p>
+            The 3DI provides a more comprehensive and nuanced understanding of autism spectrum features compared to traditional screening tools. It helps clinicians make accurate diagnoses, understand the severity of symptoms, and develop targeted intervention plans.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            Accurate diagnosis is the first step toward effective intervention. The 3DI offers families and professionals detailed insights into a child's unique profile on the autism spectrum.
+        </p>
+    </div>
+    </div>
+</div>`
+    },
+    {
+        id: 21,
+        src: "parenting-support-groups",
+        service_name: "Parenting Support Groups",
+        service_details: "Peer support platform addressing emotional challenges, guilt, anxiety, and awareness about childhood disabilities through counseling and community.",
+        slug: "parenting-support-groups",
+        image: "/assets/images/services/parent.png",
+        content: `<div class="service-details-page bg-white py-0">
+    <div class="w-full bg-gray-50 py-16 sm:py-20 mb-12 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/geometric-shapes.png')] opacity-5"></div>
+        <div class="container mx-auto text-center px-4 relative">
+            <div class="inline-block mx-auto">
+                <div class="h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full w-32"></div>
+            </div>
+            <h2 class="text-4xl sm:text-5xl font-extrabold text-gray-800 tracking-tight mt-6">Parenting Support Groups</h2>
+        </div>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <img src="/assets/images/services/parent.png" alt="Parenting Support Groups" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <div class="prose prose-lg max-w-full text-gray-700">
+        <p>
+            Parenting a child with special needs can be both rewarding and challenging. Our Parenting Support Groups provide a safe, supportive space where parents can connect with others who understand their journey, share experiences, and learn from one another.
+        </p>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">What We Offer</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li><strong>Peer Support:</strong> Connect with other parents facing similar challenges and celebrate successes together.</li>
+            <li><strong>Emotional Support:</strong> Address feelings of guilt, anxiety, frustration, and isolation in a non-judgmental environment.</li>
+            <li><strong>Educational Resources:</strong> Learn about childhood disabilities, developmental conditions, and available services.</li>
+            <li><strong>Coping Strategies:</strong> Share and learn practical strategies for managing daily challenges.</li>
+            <li><strong>Professional Guidance:</strong> Access to counseling and professional facilitation during group sessions.</li>
+            <li><strong>Community Building:</strong> Build lasting connections with families who understand your journey.</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Topics We Address</h3>
+        <ul class="list-disc space-y-2 pl-5">
+            <li>Coping with diagnosis and acceptance</li>
+            <li>Managing stress and preventing burnout</li>
+            <li>Navigating the healthcare and education systems</li>
+            <li>Balancing family needs and sibling relationships</li>
+            <li>Advocating for your child's needs</li>
+            <li>Planning for the future and transition periods</li>
+            <li>Self-care and maintaining personal well-being</li>
+            <li>Celebrating progress and small victories</li>
+        </ul>
+        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Why Join a Support Group?</h3>
+        <p>
+            Research shows that parents who participate in support groups experience reduced stress, improved coping skills, and better overall well-being. You'll find that you're not alone in this journey, and the shared wisdom of the group can be invaluable.
+        </p>
+        <p class="font-semibold text-gray-800 mt-8">
+            You don't have to navigate this journey alone. Our Parenting Support Groups provide understanding, encouragement, and practical support to help you thrive as you support your child's development.
+        </p>
+    </div>
     </div>
 </div>`
     }
