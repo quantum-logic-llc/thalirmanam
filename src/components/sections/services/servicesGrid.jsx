@@ -133,7 +133,7 @@ const ServicesGrid = () => {
         <section className="pt-12 sm:pt-16 md:pt-20 pb-12 sm:pb-16 md:pb-20 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container relative z-10">
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
-                    <h2 className="text-orange-500 text-xl sm:text-2xl md:text-[26px] font-bold uppercase mb-2 sm:mb-3">Our Services</h2>
+                    <h2 className="text-[#f28cb3] text-xl sm:text-2xl md:text-[26px] font-bold uppercase mb-2 sm:mb-3">Our Services</h2>
                     <h3 className="text-black text-xl sm:text-2xl md:text-[28px] font-bold capitalize mb-3 sm:mb-4 mt-2">
                         Comprehensive Developmental Care
                     </h3>

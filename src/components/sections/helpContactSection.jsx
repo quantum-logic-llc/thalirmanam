@@ -10,7 +10,7 @@ const HelpContactSection = () => {
         <div className="flex flex-col items-center justify-center text-center space-y-6 sm:space-y-8">
           {/* Heading */}
           <div className="space-y-3 sm:space-y-4">
-            <h2 className="font-bold text-orange-500 uppercase" style={{ fontSize: '36px', lineHeight: '1' }}>
+            <h2 className="font-bold text-[#f28cb3] uppercase" style={{ fontSize: '36px', lineHeight: '1' }}>
               Concerned about your child or teen’s development?
             </h2>
           </div>
