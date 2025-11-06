@@ -107,10 +107,10 @@ const HeroSlide = ({ slide }) => {
             {/* Main Title */}
             <TextReveal delay={0.2}>
               <div className="space-y-3">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-black leading-tight">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-[#3ede0e] leading-tight">
                   {title}
                 </h1>
-                <h2 className="text-1xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-green-600 leading-snug">
+                <h2 className="text-1xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-black-600 leading-snug">
                   {subtitle}
                 </h2>
               </div>
@@ -118,9 +118,9 @@ const HeroSlide = ({ slide }) => {
 
             {/* Colorful divider */}
             <div className="flex items-center gap-2">
-              <div className="h-1.5 w-16 bg-gradient-to-r from-green-500 to-green-600 rounded-full shadow-lg"></div>
-              <div className="h-1.5 w-12 bg-gradient-to-r from-orange-500 to-orange-600 rounded-full shadow-lg"></div>
-              <div className="h-1.5 w-8 bg-black rounded-full shadow-lg"></div>
+              <div className="h-1.5 w-16 bg-[#3ede0e] rounded-full shadow-lg"></div>
+              <div className="h-1.5 w-12 bg-[#4ca4d6] rounded-full shadow-lg"></div>
+              <div className="h-1.5 w-8 bg-[#ed2d7e] rounded-full shadow-lg"></div>
             </div>
 
             {/* Description */}
@@ -131,7 +131,7 @@ const HeroSlide = ({ slide }) => {
                     return (
                       <span
                         key={index}
-                        className="text-orange-600 font-bold"
+                        className="text-[#ed2d7e] font-bold"
                       >
                         {part}
                       </span>
@@ -148,14 +148,14 @@ const HeroSlide = ({ slide }) => {
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  className="bg-[#4ca4d6] hover:bg-[#3a8bbd] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   <Link href="/contact-us">Book Consultation</Link>
                 </Button>
                 <Button
                   asChild
                   size="lg"
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  className="bg-[#ed2d7e] hover:bg-[#c7266a] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   <Link href="/services">Explore Services</Link>
                 </Button>
