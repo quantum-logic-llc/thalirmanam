@@ -234,7 +234,7 @@ export const servicesDataOne = [
         </div>
     </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <img src="https://thalirmanam.in/wp-content/uploads/2022/12/Cerebral-Palsy-1200x400.jpg" alt="Cerebral Palsy Support" class="w-full h-auto max-h-[500px] object-cover mb-12" />
+    <img src="/assets/images/services/cerebral-palsy1.png" alt="Cerebral Palsy Support" class=" align-center h-auto max-h-[500px]  mb-12 " />
     <div class="flex flex-col md:flex-row gap-8 items-start">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
             <p>
