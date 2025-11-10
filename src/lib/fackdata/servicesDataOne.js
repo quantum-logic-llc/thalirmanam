@@ -234,38 +234,112 @@ export const servicesDataOne = [
         </div>
     </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <img src="/assets/images/services/cerebral-palsy1.png" alt="Cerebral Palsy Support" class=" align-center h-auto max-h-[500px]  mb-12 " />
-    <div class="flex flex-col md:flex-row gap-8 items-start">
+    <div class="prose prose-lg max-w-full text-gray-700 mb-12 text-center">
+        <p>Cerebral palsy (CP) is a group of disorders that affect a person's ability to move and maintain balance and posture.<br />
+        CP is the most common motor disability in childhood.<br />
+        Cerebral means having to do with the brain. Palsy means weakness or problems with using the muscles. CP is caused by abnormal brain development or damage to the developing brain that affects a person's ability to control his or her muscles.<br />
+        The symptoms of CP vary from person to person. A person with severe CP might need to use special equipment to be able to walk, or might not be able to walk at all and might need lifelong care.<br />
+        A person with mild CP, on the other hand, might walk a little awkwardly, but might not need any special help. CP does not get worse over time, though the exact symptoms can change over a person's lifetime.</p>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-8 items-start mb-12">
         <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
-            <p>
-                Cerebral palsy (CP) is a group of disorders affecting movement, balance, and posture. It's the most common motor disability in childhood, caused by abnormal brain development or damage. While CP doesn't worsen over time, its symptoms can change.
-            </p>
-            <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Types of Cerebral Palsy</h3>
-            <p>CP is classified by the main type of movement disorder involved:</p>
+            <p><strong>Types of Cerebral Palsy</strong></p>
+            <p>Doctors classify CP according to the main type of movement disorder involved. Depending on which areas of the brain are affected, one or more of the following movement disorders can occur:</p>
             <ul class="list-disc space-y-2 pl-5">
-                <li><strong>Spastic CP:</strong> The most common type (80%), causing stiff muscles and awkward movements. It can be further described by the parts of the body affected (diplegia, hemiplegia, or quadriplegia).</li>
-                <li><strong>Dyskinetic CP:</strong> Difficulty controlling the movement of hands, arms, feet, and legs, making it difficult to sit and walk.</li>
-                <li><strong>Ataxic CP:</strong> Problems with balance and coordination, leading to unsteadiness.</li>
-                <li><strong>Mixed CP:</strong> A combination of symptoms from different types, most commonly spastic-dyskinetic CP.</li>
+                <li>Stiff muscles (spasticity)</li>
+                <li>Uncontrollable movements (dyskinesia)</li>
+                <li>Poor balance and coordination (ataxia)</li>
             </ul>
         </div>
         <div class="w-full md:w-1/2">
             <img src="https://thalirmanam.in/wp-content/uploads/2022/12/1-1-300x200.jpg" alt="Cerebral Palsy Types" class="w-full h-auto rounded-lg shadow-md" />
         </div>
     </div>
-    <div class="prose prose-lg max-w-full text-gray-700 mt-12">
-        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Early Signs & Diagnosis</h3>
-        <p>Diagnosing CP at an early age is important. Signs to watch for include:</p>
+
+    <div class="prose prose-lg max-w-full text-gray-700 mb-12">
+        <p><strong><u>Spastic Cerebral Palsy</u></strong></p>
+        <p>The most common type of CP is spastic CP. Spastic CP affects about 80% of people with CP.</p>
+        <p>People with spastic CP have increased muscle tone. This means their muscles are stiff and, as a result, their movements can be awkward. Spastic CP usually is described by what parts of the body are affected:</p>
         <ul class="list-disc space-y-2 pl-5">
-            <li><strong>In a baby younger than 6 months:</strong> Head lagging, feeling stiff or floppy, overextending back/neck, or stiffening and crossing legs.</li>
-            <li><strong>In a baby older than 6 months:</strong> Not rolling over, unable to bring hands together or to the mouth, reaching with only one hand.</li>
-            <li><strong>In a baby older than 10 months:</strong> Lopsided crawling or not crawling on all fours.</li>
+            <li>Spastic diplegia/diparesis―In this type of CP, muscle stiffness is mainly in the legs, with the arms less affected or not affected at all. People with spastic diplegia might have difficulty walking because tight hip and leg muscles cause their legs to pull together, turn inward, and cross at the knees (also known as scissoring.</li>
+            <li>Spastic hemiplegia/hemiparesis―This type of CP affects only one side of a person's body; usually the arm is more affected than the leg.</li>
+            <li>Spastic quadriplegia/quadriparesis―Spastic quadriplegia is the most severe form of spastic CP and affects all four limbs, the trunk, and the face. People with spastic quadriparesis usually cannot walk and often have other developmental disabilities such as intellectual disability; seizures; or problems with vision, hearing, or speech.</li>
         </ul>
-        <p>Diagnosis involves developmental monitoring, screening tests, and medical evaluations.</p>
-        <h3 class="text-2xl font-semibold text-pink-700 mt-8 mb-4 text-left border-l-4 border-pink-200 pl-4">Treatment and Intervention</h3>
-        <p>
-            There is no cure for CP, but treatment can improve the lives of those who have the condition. It is important to begin a treatment program as early as possible.
-        </p>
+
+        <p><u><strong>Dyskinetic Cerebral Palsy</strong></u></p>
+        <p>People with dyskinetic CP have problems controlling the movement of their hands, arms, feet, and legs, making it difficult to sit and walk. The movements are uncontrollable and can be slow and writhing or rapid and jerky. Sometimes the face and tongue are affected and the person has a hard time sucking, swallowing, and talking. A person with dyskinetic CP has muscle tone that can change (varying from too tight to too loose) not only from day to day, but even during a single day.</p>
+
+        <p><strong><u>Ataxic Cerebral Palsy</u></strong></p>
+        <p>People with ataxic CP have problems with balance and coordination. They might be unsteady when they walk. They might have a hard time with quick movements or movements that need a lot of control, like writing. They might have a hard time controlling their hands or arms when they reach for something.</p>
+
+        <p><strong>Mixed Cerebral Palsy</strong></p>
+        <p>Some people have symptoms of more than one type of CP. The most common type of mixed CP is spastic-dyskinetic CP.</p>
+    </div>
+
+    <h3 class="text-3xl font-bold text-gray-800 text-center mb-8">Early Signs</h3>
+
+    <div class="space-y-12 mb-12">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/2">
+                <img src="https://thalirmanam.in/wp-content/uploads/2022/12/6-MONTH.jpg" alt="Baby younger than 6 months" class="w-full h-auto rounded-lg shadow-md" />
+            </div>
+            <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
+                <h4 class="text-2xl font-semibold text-pink-700 mb-4">In a Baby Younger Than 6 Months of Age</h4>
+                <p>• His head lags when you pick him up while he's lying on his back<br />
+                • He feels stiff<br />
+                • He feels floppy<br />
+                • When held cradled in your arms, he seems to overextend his back and neck, constantly acting as if he is pushing away from you<br />
+                • When you pick him up, his legs get stiff and they cross or scissor</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse gap-8 items-center">
+            <div class="w-full md:w-1/2">
+                <img src="https://thalirmanam.in/wp-content/uploads/2022/12/baby-g60b6aa555_640.jpg" alt="Baby older than 6 months" class="w-full h-auto rounded-lg shadow-md" />
+            </div>
+            <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
+                <h4 class="text-2xl font-semibold text-pink-700 mb-4">In a Baby Older Than 6 Months of Age</h4>
+                <p>• She doesn't roll over in either direction<br />
+                • She cannot bring her hands together<br />
+                • She has difficulty bringing her hands to her mouth<br />
+                • She reaches out with only one hand while keeping the other fisted</p>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+            <div class="w-full md:w-1/2">
+                <img src="https://thalirmanam.in/wp-content/uploads/2022/11/baby2.jpg" alt="Baby older than 10 months" class="w-full h-auto rounded-lg shadow-md" />
+            </div>
+            <div class="w-full md:w-1/2 prose prose-lg max-w-full text-gray-700">
+                <h4 class="text-2xl font-semibold text-pink-700 mb-4">In a Baby Older Than 10 Months of Age</h4>
+                <p>• He crawls in a lopsided manner, pushing off with one hand and leg while dragging the opposite hand and leg<br />
+                • He scoots around on his buttocks or hops on his knees, but does not crawl on all fours<br />
+                Tell your child's doctor or nurse if you notice any of these signs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="prose prose-lg max-w-full text-gray-700 mb-12">
+        <p><strong>Screening and Diagnosis</strong></p>
+        <p>Diagnosing CP at an early age is important to the well-being of children and their families. Diagnosing CP can take several steps:</p>
+        <ul class="list-none space-y-4">
+            <li>
+                <strong>Developmental Monitoring</strong>
+                <p class="ml-6">Developmental monitoring means tracking a child's growth and development over time. If any concerns about the child's development are raised during monitoring, then a developmental screening test should be given as soon as possible.</p>
+            </li>
+            <li>
+                <strong>Developmental Screening</strong>
+                <p class="ml-6">During developmental screening a short test is given to see if the child has specific developmental delays, such as motor or movement delays. If the results of the screening test are cause for concern, then the doctor will make referrals for developmental and medical evaluations.</p>
+            </li>
+            <li>
+                <strong>Developmental and Medical Evaluations</strong>
+                <p class="ml-6">The goal of a developmental evaluation is to diagnose the specific type of disorder that affects a child.</p>
+            </li>
+        </ul>
+
+        <p><strong>Treatments and Intervention Services</strong></p>
+        <p>There is no cure for CP, but treatment can improve the lives of those who have the condition. It is important to begin a treatment program as early as possible.</p>
     </div>
     </div>
 </div>`
