@@ -1,137 +1,94 @@
-import SectionName from '@/components/ui/sectionName'
-import Title from '@/components/ui/title'
-import { teamData } from '@/lib/fackdata/teamData'
-import React from 'react'
-import TeamCard from './teamCard'
-import Dr from '@/assets/images/team/Dr.png'
-import Image from 'next/image'
+import Link from 'next/link';
+import Image from 'next/image';
+import Dr from '@/assets/images/team/Dr.png';
+
+const founder = {
+  slug: 'dr-naveena-karthik',
+  image: Dr,
+  name: 'Dr. Naveena Karthik',
+  title: 'Our Founder',
+  profession: 'Developmental & Behavioural Paediatrician',
+  quote: 'Every child is unique and deserves personalized care to reach their full potential.',
+};
 
 const Teams = () => {
   return (
-    <section className="lg:py-20 py-16 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
-      <div className="container relative z-10">
+    <section className="py-20" style={{ backgroundColor: '#eff6ff' }}>
+      <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-8 sm:mb-12 md:mb-16 px-3 sm:px-4">
-          <h2 className="text-orange-500 text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Meet Our Expert</h2>
-          <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mb-3 sm:mb-4">Leading Specialist In Child Development</h3>
-          <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">Dedicated to providing exceptional care and support for children with developmental needs</p>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 mb-4">
+            Meet Our Founder
+          </h2>
+          <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div>
+          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            Compassionate expertise in developmental and behavioral pediatrics
+          </p>
         </div>
 
-        {/* Main Content */}
-        <div className="max-w-6xl mx-auto px-3 sm:px-4">
-          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 sm:gap-8 md:gap-10 lg:gap-12 items-start">
+        {/* Founder Profile */}
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Content Column - Left Side */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
+                  {founder.name}
+                </h3>
+                <p className="text-xl font-semibold text-green-600 mb-2">
+                  {founder.title}
+                </p>
+                <p className="text-lg text-gray-700 font-medium">
+                  {founder.profession}
+                </p>
+              </div>
 
-            {/* Left Column - Doctor Profile Card */}
-            <div className="relative">
-              <div className="bg-white rounded-xl sm:rounded-2xl shadow-xl overflow-hidden border-2 border-gray-100 hover:shadow-2xl transition-all duration-500">
-                {/* Image Section */}
-                <div className="relative h-[350px] sm:h-[400px] md:h-[450px] lg:h-[500px] bg-gradient-to-br from-orange-50 to-green-50 overflow-hidden">
-                  <Image
-                    src={Dr}
-                    alt="Dr. Naveena Karthik"
-                    fill
-                    className="object-contain"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none"></div>
+              <div className="border-l-4 border-pink-500 pl-6 py-3 bg-pink-50">
+                <p className="text-gray-700 text-lg italic">
+                  &ldquo;{founder.quote}&rdquo;
+                </p>
+              </div>
 
-                  {/* Badge */}
-                  <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-orange-500 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-full text-xs sm:text-sm font-semibold shadow-lg z-10">
-                    Our Founder
-                  </div>
-                </div>
+              <div className="space-y-4 text-gray-600">
+                <p>
+                  With years of dedicated experience in developmental and behavioural pediatrics,
+                  Dr. Naveena Karthik has been at the forefront of providing comprehensive care
+                  for children with developmental challenges.
+                </p>
+                <p>
+                  Her approach combines evidence-based medical practices with compassionate,
+                  individualized care that recognizes the unique needs of each child and family.
+                </p>
+              </div>
 
-                {/* Info Section */}
-                <div className="p-4 sm:p-6 md:p-8">
-                  <h4 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 mb-2">Dr. Naveena Karthik</h4>
-                  <p className="text-orange-500 text-sm sm:text-base md:text-lg font-semibold mb-3 sm:mb-4">Developmental & Behavioural Paediatrician</p>
-
-                  {/* Divider */}
-                  <div className="w-16 sm:w-20 h-1 bg-gradient-to-r from-orange-500 to-green-500 rounded-full mb-4 sm:mb-6"></div>
-
-                  {/* Qualifications */}
-                  <div className="space-y-2 sm:space-y-3">
-                    <div className="flex items-start gap-2 sm:gap-3">
-                      <div className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-1.5 sm:mt-2"></div>
-                      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">MBBS, DCH (Child Health)</p>
-                    </div>
-                    <div className="flex items-start gap-2 sm:gap-3">
-                      <div className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-1.5 sm:mt-2"></div>
-                      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">PG Diploma in Developmental Neurology (CDC Trivandrum)</p>
-                    </div>
-                    <div className="flex items-start gap-2 sm:gap-3">
-                      <div className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-1.5 sm:mt-2"></div>
-                      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">Fellowship in Paediatric Neuro-disability (UK)</p>
-                    </div>
-                    <div className="flex items-start gap-2 sm:gap-3">
-                      <div className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-orange-500 rounded-full mt-1.5 sm:mt-2"></div>
-                      <p className="text-gray-700 text-xs sm:text-sm leading-relaxed">Certification in Adolescent Mental Health</p>
-                    </div>
-                  </div>
-                </div>
+              <div className="pt-4">
+                <Link
+                  href={`/doctors/${founder.slug}`}
+                  className="inline-block bg-pink-500 hover:bg-pink-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
-            {/* Right Column - Expertise & Approach */}
-            <div className="space-y-4 sm:space-y-6">
-
-              {/* Experience Card */}
-              <div className="bg-gradient-to-br from-orange-50 to-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-orange-100 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-orange-500 rounded-lg sm:rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">Experience & Expertise</h4>
-                </div>
-                <p className="text-sm sm:text-base text-gray-700 leading-relaxed">Specialized in developmental and behavioral pediatrics with extensive experience in assessment, diagnosis, and intervention for children with neurodevelopmental conditions.</p>
+            {/* Image Column - Right Side */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <Image
+                  src={founder.image}
+                  alt={founder.name}
+                  width={500}
+                  height={500}
+                  className="w-full h-auto object-contain"
+                  priority
+                />
               </div>
-
-              {/* Specialization Grid */}
-              <div className="bg-gradient-to-br from-green-50 to-white rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-green-100 hover:shadow-lg transition-all duration-300">
-                <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 bg-green-600 rounded-lg sm:rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                    <svg className="w-5 h-5 sm:w-6 sm:h-6 md:w-7 md:h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
-                    </svg>
-                  </div>
-                  <h4 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">Areas of Specialization</h4>
-                </div>
-                <div className="grid grid-cols-2 gap-2 sm:gap-3 md:gap-4">
-                  <div className="bg-white p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300">
-                    <p className="text-xs sm:text-sm font-bold text-gray-800">Autism Spectrum Disorders</p>
-                  </div>
-                  <div className="bg-white p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300">
-                    <p className="text-xs sm:text-sm font-bold text-gray-800">ADHD Management</p>
-                  </div>
-                  <div className="bg-white p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300">
-                    <p className="text-xs sm:text-sm font-bold text-gray-800">Learning Disabilities</p>
-                  </div>
-                  <div className="bg-white p-2 sm:p-3 md:p-4 rounded-lg sm:rounded-xl border border-gray-200 hover:border-orange-300 hover:shadow-md transition-all duration-300">
-                    <p className="text-xs sm:text-sm font-bold text-gray-800">Cerebral Palsy Care</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Approach Quote */}
-              <div className="bg-gradient-to-br from-orange-100 via-orange-50 to-peach-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 border-2 border-orange-200 shadow-xl relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-24 h-24 sm:w-32 sm:h-32 bg-orange-200/20 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-                <div className="absolute bottom-0 left-0 w-20 h-20 sm:w-24 sm:h-24 bg-orange-200/20 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-                <div className="relative z-10">
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-orange-400/40 mb-3 sm:mb-4" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                  </svg>
-                  <p className="text-sm sm:text-base md:text-lg leading-relaxed font-medium mb-2 text-gray-800">Every child is unique and deserves personalized care. I believe in early intervention, family-centered treatment, and evidence-based therapies to help each child reach their full potential.</p>
-                  <p className="text-sm sm:text-base text-orange-600 font-bold">- Dr. Naveena Karthik</p>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Teams
+export default Teams;

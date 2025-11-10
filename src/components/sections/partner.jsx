@@ -8,8 +8,8 @@ import { partnerData } from '@/lib/fackdata/partnerData'
 
 const Partner = () => {
     return (
-        <div className="lg:pt-15 pt-10">
-            <div className="bg-warm lg:pt-[120px] pt-20">
+        <div className="lg:pt-15 pt-10" style={{ backgroundColor: '#eff6ff' }}>
+            <div className="lg:pt-[120px] pt-20" style={{ backgroundColor: '#eff6ff' }}>
                 <div className="container">
                     <Swiper
                         slidesPerView={5}

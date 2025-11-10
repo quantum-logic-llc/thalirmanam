@@ -121,7 +121,7 @@ const AppointmentBooking = () => {
     ];
 
     return (
-        <section className="lg:py-20 py-16 bg-gradient-to-b from-warm/10 via-white to-green/5">
+        <section className="lg:py-20 py-16" style={{ backgroundColor: '#ffffff' }}>
             <div className="container">
                 {/* Header Section */}
                 <div className="text-center mb-12">

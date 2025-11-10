@@ -4,7 +4,7 @@ import { FaMapLocationDot, FaRoute, FaSquareParking, FaTrain } from 'react-icons
 
 const GoogleMapNew = () => {
     return (
-        <section className="lg:py-20 py-12 bg-gradient-to-b from-white to-warm/10">
+        <section className="lg:py-20 py-12" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container">
                 {/* Header */}
                 <div className="text-center mb-12">

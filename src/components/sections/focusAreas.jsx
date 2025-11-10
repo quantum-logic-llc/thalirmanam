@@ -7,7 +7,7 @@ import { focusAreasData } from '@/lib/fackdata/focusAreasData'
 
 const FocusAreas = () => {
     return (
-        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
+        <section className="lg:pt-15 pt-10 lg:pb-15 pb-10 relative overflow-hidden" style={{ backgroundColor: '#ffffff' }}>
             {/* Background Decorations */}
             <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-80 h-80 bg-green-50/30 rounded-full blur-3xl"></div>
