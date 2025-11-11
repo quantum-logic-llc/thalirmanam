@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import SectionName from "@/components/ui/sectionName";
 import SectionDescription from "@/components/ui/sectionDescription";
 import SlideUp from "@/lib/animations/slideUp";
-import boy from "@/assets/images/about/boy.png";
+import collage from "@/assets/images/about/collage.png";
 
 const servicesWeServe = [
   {
@@ -112,7 +112,7 @@ const WhoWeServe = () => {
             <div className="relative">
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
                 <Image
-                  src={boy}
+                  src={collage}
                   alt="Thalir Manam Child Development Center"
                   fill
                   className="object-cover"
