@@ -126,14 +126,14 @@ const DoctorDetailsPage = ({ params }) => {
                   Book Appointment
                 </a>
                 <a
-                  href="tel:+919487006777"
+                  href="tel:+91 89253 36967"
                   className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-50 transition-all border-2 border-indigo-200 shadow-md hover:shadow-lg"
                 >
                   <PhoneIcon className="w-5 h-5" />
-                  +91 94870 06777
+                  +91 89253 36967
                 </a>
                 <a
-                  href="mailto:thalirmanam@gmail.com"
+                  href="mailto:thalirmanam5@gmail.com"
                   className="inline-flex items-center gap-2 bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-50 transition-all border-2 border-indigo-200 shadow-md hover:shadow-lg"
                 >
                   <EnvelopeIcon className="w-5 h-5" />
@@ -146,9 +146,9 @@ const DoctorDetailsPage = ({ params }) => {
 
         {/* Decorative Bottom Wave */}
         <div className="absolute bottom-0 left-0 right-0">
-          <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 lg:h-20">
+          {/* <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-16 lg:h-20">
             <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="white"/>
-          </svg>
+          </svg> */}
         </div>
       </div>
 
