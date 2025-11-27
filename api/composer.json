@@ -1,0 +1,6 @@
+{
+    "name": "thalirmanam/api",
+    "require": {
+        "phpmailer/phpmailer": "^7.0"
+    }
+}
