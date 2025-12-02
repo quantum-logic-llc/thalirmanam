@@ -6,7 +6,7 @@ const founder = {
   slug: 'dr-naveena-karthik',
   image: Dr,
   name: 'Dr. Naveena Karthik',
-  title: 'Our Founder',
+  // title: 'Our Founder',
   profession: 'Developmental & Behavioural Paediatrician',
   quote: 'Every child is unique and deserves personalized care to reach their full potential.',
 };
@@ -18,11 +18,11 @@ const Teams = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 mb-4">
-            Meet Our Founder
+            Meet Dr. Naveena
           </h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Compassionate expertise in developmental and behavioral pediatrics
+            Passionate about helping children and teens flourish, nurturing their strengths, and supporting families through every stage of development.
           </p>
         </div>
 

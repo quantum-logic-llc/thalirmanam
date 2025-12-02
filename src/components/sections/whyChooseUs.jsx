@@ -12,18 +12,18 @@ const WhyChooseUs = () => {
                 {/* Section Header */}
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
                     <SlideUp>
-                        <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Why Choose?</h2>
+                        <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Why Choose Thalirmanam ?</h2>
                     </SlideUp>
                     <SlideUp delay={2}>
                         <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5">
-                            Thalir Manam
+                            Families choose Thalirmanam because we:
                         </h3>
                     </SlideUp>
                 </div>
 
                 {/* Features Grid */}
                 <div className="lg:pt-10 pt-5 px-3 sm:px-4">
-                    <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-8">
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 sm:gap-6 md:gap-8">
                         {whyChooseUsData.map((item) => (
                             <FeatureCard
                                 key={item.id}
@@ -77,6 +77,14 @@ const FeatureCard = ({ id, title, icon }) => {
                     <div className={iconContainerClasses}>
                         <svg className={iconClasses} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                )
+            case 'growth':
+                return (
+                    <div className={iconContainerClasses}>
+                        <svg className={iconClasses} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
                         </svg>
                     </div>
                 )

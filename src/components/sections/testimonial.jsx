@@ -21,7 +21,7 @@ const Testimonial = () => {
         <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial" style={{ backgroundColor: '#ffffff' }}>
             <div className="container">
                 <div className="text-center mb-8 sm:mb-10 md:mb-12">
-                    <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Customer Reviews</h2>
+                    <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Feedback</h2>
                     <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mb-3 sm:mb-4">What Parents Say About Us</h3>
                     <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">We are proud of the positive feedback we receive from parents. Here are some of their stories.</p>
                 </div>

@@ -76,7 +76,7 @@ const HeroCarousel = () => {
 };
 
 const HeroSlide = ({ slide }) => {
-  const { title, subtitle, description, image, bgColor, highlights } = slide;
+  const { title, subtitle, tagline, description, image, bgColor, highlights } = slide;
 
   return (
     <div
@@ -113,6 +113,11 @@ const HeroSlide = ({ slide }) => {
                 <h2 className="text-1xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-black-600 leading-snug">
                   {subtitle}
                 </h2>
+                {tagline && (
+                  <h3 className="text-lg sm:text-xl md:text-xl lg:text-xl font-medium text-gray-600 leading-snug italic">
+                    {tagline}
+                  </h3>
+                )}
               </div>
             </TextReveal>
 

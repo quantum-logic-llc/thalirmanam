@@ -28,7 +28,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                 <div className="relative overflow-hidden rounded-b-[50px] lg:rounded-b-[100px]">
                     <Image
                         src={aboutus}
-                        alt="Thalir Manam Child Development Centre"
+                        alt="Thalir Manam Neurodevelopmental centre"
                         width={1920}
                         height={800}
                         className="object-cover w-full h-[500px] lg:h-[700px]"
@@ -63,14 +63,14 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                             </SlideUp>
                             <SlideUp delay={3}>
                                 <Title size={"3.5xl"} className={"pb-5 text-gray-800 text-center"} style={{ fontSize: '36px' }}>
-                                    Nurturing Health, Shaping Futures
+                                 Nurturing development and shaping futures
                                 </Title>
                             </SlideUp>
 
                             <SlideUp delay={4}>
                                 <div className="max-w-3xl mx-auto">
                                     <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
-                                        <strong className="text-gray-800">Thalir Manam Child Development Centre</strong> is dedicated to providing comprehensive developmental and behavioral pediatric services with expertise, innovation, and compassion.
+                                        <strong className="text-gray-800">Thalir Manam Neurodevelopmental centre</strong> is dedicated to providing comprehensive developmental and behavioral pediatric services with expertise, innovation, and compassion.
                                     </SectionDescription>
                                 </div>
                             </SlideUp>

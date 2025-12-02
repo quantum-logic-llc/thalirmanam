@@ -29,102 +29,59 @@ import teenTransitionImage from '@/assets/images/services/service11.png'
 const servicesData = [
     {
         id: 1,
-        title: "Attention Deficit Hyperactive Disorder (ADHD)",
-        description: "Comprehensive assessment and management of ADHD with behavioral interventions, parent training, and individualized treatment plans.",
-        path: "/services/adhd",
-        image: adhdImage,
+        title: "Developmental Screening & Assessments",
+        description: " Early identification of delays and challenges.",
+        path: "/services/developmental-screening",
+        image: developmentalDelaysImage,
         color: "from-blue-500 to-blue-600",
-       
     },
     {
         id: 2,
-        title: "Autism Spectrum Disorder (ASD)",
-        description: "Early detection, diagnosis, and evidence-based interventions including behavioral therapy, social skills training, and family support.",
-        path: "/services/autism-spectrum-disorder",
-        image: autismImage,
+        title: "Early Intervention Programs",
+        description: "Tailored therapy for infants and children.",
+        path: "/services/early-intervention",
+        image: adhdImage,
         color: "from-purple-500 to-purple-600",
-        
     },
     {
         id: 3,
-        title: "Behavioural Disorders",
-        description: "Specialized treatment for conduct disorders, oppositional defiant disorder, and other behavioral challenges in children.",
-        path: "/services/behavioural-disorders",
-        image: behavioralImage,
-        color: "from-red-500 to-red-600",
-        icon: "🎭"
+        title: "Neurodevelopmental Support",
+        description: "Executive functioning, social skills, and emotional regulation for children and teens.",
+        path: "/services/neurodevelopmental-support",
+        image: autismImage,
+        color: "from-green-500 to-green-600",
     },
     {
         id: 4,
-        title: "Cerebral Palsy (CP)",
-        description: "Multidisciplinary approach to manage motor disabilities, improve function, and enhance quality of life for children with CP.",
-        path: "/services/cerebral-palsy",
-        image: cerebralPalsyImage,
-        color: "from-green-500 to-green-600",
-        
+        title: "Learning Support & Educational Planning",
+        description: "Personalized strategies for academic success.",
+        path: "/services/learning-support",
+        image: learningDisabilitiesImage,
+        color: "from-orange-500 to-orange-600",
     },
     {
         id: 5,
-        title: "Developmental Delays",
-        description: "Early identification and intervention for delays in speech, motor skills, cognitive development, and social-emotional growth.",
-        path: "/services/developmental-delays",
-        image: developmentalDelaysImage,
-        color: "from-pink-500 to-pink-600",
-       
+        title: "Teen & Adolescent Transition Clinic",
+        description: "Preparing teens for school, vocational, and life transitions.",
+        path: "/services/teen-adolescent-transition",
+        image: teenTransitionImage,
+        color: "from-teal-500 to-teal-600",
     },
     {
         id: 6,
-        title: "Learning Disabilities",
-        description: "Assessment and support for children with dyslexia, dyscalculia, dysgraphia, and other specific learning difficulties.",
-        path: "/services/learning-disabilities",
-        image: learningDisabilitiesImage,
-        color: "from-orange-500 to-orange-600",
-        icon: "📚"
+        title: "Skills Bridge Program",
+        description: "Targeted interventions to close developmental and life-skill gaps.",
+        path: "/services/skills-bridge-program",
+        image: adolescentHealthImage,
+        color: "from-cyan-500 to-cyan-600",
     },
     {
         id: 7,
-        title: "Intellectual Disability",
-        description: "Comprehensive care and support services to help children with intellectual disabilities reach their maximum potential.",
-        path: "/services/intellectual-disability",
-        image: intellectualDisabilityImage,
-        color: "from-indigo-500 to-indigo-600",
-        icon: "🧠"
-    },
-    {
-        id: 8,
-        title: "School Readiness",
-        description: "Preparing children for academic success through developmental assessments and pre-academic skill building programs.",
-        path: "/services/school-readiness",
-        image: schoolReadinessImage,
-        color: "from-cyan-500 to-cyan-600",
-        icon: "🎒"
-    },
-    {
-        id: 9,
-        title: "Adolescent Health and Well-being",
-        description: "Supporting teenagers with developmental challenges through transition planning and mental health services.",
-        path: "/services/adolescent-health",
-        image: adolescentHealthImage,
-        color: "from-teal-500 to-teal-600",
-        icon: "🌱"
-    },
-    {
-        id: 10,
-        title: "Developmental Supportive Care – Antenatal Sessions",
-        description: "Prenatal counseling and support for expectant parents to promote healthy child development from birth.",
-        path: "/services/antenatal-sessions",
+        title: "Multidisciplinary Care",
+        description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
+        path: "/services/multidisciplinary-care",
         image: antenatalSessionsImage,
         color: "from-amber-500 to-amber-600",
-        icon: "🤰"
-    },
-    {
-        id: 11,
-        title: "Teen Transition Clinic for Adolescents with Special Need",
-        description: "Specialized support for adolescents transitioning to adulthood, focusing on independence and life skills.",
-        path: "/services/teen-transition-clinic",
-        image: teenTransitionImage,
-        color: "from-emerald-500 to-emerald-600",
-        icon: "🚀"
     }
 ]
 
@@ -134,8 +91,8 @@ const ServicesGrid = () => {
             <div className="container relative z-10">
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
                     <h2 className="text-[#f28cb3] text-xl sm:text-2xl md:text-[26px] font-bold uppercase mb-2 sm:mb-3">Our Services</h2>
-                    <h3 className="text-black text-xl sm:text-2xl md:text-[28px] font-bold capitalize mb-3 sm:mb-4 mt-2">
-                        Comprehensive Developmental Care
+                    <h3 className="text-lg sm:text-xl md:text-2xl lg:text-[28px] font-bold capitalize mb-3 sm:mb-4 mt-2">
+                        We offer comprehensive, individualized support:
                     </h3>
                     <SectionDescription className="max-w-3xl mx-auto text-gray-700 text-sm sm:text-sm md:text-base">
                         At Thalir Manam, we offer evidence-based therapeutic services and interventions designed to support children with diverse developmental needs. Our multidisciplinary approach ensures personalized care for every child.

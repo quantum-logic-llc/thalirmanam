@@ -7,6 +7,7 @@ export const heroCarouselData = [
         id: 1,
         title: "Thalir Manam",
         subtitle: "Neuro Development Centre",
+        tagline: "Guiding Every Child from Baby Steps to Confident Strides",
         description: "Comprehensive developmental and behavioral pediatric services for children with autism, ADHD, learning disabilities, and other developmental challenges. Expert care with evidence-based interventions.",
         image: herogirl2,
         bgColor: "#eff6ff",

@@ -26,8 +26,9 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-// Include database configuration
+// Include database configuration and notification helper
 require_once 'db-config.php';
+require_once __DIR__ . '/notification-helper-smtp.php';
 
 /**
  * Sanitize input data
@@ -138,8 +139,26 @@ try {
     if ($stmt->execute()) {
         $submissionId = $pdo->lastInsertId();
 
-        // Optional: Send email notification to admin
-        // sendAdminNotification($fullName, $email, $phoneNumber, $subject, $message);
+        // Send email notification to admin
+        $contactData = [
+            'fullName' => $fullName,
+            'email' => $email,
+            'phoneNumber' => $phoneNumber,
+            'subject' => $subject,
+            'message' => $message
+        ];
+
+        // Admin email and WhatsApp
+        $adminEmail = 'Thalirmanam5@gmail.com';
+        $adminWhatsApp = '7200385635';
+
+        // Send notifications (email and WhatsApp)
+        try {
+            $notificationResults = sendContactNotifications($contactData, $adminEmail, $adminWhatsApp);
+            error_log("Contact form notifications sent - Email: " . ($notificationResults['email'] ? 'SUCCESS' : 'FAILED') . ", WhatsApp: PREPARED");
+        } catch (Exception $e) {
+            error_log("Failed to send notifications: " . $e->getMessage());
+        }
 
         http_response_code(200);
         echo json_encode([
@@ -172,64 +191,4 @@ try {
     ]);
 }
 
-/**
- * Optional: Send email notification to admin
- * Uncomment and configure if you want email notifications
- */
-function sendAdminNotification($name, $email, $phone, $subject, $message) {
-    $to = "thalirmanam5@gmail.com";
-    $emailSubject = "New Contact Form Submission: " . $subject;
-
-    $emailBody = "
-    <html>
-    <head>
-        <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: #4F46E5; color: white; padding: 15px; border-radius: 5px; }
-            .content { background: #f9f9f9; padding: 20px; border-radius: 5px; margin-top: 20px; }
-            .field { margin-bottom: 15px; }
-            .label { font-weight: bold; color: #333; }
-            .value { color: #666; }
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <div class='header'>
-                <h2>New Contact Form Submission</h2>
-            </div>
-            <div class='content'>
-                <div class='field'>
-                    <div class='label'>Name:</div>
-                    <div class='value'>" . htmlspecialchars($name) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Email:</div>
-                    <div class='value'>" . htmlspecialchars($email) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Phone:</div>
-                    <div class='value'>" . htmlspecialchars($phone) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Subject:</div>
-                    <div class='value'>" . htmlspecialchars($subject) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Message:</div>
-                    <div class='value'>" . nl2br(htmlspecialchars($message)) . "</div>
-                </div>
-            </div>
-        </div>
-    </body>
-    </html>
-    ";
-
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: " . $email . "\r\n";
-    $headers .= "Reply-To: " . $email . "\r\n";
-
-    mail($to, $emailSubject, $emailBody, $headers);
-}
 ?>

@@ -90,13 +90,13 @@ export default function ParentsCorner() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-6 py-3 rounded-full mb-6 shadow-md">
               <HeartIcon className="w-5 h-5 text-rose-500" />
-              <span className="text-slate-700 font-semibold">Supporting Your Child's Journey</span>
+              <span className="text-slate-700 font-semibold">Supporting Your Child&apos;s Journey</span>
             </div>
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-800 mb-6">
-              Welcome to the Parent's Corner
+              Welcome to the Parent&apos;s Corner
             </h2>
             <p className="text-lg text-slate-600 leading-relaxed">
-              This dedicated space provides valuable resources, guides, and information to help you support your child's development.
+              This dedicated space provides valuable resources, guides, and information to help you support your child&apos;s development.
               We understand your journey and are here to provide the tools and knowledge you need every step of the way.
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function ParentsCorner() {
                   Need Expert Guidance?
                 </h3>
                 <p className="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
-                  Our team of specialists is here to help. Schedule a consultation to discuss your child's unique needs and development plan.
+                  Our team of specialists is here to help. Schedule a consultation to discuss your child&apos;s unique needs and development plan.
                 </p>
                 <Link
                   href="/contact-us"

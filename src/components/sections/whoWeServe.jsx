@@ -9,53 +9,69 @@ import SlideUp from "@/lib/animations/slideUp";
 import collage from "@/assets/images/about/collage.png";
 
 const servicesWeServe = [
+  // {
+  //   id: 1,
+  //   title: "Attention Deficit Hyperactive Disorder (ADHD)",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Autism Spectrum Disorder (ASD)",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Behavioural Disorders",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Cerebral Palsy (CP)",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Developmental Delays",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Learning Disabilities",
+  // },
+  // {
+  //   id: 7,
+  //   title: "Intellectual Disability",
+  // },
+  // {
+  //   id: 8,
+  //   title: "School Readiness",
+  // },
+  // {
+  //   id: 9,
+  //   title: "Adolescent Health and Well-being",
+  // },
+  // {
+  //   id: 10,
+  //   title: "Developmental Supportive Care",
+  // },
+  // {
+  //   id: 11,
+  //   title: "Antenatal Sessions",
+  // },
+  // {
+  //   id: 12,
+  //   title: "Teen Transition Clinic for Adolescents with Special Needs",
+  // },
   {
-    id: 1,
-    title: "Attention Deficit Hyperactive Disorder (ADHD)",
+    id: 13,
+    title: "High-risk infants and newborns",
   },
   {
-    id: 2,
-    title: "Autism Spectrum Disorder (ASD)",
+    id: 14,
+    title: "Children with developmental delays or neurodivergent needs",
   },
   {
-    id: 3,
-    title: "Behavioural Disorders",
+    id: 15,
+    title: "Adolescents preparing for school, social, and vocational transitions",
   },
   {
-    id: 4,
-    title: "Cerebral Palsy (CP)",
-  },
-  {
-    id: 5,
-    title: "Developmental Delays",
-  },
-  {
-    id: 6,
-    title: "Learning Disabilities",
-  },
-  {
-    id: 7,
-    title: "Intellectual Disability",
-  },
-  {
-    id: 8,
-    title: "School Readiness",
-  },
-  {
-    id: 9,
-    title: "Adolescent Health and Well-being",
-  },
-  {
-    id: 10,
-    title: "Developmental Supportive Care",
-  },
-  {
-    id: 11,
-    title: "Antenatal Sessions",
-  },
-  {
-    id: 12,
-    title: "Teen Transition Clinic for Adolescents with Special Needs",
+    id: 16,
+    title: "Young adults seeking support for independence and life skills",
   },
 ];
 
@@ -70,7 +86,7 @@ const WhoWeServe = () => {
         {/* Section Header */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
           <SlideUp>
-            <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Who Do We Serve?</h2>
+            <h2 className="text-[#f28cb3] text-2xl sm:text-[28px] md:text-[32px] font-bold uppercase mb-3 sm:mb-4">Who We Serve?</h2>
           </SlideUp>
           <SlideUp delay={2}>
             <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5 mb-3 sm:mb-4">
@@ -79,8 +95,7 @@ const WhoWeServe = () => {
           </SlideUp>
           <SlideUp delay={3}>
             <SectionDescription className="max-w-3xl mx-auto text-gray-600 text-sm sm:text-base">
-              We provide comprehensive developmental support for children with
-              various conditions and special needs
+              We provide care for children, adolescents, and young adults across the developmental spectrum
             </SectionDescription>
           </SlideUp>
         </div>

@@ -1,22 +1,27 @@
 export const whyChooseUsData = [
     {
         id: 1,
-        title: "Led by a Developmental Paediatrician",
+        title: "Provide personalized, strength-based care from birth to young adulthood.",
         icon: "doctor" // Medical expertise icon
     },
     {
         id: 2,
-        title: "Multidisciplinary expertise: therapists, educators, and trainers",
+        title: "Use a structured approach that turns baby steps into bold strides.",
         icon: "team" // Team/group icon
     },
     {
         id: 3,
-        title: "Experiential learning: real-life, community-based skill practice",
+        title: "Offer a multidisciplinary team for comprehensive developmental support.",
         icon: "learning" // Hands-on learning icon
     },
     {
         id: 4,
-        title: "Individualized, empowerment-focused programs",
+        title: "Focus on holistic growth, addressing cognitive, emotional, social, and life skills.",
         icon: "personalized" // Individual focus icon
-    }
+    },
+    {
+        id: 5,
+        title: "Partner with families to empower and guide each child through every stage of development.",
+        icon: "family" // Family/partnership icon
+    },
 ]

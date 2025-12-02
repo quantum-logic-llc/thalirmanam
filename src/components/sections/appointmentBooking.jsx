@@ -19,6 +19,7 @@ const AppointmentBooking = () => {
         concerns: '',
     });
     const [status, setStatus] = useState('');
+    const [errorMessages, setErrorMessages] = useState([]);
 
     const handleChange = (e) => {
         const { id, value } = e.target;
@@ -31,11 +32,13 @@ const AppointmentBooking = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setStatus('sending');
+        setErrorMessages([]);
 
         try {
             // Submit to database via API
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api';
-            const response = await fetch(`${apiUrl}/appointments/create.php`, {
+            // Use absolute URL to reach Apache server when running on Next.js dev server
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://srv662677.hstgr.cloud/thalirmanam/api/appointments/create.php';
+            const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -47,6 +50,7 @@ const AppointmentBooking = () => {
 
             if (response.ok && result.success) {
                 setStatus('success');
+                setErrorMessages([]);
                 setFormData({
                     parentName: '',
                     childName: '',
@@ -62,11 +66,15 @@ const AppointmentBooking = () => {
                 // Show validation errors if any
                 if (result.errors && result.errors.length > 0) {
                     console.error('Validation errors:', result.errors);
+                    setErrorMessages(result.errors);
+                } else {
+                    setErrorMessages([result.message || 'Failed to book appointment']);
                 }
                 setStatus('error');
             }
         } catch (error) {
             console.error('Error booking appointment:', error);
+            setErrorMessages(['Unable to connect to the server. Please try again.']);
             setStatus('error');
         }
     };
@@ -304,9 +312,16 @@ const AppointmentBooking = () => {
                                     </div>
                                 )}
                                 {status === 'error' && (
-                                    <div className="bg-red-50 border-2 border-red-500 text-red-700 px-6 py-4 rounded-xl text-center">
-                                        <p className="font-semibold">Failed to book appointment.</p>
-                                        <p className="text-sm mt-1">Please try again or call us directly.</p>
+                                    <div className="bg-red-50 border-2 border-red-500 text-red-700 px-6 py-4 rounded-xl">
+                                        <p className="font-semibold text-center">Failed to book appointment</p>
+                                        {errorMessages.length > 0 && (
+                                            <ul className="text-sm mt-3 space-y-1 list-disc list-inside">
+                                                {errorMessages.map((error, index) => (
+                                                    <li key={index}>{error}</li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                        <p className="text-sm mt-3 text-center">Please correct the errors above or call us directly.</p>
                                     </div>
                                 )}
                             </form>

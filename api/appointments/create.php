@@ -26,9 +26,10 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit();
 }
 
-// Include database configuration and model
+// Include database configuration, model, and notification helper
 require_once __DIR__ . '/../db-config.php';
 require_once __DIR__ . '/../models/Appointment.php';
+require_once __DIR__ . '/../notification-helper-smtp.php';
 
 /**
  * Sanitize input data
@@ -75,7 +76,7 @@ function isValidDate($date) {
  * Validate age
  */
 function isValidAge($age) {
-    return is_numeric($age) && $age > 0 && $age <= 18;
+    return is_numeric($age) && $age >= 0 && $age <= 18;
 }
 
 try {
@@ -110,7 +111,7 @@ try {
         $errors[] = "Child's name is required and must be at least 2 characters";
     }
 
-    if (empty($childAge) || !isValidAge($childAge)) {
+    if (!isset($data['childAge']) || $childAge === '' || !isValidAge($childAge)) {
         $errors[] = "Child's age is required and must be between 0 and 18";
     }
 
@@ -164,8 +165,30 @@ try {
 
     // Create the appointment
     if ($appointment->create()) {
-        // Optional: Send email notification to admin
-        // sendAdminNotification($appointment);
+        // Send email notification to admin
+        $appointmentData = [
+            'parentName' => $parentName,
+            'childName' => $childName,
+            'childAge' => $childAge,
+            'email' => $email,
+            'phoneNumber' => $phoneNumber,
+            'preferredDate' => $preferredDate,
+            'preferredTime' => $preferredTime,
+            'serviceType' => $serviceType,
+            'concerns' => $concerns
+        ];
+
+        // Admin email and WhatsApp
+        $adminEmail = 'Thalirmanam5@gmail.com';
+        $adminWhatsApp = '7200385635';
+
+        // Send notifications (email and WhatsApp)
+        try {
+            $notificationResults = sendAppointmentNotifications($appointmentData, $adminEmail, $adminWhatsApp);
+            error_log("Appointment notifications sent - Email: " . ($notificationResults['email'] ? 'SUCCESS' : 'FAILED') . ", WhatsApp: PREPARED");
+        } catch (Exception $e) {
+            error_log("Failed to send notifications: " . $e->getMessage());
+        }
 
         http_response_code(201);
         echo json_encode([
@@ -198,80 +221,4 @@ try {
     ]);
 }
 
-/**
- * Optional: Send email notification to admin
- * Uncomment and configure if you want email notifications
- */
-function sendAdminNotification($appointment) {
-    $to = "thalirmanam5@gmail.com";
-    $subject = "New Appointment Request: " . $appointment->service_type;
-
-    $emailBody = "
-    <html>
-    <head>
-        <style>
-            body { font-family: Arial, sans-serif; line-height: 1.6; }
-            .container { max-width: 600px; margin: 0 auto; padding: 20px; }
-            .header { background: #4F46E5; color: white; padding: 15px; border-radius: 5px; }
-            .content { background: #f9f9f9; padding: 20px; border-radius: 5px; margin-top: 20px; }
-            .field { margin-bottom: 15px; }
-            .label { font-weight: bold; color: #333; }
-            .value { color: #666; }
-        </style>
-    </head>
-    <body>
-        <div class='container'>
-            <div class='header'>
-                <h2>New Appointment Request</h2>
-            </div>
-            <div class='content'>
-                <div class='field'>
-                    <div class='label'>Parent/Guardian Name:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->parent_name) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Child's Name:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->child_name) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Child's Age:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->child_age) . " years</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Email:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->email) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Phone Number:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->phone_number) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Service Type:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->service_type) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Preferred Date:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->preferred_date) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Preferred Time:</div>
-                    <div class='value'>" . htmlspecialchars($appointment->preferred_time) . "</div>
-                </div>
-                <div class='field'>
-                    <div class='label'>Additional Concerns:</div>
-                    <div class='value'>" . nl2br(htmlspecialchars($appointment->concerns)) . "</div>
-                </div>
-            </div>
-        </div>
-    </body>
-    </html>
-    ";
-
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: noreply@thalirmanam.com" . "\r\n";
-    $headers .= "Reply-To: " . $appointment->email . "\r\n";
-
-    mail($to, $subject, $emailBody, $headers);
-}
 ?>

@@ -1,7 +1,7 @@
 export const faqData = [
     {
         id:"one",
-        question:"Who can benefit from visiting Thalirmanam?",
+        question:"Who shall benefit ? Developmental paediatrician",
         ans:"Children, teens, and families experiencing developmental, learning, behavioural, or emotional challenges can benefit from our care. We also support adolescents with special needs as they navigate school, relationships, and transitions into adulthood."
     },
     {
@@ -11,7 +11,7 @@ export const faqData = [
     },
     {
         id:"three",
-        question:"What kinds of concerns do you address?",
+        question:"what concerns do we address?",
         ans:"We support a wide range of developmental and behavioural needs, including: Autism Spectrum Disorder (ASD) and ADHD, Learning difficulties and academic challenges, School refusal, anxiety, and emotional regulation issues, Behavioural challenges and social skill development, Teen transitions, sexuality education, and setting healthy boundaries, Sibling and family adjustment support, Guidance for grandparents and caregivers"
     },
     {
