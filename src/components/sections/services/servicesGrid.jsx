@@ -12,6 +12,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/effect-coverflow'
+import services from '@/lib/fackdata/servicesDataOne'
 
 // Import service images
 import adhdImage from '@/assets/images/services/adhd2.png'
@@ -25,6 +26,7 @@ import schoolReadinessImage from '@/assets/images/services/schoolchild.png'
 import adolescentHealthImage from '@/assets/images/services/service9.png'
 import antenatalSessionsImage from '@/assets/images/services/service13.png'
 import teenTransitionImage from '@/assets/images/services/service11.png'
+import { title } from 'process'
 
 const servicesData = [
     {
@@ -82,6 +84,40 @@ const servicesData = [
         path: "/services/multidisciplinary-care",
         image: antenatalSessionsImage,
         color: "from-amber-500 to-amber-600",
+    },
+    {
+        id: 8,
+        title: "Learning Disabilities",
+        description: "Support for children with difficulties in reading, writing, math, reasoning, listening, and speaking - not related to intelligence or motivation.",
+        image: intellectualDisabilityImage,
+        color: "from-red-500 to-red-600",
+    },
+    {   id: 9,
+        title: "intellectual-disability",
+        description: "Assessment and support when there are limits to a person's ability to learn at an expected level and function in daily life.",
+        image: schoolReadinessImage,
+        color: "from-indigo-500 to-indigo-600",
+    },
+    {
+        id: 10,
+        title: "Cerebral Palsy",
+        description: "Therapies and interventions to improve movement, posture, and overall quality of life for children with cerebral palsy.",
+        image: cerebralPalsyImage,
+        color: "from-pink-500 to-pink-600",
+    },
+    {
+        id: 11,
+        title: "Behavioral Disorders",
+        description: "Strategies and therapies to manage behaviors associated with conditions like Oppositional Defiant Disorder (ODD) and Conduct Disorder (CD).",
+        image: behavioralImage,
+        color: "from-yellow-500 to-yellow-600",
+    },
+    {
+        id: 12,
+        title: "ADHD Management",
+        description: "Comprehensive support for children with Attention Deficit Hyperactivity Disorder (ADHD) including behavioral therapy and parent training.",
+        image: adhdImage,
+        color: "from-lime-500 to-lime-600",
     }
 ]
 
@@ -203,7 +239,7 @@ const ServicesGrid = () => {
                 >
                     {servicesData.map(({ id, title, description, path, image, color, icon }) => (
                         <SwiperSlide key={id}>
-                            <Link href={path} className="group block h-full">
+                            <Link href={`/services/${id}`} className="group block h-full">
                                 <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
 
                                     {/* Image Header */}
@@ -219,6 +255,7 @@ const ServicesGrid = () => {
                                     </div>
 
                                     {/* Card Content */}
+
                                     <div className="p-4 sm:p-5 md:p-7 relative z-20">
                                         <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 transition-colors duration-300 mb-3 sm:mb-4 leading-tight min-h-[48px] sm:min-h-[56px] md:min-h-[60px]">
                                             {title}
