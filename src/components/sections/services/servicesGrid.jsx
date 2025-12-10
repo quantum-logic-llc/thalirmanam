@@ -87,40 +87,40 @@ const servicesData = [
         description: "Comprehensive support for children with Attention Deficit Hyperactivity Disorder (ADHD) including behavioral therapy and parent training.",
         image: adhdImage,
         color: "from-lime-500 to-lime-600",
-    }
-    // {
-    //     id: 3,
-    //     title: "Neurodevelopmental Support",
-    //     description: "Executive functioning, social skills, and emotional regulation for children and teens.",
-    //     path: "/services/neurodevelopmental-support",
-    //     image: autismImage,
-    //     color: "from-green-500 to-green-600",
-    // },
-    // {
-    //     id: 4,
-    //     title: "Learning Support & Educational Planning",
-    //     description: "Personalized strategies for academic success.",
-    //     path: "/services/learning-support",
-    //     image: learningDisabilitiesImage,
-    //     color: "from-orange-500 to-orange-600",
-    // },
-    // {
-    //     id: 5,
-    //     title: "Teen & Adolescent Transition Clinic",
-    //     description: "Preparing teens for school, vocational, and life transitions.",
-    //     path: "/services/teen-adolescent-transition",
-    //     image: teenTransitionImage,
-    //     color: "from-teal-500 to-teal-600",
-    // },
+    },
+    {
+        id: 3,
+        title: "Neurodevelopmental Support",
+        description: "Executive functioning, social skills, and emotional regulation for children and teens.",
+        path: "/services/neurodevelopmental-support",
+        image: autismImage,
+        color: "from-green-500 to-green-600",
+    },
+    {
+        id: 4,
+        title: "Learning Support & Educational Planning",
+        description: "Personalized strategies for academic success.",
+        path: "/services/learning-support",
+        image: learningDisabilitiesImage,
+        color: "from-orange-500 to-orange-600",
+    },
+    {
+        id: 5,
+        title: "Teen & Adolescent Transition Clinic",
+        description: "Preparing teens for school, vocational, and life transitions.",
+        path: "/services/teen-adolescent-transition",
+        image: teenTransitionImage,
+        color: "from-teal-500 to-teal-600",
+    },
     
-    // {
-    //     id: 7,
-    //     title: "Multidisciplinary Care",
-    //     description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
-    //     path: "/services/multidisciplinary-care",
-    //     image: antenatalSessionsImage,
-    //     color: "from-amber-500 to-amber-600",
-    // }
+    {
+        id: 7,
+        title: "Multidisciplinary Care",
+        description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
+        path: "/services/multidisciplinary-care",
+        image: antenatalSessionsImage,
+        color: "from-amber-500 to-amber-600",
+    }
 ]
 
 const ServicesGrid = () => {
@@ -241,7 +241,7 @@ const ServicesGrid = () => {
                 >
                     {servicesData.map(({ id, title, description, path, image, color, icon }) => (
                         <SwiperSlide key={id}>
-                            <Link href={`/services/${id}`} className="group block h-full">
+                            {/* <Link href={`/services/${id}`} className="group block h-full"> */}
                                 <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
 
                                     {/* Image Header */}
@@ -267,14 +267,14 @@ const ServicesGrid = () => {
                                         </p>
 
                                         {/* CTA Button */}
-                                        <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
+                                        {/* <div className="flex items-center justify-between pt-3 sm:pt-4 border-t border-gray-200 group-hover:border-white/30 transition-colors duration-300">
                                             <span className="text-primary text-xs sm:text-sm font-bold uppercase tracking-wider transition-colors">
                                               Read More
                                             </span>
                                             <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 rounded-full bg-primary/10 group-hover:bg-white/20 flex items-center justify-center transition-all duration-300 group-hover:translate-x-2">
                                                 <span className="text-primary text-lg sm:text-xl font-bold transition-colors">→</span>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                                     {/* Shine Effect */}
@@ -282,7 +282,7 @@ const ServicesGrid = () => {
                                         <div className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12"></div>
                                     </div>
                                 </div>
-                            </Link>
+                            {/* </Link> */}
                         </SwiperSlide>
                     ))}
                 </Swiper>

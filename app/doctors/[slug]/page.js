@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Dr from '@/assets/images/team/Dr.png';
+import Dr from '@/assets/images/team/r.png';
 import { CheckCircleIcon, PhoneIcon, EnvelopeIcon, CalendarDaysIcon } from '@heroicons/react/24/solid';
 import { AcademicCapIcon, StarIcon, ClipboardDocumentCheckIcon } from '@heroicons/react/24/outline';
 
@@ -89,7 +89,7 @@ const DoctorDetailsPage = ({ params }) => {
         <div className="absolute inset-0 container mx-auto px-4">
           <div className="h-full flex items-center justify-between gap-12">
             {/* Left Side - Doctor Image */}
-            <div className="hidden lg:block w-1/2 h-full relative">
+            <div className="hidden lg:block w-1/2 h-[500px] relative">
               <div className="absolute bottom-0 left-0 w-full h-5/6">
                 <Image
                   src={doctor.image}
