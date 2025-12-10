@@ -27,16 +27,9 @@ import antenatalSessionsImage from '@/assets/images/services/service13.png'
 import teenTransitionImage from '@/assets/images/services/service11.png'
 
 const servicesData = [
+   
     {
         id: 1,
-        title: "Developmental Screening & Assessments",
-        description: " Early identification of delays and challenges.",
-        path: "/services/developmental-screening",
-        image: developmentalDelaysImage,
-        color: "from-blue-500 to-blue-600",
-    },
-    {
-        id: 2,
         title: "Early Intervention Programs",
         description: "Tailored therapy for infants and children.",
         path: "/services/early-intervention",
@@ -44,45 +37,54 @@ const servicesData = [
         color: "from-purple-500 to-purple-600",
     },
     {
-        id: 3,
-        title: "Neurodevelopmental Support",
-        description: "Executive functioning, social skills, and emotional regulation for children and teens.",
-        path: "/services/neurodevelopmental-support",
-        image: autismImage,
-        color: "from-green-500 to-green-600",
-    },
-    {
-        id: 4,
-        title: "Learning Support & Educational Planning",
-        description: "Personalized strategies for academic success.",
-        path: "/services/learning-support",
-        image: learningDisabilitiesImage,
-        color: "from-orange-500 to-orange-600",
-    },
-    {
-        id: 5,
-        title: "Teen & Adolescent Transition Clinic",
-        description: "Preparing teens for school, vocational, and life transitions.",
-        path: "/services/teen-adolescent-transition",
-        image: teenTransitionImage,
-        color: "from-teal-500 to-teal-600",
-    },
-    {
-        id: 6,
+        id: 2,
         title: "Skills Bridge Program",
         description: "Targeted interventions to close developmental and life-skill gaps.",
         path: "/services/skills-bridge-program",
         image: adolescentHealthImage,
         color: "from-cyan-500 to-cyan-600",
     },
-    {
-        id: 7,
-        title: "Multidisciplinary Care",
-        description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
-        path: "/services/multidisciplinary-care",
-        image: antenatalSessionsImage,
-        color: "from-amber-500 to-amber-600",
+     {
+        id: 3,
+        title: "Developmental Screening & Assessments",
+        description: " Early identification of delays and challenges.",
+        path: "/services/developmental-screening",
+        image: developmentalDelaysImage,
+        color: "from-blue-500 to-blue-600",
     }
+    // {
+    //     id: 3,
+    //     title: "Neurodevelopmental Support",
+    //     description: "Executive functioning, social skills, and emotional regulation for children and teens.",
+    //     path: "/services/neurodevelopmental-support",
+    //     image: autismImage,
+    //     color: "from-green-500 to-green-600",
+    // },
+    // {
+    //     id: 4,
+    //     title: "Learning Support & Educational Planning",
+    //     description: "Personalized strategies for academic success.",
+    //     path: "/services/learning-support",
+    //     image: learningDisabilitiesImage,
+    //     color: "from-orange-500 to-orange-600",
+    // },
+    // {
+    //     id: 5,
+    //     title: "Teen & Adolescent Transition Clinic",
+    //     description: "Preparing teens for school, vocational, and life transitions.",
+    //     path: "/services/teen-adolescent-transition",
+    //     image: teenTransitionImage,
+    //     color: "from-teal-500 to-teal-600",
+    // },
+    
+    // {
+    //     id: 7,
+    //     title: "Multidisciplinary Care",
+    //     description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
+    //     path: "/services/multidisciplinary-care",
+    //     image: antenatalSessionsImage,
+    //     color: "from-amber-500 to-amber-600",
+    // }
 ]
 
 const ServicesGrid = () => {

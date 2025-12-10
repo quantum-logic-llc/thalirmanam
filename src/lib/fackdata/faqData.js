@@ -1,12 +1,12 @@
 export const faqData = [
     {
         id:"one",
-        question:"Who shall benefit ? Developmental paediatrician",
+        question:"Who shall benefit ?",
         ans:"Children, teens, and families experiencing developmental, learning, behavioural, or emotional challenges can benefit from our care. We also support adolescents with special needs as they navigate school, relationships, and transitions into adulthood."
     },
     {
         id:"two",
-        question:"When should I consider consulting a developmental specialist?",
+        question:"When should I consider consulting a Developmental paediatrician?",
         ans:"If your child or teen struggles with speech, learning, attention, social skills, or emotional regulation or if you're uncertain about their developmental progress—it's a good time to seek guidance. Early consultation helps identify strengths, address challenges, and build confidence."
     },
     {
