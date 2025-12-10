@@ -9,68 +9,21 @@ import SlideUp from "@/lib/animations/slideUp";
 import collage from "@/assets/images/about/collage.png";
 
 const servicesWeServe = [
-  // {
-  //   id: 1,
-  //   title: "Attention Deficit Hyperactive Disorder (ADHD)",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Autism Spectrum Disorder (ASD)",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Behavioural Disorders",
-  // },
-  // {
-  //   id: 4,
-  //   title: "Cerebral Palsy (CP)",
-  // },
-  // {
-  //   id: 5,
-  //   title: "Developmental Delays",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Learning Disabilities",
-  // },
-  // {
-  //   id: 7,
-  //   title: "Intellectual Disability",
-  // },
-  // {
-  //   id: 8,
-  //   title: "School Readiness",
-  // },
-  // {
-  //   id: 9,
-  //   title: "Adolescent Health and Well-being",
-  // },
-  // {
-  //   id: 10,
-  //   title: "Developmental Supportive Care",
-  // },
-  // {
-  //   id: 11,
-  //   title: "Antenatal Sessions",
-  // },
-  // {
-  //   id: 12,
-  //   title: "Teen Transition Clinic for Adolescents with Special Needs",
-  // },
-  {
-    id: 13,
+  
+   {
+    id: 1,
     title: "High-risk infants and newborns",
   },
   {
-    id: 14,
-    title: "Children with developmental delays or neurodivergent needs",
+    id: 2,
+    title: "Comprehensive early developmental support",
   },
   {
-    id: 15,
-    title: "Adolescents preparing for school, social, and vocational transitions",
+    id: 3,
+    title: "Building Adolescents pre vocational  and Social Communications skills for real life",
   },
   {
-    id: 16,
+    id: 4,
     title: "Young adults seeking support for independence and life skills",
   },
 ];
@@ -125,12 +78,12 @@ const WhoWeServe = () => {
           {/* Right Side - Image */}
           <SlideUp delay={5}>
             <div className="relative">
-              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
+              <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[350px] md:h-[350px] lg:h-[350px]">
                 <Image
                   src={collage}
                   alt="Thalir Manam Child Development Center"
                   fill
-                  className="object-cover"
+                  
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
               </div>

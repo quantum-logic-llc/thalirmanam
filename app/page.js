@@ -8,7 +8,7 @@ import CommitmentBanner from '../src/components/sections/commitmentBanner'
 import FaqComp from '../src/components/sections/faqComp'
 import Teams from '../src/components/sections/teams/teams'
 import WhoWeServe from '../src/components/sections/whoWeServe'
-import FocusAreas from '../src/components/sections/focusAreas'
+// import FocusAreas from '../src/components/sections/focusAreas'
 import WhyChooseUs from '../src/components/sections/whyChooseUs'
 import HelpContactSection from '../src/components/sections/helpContactSection'
 import Testimonial from '../src/components/sections/testimonial'
@@ -26,7 +26,7 @@ export default function HomePage() {
       <main>
         <HeroCarousel />
         <WhoWeServe />
-        <FocusAreas />
+        {/* <FocusAreas /> */}
         <ServicesGrid />
         <WhyChooseUs />
         <CommitmentBanner />

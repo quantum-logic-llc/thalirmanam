@@ -7,7 +7,7 @@ import { FaUserDoctor, FaPeopleGroup, FaLightbulb, FaHeart } from 'react-icons/f
 
 const WhyChooseUs = () => {
     return (
-        <section className="lg:py-15 py-10 relative overflow-hidden" style={{ backgroundColor: '#ffffff' }}>
+        <section className="lg:py-15 py-10 relative overflow-hidden" style={{ backgroundColor: '#eff6ff' }}>
             <div className="container relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-8 sm:mb-10 md:mb-12 px-3 sm:px-4">
