@@ -43,7 +43,7 @@ const WhoWeServe = () => {
           </SlideUp>
           <SlideUp delay={2}>
             <h3 className="text-gray-800 text-2xl sm:text-3xl md:text-[36px] font-bold capitalize mt-2.5 mb-3 sm:mb-4">
-              Specialized Care For Every Child
+              Specialized Care For Every Child and Young Adult
             </h3>
           </SlideUp>
           <SlideUp delay={3}>
