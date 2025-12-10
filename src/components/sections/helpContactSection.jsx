@@ -29,7 +29,7 @@ const HelpContactSection = () => {
             >
               <Link href="/contact-us" className="inline-flex items-center gap-3">
                 <FaPhone className="text-lg sm:text-xl" />
-                <span>book an appointment to talk with us.</span>
+                <span>Book an Appointment To Talk With Us.</span>
               </Link>
             </Button>
           </div>

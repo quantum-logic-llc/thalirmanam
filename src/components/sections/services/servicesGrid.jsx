@@ -34,7 +34,7 @@ const servicesData = [
         id: 1,
         title: "Early Intervention Programs",
         description: "Tailored therapy for infants and children.",
-        path: "/services/early-intervention",
+        path: "/services/adhd",
         image: adhdImage,
         color: "from-purple-500 to-purple-600",
     },
