@@ -13,6 +13,19 @@ import 'swiper/css/navigation'
 const Testimonial = () => {
     const prevRef = useRef(null)
     const nextRef = useRef(null)
+    const swiperRef = useRef(null)
+
+    const handlePrev = () => {
+        if (swiperRef.current?.swiper) {
+            swiperRef.current.swiper.slidePrev()
+        }
+    }
+
+    const handleNext = () => {
+        if (swiperRef.current?.swiper) {
+            swiperRef.current.swiper.slideNext()
+        }
+    }
 
     return (
         <section className="lg:pt-15 lg:pb-15 pt-10 pb-10 testimonial" style={{ backgroundColor: '#ffffff' }}>
@@ -25,6 +38,7 @@ const Testimonial = () => {
 
                 <div className="relative max-w-4xl mx-auto">
                     <Swiper
+                        ref={swiperRef}
                         modules={[Navigation]}
                         slidesPerView={1}
                         spaceBetween={30}
@@ -42,7 +56,17 @@ const Testimonial = () => {
                         {
                             testimonialData.map(({ id, name, position, rating, review, src }) => (
                                 <SwiperSlide key={id}>
-                                    <Card name={name} position={position} src={src} rating={rating} review={review} prevRef={prevRef} nextRef={nextRef} />
+                                    <Card 
+                                        name={name} 
+                                        position={position} 
+                                        src={src} 
+                                        rating={rating} 
+                                        review={review} 
+                                        prevRef={prevRef} 
+                                        nextRef={nextRef}
+                                        onPrev={handlePrev}
+                                        onNext={handleNext}
+                                    />
                                 </SwiperSlide>
                             ))
                         }
@@ -55,7 +79,7 @@ const Testimonial = () => {
 
 export default Testimonial
 
-const Card = ({ name, src, position, review, rating, prevRef, nextRef }) => {
+const Card = ({ name, src, position, review, rating, prevRef, nextRef, onPrev, onNext }) => {
     return (
         <div className="py-8 px-4">
             <div className="relative group">
@@ -97,18 +121,24 @@ const Card = ({ name, src, position, review, rating, prevRef, nextRef }) => {
                         <Rating star={rating} />
                     </div>
 
-                    {/* Bottom Left - Previous Button */}
+                    {/* Middle Left - Previous Button - Clickable */}
                     <button
                         ref={prevRef}
-                        className="absolute bottom-4 left-4 sm:bottom-6 sm:left-6 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 hover:-translate-x-1 group/prev"
+                        onClick={onPrev}
+                        type="button"
+                        aria-label="Previous testimonial"
+                        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-white border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 hover:-translate-x-2 cursor-pointer"
                     >
                         <FaChevronLeft className="text-base sm:text-lg" />
                     </button>
 
-                    {/* Bottom Right - Next Button */}
+                    {/* Middle Right - Next Button - Clickable */}
                     <button
                         ref={nextRef}
-                        className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 hover:translate-x-1 group/next"
+                        onClick={onNext}
+                        type="button"
+                        aria-label="Next testimonial"
+                        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 flex items-center justify-center w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-110 active:scale-95 hover:translate-x-2 cursor-pointer"
                     >
                         <FaChevronRight className="text-base sm:text-lg" />
                     </button>
