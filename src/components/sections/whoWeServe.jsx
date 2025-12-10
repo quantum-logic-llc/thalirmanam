@@ -12,15 +12,15 @@ const servicesWeServe = [
   
    {
     id: 1,
-    title: "High-risk infants and newborns",
+    title: "Developmental Supportive Care for High-Risk Infants & Newborns",
   },
   {
     id: 2,
-    title: "Comprehensive early developmental support",
+    title: "Early Childhood Development & Early Intervention",
   },
   {
     id: 3,
-    title: "Building Adolescents pre vocational  and Social Communications skills for real life",
+    title: "Adolescent Skill Building , functional independence & pre vocational skills",
   },
   {
     id: 4,

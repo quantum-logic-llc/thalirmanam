@@ -5,7 +5,7 @@ import { FaPhone } from 'react-icons/fa6'
 
 const HelpContactSection = () => {
   return (
-    <section className="relative w-full overflow-hidden py-16 sm:py-20 md:py-24" style={{ backgroundColor: '#FFFFFF' }}>
+    <section className="relative w-full overflow-hidden py-16 pt-0 sm:py-20 pt-0 md:py-24 pt-0" style={{ backgroundColor: '#FFFFFF' }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center text-center space-y-6 sm:space-y-8">
           {/* Heading */}

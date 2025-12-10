@@ -61,30 +61,32 @@ const Teams = () => {
               </div>
             </div>
 
-            {/* Image Column - Right Side - Perfect Circle */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative group">
-                {/* Outer Glow - Large */}
-                <div className="absolute -inset-6 bg-gradient-to-br from-pink-300 via-purple-300 to-blue-300 rounded-full opacity-0 group-hover:opacity-30 blur-3xl transition-all duration-500"></div>
-                
-                {/* Middle Glow - Medium */}
-                <div className="absolute -inset-4 bg-gradient-to-br from-pink-200 to-purple-200 rounded-full opacity-20 group-hover:opacity-40 blur-2xl transition-all duration-500"></div>
-                
-                {/* Inner Glow - Small */}
-                <div className="absolute -inset-2 bg-gradient-to-br from-pink-400 to-purple-400 rounded-full opacity-0 group-hover:opacity-20 blur-xl transition-all duration-500"></div>
+          
+{/* Image Column - Right Side - Rounded Square */}
+<div className="flex justify-center lg:justify-end">
+  <div className="relative group">
+    {/* Gradient Border Animation */}
+    <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-3xl opacity-75 group-hover:opacity-100 blur transition-all duration-500 animate-pulse"></div>
+    
+    {/* Inner Shadow */}
+    <div className="absolute -inset-0.5 bg-gradient-to-br from-pink-200 to-blue-200 rounded-3xl opacity-0 group-hover:opacity-40 blur-lg transition-all duration-500"></div>
 
-                {/* Image Container - Perfect Circle */}
-                <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white shadow-2xl group-hover:shadow-3xl transition-all duration-500 bg-gradient-to-br from-pink-50 to-blue-50">
-                  <Image
-                    src={founder.image}
-                    alt={founder.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                    priority
-                  />
-                </div>
+    {/* Image Container */}
+    <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl group-hover:shadow-3xl transition-all duration-500 bg-white">
+      <Image
+        src={founder.image}
+        alt={founder.name}
+        fill
+        className="object-cover group-hover:scale-110 transition-transform duration-500"
+        priority
+      />
+    </div>
 
-                {/* Floating Badge */}
+    {/* Corner Badge */}
+    <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+      <div className="text-xs font-bold">FOUNDER</div>
+    </div>
+      {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
                   <div className="text-2xl font-bold text-pink-600">15+</div>
                   <div className="text-xs font-semibold text-gray-600">Years Experience</div>
@@ -94,7 +96,7 @@ const Teams = () => {
           </div>
         </div>
       </div>
-    </section>
+    </section> 
   );
 };
 
