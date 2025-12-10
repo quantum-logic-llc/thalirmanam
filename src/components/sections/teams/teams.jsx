@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Dr from '@/assets/images/team/Dr.png';
+import Dr from '@/assets/images/team/Dr naveena.jpg';
 
 const founder = {
   slug: 'dr-naveena-karthik',
