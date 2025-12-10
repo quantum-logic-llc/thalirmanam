@@ -37,7 +37,7 @@ const servicesData = [
         path: "/services/adhd",
         image: adhdImage,
         color: "from-purple-500 to-purple-600",
-        alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png",
+        alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png"',
     },
     {
         id: 2,
@@ -55,7 +55,7 @@ const servicesData = [
         path: "/services/neurodevelopmental-support",
         image: developmentalDelaysImage,
         color: "from-green-500 to-green-600",
-        alt: '"Developmental Screening &amp; Assessments" fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/developmental-delays2.513ef8f8.png'
+        alt: '"Developmental Screening &amp; Assessments" fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/developmental-delays2.513ef8f8.png"',
     }
 ]
 
@@ -175,7 +175,7 @@ const ServicesGrid = () => {
                     }}
                     className="services-carousel pb-12 sm:pb-14 md:pb-16 px-1 sm:px-2"
                 >
-                    {servicesData.map(({ id, title, description, path, image, color, icon }) => (
+                    {servicesData.map(({ id, title, description, path, image, color, icon, alt }) => (
                         <SwiperSlide key={id}>
                             {/* <Link href={`/services/${id}`} className="group block h-full"> */}
                                 <div className="bg-white rounded-2xl sm:rounded-3xl overflow-hidden h-full transition-all duration-500 hover:shadow-2xl shadow-lg border border-gray-100 hover:border-transparent relative">
