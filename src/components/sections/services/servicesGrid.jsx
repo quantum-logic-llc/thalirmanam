@@ -37,6 +37,7 @@ const servicesData = [
         path: "/services/adhd",
         image: adhdImage,
         color: "from-purple-500 to-purple-600",
+        alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png",
     },
     {
         id: 2,
@@ -45,81 +46,16 @@ const servicesData = [
         path: "/services/skills-bridge-program",
         image: adolescentHealthImage,
         color: "from-cyan-500 to-cyan-600",
-    },
-    {
-        id: 7,
-        title: "Multidisciplinary Care",
-        description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
-        path: "/services/multidisciplinary-care",
-        image: antenatalSessionsImage,
-        color: "from-amber-500 to-amber-600",
-    },
-    {
-        id: 8,
-        title: "Learning Disabilities",
-        description: "Support for children with difficulties in reading, writing, math, reasoning, listening, and speaking - not related to intelligence or motivation.",
-        image: intellectualDisabilityImage,
-        color: "from-red-500 to-red-600",
-    },
-    {   id: 9,
-        title: "intellectual-disability",
-        description: "Assessment and support when there are limits to a person's ability to learn at an expected level and function in daily life.",
-        image: schoolReadinessImage,
-        color: "from-indigo-500 to-indigo-600",
-    },
-    {
-        id: 10,
-        title: "Cerebral Palsy",
-        description: "Therapies and interventions to improve movement, posture, and overall quality of life for children with cerebral palsy.",
-        image: cerebralPalsyImage,
-        color: "from-pink-500 to-pink-600",
-    },
-    {
-        id: 11,
-        title: "Behavioral Disorders",
-        description: "Strategies and therapies to manage behaviors associated with conditions like Oppositional Defiant Disorder (ODD) and Conduct Disorder (CD).",
-        image: behavioralImage,
-        color: "from-yellow-500 to-yellow-600",
-    },
-    {
-        id: 12,
-        title: "ADHD Management",
-        description: "Comprehensive support for children with Attention Deficit Hyperactivity Disorder (ADHD) including behavioral therapy and parent training.",
-        image: adhdImage,
-        color: "from-lime-500 to-lime-600",
+        alt: 'Multidisciplinary Care fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service11.1f3f3f6e.png',
     },
     {
         id: 3,
-        title: "Neurodevelopmental Support",
-        description: "Executive functioning, social skills, and emotional regulation for children and teens.",
+        title: "Developmental Screening & Assessments",
+        description: "Comprehensive evaluations to identify developmental delays.",
         path: "/services/neurodevelopmental-support",
-        image: autismImage,
+        image: developmentalDelaysImage,
         color: "from-green-500 to-green-600",
-    },
-    {
-        id: 4,
-        title: "Learning Support & Educational Planning",
-        description: "Personalized strategies for academic success.",
-        path: "/services/learning-support",
-        image: learningDisabilitiesImage,
-        color: "from-orange-500 to-orange-600",
-    },
-    {
-        id: 5,
-        title: "Teen & Adolescent Transition Clinic",
-        description: "Preparing teens for school, vocational, and life transitions.",
-        path: "/services/teen-adolescent-transition",
-        image: teenTransitionImage,
-        color: "from-teal-500 to-teal-600",
-    },
-    
-    {
-        id: 7,
-        title: "Multidisciplinary Care",
-        description: "Collaborative planning with psychologists, therapists, educators, and medical specialists",
-        path: "/services/multidisciplinary-care",
-        image: antenatalSessionsImage,
-        color: "from-amber-500 to-amber-600",
+        alt: '"Developmental Screening &amp; Assessments" fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/developmental-delays2.513ef8f8.png'
     }
 ]
 
@@ -248,7 +184,7 @@ const ServicesGrid = () => {
                                     <div className="relative w-full h-48 sm:h-70 md:h-56 overflow-hidden bg-gradient-to-br from-primary/10 to-orange-100">
                                         <Image
                                             src={image}
-                                            alt={title}
+                                            alt={alt}
                                             fill
                                             className="object-cover  transition-transform duration-700"
                                             priority
