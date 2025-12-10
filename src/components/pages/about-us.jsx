@@ -66,11 +66,15 @@ const AboutUs = () => {
           </div>
         </section>
 
-        {/* Testimonials Section */}
-        <Testimonial />
+        {/* Testimonials Section - Tight Spacing */}
+        <div className="-mt-12 relative z-5">
+          <Testimonial />
+        </div>
 
-        {/* Meet Our Founder Section */}
-        <Teams />
+        {/* Meet Our Founder Section - Tight Spacing */}
+        <div className="-mt-12 relative z-5">
+          <Teams />
+        </div>
       </main>
     </>
   )

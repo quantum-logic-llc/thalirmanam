@@ -12,7 +12,7 @@ const founder = {
 
 const Teams = () => {
   return (
-    <section className="py-20" style={{ backgroundColor: '#eff6ff' }}>
+    <section className="py-20 pt-0" style={{ backgroundColor: '#eff6ff' }}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
