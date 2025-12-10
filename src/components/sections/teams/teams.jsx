@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Dr from '@/assets/images/team/dr_naveenaa.png';
+import Dr from '@/assets/images/team/drnaveena.png';
 
 const founder = {
   slug: 'dr-naveena-karthik',
@@ -12,11 +12,11 @@ const founder = {
 
 const Teams = () => {
   return (
-    <section className="py-20 pt-0" style={{ backgroundColor: '#eff6ff' }}>
-      <div className="container mx-auto px-4">
+    <section className="py-20 pt-5 bg-light-blue" >
+      <div className="container mx-auto py-5">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 mb-4">
+          <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 ">
             Meet Dr. Naveena
           </h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div>
@@ -72,22 +72,28 @@ const Teams = () => {
     <div className="absolute -inset-0.5 bg-gradient-to-br from-pink-200 to-blue-200 rounded-3xl opacity-0 group-hover:opacity-40 blur-lg transition-all duration-500"></div>
 
     {/* Image Container */}
-    <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-3xl overflow-hidden border-4 border-white shadow-2xl group-hover:shadow-3xl transition-all duration-500 bg-white">
+    <div className=" relative
+  w-72 h-80                 
+  rounded-2xl overflow-hidden
+  border-4 border-white
+  shadow-2xl
+  transition-all duration-500
+  bg-white">
       <Image
         src={founder.image}
         alt={founder.name}
         fill
-        className="object-cover group-hover:scale-110 transition-transform duration-500"
+        className=""
         priority
       />
     </div>
 
     {/* Corner Badge */}
-    <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform -translate-y-2 group-hover:translate-y-0">
+    <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center">
       <div className="text-xs font-bold">FOUNDER</div>
     </div>
       {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
                   <div className="text-2xl font-bold text-pink-600">15+</div>
                   <div className="text-xs font-semibold text-gray-600">Years Experience</div>
                 </div>

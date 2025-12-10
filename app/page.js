@@ -32,8 +32,8 @@ export default function HomePage() {
         <CommitmentBanner />
         <FaqComp />
         <Testimonial />
-        <HelpContactSection />
         <Teams />
+         <HelpContactSection />
       </main>
       <FooterOne />
     </>

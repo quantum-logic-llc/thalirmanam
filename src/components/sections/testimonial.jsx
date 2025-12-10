@@ -79,15 +79,15 @@ const Testimonial = () => {
 
 export default Testimonial
 
-const Card = ({ name, src, position, review, rating, prevRef, nextRef, onPrev, onNext }) => {
+const Card = ({ name, src,position, review, rating, prevRef, nextRef, onPrev, onNext }) => {
     return (
-        <div className="py-8 px-4">
+        <div className="py-10 px-20 pb-0">
             <div className="relative group">
                 <div className="absolute -inset-0.5 bg-gradient-to-r from-orange-300 via-pink-300 to-purple-300 rounded-3xl opacity-0 group-hover:opacity-100 transition duration-1000 blur-lg group-hover:blur-xl"></div>
 
                 <div className="relative bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg group-hover:shadow-2xl transition-all duration-500 group-hover:scale-105 border border-gray-100 group-hover:border-orange-100 overflow-visible">
                     
-                    <div className="absolute top-0 left-0 h-1 w-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-r-full"></div>
+                    {/* <div className="absolute top-0 left-0 h-1 w-20 bg-gradient-to-r from-orange-500 to-pink-500 rounded-r-full"></div> */}
 
                     <div className="absolute -top-8 right-8 opacity-10 group-hover:opacity-20 transition-opacity duration-300">
                         <Image src={quotation} alt="quotation" width={80} height={80} />
@@ -96,9 +96,9 @@ const Card = ({ name, src, position, review, rating, prevRef, nextRef, onPrev, o
                     <div className="flex items-center gap-4 mb-6 relative z-10">
                         <div className="relative flex-shrink-0">
                             <div className="absolute -inset-1 bg-gradient-to-r from-orange-400 to-pink-400 rounded-full opacity-0 group-hover:opacity-100 transition duration-300 blur"></div>
-                            <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-3 border-white bg-white shadow-md">
+                            {/* <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-3 border-white bg-white shadow-md">
                                 <Image src={src} alt={name} fill className="object-cover" />
-                            </div>
+                            </div> */}
                         </div>
 
                         <div className="flex-1 min-w-0">
