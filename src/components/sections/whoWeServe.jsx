@@ -22,10 +22,6 @@ const servicesWeServe = [
     id: 3,
     title: "Adolescent Skill Building , functional independence & pre vocational skills",
   },
-  {
-    id: 4,
-    title: "Young adults seeking support for independence and life skills",
-  },
 ];
 
 const WhoWeServe = () => {

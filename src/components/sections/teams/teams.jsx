@@ -17,7 +17,7 @@ const Teams = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 ">
-            Meet Dr. Naveena
+            Meet Dr. Naveena K
           </h2>
           <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">

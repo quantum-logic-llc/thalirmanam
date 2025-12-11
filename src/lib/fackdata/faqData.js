@@ -11,7 +11,7 @@ export const faqData = [
     },
     {
         id:"three",
-        question:"what concerns do we address?",
+        question:"What concerns do we address?",
         ans:"We support a wide range of developmental and behavioural needs, including: Autism Spectrum Disorder (ASD) and ADHD, Learning difficulties and academic challenges, School refusal, anxiety, and emotional regulation issues, Behavioural challenges and social skill development, Teen transitions, sexuality education, and setting healthy boundaries, Sibling and family adjustment support, Guidance for grandparents and caregivers"
     },
     {
