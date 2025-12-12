@@ -114,7 +114,7 @@ const Card = ({ name, src,position, review, rating, prevRef, nextRef, onPrev, on
                     <div className="h-0.5 bg-gradient-to-r from-orange-200 to-pink-200 mb-6 group-hover:from-orange-400 group-hover:to-pink-400 transition-all duration-500"></div>
 
                     <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 group-hover:text-gray-900 transition-colors duration-300 italic">
-                        "{review}"
+                        &ldquo;{review}&rdquo;
                     </p>
 
                     <div className="mb-4">
