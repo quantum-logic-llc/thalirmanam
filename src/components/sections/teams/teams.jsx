@@ -19,7 +19,7 @@ const Teams = () => {
           <h2 className="text-4xl lg:text-5xl font-bold text-pink-600 ">
             Meet Dr. Naveena K
           </h2>
-          <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div>
+          {/* <div className="w-20 h-1 bg-pink-500 mx-auto mb-4"></div> */}
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Passionate about helping children and teens flourish, nurturing their strengths, and supporting families through every stage of development.
           </p>
@@ -51,7 +51,7 @@ const Teams = () => {
               <div className="space-y-4 text-gray-600 leading-relaxed">
                 <p>
                   With years of dedicated experience in developmental and behavioural pediatrics,
-                  Dr. Naveena Karthik has been at the forefront of providing comprehensive care
+                  Dr. Naveena K has been at the forefront of providing comprehensive care
                   for children with developmental challenges.
                 </p>
                 <p>
@@ -90,11 +90,11 @@ const Teams = () => {
 
     {/* Corner Badge */}
     <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center">
-      <div className="text-xs font-bold">FOUNDER</div>
+      <div className="text-xs font-bold">Paediatrician</div>
     </div>
       {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
-                  <div className="text-2xl font-bold text-pink-600">15+</div>
+                  <div className="text-2xl font-bold text-pink-600">5+</div>
                   <div className="text-xs font-semibold text-gray-600">Years Experience</div>
                 </div>
               </div>
