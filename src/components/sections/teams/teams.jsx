@@ -89,7 +89,7 @@ const Teams = () => {
     </div>
 
     {/* Corner Badge */}
-    <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center">
+    <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-2 shadow-lg text-center">
                        <div className="text-xs font-bold">Developmental and Behavioural Pediatrics</div>
 
     </div>
