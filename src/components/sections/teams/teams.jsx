@@ -5,7 +5,7 @@ import Dr from '@/assets/images/team/drnaveena.png';
 const founder = {
   slug: 'dr-naveena-karthik',
   image: Dr,
-  name: 'Dr. Naveena Karthik',
+  name: 'Dr. Naveena K',
   profession: 'Developmental & Behavioural Paediatrician',
   quote: 'Every child is unique and deserves personalized care to reach their full potential.',
 };
@@ -35,7 +35,7 @@ const Teams = () => {
                   {founder.name}
                 </h3>
                 <p className="text-xl font-semibold text-green-600 mb-2">
-                  Founder & Director
+                   Director
                 </p>
                 <p className="text-lg text-gray-700 font-medium">
                   {founder.profession}
