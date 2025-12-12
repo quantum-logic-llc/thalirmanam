@@ -15,7 +15,7 @@ import 'swiper/css/effect-coverflow'
 import services from '@/lib/fackdata/servicesDataOne'
 
 // Import service images
-import adhdImage from '@/assets/images/services/adhd2.png'
+import adhdImage from '@/assets/images/services/inventary.jpg'
 import autismImage from '@/assets/images/services/Asd.png'
 import behavioralImage from '@/assets/images/services/behavioral-disorders2.png'
 import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'

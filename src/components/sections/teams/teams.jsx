@@ -89,13 +89,14 @@ const Teams = () => {
     </div>
 
     {/* Corner Badge */}
-    <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center">
-       <div className="text-2xl font-bold text-pink-600">5+</div>
-                  <div className="text-xs font-semibold text-gray-600">Years Experience</div>
+    <div className="absolute -bottom-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-3 shadow-lg text-center">
+                       <div className="text-xs font-bold">Developmental and Behavioural Pediatrics</div>
+
     </div>
       {/* Floating Badge */}
-                <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
-                       <div className="text-xs font-bold">Developmental and Behavioural Pediatrics</div>
+                <div className="absolute -top-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
+                       <div className="text-2xl font-bold text-pink-600">5+</div>
+                  <div className="text-xs font-semibold text-gray-600">Years Experience</div>
                 </div>
               </div>
             </div>
