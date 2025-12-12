@@ -15,7 +15,7 @@ import 'swiper/css/effect-coverflow'
 import services from '@/lib/fackdata/servicesDataOne'
 
 // Import service images
-import adhdImage from '@/assets/images/services/inventary.jpg'
+import inventary from '@/assets/images/services/inventary.jpg'
 import autismImage from '@/assets/images/services/Asd.png'
 import behavioralImage from '@/assets/images/services/behavioral-disorders2.png'
 import cerebralPalsyImage from '@/assets/images/services/cerebral-disorders1.png'
@@ -35,7 +35,7 @@ const servicesData = [
         title: "Early Intervention Programs",
         description: "Tailored therapy for infants and children.",
         path: "/services/adhd",
-        image: adhdImage,
+        image: inventary,
         color: "from-purple-500 to-purple-600",
         alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png"',
     },
