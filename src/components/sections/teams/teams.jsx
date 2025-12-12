@@ -6,7 +6,7 @@ const founder = {
   slug: 'dr-naveena-karthik',
   image: Dr,
   name: 'Dr. Naveena K',
-  profession: 'Developmental Paediatrician',
+  profession: 'Developmental and Behavioural Pediatrics',
   quote: 'Every child is unique and deserves personalized care to reach their full potential.',
 };
 
@@ -95,7 +95,7 @@ const Teams = () => {
     </div>
       {/* Floating Badge */}
                 <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
-                       <div className="text-xs font-bold">Developmental Paediatrician</div>
+                       <div className="text-xs font-bold">Developmental and Behavioural Pediatrics</div>
                 </div>
               </div>
             </div>
