@@ -74,12 +74,12 @@ export const menuList = [
             }
         ]
     },
-    {
-        id: 5,
-        path: "/appointments",
-        label: "Appointments",
-        dropDownMenu: false
-    },
+    // {
+    //     id: 5,
+    //     path: "/appointments",
+    //     label: "Appointments",
+    //     dropDownMenu: false
+    // },
     {
         id: 6,
         path: "/parents-corner",

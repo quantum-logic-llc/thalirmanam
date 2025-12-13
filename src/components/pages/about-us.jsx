@@ -7,6 +7,10 @@ import Testimonial from '@/components/sections/testimonial'
 import aboutImage from '@/assets/images/about/aboutus.png'
 import { FaHeart, FaUsers, FaLightbulb, FaStar, FaCheckCircle, FaHandHoldingHeart, FaAward } from 'react-icons/fa'
 import SlideUp from '@/lib/animations/slideUp'
+import { Button } from '../ui/button'
+import { FaPhone } from 'react-icons/fa6'
+import Link from 'next/link'
+
 
 const AboutUs = () => {
   const features = [
@@ -75,6 +79,18 @@ const AboutUs = () => {
         <div className="-mt-12 relative z-5">
           <Teams />
         </div>
+            <div className="pt-4" style={{ textAlign: 'center' }}>
+            <Button
+              asChild
+              size="lg"
+              className="bg-green-600 hover:bg-green-600 text-white font-semibold text-base sm:text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
+              <Link href="/contact-us" className="inline-flex items-center gap-3">
+                <FaPhone className="text-lg sm:text-xl" />
+                <span>click to contact with us.</span>
+              </Link>
+            </Button>
+          </div>
       </main>
     </>
   )

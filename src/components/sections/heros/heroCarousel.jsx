@@ -76,14 +76,44 @@ const HeroCarousel = () => {
 };
 
 const HeroSlide = ({ slide }) => {
-  const { title, subtitle, tagline, description, image, bgColor, highlights } = slide;
+  const {
+    title,
+    subtitle,
+    tagline,
+    description,
+    image,
+    bgColor,
+    highlights = [],
+    type,
+  } = slide;
 
+  // IMAGE ONLY SLIDE
+  if (type === "image-only") {
+    return (
+      <div
+        className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden"
+        style={{ backgroundColor: bgColor || "#ffffff" }}
+      >
+        <div className="relative w-full h-full">
+          <Image
+            src={image}
+            alt={title || "Thalir Manam banner"}
+            fill
+            className="object-contain object-center"
+            priority
+          />
+        </div>
+      </div>
+    );
+  }
+
+  // DEFAULT SLIDE WITH CONTENT
   return (
     <div
       className="relative w-full h-[85vh] flex items-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
-      {/* Background Image - Clean and bright for kids */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src={image}
@@ -92,88 +122,93 @@ const HeroSlide = ({ slide }) => {
           className="object-cover object-center"
           priority
         />
-        {/* Subtle gradient overlay for right side text readability */}
         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-black/20"></div>
       </div>
 
       {/* Content Container */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex justify-end items-center min-h-[70vh]">
-
-          {/* Right Side - Text Content with Card Background */}
           <div className="w-full lg:w-1/2 xl:w-5/12 px-5">
             <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border-l-8 border-orange-500 min-h-[520px] flex flex-col justify-center space-y-6">
+              {/* Title */}
+              <TextReveal delay={0.2}>
+                <div className="space-y-3">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-[#91ec76] leading-tight">
+                    {title}
+                  </h1>
+                  <h2 className="text-xl sm:text-2xl font-semibold text-black leading-snug">
+                    {subtitle}
+                  </h2>
+                  {tagline && (
+                    <h3 className="text-lg sm:text-xl font-medium text-gray-600 leading-snug italic">
+                      {tagline}
+                    </h3>
+                  )}
+                </div>
+              </TextReveal>
 
-            {/* Main Title */}
-            <TextReveal delay={0.2}>
-              <div className="space-y-3">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-[#91ec76] leading-tight">
-                  {title}
-                </h1>
-                <h2 className="text-1xl sm:text-2xl md:text-2xl lg:text-2xl font-semibold text-black-600 leading-snug">
-                  {subtitle}
-                </h2>
-                {tagline && (
-                  <h3 className="text-lg sm:text-xl md:text-xl lg:text-xl font-medium text-gray-600 leading-snug italic">
-                    {tagline}
-                  </h3>
-                )}
+              {/* Divider */}
+              <div className="flex items-center gap-2">
+                <div className="h-1.5 w-16 bg-[#91ec76] rounded-full shadow-lg"></div>
+                <div className="h-1.5 w-12 bg-[#8ccdee] rounded-full shadow-lg"></div>
+                <div className="h-1.5 w-8 bg-[#f28cb3] rounded-full shadow-lg"></div>
               </div>
-            </TextReveal>
 
-            {/* Colorful divider */}
-            <div className="flex items-center gap-2">
-              <div className="h-1.5 w-16 bg-[#91ec76] rounded-full shadow-lg"></div>
-              <div className="h-1.5 w-12 bg-[#8ccdee] rounded-full shadow-lg"></div>
-              <div className="h-1.5 w-8 bg-[#f28cb3] rounded-full shadow-lg"></div>
-            </div>
+              {/* Description with highlights (guard for highlights) */}
+              {description && (
+                <TextReveal delay={0.4}>
+                  <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+                    {(highlights.length
+                      ? description.split(
+                          new RegExp(`(${highlights.join("|")})`, "gi")
+                        )
+                      : [description]
+                    ).map((part, index) => {
+                      const match = highlights.find(
+                        (h) => h.toLowerCase() === part.toLowerCase()
+                      );
+                      if (match) {
+                        return (
+                          <span
+                            key={index}
+                            className="text-[#f28cb3] font-bold"
+                          >
+                            {part}
+                          </span>
+                        );
+                      }
+                      return <span key={index}>{part}</span>;
+                    })}
+                  </p>
+                </TextReveal>
+              )}
 
-            {/* Description */}
-            <TextReveal delay={0.4}>
-              <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
-                {description.split(new RegExp(`(${highlights.join('|')})`, 'gi')).map((part, index) => {
-                  if (highlights.some(h => h.toLowerCase() === part.toLowerCase())) {
-                    return (
-                      <span
-                        key={index}
-                        className="text-[#f28cb3] font-bold"
-                      >
-                        {part}
-                      </span>
-                    );
-                  }
-                  return part;
-                })}
-              </p>
-            </TextReveal>
-
-            {/* CTA Buttons */}
-            <SlideUp delay={0.6}>
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-[#8ccdee] hover:bg-[#72b8e0] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-                >
-                  <Link href="/contact-us">Book Consultation</Link>
-                </Button>
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-[#f28cb3] hover:bg-[#e0729e] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
-                >
-                  <Link href="/services">Explore Services</Link>
-                </Button>
-              </div>
-            </SlideUp>
-
+              {/* CTAs */}
+              <SlideUp delay={0.6}>
+                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-[#8ccdee] hover:bg-[#72b8e0] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  >
+                    <Link href="/contact-us">Book Consultation</Link>
+                  </Button>
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-[#f28cb3] hover:bg-[#e0729e] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  >
+                    <Link href="/services">Explore Services</Link>
+                  </Button>
+                </div>
+              </SlideUp>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   );
 };
+
 
 export default HeroCarousel;

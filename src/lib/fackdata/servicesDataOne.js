@@ -139,17 +139,66 @@ export const servicesDataOne = [
     <img src="/assets/images/services/parent.png" alt="ADHD Support" class="w-full align-center max-h-[500px] object-cover mb-10 rounded-xl shadow-2xl border-8 border-blue-100 hover:scale-[1.02] transition-transform duration-300" />
     <div class="flex justify-center items-center">
         <div class="w-full md:w-3/4 prose prose-lg max-w-full text-gray-700 bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
-            <ul class="list-none space-y-4">
-                <li class="flex items-start"><span class="inline-block w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">i</span><span class="text-lg"><strong>Diagnosis of ADHD and therapy</strong></span></li>
-                <li class="flex items-start"><span class="inline-block w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">ii</span><span class="text-lg"><strong>Help children with ADHD to explore their feelings and thoughts</strong></span></li>
-                <li class="flex items-start"><span class="inline-block w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">iii</span><span class="text-lg"><strong>Setting up behavioural modification programmes at school and home</strong></span></li>
-                <li class="flex items-start"><span class="inline-block w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">iv</span><span class="text-lg"><strong>Advice families about assistive technology</strong></span></li>
-                <li class="flex items-start"><span class="inline-block w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">v</span><span class="text-lg"><strong>Making aware of the parents and teachers about the fact that ADHD can be successfully managed</strong></span></li>
+            <ul class="list-none space-y-4 mb-10">
+                <li class="flex items-start">
+                    <span class="inline-block w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">i</span>
+                    <span class="text-lg"><strong>Diagnosis of ADHD and therapy</strong></span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-block w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">ii</span>
+                    <span class="text-lg"><strong>Help children with ADHD to explore their feelings and thoughts</strong></span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-block w-8 h-8 bg-pink-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">iii</span>
+                    <span class="text-lg"><strong>Setting up behavioural modification programmes at school and home</strong></span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-block w-8 h-8 bg-blue-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">iv</span>
+                    <span class="text-lg"><strong>Advice for families about assistive technology</strong></span>
+                </li>
+                <li class="flex items-start">
+                    <span class="inline-block w-8 h-8 bg-green-500 text-white rounded-full flex items-center justify-center font-bold mr-3 flex-shrink-0">v</span>
+                    <span class="text-lg"><strong>Raising awareness among parents and teachers that ADHD can be successfully managed</strong></span>
+                </li>
             </ul>
+
+            <!-- Behavioral Treatments -->
+            <div class="space-y-4 mb-8">
+                <h3 class="text-2xl font-bold text-blue-600">Behavioral Treatments</h3>
+                <p class="text-lg leading-relaxed">
+                    <strong>Parent training:</strong> Structured guidance for parents to respond more effectively to their child’s behaviours using praise, clear rules and consistent consequences. This helps manage impulsive actions, tantrums and defiance, and supports a more positive home environment.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    <strong>Skill-building:</strong> Focus on executive functions such as organisation, planning and time management. Children learn to use tools like checklists, visual schedules and planners to stay on task and manage daily responsibilities more independently.
+                </p>
+            </div>
+
+            <!-- Cognitive Behavioral Therapy -->
+            <div class="space-y-4 mb-8">
+                <h3 class="text-2xl font-bold text-blue-600">Cognitive Behavioral Therapy (CBT)</h3>
+                <p class="text-lg leading-relaxed">
+                    CBT is an evidence-based approach that helps children understand how their thoughts, feelings and behaviours interact with ADHD symptoms. It teaches practical techniques for managing distractions, procrastination and emotional regulation.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Sessions typically involve identifying specific challenges, setting realistic goals and developing coping strategies that children can carry forward as they grow. CBT is often most effective when combined with other therapies or medication as part of a comprehensive plan.
+                </p>
+            </div>
+
+            <!-- Comprehensive Support -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-bold text-blue-600">Comprehensive Support</h3>
+                <p class="text-lg leading-relaxed">
+                    In addition to therapy, children with ADHD often benefit from a multi-faceted support system that may include educational accommodations, structured routines at home, lifestyle changes and close collaboration with teachers and healthcare providers.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    This holistic approach helps children receive consistent support across school, home and clinic settings, improving attention, behaviour and overall wellbeing.
+                </p>
+            </div>
         </div>
     </div>
     </div>
 </div>`
+
     },
     {
         id: 4,

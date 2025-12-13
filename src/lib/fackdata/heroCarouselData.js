@@ -1,6 +1,7 @@
 import herogirl2 from "@/assets/images/banner/banner8.png";
 import herosec2 from "@/assets/images/banner/banner7.png";
 import herosec3 from "@/assets/images/banner/banner9.png";
+import herosec4 from "@/assets/images/banner/baby2.png";
 
 export const heroCarouselData = [
     {
@@ -26,9 +27,15 @@ export const heroCarouselData = [
         id: 3,
         title: "Family-Centered Care",
         subtitle: "Supporting the Whole Family",
-        description: "We believe in supporting not just the child, but the entire family. Our family-centered approach includes parent training, sibling support, and antenatal sessions to ensure comprehensive developmental care.",
+        description: "We believe in supporting not just the child, but the entire family. Our family-centered approach Parent and caregiver support , sibling support and family guidance ensure comprehensive developmental care.",
         image: herosec3,
         bgColor: "#f0fdf4",
         highlights: ["family support", "parent training", "holistic care"]
-    }
+    },
+    {
+    id: 4,
+    image: herosec4,
+    bgColor: "#ffffff", // optional background for this pure image slide
+    type: "image-only",
+    },
 ];

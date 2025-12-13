@@ -167,7 +167,7 @@ const ContactSectionNew = () => {
                 </div>
 
                 {/* Main Content Grid */}
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-12">
+                <div className="grid grid-cols-1 lg:grid-cols-[1.7fr_1.1fr] gap-10 lg:gap-12">
                     {/* Left Side - Contact Form */}
                     <SlideUp delay={5}>
                         <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl border-2 border-warm/20">
@@ -311,27 +311,35 @@ const ContactSectionNew = () => {
                     {/* Right Side - Location & Info */}
                     <div className="space-y-8">
                         {/* Location Card */}
-                        <SlideLeft delay={6}>
-                            <div className="bg-gradient-to-br from-teal-600 to-cyan-600 text-white rounded-3xl p-8 shadow-2xl">
-                                <div className="flex items-center gap-3 mb-6">
-                                    <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center">
-                                        <FaLocationDot className="text-2xl" />
-                                    </div>
-                                    <h3 className="text-2xl font-bold">Visit Our Center</h3>
-                                </div>
-                                <p className="text-lg leading-relaxed mb-6 text-white/90">
-                                    No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125
-                                </p>
-                                <a
-                                    href="https://maps.google.com/?q=No.+13,+Kundrathur+Main+Rd,+MS+Nagar,+Porur,+Chennai,+Tamil+Nadu+600125"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-white text-primary px-6 py-3 rounded-full font-semibold hover:bg-white/90 transition-colors"
-                                >
-                                    <FaLocationDot /> Get Directions
-                                </a>
-                            </div>
-                        </SlideLeft>
+                       <SlideLeft delay={6}>
+  <div className="bg-gradient-to-br from-sky-500 to-indigo-600 text-white rounded-3xl p-7 sm:p-8 shadow-[0_20px_60px_rgba(15,23,42,0.35)] relative overflow-hidden">
+    {/* Soft glow circles */}
+    <div className="pointer-events-none absolute -top-10 -right-10 w-32 h-32 bg-white/15 rounded-full blur-2xl" />
+    <div className="pointer-events-none absolute -bottom-16 -left-8 w-40 h-40 bg-sky-400/20 rounded-full blur-3xl" />
+
+    <div className="relative flex items-center gap-3 mb-5">
+      <div className="w-12 h-12 rounded-2xl bg-white/15 flex items-center justify-center shadow-md">
+        <FaLocationDot className="text-2xl text-white" />
+      </div>
+      <h3 className="text-2xl font-bold tracking-tight">Visit Our Center</h3>
+    </div>
+
+    <p className="relative text-base sm:text-lg leading-relaxed mb-6 text-sky-50/95">
+      No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125
+    </p>
+
+    <a
+      href="https://maps.google.com/?q=No.+13,+Kundrathur+Main+Rd,+MS+Nagar,+Porur,+Chennai,+Tamil+Nadu+600125"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative inline-flex items-center gap-2 bg-white text-indigo-700 px-6 sm:px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:bg-sky-50 transition-all duration-300 hover:-translate-y-0.5"
+    >
+      <FaLocationDot className="text-indigo-600" />
+      <span>Get Directions</span>
+    </a>
+  </div>
+</SlideLeft>
+
 
                         {/* Operating Hours */}
                         <SlideLeft delay={7}>
@@ -360,7 +368,7 @@ const ContactSectionNew = () => {
                         </SlideLeft>
 
                         {/* Quick Actions */}
-                        <SlideLeft delay={8}>
+                        {/* <SlideLeft delay={8}>
                             <div className="bg-gradient-to-br from-green/10 to-green/5 rounded-3xl p-8 border-2 border-green/20">
                                 <h3 className="text-2xl font-bold text-gray-800 mb-4">Quick Actions</h3>
                                 <div className="space-y-3">
@@ -396,7 +404,7 @@ const ContactSectionNew = () => {
                                     </a>
                                 </div>
                             </div>
-                        </SlideLeft>
+                        </SlideLeft> */}
                     </div>
                 </div>
             </div>
