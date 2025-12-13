@@ -1,3 +1,4 @@
+import audth from "@/assets/images/services/parent.png";
 export const servicesDataOne = [
     {
         id: 1,
@@ -136,7 +137,7 @@ export const servicesDataOne = [
         </div>
     </div>
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <img src="/assets/images/services/parent.png" alt="ADHD Support" class="w-full align-center max-h-[500px] object-cover mb-10 rounded-xl shadow-2xl border-8 border-blue-100 hover:scale-[1.02] transition-transform duration-300" />
+    <img src="https://drroseann.com/wp-content/uploads/2023/10/Effective-Therapy-Activities-for-an-ADHD-Child-1024x576.webp" alt="ADHD Support" class="w-full align-center max-h-[500px] object-cover mb-10 rounded-xl shadow-2xl border-8 border-blue-100 hover:scale-[1.02] transition-transform duration-300" />
     <div class="flex justify-center items-center">
         <div class="w-full md:w-3/4 prose prose-lg max-w-full text-gray-700 bg-white p-8 rounded-lg shadow-md border-t-4 border-blue-500">
             <ul class="list-none space-y-4 mb-10">
