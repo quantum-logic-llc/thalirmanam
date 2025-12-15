@@ -357,7 +357,7 @@ const ContactSectionNew = () => {
                                     </div>
                                     <div className="flex justify-between items-center p-4 bg-warm/10 rounded-xl">
                                         <span className="font-semibold text-gray-700">Saturday</span>
-                                        <span className="text-primary font-bold">9:00 AM - 2:00 PM</span>
+                                        <span className="text-primary font-bold">9:00 AM - 6:00 PM</span>
                                     </div>
                                     <div className="flex justify-between items-center p-4 bg-red-50 rounded-xl">
                                         <span className="font-semibold text-gray-700">Sunday</span>

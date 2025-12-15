@@ -9,7 +9,7 @@ import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
 import SlideUp from '@/lib/animations/slideUp'
 import SectionDescription from '@/components/ui/sectionDescription'
-import { FaCheckCircle, FaCalendarCheck, FaChevronDown } from 'react-icons/fa'
+import { FaCheckCircle, FaCalendarCheck, FaChevronDown, FaUserMd, FaFlask, FaPeopleGroup, FaHandsHelping } from 'react-icons/fa'
 
 const devPaedsItems = [
   {
@@ -38,12 +38,22 @@ const devPaedsItems = [
   },
 ]
 
+
 const highlights = [
   "Over 10+ Years of Excellence in Pediatric Care",
-  "Expert Team of Developmental Specialists",
-  "Evidence-Based Treatment Approaches",
-  "Multidisciplinary Collaboration",
-  "Family-Centered Methodology"
+  "A dedicated team of developmental specialists",
+  "Evidence-based, child-focused interventions",
+  "Strong multidisciplinary collaboration",
+  "A truly family-centred approach"
+]
+
+// map each highlight to a different icon
+const highlightIcons = [
+  FaUserMd,        // for years of care
+  FaPeopleGroup,   // for team
+  FaFlask,         // for evidence-based
+  FaCheckCircle,   // for collaboration
+  FaHandsHelping   // for family-centered
 ]
 
 const AccordionItem = ({ item }) => {
@@ -130,7 +140,8 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
               <SlideUp delay={4}>
                 <div className="max-w-3xl mx-auto">
                   <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
-                    <strong className="text-gray-800">Thalir Manam Neurodevelopmental centre</strong> is dedicated to providing comprehensive developmental and behavioral pediatric services with expertise, innovation, and compassion.
+                    <strong className="text-gray-800">Thalir Manam Neurodevelopmental centre</strong> is dedicated to providing comprehensive developmental and behavioural pediatric care, grounded in clinical expertise, thoughtful innovation, and compassion.
+
                   </SectionDescription>
                 </div>
               </SlideUp>
@@ -138,7 +149,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
               <SlideUp delay={5}>
                 <div className="max-w-3xl mx-auto">
                   <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
-                    Under the expert guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, we offer specialized care for children with developmental and behavioral challenges including Autism Spectrum Disorders, ADHD, Learning Disabilities, Cerebral Palsy, and various neurodevelopmental conditions.
+                    Under the guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, the centre offers specialized care for children and adolescents with developmental and behavioural challenges, including Autism Spectrum Disorder, ADHD, Learning Disabilities, Cerebral Palsy, and other neurodevelopmental conditions.
                   </SectionDescription>
                 </div>
               </SlideUp>
@@ -148,22 +159,35 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
                   <SlideUp delay={6}>
                     <div className="max-w-3xl mx-auto">
                       <SectionDescription className="mb-6 text-base lg:text-lg leading-relaxed text-center">
-                        Our multidisciplinary approach combines clinical expertise with compassionate care, creating individualized treatment plans that address each child&apos;s unique strengths and challenges. We ensure comprehensive support for both children and their families throughout their developmental journey.
+                        Our approach is multidisciplinary and individualized, recognising each child’s strengths, needs, and developmental trajectory. We focus on supporting families at every stage, with care plans that promote emotional wellbeing, functional independence, and smooth transitions into adolescence and adulthood.
                       </SectionDescription>
                     </div>
                   </SlideUp>
 
                   {/* Key Highlights */}
-                  <SlideUp delay={7}>
-                    <div className="mb-8 space-y-3 max-w-2xl mx-auto">
-                      {highlights.map((highlight, index) => (
-                        <div key={index} className="flex items-start gap-3 group">
-                          <FaCheckCircle className="text-green-600 text-lg mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-                          <span className="text-gray-700 text-sm lg:text-base font-medium">{highlight}</span>
-                        </div>
-                      ))}
-                    </div>
-                  </SlideUp>
+ 
+  <div className="mb-8 max-w-3xl mx-auto">
+        <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
+                    Why Thalir Manam
+      </h1>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+  
+      {highlights.map((highlight, index) => {
+        const Icon = highlightIcons[index] || FaCheckCircle
+        return (
+          <div
+            key={index}
+            className="flex items-start gap-3 group bg-white/80 rounded-xl px-4 py-3 shadow-sm hover:shadow-md transition-shadow"
+          >
+            <Icon className="text-green-600 text-xl mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
+            <span className="text-gray-700 text-sm lg:text-base font-medium">
+              {highlight}
+            </span>
+          </div>
+        )
+      })}
+    </div>
+  </div>
 
                   {/* Accordion Section */}
                   <SlideUp delay={8}>

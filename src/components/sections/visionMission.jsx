@@ -45,8 +45,7 @@ const VisionMission = () => {
 
               {/* Description */}
               <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
-                To be a leading force in pediatric healthcare, recognized for our commitment to excellence, innovation, and compassionate family-centered care. We envision a future where every child reaches their full potential through early intervention and comprehensive developmental support.
-              </p>
+                To guide children and adolescents with developmental differences from baby steps to bold strides through early intervention, thoughtful transition care, and strong partnerships with families and caregivers.              </p>
 
               {/* Decorative element */}
               <div className="mt-6 h-1 w-20 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full"></div>
@@ -66,8 +65,7 @@ const VisionMission = () => {
 
               {/* Description */}
               <p className="text-gray-700 text-base lg:text-lg leading-relaxed">
-                To provide compassionate, expert care to children with developmental and behavioral challenges. We are dedicated to safeguarding health, shaping futures, and empowering families through evidence-based interventions, multidisciplinary collaboration, and personalized treatment plans.
-              </p>
+                  To bridge gaps in developmental care by helping every child and adolescent reach their full potential—through understanding their needs, strengthening supportive environments, and partnering with families and caregivers across home, school, and community              </p>
 
               {/* Decorative element */}
               <div className="mt-6 h-1 w-20 bg-gradient-to-r from-green-500 to-green-600 rounded-full"></div>
