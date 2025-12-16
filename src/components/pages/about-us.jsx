@@ -108,9 +108,11 @@ const AboutUs = () => {
         <div className="-mt-12 relative z-5">
           <Testimonial />
         </div>
+          <div className="my-20"></div>
+
 
         {/* Meet Our Founder Section */}
-        <div className="container mx-auto py-5">
+        <div className="container mx-auto py-20 pt-5 bg-light-blue">
           {/* Section Header */}
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-black-600">

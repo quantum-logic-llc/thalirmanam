@@ -32,6 +32,7 @@ export default function HomePage() {
         <CommitmentBanner />
         <FaqComp />
         <Testimonial />
+        <div className="my-20"></div>
         <Teams />
          <HelpContactSection />
       </main>
