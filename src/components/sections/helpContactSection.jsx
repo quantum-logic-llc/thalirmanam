@@ -33,7 +33,7 @@ const HelpContactSection = () => {
           <div className="space-y-3 sm:space-y-4">
             <h2 className="font-bold text-white/95 drop-shadow-2xl uppercase" 
                 style={{ fontSize: '36px', lineHeight: '1', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
-              Concerned about your child or teen's development?
+              Concerned about your child or teen&apos;s development?
             </h2>
           </div>
 
