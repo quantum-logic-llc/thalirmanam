@@ -34,7 +34,9 @@ export const heroCarouselData = [
     },
     {
     id: 4,
-    title: "Developmental Supportive Care for High-Risk Infants & Newborns",
+    title: "Developmental Supportive Care ",
+    subtitle: "Nurturing Early Growth and Development",
+    description: "Specialized developmental supportive care for high-risk infants and newborns, focusing on early intervention and nurturing growth during the critical first years of life.",
     image: herosec4,
     bgColor: "#ffffff", // optional background for this pure image slide
 

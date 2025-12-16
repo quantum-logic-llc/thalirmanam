@@ -108,130 +108,137 @@ const AboutUs = () => {
         <div className="-mt-12 relative z-5">
           <Testimonial />
         </div>
-          <div className="my-20"></div>
+                <div className="my-20"></div>
 
 
-        {/* Meet Our Founder Section */}
-        <div className="container mx-auto py-20 pt-5 bg-light-blue">
-          {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-black-600">
-              Meet Dr. Naveena K
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Passionate about helping children and teens flourish, nurturing their strengths, and supporting
-              families through every stage of development.
-            </p>
-          </div>
-
-          {/* Founder Profile */}
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              {/* Content Column - Left Side */}
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-3">
-                    {founder.name}
-                  </h3>
-                  <p className="text-xl font-semibold text-green-600 mb-2">
-                    Director
-                  </p>
-                  <p className="text-lg text-gray-700 font-medium">
-                    {founder.profession}
-                  </p>
-                </div>
-
-                <div className="border-l-4 border-pink-500 pl-6 py-3 bg-pink-50 rounded-r-lg">
-                  <p className="text-gray-700 text-lg italic">
-                    &ldquo;{founder.quote}&rdquo;
-                  </p>
-                </div>
-
-                <div className="space-y-4 text-gray-600 leading-relaxed">
-                  <p>
-                    “Every child travels a developmental journey from early childhood through adolescence into
-                    adulthood. This journey needs ongoing guidance, careful monitoring, and consistent support to help
-                    each child reach their potential and develop functional independence. We walk alongside children and
-                    families at every step — from baby steps to bold strides.”
-                  </p>
-                  <p>
-                    Dr. Naveena K is a Developmental and Behavioural Paediatrician with over six years of experience
-                    supporting children and adolescents with developmental, behavioural, and neurodevelopmental
-                    challenges.
-                  </p>
-                  <p>
-                    She completed her MBBS from Sri Ramachandra Medical College and underwent paediatric training in the
-                    UK, followed by a Postgraduate Diploma in Developmental Neurology (PGDDN) from CDC, Trivandrum. She
-                    also holds a Post-Diploma in Family Counselling, and an Advanced Diploma in Special Education from
-                    Singapore, where she volunteered with early intervention centres and worked closely with children
-                    and adolescents across developmental stages.
-                  </p>
-                  <p>
-                    Naveena K worked for three years as a Junior Consultant at a private neurodevelopmental centre in
-                    Chennai, gaining hands-on experience in assessing and managing children with Autism, ADHD, learning
-                    difficulties, Cerebral Palsy, and other developmental and behavioural concerns.
-                  </p>
-                  <p>
-                    She has completed advanced training in Paediatric Neurodisability from Sheffield, UK, and
-                    specialised mental health training for children and adolescents, and she is trained in key
-                    assessment tools including DASII, Bayley-III, 3di, and SCOPE Profile, along with adolescent
-                    life-skills programs.
-                  </p>
-                  <p>
-                    She is the founder of Thalirmanam Neurodevelopmental Centre for Children and Adolescents—“Thalirmanam”
-                    means “Tender Minds” in Tamil.
-                  </p>
-                  <p>
-                    At Thalirmanam, her philosophy is “from baby steps to bold strides”: nurturing children and families
-                    through every small developmental step, helping them grow confident, strong, and independent.
-                  </p>
-                  <p>
-                    She also works as a visiting consultant at Kauvery Hospital Vadapalani, Hamsa Kids Kauvery
-                    Kovilambakkam, MIOT International, and A4 Hospital.
-                  </p>
-                  <p>
-                    Her practice is family-centred, focusing on supporting children’s growth, promoting emotional
-                    wellbeing, and guiding families through every stage of development, including adolescent transition
-                    care.
-                  </p>
-                </div>
-              </div>
-
-              {/* Image Column - Right Side */}
-              <div className="flex justify-center lg:justify-end">
-                <div className="relative group">
-                  {/* Gradient Border Animation */}
-                  <div className="absolute -inset-1 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 rounded-3xl opacity-75 group-hover:opacity-100 blur transition-all duration-500 animate-pulse" />
-                  {/* Inner Shadow */}
-                  <div className="absolute -inset-0.5 bg-gradient-to-br from-pink-200 to-blue-200 rounded-3xl opacity-0 group-hover:opacity-40 blur-lg transition-all duration-500" />
-                  {/* Image Container */}
-                  <div
-                    className="relative w-72 h-80 rounded-2xl overflow-hidden border-4 border-white shadow-2xl transition-all duration-500 bg-white"
-                  >
-                    <Image
-                      src={founder.image}
-                      alt={founder.name}
-                      fill
-                      className="object-cover"
-                      priority
-                    />
-                  </div>
-                  {/* Corner Badge */}
-                  <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-2 shadow-lg text-center">
-                    <div className="text-xs font-bold">Pediatrics</div>
-                  </div>
-                  {/* Floating Badge */}
-                  <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center">
-                    <div className="text-2xl font-bold text-pink-600">5+</div>
-                    <div className="text-xs font-semibold text-gray-600">Years Experience</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+       {/* Founder Profile */}
+<div className="py-20 pt-5 bg-gradient-to-b from-blue-50 via-white to-pink-50">
+  <div className="max-w-6xl mx-auto px-4 lg:px-0 rounded-3xl bg-white/70 shadow-xl ring-1 ring-gray-100 backdrop-blur">
+    {/* Section label */}
+ 
+    {/* Top: 2-column layout (text left, image right) */}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center mb-12 px-6 pb-6 pt-4">
+      {/* Text Column – Left */}
+      <div className="order-2 lg:order-1 space-y-5">
+        <div>
+          <h3 className="text-3xl lg:text-4xl font-extrabold text-gray-900 mb-2 tracking-tight">
+            {founder.name}
+          </h3>
+          <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-green-700 bg-green-50 px-3 py-1 rounded-full">
+            <span className="w-2 h-2 rounded-full bg-green-500" />
+            Director
+          </p>
+          <p className="mt-2 text-lg text-gray-700 font-medium">
+            {founder.profession}
+          </p>
         </div>
 
-        {/* Contact CTA with Background Image */}
+        <div className="relative">
+          <div className="absolute -left-3 top-0 h-full w-1 bg-gradient-to-b from-pink-500 via-purple-500 to-blue-500 rounded-full" />
+          <div className="pl-5 py-4 bg-pink-50/90 rounded-2xl shadow-sm">
+            <p className="text-gray-700 text-lg italic">
+              &ldquo;{founder.quote}&rdquo;
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Image Column – Right */}
+      <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+        <div className="relative group">
+          {/* Glow border */}
+    <div className="absolute -inset-0.5 bg-gradient-to-br from-pink-200 to-blue-200 rounded-3xl opacity-0 group-hover:opacity-40 blur-lg transition-all duration-500"></div>
+ 
+     {/* Image Container */}
+     <div className=" relative
+   w-72 h-80                 
+   rounded-2xl overflow-hidden
+   border-4 border-white
+   shadow-2xl
+   transition-all duration-500
+   bg-white">
+       <Image
+         src={founder.image}
+         alt={founder.name}
+         fill
+         className=""
+         priority
+       />
+     </div>
+ 
+     {/* Corner Badge */}
+     <div className="absolute -top-4 -right-4 bg-gradient-to-br from-pink-500 to-purple-600 text-white rounded-full p-2 shadow-lg text-center">
+ 
+                 <div className="text-xs font-bold">Pediatrics</div>
+ 
+     </div>
+       {/* Floating Badge */}
+                 <div className="absolute -bottom-4 -right-4 bg-white rounded-full p-4 shadow-xl border-2 border-pink-500 text-center  ">
+ 
+                   <div className="text-2xl font-bold text-pink-600">5+</div>
+                   <div className="text-xs font-semibold text-gray-600">Years Experience</div>
+                 </div>
+               </div> 
+  
+      </div>
+    </div>
+
+    {/* Divider */}
+    <div className="border-t border-dashed border-gray-200 mx-6" />
+
+    {/* Bottom: 1-column layout for detailed bio */}
+    <div className="px-6 pb-8 pt-6 space-y-4 text-gray-600 leading-relaxed">
+      <p>
+        “Every child travels a developmental journey from early childhood through adolescence into
+        adulthood. This journey needs ongoing guidance, careful monitoring, and consistent support to help
+        each child reach their potential and develop functional independence. We walk alongside children and
+        families at every step — from baby steps to bold strides.”
+      </p>
+      <p>
+        Dr. Naveena K is a Developmental and Behavioural Paediatrician with over six years of experience
+        supporting children and adolescents with developmental, behavioural, and neurodevelopmental
+        challenges.
+      </p>
+      <p>
+        She completed her MBBS from Sri Ramachandra Medical College and underwent paediatric training in the
+        UK, followed by a Postgraduate Diploma in Developmental Neurology (PGDDN) from CDC, Trivandrum. She
+        also holds a Post-Diploma in Family Counselling, and an Advanced Diploma in Special Education from
+        Singapore, where she volunteered with early intervention centres and worked closely with children
+        and adolescents across developmental stages.
+      </p>
+      <p>
+        Naveena K worked for three years as a Junior Consultant at a private neurodevelopmental centre in
+        Chennai, gaining hands-on experience in assessing and managing children with Autism, ADHD, learning
+        difficulties, Cerebral Palsy, and other developmental and behavioural concerns.
+      </p>
+      <p>
+        She has completed advanced training in Paediatric Neurodisability from Sheffield, UK, and
+        specialised mental health training for children and adolescents, and she is trained in key
+        assessment tools including DASII, Bayley-III, 3di, and SCOPE Profile, along with adolescent
+        life-skills programs.
+      </p>
+      <p>
+        She is the founder of Thalirmanam Neurodevelopmental Centre for Children and Adolescents—“Thalirmanam”
+        means “Tender Minds” in Tamil.
+      </p>
+      <p>
+        At Thalirmanam, her philosophy is “from baby steps to bold strides”: nurturing children and families
+        through every small developmental step, helping them grow confident, strong, and independent.
+      </p>
+      <p>
+        She also works as a visiting consultant at Kauvery Hospital Vadapalani, Hamsa Kids Kauvery
+        Kovilambakkam, MIOT International, and A4 Hospital.
+      </p>
+      <p>
+        Her practice is family-centred, focusing on supporting children’s growth, promoting emotional
+        wellbeing, and guiding families through every stage of development, including adolescent transition
+        care.
+      </p>
+    </div>
+  </div>
+</div>
+
+       {/* Contact CTA with Background Image */}
         <section className="relative w-full overflow-hidden py-12 mt-12">
           {/* Background image */}
           <div className="absolute inset-0 -z-10">
