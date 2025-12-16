@@ -17,7 +17,7 @@ const founder = {
   image: Dr,
   name: 'Dr. Naveena K',
   profession: 'Developmental and Behavioural Pediatrics',
-  quote: 'Every child is unique and deserves personalized care to reach their full potential.',
+  quote: 'Supporting each child and teen, based on their unique needs.',
 }
 const background ={
   image:bg,

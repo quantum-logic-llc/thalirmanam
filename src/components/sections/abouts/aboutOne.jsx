@@ -19,37 +19,37 @@ import {
 
 const devPaedsItems = [
   {
-    title: 'What do we do as a Developmental Paediatrician?',
-    content:
-      `Every consultation is an opportunity to ask flexible questions about a child's development as part of comprehensive medical care. Parents who voice concerns about their child's development are usually correct, and loss of previously acquired skills (regression) is a red flag that needs rapid referral for detailed assessment. Parents and carers are often more aware of gross motor milestones than speech, language, and play skills, so targeted questioning is essential. Developmental screening questionnaires and tools can complement clinical judgment.`,
-  },
-  {
     title: 'What is a Developmental Assessment?',
     content:
-      `Developmental assessment maps a child's performance compared with peers of similar age, using standards derived from representative population samples. In multicultural settings, choosing appropriate benchmarks can be challenging. The goal is to understand how a child is progressing across multiple developmental domains using structured, validated tools.`,
+      `A developmental assessment is a structured evaluation of a child’s growth, learning, behaviour, communication, social skills, and daily functioning. It helps us understand how a child is developing across different areas and identify any delays or differences early.`,
   },
   {
-    title: 'Significance of Developmental Assessments',
+    title: 'Who is a Developmental Paediatrician?',
     content:
-      `Developmental assessment is a key part of paediatric care. It evaluates physical, cognitive, social, linguistic, emotional, and adaptive skills such as self-care and self-direction. Standard psychometric tools help identify strengths and challenges, guiding tailored management plans and life-skills support for home and school.`,
+      `A developmental paediatrician is a doctor specialized in assessing, monitoring, and supporting children and adolescents with developmental, behavioural, or learning differences. They guide families through evaluation, interventions, and long-term developmental planning`,
   },
   {
-    title: 'Importance of Developmental Assessments',
+    title: 'Developmental Screening and Surveillance',
     content:
-      `These assessments help identify intellectual or cognitive delays, quantify the degree of impairment, and track progress over time. Results can support diagnosis of disabilities, access to funding or school supports, and inform targeted mentoring to build on a child's strengths and address specific learning or functional difficulties.`,
+      `Developmental Surveillance: Continuous monitoring of milestones and behaviour at regular checkpoints from infancy to adolescence                                                                                  Developmental Screening: Structured questionnaires or tools used at key ages to detect delays or differences early.`,
   },
   {
-    title: 'Assessment of Young Children (0–5 years)',
+    title: 'What Happens During a Developmental Assessment?',
     content:
-      `Assessment in early childhood should integrate developmental, relational, and biological perspectives, using interviews, observation of caregiver–child interactions, and validated screening tools. Screening suggests whether development is on track; if concerns are found, a formal evaluation by specialists such as developmental paediatricians, psychologists, speech-language pathologists, or occupational therapists determines the need for early intervention or specialised therapies.`,
+      `Review medical history, previous investigations, therapy reports, and school records Observe and assess motor, speech, language, social, cognitive, and daily living skills Identify areas of strength and concern Plan interventions, therapies, or referrals tailored to the child Map the child’s unique developmental trajectory for ongoing monitoring and prognosis`,
   },
   {
-    title: 'Typical Development & Sensitive/Critical Periods',
+    title: 'What Parents Should Do Before an Assessment? ',
     content:
-      `Typical development involves achieving physical, cognitive, language, social-emotional, and behavioural milestones shaped by many factors. Critical periods are time windows when certain functions must develop, such as early language foundations in the first five years, whereas sensitive periods are times when learning is easier but still possible later, like acquiring additional languages in early childhood.`,
+        'Bring all previous reports and investigations – medical, lab, therapy, and school records Share daily observations – play, communication, behaviour, learning, and self-care skills Note milestones and any areas of regression List current therapies, interventions, or medications',
   },
+  {
+    title: 'Why This Matters',
+    content:
+'Providing a complete set of reports and observations allows the developmental paediatrician to understand your child’s unique developmental trajectory.                                                                                      This comprehensive picture is crucial to: Identify delays or differences early Guide timely, targeted interventions Track progress over time Plan realistic goals and support independence Make informed predictions about future development A thorough and structured developmental assessment ensures children receive the right support at the right time, helping them reach their full potential ',
+ },
 ]
-
+ 
 const highlights = [
   'Over 10+ Years of Excellence in Pediatric Care',
   'A dedicated team of developmental specialists',
