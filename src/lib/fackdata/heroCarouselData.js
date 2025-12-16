@@ -1,7 +1,7 @@
 import herogirl2 from "@/assets/images/banner/banner8.png";
 import herosec2 from "@/assets/images/banner/banner7.png";
 import herosec3 from "@/assets/images/banner/banner9.png";
-import herosec4 from "@/assets/images/banner/baby2.png";
+import herosec4 from "@/assets/images/banner/baby2.jpg";
 
 export const heroCarouselData = [
     {
@@ -34,8 +34,9 @@ export const heroCarouselData = [
     },
     {
     id: 4,
+    title: "Developmental Supportive Care for High-Risk Infants & Newborns",
     image: herosec4,
     bgColor: "#ffffff", // optional background for this pure image slide
-    type: "image-only",
+
     },
 ];

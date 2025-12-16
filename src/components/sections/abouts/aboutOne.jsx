@@ -3,57 +3,67 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import Title from '@/components/ui/title'
-import aboutus from "@/assets/images/about/aboutus.png"
+import aboutus from '@/assets/images/about/aboutus.png'
 import { Button } from '@/components/ui/button'
-import SectionName from '@/components/ui/sectionName'
 import { cn } from '@/lib/utils'
-import SlideUp from '@/lib/animations/slideUp'
 import SectionDescription from '@/components/ui/sectionDescription'
-import { FaCheckCircle, FaCalendarCheck, FaChevronDown, FaUserMd, FaFlask, FaPeopleGroup, FaHandsHelping } from 'react-icons/fa'
+import {
+  FaCheckCircle,
+  FaCalendarCheck,
+  FaChevronDown,
+  FaUserMd,
+  FaFlask,
+  FaPeopleGroup,
+  FaHandsHelping,
+} from 'react-icons/fa'
 
 const devPaedsItems = [
   {
-    title: "What do we do as a Developmental Paediatrician?",
-    content: `Every consultation is an opportunity to ask flexible questions about a child's development as part of comprehensive medical care. Parents who voice concerns about their child's development are usually correct, and loss of previously acquired skills (regression) is a red flag that needs rapid referral for detailed assessment. Parents and carers are often more aware of gross motor milestones than speech, language, and play skills, so targeted questioning is essential. Developmental screening questionnaires and tools can complement clinical judgment.`,
+    title: 'What do we do as a Developmental Paediatrician?',
+    content:
+      `Every consultation is an opportunity to ask flexible questions about a child's development as part of comprehensive medical care. Parents who voice concerns about their child's development are usually correct, and loss of previously acquired skills (regression) is a red flag that needs rapid referral for detailed assessment. Parents and carers are often more aware of gross motor milestones than speech, language, and play skills, so targeted questioning is essential. Developmental screening questionnaires and tools can complement clinical judgment.`,
   },
   {
-    title: "What is a Developmental Assessment?",
-    content: `Developmental assessment maps a child's performance compared with peers of similar age, using standards derived from representative population samples. In multicultural settings, choosing appropriate benchmarks can be challenging. The goal is to understand how a child is progressing across multiple developmental domains using structured, validated tools.`,
+    title: 'What is a Developmental Assessment?',
+    content:
+      `Developmental assessment maps a child's performance compared with peers of similar age, using standards derived from representative population samples. In multicultural settings, choosing appropriate benchmarks can be challenging. The goal is to understand how a child is progressing across multiple developmental domains using structured, validated tools.`,
   },
   {
-    title: "Significance of Developmental Assessments",
-    content: `Developmental assessment is a key part of paediatric care. It evaluates physical, cognitive, social, linguistic, emotional, and adaptive skills such as self-care and self-direction. Standard psychometric tools help identify strengths and challenges, guiding tailored management plans and life-skills support for home and school.`,
+    title: 'Significance of Developmental Assessments',
+    content:
+      `Developmental assessment is a key part of paediatric care. It evaluates physical, cognitive, social, linguistic, emotional, and adaptive skills such as self-care and self-direction. Standard psychometric tools help identify strengths and challenges, guiding tailored management plans and life-skills support for home and school.`,
   },
   {
-    title: "Importance of Developmental Assessments",
-    content: `These assessments help identify intellectual or cognitive delays, quantify the degree of impairment, and track progress over time. Results can support diagnosis of disabilities, access to funding or school supports, and inform targeted mentoring to build on a child's strengths and address specific learning or functional difficulties.`,
+    title: 'Importance of Developmental Assessments',
+    content:
+      `These assessments help identify intellectual or cognitive delays, quantify the degree of impairment, and track progress over time. Results can support diagnosis of disabilities, access to funding or school supports, and inform targeted mentoring to build on a child's strengths and address specific learning or functional difficulties.`,
   },
   {
-    title: "Assessment of Young Children (0–5 years)",
-    content: `Assessment in early childhood should integrate developmental, relational, and biological perspectives, using interviews, observation of caregiver–child interactions, and validated screening tools. Screening suggests whether development is on track; if concerns are found, a formal evaluation by specialists such as developmental paediatricians, psychologists, speech-language pathologists, or occupational therapists determines the need for early intervention or specialised therapies.`,
+    title: 'Assessment of Young Children (0–5 years)',
+    content:
+      `Assessment in early childhood should integrate developmental, relational, and biological perspectives, using interviews, observation of caregiver–child interactions, and validated screening tools. Screening suggests whether development is on track; if concerns are found, a formal evaluation by specialists such as developmental paediatricians, psychologists, speech-language pathologists, or occupational therapists determines the need for early intervention or specialised therapies.`,
   },
   {
-    title: "Typical Development & Sensitive/Critical Periods",
-    content: `Typical development involves achieving physical, cognitive, language, social-emotional, and behavioural milestones shaped by many factors. Critical periods are time windows when certain functions must develop, such as early language foundations in the first five years, whereas sensitive periods are times when learning is easier but still possible later, like acquiring additional languages in early childhood.`,
+    title: 'Typical Development & Sensitive/Critical Periods',
+    content:
+      `Typical development involves achieving physical, cognitive, language, social-emotional, and behavioural milestones shaped by many factors. Critical periods are time windows when certain functions must develop, such as early language foundations in the first five years, whereas sensitive periods are times when learning is easier but still possible later, like acquiring additional languages in early childhood.`,
   },
 ]
-
 
 const highlights = [
-  "Over 10+ Years of Excellence in Pediatric Care",
-  "A dedicated team of developmental specialists",
-  "Evidence-based, child-focused interventions",
-  "Strong multidisciplinary collaboration",
-  "A truly family-centred approach"
+  'Over 10+ Years of Excellence in Pediatric Care',
+  'A dedicated team of developmental specialists',
+  'Evidence-based, child-focused interventions',
+  'Strong multidisciplinary collaboration',
+  'A truly family-centred approach',
 ]
 
-// map each highlight to a different icon
 const highlightIcons = [
-  FaUserMd,        // for years of care
-  FaPeopleGroup,   // for team
-  FaFlask,         // for evidence-based
-  FaCheckCircle,   // for collaboration
-  FaHandsHelping   // for family-centered
+  FaUserMd,
+  FaPeopleGroup,
+  FaFlask,
+  FaCheckCircle,
+  FaHandsHelping,
 ]
 
 const AccordionItem = ({ item }) => {
@@ -77,7 +87,7 @@ const AccordionItem = ({ item }) => {
       </button>
 
       {open && (
-        <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0 text-sm sm:text-base text-gray-700 border-t border-gray-100 animate-in fade-in duration-300">
+        <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0 text-sm sm:text-base text-gray-700 border-t border-gray-100">
           <p className="leading-relaxed whitespace-pre-wrap">
             {item.content}
           </p>
@@ -86,6 +96,7 @@ const AccordionItem = ({ item }) => {
     </div>
   )
 }
+
 
 const AboutOne = ({ gridClass, isAboutpage }) => {
   return (
@@ -122,108 +133,117 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
       {/* Content Section */}
       <div className="lg:pt-15 pt-10 lg:pb-15 pb-10">
         <div className="container">
-          <div className={cn("grid lg:grid-cols-1 grid-cols-1 px-3 sm:px-4", gridClass)}>
+          <div className={cn('grid lg:grid-cols-1 grid-cols-1 px-3 sm:px-4', gridClass)}>
             {/* Content */}
-            <div className={`${isAboutpage ? "max-w-4xl" : "lg:max-w-3xl"} mx-auto`}>
-              <SlideUp delay={2}>
+            <div className={`${isAboutpage ? 'max-w-4xl' : 'lg:max-w-3xl'} mx-auto`}>
+              <div>
                 <h2 className="text-orange-500 font-bold uppercase mb-3 sm:mb-4 text-center text-2xl sm:text-3xl lg:text-4xl">
                   About Us
                 </h2>
-              </SlideUp>
+              </div>
 
-              <SlideUp delay={3}>
-                <Title size={"3.5xl"} className={"pb-5 text-gray-800 text-center"}>
+              <div>
+                <Title size="3.5xl" className="pb-5 text-gray-800 text-center">
                   Nurturing development and shaping futures
                 </Title>
-              </SlideUp>
+              </div>
 
-              <SlideUp delay={4}>
-                <div className="max-w-3xl mx-auto">
-                  <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
-                    <strong className="text-gray-800">Thalir Manam Neurodevelopmental centre</strong> is dedicated to providing comprehensive developmental and behavioural pediatric care, grounded in clinical expertise, thoughtful innovation, and compassion.
+              <div className="max-w-3xl mx-auto">
+                <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
+                  <strong className="text-gray-800">Thalir Manam Neurodevelopmental centre</strong> is dedicated to
+                  providing comprehensive developmental and behavioural pediatric care, grounded in clinical expertise,
+                  thoughtful innovation, and compassion.
+                </SectionDescription>
+              </div>
 
-                  </SectionDescription>
-                </div>
-              </SlideUp>
-
-              <SlideUp delay={5}>
-                <div className="max-w-3xl mx-auto">
-                  <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
-                    Under the guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, the centre offers specialized care for children and adolescents with developmental and behavioural challenges, including Autism Spectrum Disorder, ADHD, Learning Disabilities, Cerebral Palsy, and other neurodevelopmental conditions.
-                  </SectionDescription>
-                </div>
-              </SlideUp>
+              <div className="max-w-3xl mx-auto">
+                <SectionDescription className="mb-5 text-base lg:text-lg leading-relaxed text-center">
+                  Under the guidance of <strong className="text-gray-800">Dr. Naveena Karthik</strong>, the centre
+                  offers specialized care for children and adolescents with developmental and behavioural challenges,
+                  including Autism Spectrum Disorder, ADHD, Learning Disabilities, Cerebral Palsy, and other
+                  neurodevelopmental conditions.
+                </SectionDescription>
+              </div>
 
               {isAboutpage && (
                 <>
-                  <SlideUp delay={6}>
-                    <div className="max-w-3xl mx-auto">
-                      <SectionDescription className="mb-6 text-base lg:text-lg leading-relaxed text-center">
-                        Our approach is multidisciplinary and individualized, recognising each child’s strengths, needs, and developmental trajectory. We focus on supporting families at every stage, with care plans that promote emotional wellbeing, functional independence, and smooth transitions into adolescence and adulthood.
-                      </SectionDescription>
-                    </div>
-                  </SlideUp>
+                  <div className="max-w-3xl mx-auto">
+                    <SectionDescription className="mb-6 text-base lg:text-lg leading-relaxed text-center">
+                      Our approach is multidisciplinary and individualized, recognising each child’s strengths, needs,
+                      and developmental trajectory. We focus on supporting families at every stage, with care plans that
+                      promote emotional wellbeing, functional independence, and smooth transitions into adolescence and
+                      adulthood.
+                    </SectionDescription>
+                  </div>
 
                   {/* Key Highlights */}
- 
-  <div className="mb-8 max-w-3xl mx-auto">
-        <h1 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
-                    Why Thalir Manam
-      </h1>
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-  
-      {highlights.map((highlight, index) => {
-        const Icon = highlightIcons[index] || FaCheckCircle
-        return (
-          <div
-            key={index}
-            className="flex items-start gap-3 group bg-white/80 rounded-xl px-4 py-3 shadow-sm hover:shadow-md transition-shadow"
-          >
-            <Icon className="text-green-600 text-xl mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" />
-            <span className="text-gray-700 text-sm lg:text-base font-medium">
-              {highlight}
-            </span>
+<div className="mb-8 max-w-3xl mx-auto">
+  <h1 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 text-center">
+    Why Thalir Manam
+  </h1>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    {highlights.map((highlight, index) => {
+      const Icon = highlightIcons[index] || FaCheckCircle
+      return (
+        <div
+          key={index}
+          className="relative flex items-start gap-3 rounded-2xl border border-green-100 bg-gradient-to-br from-white via-white to-green-50/60 px-5 py-4 shadow-sm hover:shadow-md hover:border-green-300 transition-all duration-200"
+        >
+          <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-green-100 text-green-700 shadow-sm">
+            <Icon className="text-lg" />
           </div>
-        )
-      })}
-    </div>
+          <span className="text-gray-800 text-sm lg:text-base font-medium leading-relaxed">
+            {highlight}
+          </span>
+          <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1 rounded-b-2xl bg-gradient-to-r from-green-400/60 via-emerald-400/60 to-green-500/60 opacity-0 group-hover:opacity-100 transition-opacity" />
+        </div>
+      )
+    })}
   </div>
+</div>
+
 
                   {/* Accordion Section */}
-                  <SlideUp delay={8}>
-                    <div className="max-w-3xl mx-auto mt-12">
-                      <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
-                        Developmental Paediatrics & Assessments
-                      </h3>
+                  <div className="max-w-3xl mx-auto mt-12">
+                    <h3 className="text-2xl lg:text-3xl font-bold text-gray-800 mb-6 text-center">
+                      Developmental Paediatrics & Assessments
+                    </h3>
 
-                      <div className="space-y-3">
-                        {devPaedsItems.map((item, index) => (
-                          <AccordionItem key={index} item={item} />
-                        ))}
-                      </div>
+                    <div className="space-y-3">
+                      {devPaedsItems.map((item, index) => (
+                        <AccordionItem key={index} item={item} />
+                      ))}
                     </div>
-                  </SlideUp>
+                  </div>
                 </>
               )}
 
-              <SlideUp delay={9}>
-                <div className='flex flex-col sm:flex-row gap-4 lg:mt-10 mt-7 justify-center'>
-                  <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-                    <Link 
-                      href="mailto:thalirmanam5@gmail.com?subject=Appointment%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20provide%20the%20following%20details%3A%0A-%20Name%3A%0A-%20Phone%3A%0A-%20Preferred%20Date%3A%0A-%20Service%20Required%3A%0A%0AThank%20you." 
-                      target="_blank" 
-                      rel="noopener noreferrer" 
-                      className="inline-flex items-center gap-2"
-                    >
-                      <FaCalendarCheck />
-                      <span>Book Appointment</span>
-                    </Link>
-                  </Button>
-                  <Button asChild size="lg" variant="outline" className="border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 rounded-full transition-all duration-300">
-                    <Link href="/services">Our Services</Link>
-                  </Button>
-                </div>
-              </SlideUp>
+              <div className="flex flex-col sm:flex-row gap-4 lg:mt-10 mt-7 justify-center">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                >
+                  <Link
+                    href="mailto:thalirmanam5@gmail.com?subject=Appointment%20Request&body=Hello%2C%0A%0AI%20would%20like%20to%20book%20an%20appointment.%0A%0APlease%20provide%20the%20following%20details%3A%0A-%20Name%3A%0A-%20Phone%3A%0A-%20Preferred%20Date%3A%0A-%20Service%20Required%3A%0A%0AThank%20you."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2"
+                  >
+                    <FaCalendarCheck />
+                    <span>Book Appointment</span>
+                  </Link>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="border-2 border-green-600 text-green-600 hover:bg-green-50 font-semibold px-8 py-6 rounded-full transition-all duration-300"
+                >
+                  <Link href="/services">Our Services</Link>
+                </Button>
+              </div>
             </div>
           </div>
         </div>

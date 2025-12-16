@@ -3,6 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Button } from '../ui/button'
 import { FaPhone } from 'react-icons/fa6'
+import bi from '@/assets/images/team/appoint.png'
+
+const bground ={
+  image:bi,
+  alt:"background image"
+}
 
 const HelpContactSection = () => {
   return (
@@ -10,8 +16,8 @@ const HelpContactSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
-          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
-          alt="Healthcare background"
+          src={bground.image}
+          alt={bground.alt}
           fill
           className="object-cover object-center"
           priority
