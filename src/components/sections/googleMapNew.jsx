@@ -22,13 +22,13 @@ const GoogleMapNew = () => {
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5982387842516!2d80.14892197484969!3d13.035776987290045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261a8c8e2e8e9%3A0x1234567890abcdef!2sKundrathur%20Main%20Rd%2C%20MS%20Nagar%2C%20Porur%2C%20Chennai%2C%20Tamil%20Nadu%20600125!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
                         width="100%"
-                        height="500"
-                        style={{ border: 0 }}
+                        height="100%"
+                        style={{ border: 0, minHeight: '300px', height: '50vh' }}
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
                         title="Thalir Manam Location Map"
-                        className="grayscale hover:grayscale-0 transition-all duration-500"
+                        className="w-full h-[40vh] min-h-[300px] md:h-[50vh] lg:h-[500px] grayscale hover:grayscale-0 transition-all duration-500"
                     ></iframe>
                 </div>
 

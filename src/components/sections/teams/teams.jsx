@@ -49,14 +49,14 @@ const Teams = () => {
               </div>
 
               <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                 “Every child travels a developmental journey from early childhood through adolescence into adulthood. This journey needs ongoing guidance, careful monitoring, and consistent support to help each child reach their potential and develop functional independence. We walk alongside children and families at every step — from baby steps to bold strides.”
+                <p className="break-words">
+                 &ldquo;Every child travels a developmental journey from early childhood through adolescence into adulthood. This journey needs ongoing guidance, careful monitoring, and consistent support to help each child reach their potential and develop functional independence. We walk alongside children and families at every step — from baby steps to bold strides.&rdquo;
 
                 </p>
-                <p>
+                <p className="break-words">
                   Dr. Naveena K is a developmental and behavioural pediatrician with wide experience in working with children and adolescents with neurodevelopmental, behavioural, and emotional wellbeing and regulation concerns. Her work focuses on understanding each child as an individual and supporting families across different stages of development, rather than addressing concerns in isolation.
            </p>
-           <p>Her practice combines evidence-based medicine with compassionate, family-centred care, with an emphasis on long-term follow-up, skill development, emotional wellbeing, and planning for transitions. She is deeply committed to helping young people grow into confident, functional, and independent adults, while ensuring families feel heard, supported, and guided throughout their journey.
+           <p className="break-words">Her practice combines evidence-based medicine with compassionate, family-centred care, with an emphasis on long-term follow-up, skill development, emotional wellbeing, and planning for transitions. She is deeply committed to helping young people grow into confident, functional, and independent adults, while ensuring families feel heard, supported, and guided throughout their journey.
 </p>
               </div>
             </div>
@@ -73,7 +73,8 @@ const Teams = () => {
 
     {/* Image Container */}
     <div className=" relative
-  w-72 h-80                 
+  w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px]
+  aspect-[9/10]
   rounded-2xl overflow-hidden
   border-4 border-white
   shadow-2xl
