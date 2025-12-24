@@ -88,7 +88,7 @@ const AccordionItem = ({ item }) => {
 
       {open && (
         <div className="px-4 sm:px-5 pb-4 sm:pb-5 pt-0 text-sm sm:text-base text-gray-700 border-t border-gray-100">
-          <p className="leading-relaxed whitespace-pre-wrap">
+          <p className="leading-relaxed whitespace-pre-wrap break-words">
             {item.content}
           </p>
         </div>
@@ -109,7 +109,8 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
             alt="Thalir Manam Neurodevelopmental centre"
             width={1920}
             height={800}
-            className="object-cover w-full h-[500px] lg:h-[700px]"
+            sizes="100vw"
+            className="object-cover w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[700px]"
             priority
           />
         </div>
@@ -193,7 +194,7 @@ const AboutOne = ({ gridClass, isAboutpage }) => {
           <div className="mt-0.5 flex h-9 w-9 items-center justify-center rounded-full bg-green-100 text-green-700 shadow-sm">
             <Icon className="text-lg" />
           </div>
-          <span className="text-gray-800 text-sm lg:text-base font-medium leading-relaxed">
+          <span className="text-gray-800 text-sm lg:text-base font-medium leading-relaxed break-words">
             {highlight}
           </span>
           <span className="pointer-events-none absolute inset-x-0 bottom-0 h-1 rounded-b-2xl bg-gradient-to-r from-green-400/60 via-emerald-400/60 to-green-500/60 opacity-0 group-hover:opacity-100 transition-opacity" />

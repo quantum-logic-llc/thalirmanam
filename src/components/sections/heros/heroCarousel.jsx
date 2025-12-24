@@ -91,7 +91,7 @@ const HeroSlide = ({ slide }) => {
   if (type === "image-only") {
     return (
       <div
-        className="relative w-full h-[85vh] flex items-center justify-center overflow-hidden"
+        className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] flex items-center justify-center overflow-hidden"
         style={{ backgroundColor: bgColor || "#ffffff" }}
       >
         <div className="relative w-full h-full">
@@ -110,7 +110,7 @@ const HeroSlide = ({ slide }) => {
   // DEFAULT SLIDE WITH CONTENT
   return (
     <div
-      className="relative w-full h-[85vh] flex items-center overflow-hidden"
+      className="relative w-full h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[85vh] flex items-center overflow-hidden"
       style={{ backgroundColor: bgColor }}
     >
       {/* Background Image */}
@@ -127,20 +127,20 @@ const HeroSlide = ({ slide }) => {
 
       {/* Content Container */}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="flex justify-end items-center min-h-[70vh]">
-          <div className="w-full lg:w-1/2 xl:w-5/12 px-5">
-            <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 border-l-8 border-orange-500 min-h-[520px] flex flex-col justify-center space-y-6">
+        <div className="flex justify-end items-center min-h-[40vh] sm:min-h-[50vh] md:min-h-[60vh] lg:min-h-[70vh]">
+          <div className="w-full lg:w-1/2 xl:w-5/12 px-3 sm:px-5">
+            <div className="bg-white/95 backdrop-blur-md rounded-2xl sm:rounded-3xl shadow-2xl p-4 sm:p-6 md:p-8 lg:p-10 border-l-4 sm:border-l-8 border-orange-500 min-h-[350px] sm:min-h-[420px] md:min-h-[520px] flex flex-col justify-center space-y-4 sm:space-y-6">
               {/* Title */}
               <TextReveal delay={0.2}>
                 <div className="space-y-3">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-[#91ec76] leading-tight">
+                  <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#91ec76] leading-tight break-words">
                     {title}
                   </h1>
-                  <h2 className="text-xl sm:text-2xl font-semibold text-black leading-snug">
+                  <h2 className="text-lg sm:text-xl md:text-2xl font-semibold text-black leading-snug break-words">
                     {subtitle}
                   </h2>
                   {tagline && (
-                    <h3 className="text-lg sm:text-xl font-medium text-gray-600 leading-snug italic">
+                    <h3 className="text-base sm:text-lg md:text-xl font-medium text-gray-600 leading-snug italic break-words">
                       {tagline}
                     </h3>
                   )}
@@ -157,7 +157,7 @@ const HeroSlide = ({ slide }) => {
               {/* Description with highlights (guard for highlights) */}
               {description && (
                 <TextReveal delay={0.4}>
-                  <p className="text-base sm:text-lg md:text-xl text-gray-700 font-medium leading-relaxed">
+                  <p className="text-sm sm:text-base md:text-lg text-gray-700 font-medium leading-relaxed break-words">
                     {(highlights.length
                       ? description.split(
                           new RegExp(`(${highlights.join("|")})`, "gi")
@@ -185,18 +185,18 @@ const HeroSlide = ({ slide }) => {
 
               {/* CTAs */}
               <SlideUp delay={0.6}>
-                <div className="flex flex-col sm:flex-row gap-4 pt-2">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
                   <Button
                     asChild
                     size="lg"
-                    className="bg-[#8ccdee] hover:bg-[#72b8e0] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="bg-[#8ccdee] hover:bg-[#72b8e0] text-white font-bold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base md:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     <Link href="/contact-us">Book Consultation</Link>
                   </Button>
                   <Button
                     asChild
                     size="lg"
-                    className="bg-[#f28cb3] hover:bg-[#e0729e] text-white font-bold px-8 py-6 text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="bg-[#f28cb3] hover:bg-[#e0729e] text-white font-bold px-6 sm:px-8 py-4 sm:py-6 text-sm sm:text-base md:text-lg rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                   >
                     <Link href="/services">Explore Services</Link>
                   </Button>
