@@ -17,7 +17,7 @@ const TopHeader = () => {
                                 <FaEnvelope /> <a href="mailto:thalirmanam5@gmail.com">thalirmanam5@gmail.com</a>
                             </li>
                             <li className='text-cream-foreground flex items-center gap-4'>
-                                <FaLocationDot /> <span>Mon - Sat: 9 AM to 3 PM</span>
+                                <FaLocationDot /> <span>Mon - Sat: 9 AM to 6 PM</span>
                             </li>
                         </ul>
                     </div>
