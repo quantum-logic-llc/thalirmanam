@@ -40,7 +40,7 @@ export const testimonialData = [
         src:user_3,
         name:"vidhya devarajan",
         position:"Chennai",
-        review:"I recently met the Dr.Naveena for a consultation regarding my 10-year-old son. She explained his condition with great clarity and patience, making sure we understood every detail. She was extremely supportive and reassuring, and also committed to following up with us regularly to monitor his progress. We truly appreciate her dedication and the genuine care she shows towards her patients.",
+        review:"I recently met the Dr.Naveena for a consultation regarding my 10-year-old son. She explained his condition with great clarity and patience, making sure we understood every detail. She was extremely supportive and reassuring, and also committed to following up with us regularly to monitor his progress.",
         rating:5
     },
     {
@@ -49,6 +49,14 @@ export const testimonialData = [
         name:"Robert Jebakumar.J",
         position:"Chennai",
         review:"Dr. Naveena has been supportive throughout my son’s developmental journey. She has guided us with in the right direction with patience and care.",
+        rating:5
+    },
+    {
+        id:7,
+        src:user_3,
+        name:" Vaji Azeem",
+        position:"Chennai",
+        review:"Dr. Naveena was very patient and caring with my child. She spoke directly with my child, encouraged my child to talk, and involved my child in activities. She carefully observed my child’s behavior and explained her observations clearly.",
         rating:5
     }
 
