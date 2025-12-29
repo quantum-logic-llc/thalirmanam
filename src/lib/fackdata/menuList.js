@@ -14,62 +14,62 @@ export const menuList = [
 
     {
         id: 4,
-        path: "/services",
+        path: "/",
         label: "Services",
-        dropDownMenu: [
-            {
-                id: 1,
-                path: "/services/adhd",
-                label: "Attention Deficit Hyperactive Disorder (ADHD)"
-            },
-            {
-                id: 2,
-                path: "/services/autism-spectrum-disorder",
-                label: "Autism Spectrum Disorder (ASD)"
+          dropDownMenu: [
+                {
+                    id: 1,
+                    path: "/",
+                    label: "Attention Deficit Hyperactive Disorder (ADHD)"
+                },
+                {
+                    id: 2,
+                path: "/",
+                label: ""
             },
             {
                 id: 3,
-                path: "/services/behavioural-disorders",
+                path: "/",
                 label: "Behavioural Disorders"
             },
             {
                 id: 4,
-                path: "/services/cerebral-palsy",
+                path: "/",
                 label: "Cerebral Palsy (CP)"
             },
             {
                 id: 5,
-                path: "/services/developmental-delays",
+                path: "/",
                 label: "Developmental Delays"
             },
             {
                 id: 6,
-                path: "/services/learning-disabilities",
+                path: "/",
                 label: "Learning Disabilities"
             },
             {
                 id: 7,
-                path: "/services/intellectual-disability",
+                path: "/",
                 label: "Intellectual Disability"
             },
             {
                 id: 8,
-                path: "/services/school-readiness",
+                path: "/",
                 label: "School Readiness"
             },
             {
                 id: 9,
-                path: "/services/adolescent-health",
+                path: "/",
                 label: "Adolescent Health and Well-being"
             },
             {
                 id: 10,
-                path: "/services/antenatal-sessions",
+                path: "/",
                 label: "Developmental Supportive Care – Antenatal Sessions"
             },
             {
                 id: 11,
-                path: "/services/teen-transition-clinic",
+                path: "/",
                 label: "Teen Transition Clinic for Adolescents with Special Needs"
             }
         ]
@@ -82,7 +82,7 @@ export const menuList = [
     // },
     {
         id: 6,
-        path: "/parents-corner",
+        path: "/",
         label: "Parent's Corner",
         dropDownMenu: false
     },

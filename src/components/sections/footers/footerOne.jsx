@@ -23,9 +23,9 @@ const FooterOne = () => {
                         <h3 className="text-2xl font-bold mb-6">Quick Links</h3>
                         <ul className="flex flex-col gap-4 min-w-[203px]">
                             <li><Link href="/about-us" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>About Us</Link></li>
-                            <li><Link href="/services" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Services</Link></li>
+                            <li><Link href="/" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Services</Link></li>
                             <li><Link href="/appointments" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Appointments</Link></li>
-                            <li><Link href="/parents-corner" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Parent&apos;s Corner</Link></li>
+                            <li><Link href="/" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Parent&apos;s Corner</Link></li>
                             <li><Link href="/contact-us" className="text-gray-600 transition-all duration-300 hover:ml-2 hover:text-primary font-medium flex items-center group"><span className="mr-2 opacity-0 group-hover:opacity-100 transition-opacity">→</span>Contact Us</Link></li>
                         </ul>
                     </SlideUp>

@@ -24,6 +24,7 @@ const HeroOne = () => {
                   alt="Thalir Manam Center"
                   width={380}
                   height={220}
+                  sizes="(max-width: 640px) 70vw, (max-width: 1024px) 60vw, 50vw"
                   className="w-full h-auto object-contain rounded-3xl"
                   priority
                 />

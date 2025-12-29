@@ -23,9 +23,9 @@ const ServiceCardOne = ({ service_name, service_details, src }) => {
     return (
         <div className="service-card rounded-[10px] px-7.5 py-9 bg-transparent hover:bg-background transition-all duration-500 hover:shadow-3xl m-2.5 group/card">
             <i className="text-green-foreground">{renderIcon(src)}</i>
-            <h4 className="lg:max-w-[176px] mt-5"><Link href={"/service-details"} className="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500 ">{service_name}</Link></h4>
+            <h4 className="mt-5"><Link href={"/service-details"} className="lg:text-2xl text-xl font-semibold leading-[141%] group-hover/card:text-green-foreground transition-all duration-500 break-words">{service_name}</Link></h4>
             <div className="card-footer opacity-0 invisible transition-all duration-500 group-hover/card:opacity-100 group-hover/card:visible">
-                <p className="mt-[15px] lg:max-w-[223px]">{service_details}</p>
+                <p className="mt-[15px] break-words">{service_details}</p>
                 <Link href={"/service-details"} className="inline-flex items-center gap-2.5 lg:mt-7.5 mt-4 group/btn">
                     <span className="group-hover/btn:text-green-foreground transition-all duration-500">Read More</span>
                     <span className="group-hover/btn:ml-1 text-green-foreground transition-all duration-500"> <FaArrowRight /> </span>

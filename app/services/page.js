@@ -14,7 +14,6 @@ export default function ServicesPage() {
       <main>
         <PageTitle pageName="Services" />
         <ServicesGrid />
-        <Partner />
       </main>
       <FooterOne />
     </>
