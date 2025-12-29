@@ -74,17 +74,17 @@ const Teams = () => {
     {/* Image Container */}
     <div className=" relative
   w-full max-w-[280px] sm:max-w-[320px] md:max-w-[360px]
-  aspect-[9/10]
   rounded-2xl overflow-hidden
   border-4 border-white
   shadow-2xl
   transition-all duration-500
   bg-white">
       <Image
-        src={founder.image}
+        src={founder.image.src || founder.image}
         alt={founder.name}
-        fill
-        className=""
+        width={300}
+        height={350}
+        className="w-full h-auto"
         priority
       />
     </div>
