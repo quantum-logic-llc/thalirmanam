@@ -33,7 +33,7 @@ const ContactSectionNew = () => {
         try {
             // Submit to PHP backend
             // Use absolute URL to reach Apache server when running on Next.js dev server
-            const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://srv662677.hstgr.cloud/thalirmanam/api/contact-handler.php';
+            const apiUrl = process.env.NEXT_PUBLIC_API_URL || '/api/contact-handler.php';
 
             const response = await fetch(apiUrl, {
                 method: 'POST',
