@@ -77,7 +77,7 @@ const WhoWeServe = () => {
               <div className="relative rounded-xl sm:rounded-2xl overflow-hidden shadow-2xl h-[280px] sm:h-[350px] md:h-[350px] lg:h-[350px]">
                 <Image
                   src={collage}
-                  alt="Thalir Manam Child Development Center"
+                  alt="Thalir Manam Neuro Development Center"
                   fill
                   
                 />

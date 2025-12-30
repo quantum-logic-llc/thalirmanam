@@ -1,11 +1,11 @@
 export const seoConfig = {
-  siteName: 'Thalir Manam - Child Development & Therapy Center',
+  siteName: 'Thalir Manam - Neuro Development Center',
   siteUrl: 'https://thalirmanam.in',
   defaultDescription: 'Thalir Manam provides specialized child development services including speech therapy, behavioral therapy, and neurodevelopmental assessments',
   
   pages: {
     home: {
-      title: 'Thalir Manam - Child Development & Therapy Center',
+      title: 'Thalir Manam - Neuro Development Center',
       description: 'Specialized services include speech and language therapy, behavioral therapy, swallowing disorders, sleep disorders, neurodevelopmental assessments, and psychometric evaluations',
       keywords: 'child development, speech therapy, behavioral therapy, autism support, special needs, Chennai'
     },
@@ -20,7 +20,7 @@ export const seoConfig = {
       keywords: 'child development, teen transition, family care, autism support, ADHD therapy, developmental services, Chennai'
     },
     'about-us': {
-      title: 'About Thalir Manam - Child Development Center',
+      title: 'About Thalir Manam - Neuro Development Center',
       description: 'Learn about Thalir Manam\'s mission to provide comprehensive child development and therapy services'
     },
     'contact-us': {
@@ -28,7 +28,7 @@ export const seoConfig = {
       description: 'Get in touch with Thalir Manam for specialized child development and therapy services in Chennai'
     },
     blog: {
-      title: 'Thalir Manam Blog - Child Development Insights',
+      title: 'Thalir Manam Blog - Neuro Development Insights',
       description: 'Expert insights on child development, therapy techniques, and parenting tips'
     },
     'blog-details': {
@@ -36,7 +36,7 @@ export const seoConfig = {
       description: 'Detailed articles about child development and therapy approaches'
     },
     services: {
-      title: 'Thalir Manam Services - Child Development & Therapy',
+      title: 'Thalir Manam - Neuro Development Center',
       description: 'Comprehensive child development services including speech therapy, behavioral therapy, and assessments'
     },
     'service-details': {

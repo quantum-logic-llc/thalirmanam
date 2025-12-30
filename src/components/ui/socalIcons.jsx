@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link';
 import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn } from "react-icons/fa6";
 import { cn } from '@/lib/utils';
 
@@ -32,9 +31,9 @@ const SocalIcons = ({className, prentClass}) => {
                 icons.map(({ icon, id, link }) => {
                     return (
                         <li key={id}>
-                            <Link href={link} className={cn('rounded-md w-6 h-6 flex items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500', className)}>
+                            <a href={link} target="_blank" rel="noopener noreferrer" className={cn('rounded-md w-6 h-6 flex items-center justify-center border border-white border-opacity-20 text-cream-foreground hover:bg-primary transition-all duration-500', className)}>
                                 {icon}
-                            </Link>
+                            </a>
                         </li>
                     )
                 })
