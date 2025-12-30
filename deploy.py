@@ -10,15 +10,15 @@ import sys
 from pathlib import Path
 
 # FTP Configuration
-FTP_HOST = "ftp.thalirmanam.in"
+FTP_HOST = "thalirmanam.in"
 FTP_USER = "thalirmanam@thalirmanam.in"
 FTP_PASS = "LV^+itFn9EG0"
 FTP_PORT = 21
 
 # Local and Remote paths
 PROJECT_DIR = "/var/www/thalirmanam_code"
-LOCAL_BUILD_DIR = "/var/www/thalirmanam_code/out"
-REMOTE_BASE_DIR = "/public_html"  # Common FTP directory for web files (change if needed)
+LOCAL_BUILD_DIR = "/var/www/html/thalirmanam_prod"
+REMOTE_BASE_DIR = "/"  # Common FTP directory for web files (change if needed)
 
 # Files to exclude from upload
 EXCLUDE_FILES = {
@@ -30,12 +30,6 @@ EXCLUDE_FILES = {
     '*.log',
 }
 
-# File extensions to upload in ASCII mode
-ASCII_EXTENSIONS = {
-    '.html', '.htm', '.css', '.js', '.json', '.xml', '.svg',
-    '.txt', '.md', '.yml', '.yaml'
-}
-
 
 def should_exclude(filepath):
     """Check if file should be excluded from upload"""
@@ -45,56 +39,30 @@ def should_exclude(filepath):
     return False
 
 
-def get_transfer_mode(filename):
-    """Determine if file should be uploaded in ASCII or binary mode"""
-    ext = os.path.splitext(filename)[1].lower()
-    if ext in ASCII_EXTENSIONS:
-        return 'A'
-    return 'I'
-
-
-def upload_file(ftp, local_path, remote_path):
-    """Upload a single file to FTP server"""
-    try:
-        mode = get_transfer_mode(local_path)
-
-        with open(local_path, 'rb' if mode == 'I' else 'r') as f:
-            ftp.storbinary(f'STOR {remote_path}', f) if mode == 'I' else ftp.storlines(f'STOR {remote_path}', f)
-
-        print(f"  ✓ Uploaded: {remote_path}")
-        return True
-    except Exception as e:
-        print(f"  ✗ Failed: {remote_path} - {str(e)}")
-        return False
-
-
 def ensure_remote_dir(ftp, remote_dir):
     """Create remote directory if it doesn't exist"""
-    if remote_dir == '/' or remote_dir == '.':
+    if not remote_dir or remote_dir == '.' or remote_dir == '/':
         return
 
     parts = remote_dir.strip('/').split('/')
-    current_path = ''
 
     for part in parts:
-        current_path = f"{current_path}/{part}" if current_path else f"/{part}"
+        if not part:
+            continue
 
+        # Try to change to the part first
         try:
-            # Try to change to directory
-            ftp.cwd(current_path)
+            ftp.cwd(part)
         except ftplib.error_perm:
-            # Directory doesn't exist, create it
+            # Directory doesn't exist, try to create it
             try:
-                ftp.mkd(current_path)
-                print(f"  + Created directory: {current_path}")
+                ftp.mkd(part)
+                print(f"  + Created directory: {part}")
+                # Now change into it
+                ftp.cwd(part)
             except ftplib.error_perm as e:
-                if '550' not in str(e):
-                    print(f"  ! Warning: Could not create directory {current_path}: {e}")
-                # Try to navigate anyway
-                try:
-                    ftp.cwd(current_path)
-                except:
-                    pass
+                print(f"  ✗ Failed to create directory '{part}': {e}")
+                raise
 
 
 def upload_directory(ftp, local_dir, remote_dir=''):
@@ -103,12 +71,19 @@ def upload_directory(ftp, local_dir, remote_dir=''):
 
     if not local_path.exists():
         print(f"✗ Local directory does not exist: {local_dir}")
-        return
+        return 0, 0
 
-    # Ensure remote directory exists
-    ensure_remote_dir(ftp, remote_dir)
+    # Normalize remote directory
+    remote_dir = remote_dir.rstrip('/') if remote_dir else ''
 
-    print(f"\n📁 Uploading: {local_dir} -> {remote_dir}")
+    print(f"\n📁 Uploading: {local_dir} -> /{remote_dir if remote_dir else ''}")
+
+    # Create the remote directory and change into it
+    try:
+        ensure_remote_dir(ftp, remote_dir)
+    except Exception as e:
+        print(f"  ✗ Failed to create directory structure: {e}")
+        return 0, 0
 
     success_count = 0
     fail_count = 0
@@ -117,18 +92,33 @@ def upload_directory(ftp, local_dir, remote_dir=''):
         if should_exclude(item.name):
             continue
 
-        remote_path = f"{remote_dir}/{item.name}" if remote_dir else f"/{item.name}"
-
         if item.is_file():
-            if upload_file(ftp, str(item), remote_path):
+            # Upload file (relative to current directory)
+            try:
+                file_size = os.path.getsize(item)
+                with open(item, 'rb') as f:
+                    ftp.storbinary(f'STOR {item.name}', f, blocksize=8192)
+                current = ftp.pwd()
+                print(f"  ✓ Uploaded: /{current}/{item.name} ({file_size:,} bytes)")
                 success_count += 1
-            else:
+            except Exception as e:
+                print(f"  ✗ Failed: {item.name} - {e}")
                 fail_count += 1
 
         elif item.is_dir():
-            sub_success, sub_fail = upload_directory(ftp, str(item), remote_path)
+            # Save current directory
+            current_dir = ftp.pwd()
+
+            # Process subdirectory
+            sub_success, sub_fail = upload_directory(ftp, str(item), item.name)
             success_count += sub_success
             fail_count += sub_fail
+
+            # Return to parent directory
+            try:
+                ftp.cwd(current_dir)
+            except:
+                pass
 
     return success_count, fail_count
 
