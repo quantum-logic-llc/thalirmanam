@@ -223,3 +223,17 @@
 .bg-light-white {
   background-color: #ffffff;
 }
+@media (max-width: 280px) {
+  .hero-title-xs {
+    font-size: 0.9rem;      /* ~14px */
+    line-height: 1.1;
+  }
+  .hero-subtitle-xs {
+    font-size: 0.75rem;     /* ~12px */
+    line-height: 1.1;
+  }
+  .hero-tagline-xs {
+    font-size: 0.7rem;      /* ~11px */
+    line-height: 1.1;
+  }
+}
