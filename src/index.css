@@ -223,7 +223,7 @@
 .bg-light-white {
   background-color: #ffffff;
 }
-@media (max-width: 280px) {
+@media (max-width: 638px) {
   .hero-title-xs {
     font-size: 0.9rem;      /* ~14px */
     line-height: 1.1;
