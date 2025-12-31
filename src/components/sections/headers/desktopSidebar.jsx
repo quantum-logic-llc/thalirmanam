@@ -26,13 +26,13 @@ const DesktopSidebar = ({ active, setActive }) => {
                         <h4 className="text-xl font-bold text-[#385469]">Contact Info</h4>
                         <ul className="mt-5 flex flex-col gap-[15px]">
                             <li className='flex items-center'>
-                                <FaPhone className='text-primary-foreground' /> <a href="" className="ml-2.5">(629) 555-0129</a>
+                                <FaPhone className='text-primary-foreground' /> <a href="" className="ml-2.5">+91 89253 36967</a>
                             </li>
                             <li className='flex items-center'>
-                                <FaEnvelope className='text-primary-foreground' /> <a href="" className="ml-2.5">info@example.com</a>
+                                <FaEnvelope className='text-primary-foreground' /> <a href="" className="ml-2.5">thalirmanam5@gmail.com</a>
                             </li>
                             <li className='flex items-center'>
-                                <FaLocationDot className='text-primary-foreground' /> <span className="ml-2.5">6391 Elgin St. Celina, 10299</span>
+                                <FaLocationDot className='text-primary-foreground' /> <span className="ml-2.5">No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</span>
                             </li>
                         </ul>
                     </div>
@@ -49,4 +49,4 @@ const DesktopSidebar = ({ active, setActive }) => {
     )
 }
 
-export default DesktopSidebar
+
