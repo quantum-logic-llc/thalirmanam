@@ -6,33 +6,33 @@ export const testimonialData = [
     {
         id:1,
         src:user_1,
-        name:"Ravi Kumar",
+        name:"Divya Mathew",
         position:"Chennai",
-        review:"Dr. Naveena Karthik has been a blessing for our family. Her guidance and support have made a huge difference in our child's development.",
+        review:"She is an amazing listener and takes time to patiently answer all your questions. She made my daughter feel comfortable. One of the best developmental paediatricians and would highly recommend her.",
         rating:5
     },
-    {
-        id:2,
-        src:user_2,
-        name:"Suresh Kumar",
-        position:"Chennai",
-        review:"The team at Thalir Manam is very professional and caring. They have helped our child overcome many challenges.",
-        rating:5
-    },
-    {
-        id:3,
-        src:user_3,
-        name:"Anita",
-        position:"Chennai",
-        review:"We are so grateful for the Early Intervention Programme. It has given our child a great start.",
-        rating:5
-    },
+    // {
+    //     id:2,
+    //     src:user_2,
+    //     name:"Suresh Kumar",
+    //     position:"Chennai",
+    //     review:"The team at Thalir Manam is very professional and caring. They have helped our child overcome many challenges.",
+    //     rating:5
+    // },
+    // {
+    //     id:3,
+    //     src:user_3,
+    //     name:"Anita",
+    //     position:"Chennai",
+    //     review:"We are so grateful for the Early Intervention Programme. It has given our child a great start.",
+    //     rating:5
+    // },
     {
         id:4,
         src:user_3,
         name:"shikha rajeev",
         position:"Chennai",
-        review: "We consulted Dr Naveena about our son.Having met a lot of doctors about our son she stood out as someone truly exceptional and caring. ",
+        review: "We consulted Dr Naveena about our son.Having met a lot of doctors about our son she stood out as someone truly exceptional and caring. She has a very compassionate and wonderful approach. She listened to our problems and very patiently explained the treatment plan. ",
         rating:5
     },
     {
