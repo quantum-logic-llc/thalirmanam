@@ -29,34 +29,35 @@ import teenTransitionImage from '@/assets/images/services/service11.png'
 import { title } from 'process'
 
 const servicesData = [
-   
-    {
+
+       {
         id: 1,
-        title: "Early Intervention Programs",
-        description: "Tailored therapy for infants and children.",
-        path: "/services/adhd",
-        image: inventary,
-        color: "from-purple-500 to-purple-600",
-        alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png"',
-    },
-    {
-        id: 2,
-        title: "Skills Bridge Program",
-        description: "Targeted interventions to close developmental and life-skill gaps.",
-        path: "/services/skills-bridge-program",
-        image: adolescentHealthImage,
-        color: "from-cyan-500 to-cyan-600",
-        alt: 'Multidisciplinary Care fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service11.1f3f3f6e.png',
-    },
-    {
-        id: 3,
         title: "Developmental Screening & Assessments",
         description: "Comprehensive evaluations to identify developmental delays.",
         path: "/services/neurodevelopmental-support",
         image: developmentalDelaysImage,
         color: "from-green-500 to-green-600",
         alt: '"Developmental Screening &amp; Assessments" fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/developmental-delays2.513ef8f8.png"',
+    },
+    {
+        id: 2,
+        title: "Adolescent Transition Support",
+        description: "We help tweens and teens with special needs gain confidence, independence, and practical life skills, preparing them to navigate new challenges with clarity and self-assurance.",
+        path: "/services/adhd",
+        image: inventary,
+        color: "from-purple-500 to-purple-600",
+        alt: 'Early invention program fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service13.9fd9fe2a.png"',
+    },
+    {
+        id: 3,
+        title: "Second Opinions & Online Consultations",
+        description: "Parents can get a second opinion and connect with us online for guidance and reassurance, helping them make informed decisions about their child’s growth and development.",
+        path: "/services/skills-bridge-program",
+        image: adolescentHealthImage,
+        color: "from-cyan-500 to-cyan-600",
+        alt: 'Multidisciplinary Care fetchpriority="high" decoding="async" data-nimg="fill" class="object-cover  transition-transform duration-700" style="position:absolute;height:100%;width:100%;left:0;top:0;right:0;bottom:0;color:transparent" src="/_next/static/media/service11.1f3f3f6e.png',
     }
+
 ]
 
 const ServicesGrid = () => {
