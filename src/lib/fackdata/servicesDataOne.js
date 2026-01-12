@@ -711,7 +711,7 @@ export const servicesDataOne = [
         src: "teen-transition",
         service_name: "Teen Transition Clinic for Adolescents with Special Needs",
         service_details: "Specialized clinic supporting transition from childhood to adulthood for teens with neurodevelopmental conditions.",
-        slug: "teen-transition-clinic",
+        slug: "teen-transition-clinic-for-adolescents-with-special-needs",
         image: "/assets/images/services/service11.png",
         content: `<div class="service-details-page bg-white py-0">
     <div class="w-full bg-blue-50 py-16 sm:py-20 mb-16 relative overflow-hidden">

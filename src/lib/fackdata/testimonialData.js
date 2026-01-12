@@ -6,33 +6,37 @@ export const testimonialData = [
     {
         id:1,
         src:user_1,
-        name:"Ravi Kumar",
+        name:"Divya Mathew",
         position:"Chennai",
-        review:"Dr. Naveena Karthik has been a blessing for our family. Her guidance and support have made a huge difference in our child's development.",
+        review:"She is an amazing listener and takes time to patiently answer all your questions. She made my daughter feel comfortable. One of the best developmental paediatricians and would highly recommend her.",
         rating:5
     },
-    {
-        id:2,
-        src:user_2,
-        name:"Suresh Kumar",
-        position:"Chennai",
-        review:"The team at Thalir Manam is very professional and caring. They have helped our child overcome many challenges.",
-        rating:5
-    },
-    {
-        id:3,
-        src:user_3,
-        name:"Anita",
-        position:"Chennai",
-        review:"We are so grateful for the Early Intervention Programme. It has given our child a great start.",
-        rating:5
-    },
+    // {
+    //     id:2,
+    //     src:user_2,
+    //     name:"Suresh Kumar",
+    //     position:"Chennai",
+    //     review:"The team at Thalir Manam is very professional and caring. They have helped our child overcome many challenges.",
+    //     rating:5
+    // },
+    // {
+    //     id:3,
+    //     src:user_3,
+    //     name:"Anita",
+    //     position:"Chennai",
+    //     review:"We are so grateful for the Early Intervention Programme. It has given our child a great start.",
+    //     rating:5
+    // },
     {
         id:4,
         src:user_3,
         name:"shikha rajeev",
         position:"Chennai",
+<<<<<<< HEAD
         review: "We consulted Dr Naveena about our son.Having met a lot of doctors about our son she stood out as someone truly exceptional and caring.She has a very compassionate and wonderful approach. She listened to our problems and very patiently explained the treatment plan. She made us feel confident and informed about our son's diagnosis.She guided us patiently and carefully outlined our treatment options. Under her care and guidance our son is showing wonderful improvement. She reaches out to us to know about therapy review and gives a lot of helpful suggestions to improve him.There are monthly reviews about the goals achieved and she discusses the same with the therapists as well. We are genuinely happy that we met her at the crucial time and steered us in the right direction. Dr Naveena has made a positive difference in our lives ",
+=======
+        review: "We consulted Dr Naveena about our son.Having met a lot of doctors about our son she stood out as someone truly exceptional and caring. She has a very compassionate and wonderful approach. She listened to our problems and very patiently explained the treatment plan. ",
+>>>>>>> 19a5f2c7d0e661fdcaff84236a1033f16b71bc6c
         rating:5
     },
     {
