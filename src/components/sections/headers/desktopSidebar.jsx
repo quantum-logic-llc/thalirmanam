@@ -32,7 +32,7 @@ const DesktopSidebar = ({ active, setActive }) => {
                                 <FaEnvelope className='text-primary-foreground' /> <a href="" className="ml-2.5">thalirmanam5@gmail.com</a>
                             </li>
                             <li className='flex items-center'>
-                                <FaLocationDot className='text-primary-foreground' /> <span className="ml-2.5">No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</span>
+                                <FaLocationDot className='text-primary-foreground' /> <span className="ml-2.5">2nd floor, 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</span>
                             </li>
                         </ul>
                     </div>

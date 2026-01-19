@@ -40,7 +40,7 @@ const FooterOne = () => {
                                     </span>
                                     <div>
                                         <p className="font-medium text-gray-800">Location</p>
-                                        <p className="text-gray-600 text-sm">No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</p>
+                                        <p className="text-gray-600 text-sm">2nd floor, 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125</p>
                                     </div>
                                 </div>
                             </li>

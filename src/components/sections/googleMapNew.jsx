@@ -20,7 +20,7 @@ const GoogleMapNew = () => {
                 {/* Map Container */}
                 <div className="rounded-3xl overflow-hidden shadow-2xl border-4 border-primary/10 mb-12">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.5982387842516!2d80.14892197484969!3d13.035776987290045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5261a8c8e2e8e9%3A0x1234567890abcdef!2sKundrathur%20Main%20Rd%2C%20MS%20Nagar%2C%20Porur%2C%20Chennai%2C%20Tamil%20Nadu%20600125!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.8!2d80.148603!3d13.0249677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52617285038671%3A0x24a5fc26e86a298b!2sThalirmanam+Neurodevelopment+centre!5e0!3m2!1sen!2sin!4v1737280000000!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0, minHeight: '300px', height: '50vh' }}
@@ -40,7 +40,7 @@ const GoogleMapNew = () => {
                         </div>
                         <h4 className="font-bold text-lg mb-2 text-gray-800">Address</h4>
                         <p className="text-sm text-muted-foreground leading-relaxed">
-                            No. 13, Kundrathur Main Rd, MS Nagar, Porur
+                            2nd floor, 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125
                         </p>
                     </div>
 
@@ -82,7 +82,7 @@ const GoogleMapNew = () => {
                         Get turn-by-turn directions to our center from your current location using Google Maps
                     </p>
                     <a
-                        href="https://maps.google.com/?q=No.+13,+Kundrathur+Main+Rd,+MS+Nagar,+Porur,+Chennai,+Tamil+Nadu+600125"
+                        href="https://www.google.com/maps/place/Thalirmanam+Neurodevelopment+centre/@13.0253812,80.1485442,19.65z/data=!4m6!3m5!1s0x3a52617285038671:0x24a5fc26e86a298b!8m2!3d13.0249677!4d80.148603!16s%2Fg%2F11mt5tpdm3?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-3 bg-white text-primary px-8 py-4 rounded-full font-bold text-lg hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"

@@ -325,11 +325,11 @@ const ContactSectionNew = () => {
     </div>
 
     <p className="relative text-base sm:text-lg leading-relaxed mb-6 text-sky-50/95">
-      No. 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125
+      2nd floor, 13, Kundrathur Main Rd, MS Nagar, Porur, Chennai, Tamil Nadu 600125
     </p>
 
     <a
-      href="https://maps.google.com/?q=No.+13,+Kundrathur+Main+Rd,+MS+Nagar,+Porur,+Chennai,+Tamil+Nadu+600125"
+      href="https://maps.google.com/?q=2nd+floor,+13,+Kundrathur+Main+Rd,+MS+Nagar,+Porur,+Chennai,+Tamil+Nadu+600125"
       target="_blank"
       rel="noopener noreferrer"
       className="relative inline-flex items-center gap-2 bg-white text-indigo-700 px-6 sm:px-7 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl hover:bg-sky-50 transition-all duration-300 hover:-translate-y-0.5"
