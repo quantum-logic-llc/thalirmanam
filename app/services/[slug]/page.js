@@ -13,6 +13,9 @@ export async function generateStaticParams() {
 // Generate dynamic metadata for each service
 export async function generateMetadata({ params }) {
   const service = servicesDataOne.find((s) => s.slug === params.slug);
+  const siteUrl = 'https://thalirmanam.in';
+  const ogImage = 'https://thalirmanam.in/assets/og-image.png';
+  const twitterHandle = '@thalirmanam';
 
   if (!service) {
     return {
@@ -21,10 +24,62 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const title = `${service.service_name} - Thalir Manam`;
+  const description = service.service_details;
+  const canonical = `${siteUrl}/services/${service.slug}`;
+
   return {
-    title: `${service.service_name} - Thalir Manam`,
-    description: service.service_details,
+    title,
+    description,
     keywords: `${service.service_name}, child development, therapy, Chennai, Thalir Manam`,
+    authors: [{ name: 'Thalir Manam' }],
+    creator: 'Thalir Manam',
+    publisher: 'Thalir Manam - Neuro Development Center',
+
+    alternates: {
+      canonical: canonical
+    },
+
+    openGraph: {
+      type: 'article',
+      locale: 'en_US',
+      url: canonical,
+      title: title,
+      description: description,
+      siteName: 'Thalir Manam - Neuro Development Center',
+      images: [
+        {
+          url: ogImage,
+          width: 1200,
+          height: 630,
+          alt: title
+        }
+      ]
+    },
+
+    twitter: {
+      card: 'summary_large_image',
+      site: twitterHandle,
+      creator: twitterHandle,
+      title: title,
+      description: description,
+      images: [ogImage]
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+
+    category: 'Health',
+    classification: 'Child Development Services',
   };
 }
 

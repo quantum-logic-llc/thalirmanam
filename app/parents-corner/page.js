@@ -14,6 +14,8 @@ import {
   AcademicCapIcon
 } from '@heroicons/react/24/outline';
 
+export const metadata = getPageSEO('parents-corner');
+
 const resources = [
   {
     id: 1,

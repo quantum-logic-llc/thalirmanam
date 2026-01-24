@@ -3,11 +3,9 @@ import FooterOne from '../../src/components/sections/footers/footerOne'
 import PageTitle from '../../src/components/sections/pageTitle'
 import ServiceArtical from '../../src/components/sections/services/serviceArtical'
 import Sidebar from '../../src/components/sections/sidebar/sidebar'
+import { getPageSEO } from '../../src/lib/seo-config'
 
-export const metadata = {
-  title: 'Ascent - Service Details',
-  description: 'Learn more about our specific childcare and educational services',
-}
+export const metadata = getPageSEO('service-details')
 
 export default function ServiceDetailsPage() {
   return (

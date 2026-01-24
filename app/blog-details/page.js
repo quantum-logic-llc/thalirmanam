@@ -3,11 +3,9 @@ import FooterOne from '../../src/components/sections/footers/footerOne'
 import PageTitle from '../../src/components/sections/pageTitle'
 import BlogArticle from '../../src/components/sections/blogs/blogArticle'
 import Sidebar from '../../src/components/sections/sidebar/sidebar'
+import { getPageSEO } from '../../src/lib/seo-config'
 
-export const metadata = {
-  title: 'Ascent - Blog Details',
-  description: 'Read detailed blog posts about childcare and education',
-}
+export const metadata = getPageSEO('blog-details')
 
 export default function BlogDetailsPage() {
   return (
