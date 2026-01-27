@@ -108,6 +108,11 @@ export default function ServiceDetailsPage({ params }) {
     <>
       <HeaderOne />
       <main>
+        <section className="container py-8">
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+            {service.service_name}
+          </h1>
+        </section>
         <article
           className="max-w-none"
           dangerouslySetInnerHTML={{ __html: service.content }}

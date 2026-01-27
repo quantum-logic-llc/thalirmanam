@@ -254,9 +254,9 @@ const AboutUs = () => {
 
           {/* Content */}
           <div className="container mx-auto px-4 flex flex-col items-center text-center gap-4">
-            <h1 className="text-white text-2xl lg:text-3xl font-bold max-w-3xl">
+            <h2 className="text-white text-2xl lg:text-3xl font-bold max-w-3xl">
               Noticing developmental concerns in your child or teenager?
-            </h1>
+            </h2>
 
             <p className="text-white/90 max-w-3xl text-base lg:text-lg leading-relaxed">
               Noticing delays or changes in your child or teenager’s growth, learning, behavior, or emotions?
