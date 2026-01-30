@@ -210,6 +210,12 @@ export const seoConfig = {
       description: 'Schedule an appointment with our child development specialists. Book speech therapy, behavioral therapy, and developmental assessments in Chennai. Easy online booking available.',
       keywords: 'book appointment, child therapy, speech therapy booking, developmental assessment, Chennai child development center',
       canonical: 'https://thalirmanam.in/appointments'
+    },
+    newsletter: {
+      title: 'Newsletter - Thalirmanam Neuro Development Center',
+      description: 'Stay updated with the latest news, insights, and resources from Thalirmanam. Our newsletter brings you expert advice on child development, therapy tips, and upcoming events.',
+      keywords: 'thalirmanam newsletter, child development news, therapy updates, parenting newsletter, Chennai child development',
+      canonical: 'https://thalirmanam.in/newsletter'
     }
   }
 }

@@ -4,6 +4,9 @@ import Services from '../../src/components/pages/services'
 import PageTitle from '../../src/components/sections/pageTitle'
 import ServicesGrid from '../../src/components/sections/services/servicesGrid'
 import Partner from '../../src/components/sections/partner'
+import { getPageSEO } from '../../src/lib/seo-config'
+
+export const metadata = getPageSEO('services')
 
 // ... other imports
 
