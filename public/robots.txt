@@ -4,11 +4,8 @@
 User-agent: *
 Allow: /
 
-# Disallow specific paths if any
-# Disallow: /admin/
-# Disallow: /private/
+User-agent: Bingbot
+Allow: /
 
-# Sitemap location
 Sitemap: https://thalirmanam.in/sitemap.xml
-
 
